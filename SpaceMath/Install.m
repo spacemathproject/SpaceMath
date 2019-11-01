@@ -202,6 +202,6 @@ This allows you to customize your SpaceMath installation to fit your needs best.
     
 	WriteString["stdout", "\nInstallation complete! Loaded SpaceMath ... \n"];
 
-	 Get["SpaceMath`"]; 
+	 (* Get["SpaceMath`"]; *) 
 
 ];
