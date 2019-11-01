@@ -146,7 +146,6 @@ If[ Global`$SpaceMathStartupMessages =!= False,
 	Print [Style["\[Bullet] Authors:  ","Text"]];
 	Print [Style["M. A. Arroyo-Ure\[NTilde]a","Text"]];
 	Print [Style["Facultad de Estudios Superiores-Cuautitl\[AAcute]n, Universidad Nacional Aut\[OAcute]noma de M\[EAcute]xico","Text"]];
-	Print [Style["E. A. Herrera-Chac\[OAcute]n","Text"]];
 	Print [Style["T. A. Valencia-P\[EAcute]rez","Text"]];
 	Print [Style["Facultad de Ciencias F\[IAcute]sico Matem\[AAcute]ticas, Benem\[EAcute]rita Universidad Aut\[OAcute]noma de Puebla","Text"]];
 	];
