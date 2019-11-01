@@ -199,9 +199,9 @@ This allows you to customize your SpaceMath installation to fit your needs best.
 
 	(* To have the documentation available immediately after installing SpaceMath (following the advice of Szabolcs Horv'at) *)
 	RebuildPacletData[];
-
+    (*
 	WriteString["stdout", "\nInstallation complete! Loading SpaceMath ... \n"];
 
-	(* Get["SpaceMath`"]; *)
+	 Get["SpaceMath`"]; *)
 
 ];
