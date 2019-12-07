@@ -76,7 +76,7 @@ Index.html"], StandardForm]], "Input", TextClipboardType -> "PlainText"]},
                     URL[
                     StringJoin[
                     If[
-                    TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$19328], 
+                    TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$19657], 
                     "http://reference.wolfram.com/system-modeler/", 
                     "http://reference.wolfram.com/language/"], 
                     "SpaceMath/tutorial/Index", ".html"]], None}]}]}, 
@@ -702,7 +702,7 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2019, 12, 5, 14, 20, 34.116493}", 
+   "built" -> "{2019, 12, 7, 13, 37, 51.664735}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -765,7 +765,7 @@ Index.html"], StandardForm]], "Input", TextClipboardType -> "PlainText"]},
                     URL[
                     StringJoin[
                     If[
-                    TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$19328], 
+                    TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$19657], 
                     "http://reference.wolfram.com/system-modeler/", 
                     "http://reference.wolfram.com/language/"], 
                     "SpaceMath/tutorial/Index", ".html"]], None}]}]}, 
@@ -1389,7 +1389,7 @@ Index.html"], StandardForm]], "Input", TextClipboardType -> "PlainText"]},
         "PrimaryExamplesSection", "ExtendedExamplesSection", "ExampleSection",
           "ExampleSubsection", "ExampleDelimiter", "Title"}]], "Tutorial", 
       "Introduction to SpaceMath package"], "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$19267, "title" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$19596, "title" -> 
     "Introduction to SpaceMath package", "titlemodifier" -> "", "windowtitle" -> 
     "Introduction to SpaceMath package", "type" -> "Tutorial", "uri" -> 
     "SpaceMath/tutorial/Index"}},
@@ -1425,8 +1425,8 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[605, 21, 37793, 665, 70, "Input",ExpressionUUID->"2b667dc4-a79b-4d16-9a01-1004c60faa99"],
-Cell[38401, 688, 23, 0, 70, "FooterCell",ExpressionUUID->"161819fd-ccc7-4fd0-a3f3-2be94bbf65ec"]
+Cell[605, 21, 37793, 665, 70, "Input",ExpressionUUID->"f418db6a-ff18-467d-9ef7-e3116633648a"],
+Cell[38401, 688, 23, 0, 70, "FooterCell",ExpressionUUID->"816c8262-8543-4cc2-b828-f6994033b10d"]
 }
 ]
 *)

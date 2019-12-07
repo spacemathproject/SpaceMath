@@ -2,7 +2,7 @@ Automatic Installation
 
 Run the following instructions in a Notebook of Mathematica
 
-Import["https://raw.githubusercontent.com/spacemathproject/SpaceMath/developerTAVP/SpaceMath/Install.m"]
+Import["https://raw.githubusercontent.com/spacemathproject/SpaceMath/developing/SpaceMath/Install.m"]
 
 InstallSpaceMath[]
 

@@ -21,14 +21,14 @@ WindowFrame->Normal*)
 Notebook[{
 Cell[BoxData[GridBox[{
    {Cell["SPACE MATH TUTORIAL", "PacletNameCell",ExpressionUUID->
-     "54f862ca-cfc8-4821-8f53-44e7c5fee28b"], Cell[TextData[Cell[BoxData[
+     "3f537d51-845d-4b29-a97a-990016925540"], Cell[TextData[Cell[BoxData[
      ActionMenuBox[
       FrameBox[
        InterpretationBox[Cell[TextData[{
          "URL",
          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
           StripOnInput->False]
-        }],ExpressionUUID->"95ec0926-f03b-4b18-ae91-18bb03c1f4bc"],
+        }],ExpressionUUID->"735180e0-402d-4250-888d-7f039dc91651"],
         TextCell[
          Row[{"URL", 
            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
@@ -60,7 +60,7 @@ FirstSteps.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$19064], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$19134], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/tutorial/FirstSteps", ".html"]], None}]}]},
@@ -68,14 +68,14 @@ FirstSteps.html"], StandardForm]], "Input", TextClipboardType ->
       MenuAppearance->Automatic,
       MenuStyle->"URLMenu"]],
      LineSpacing->{1.4, 0},ExpressionUUID->
-     "028e4822-f761-4ca8-81d6-084ae0246956"]], "AnchorBar",ExpressionUUID->
-     "eebe22a7-fde1-47b4-a7ac-8e2f6e9c2444"]}
+     "a4259d96-f464-48b3-b382-da2d0f2bf050"]], "AnchorBar",ExpressionUUID->
+     "22451abb-3bd3-4da0-9215-2053f4950c5f"]}
   }]], "AnchorBarGrid",
  GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
      Scaled[0.65], {
       Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
    "RowsIndexed" -> {}}},
- CellID->1,ExpressionUUID->"b7621445-fba1-4b68-abc9-e7b635d93dc2"],
+ CellID->1,ExpressionUUID->"91c72a84-f910-40be-bd06-b22c8843d20c"],
 
 Cell[CellGroupData[{
 
@@ -105,7 +105,7 @@ Cell[BoxData["XXXX"], "Output",
 }, Open  ]]
 }, Open  ]],
 
-Cell[" ", "FooterCell",ExpressionUUID->"8853998a-621d-433a-9bb5-167fd053688e"]
+Cell[" ", "FooterCell",ExpressionUUID->"80dd6be3-a830-480a-8ab0-9ca65608c880"]
 },
 Saveable->False,
 ScreenStyleEnvironment->"Working",
@@ -121,7 +121,7 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2019, 12, 5, 14, 20, 33.103427}", 
+   "built" -> "{2019, 12, 7, 13, 37, 49.416327}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -131,7 +131,7 @@ TaggingRules->{
 commands of $SpaceMath$ v1.0 with their application to the Two-Higgs-Doublet \
 Model type-III (THDM-III). In table \\ref{commandsSignalStrengths} we show \
 the correponding commands to the $Signal Strenghts$. XXXX.", "synonyms" -> {},
-     "tabletags" -> DocumentationBuild`Make`Private`tabletaggingrules$19013, 
+     "tabletags" -> DocumentationBuild`Make`Private`tabletaggingrules$19083, 
     "title" -> "First steps", "titlemodifier" -> "", "windowtitle" -> 
     "First steps", "type" -> "Tutorial", "uri" -> 
     "SpaceMath/tutorial/FirstSteps", "WorkflowDockedCell" -> ""}, 
@@ -168,7 +168,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[583, 21, 2601, 56, 55, "AnchorBarGrid",ExpressionUUID->"b7621445-fba1-4b68-abc9-e7b635d93dc2",
+Cell[583, 21, 2601, 56, 55, "AnchorBarGrid",ExpressionUUID->"91c72a84-f910-40be-bd06-b22c8843d20c",
  CellID->1],
 Cell[CellGroupData[{
 Cell[3209, 81, 103, 1, 65, "Title",ExpressionUUID->"816b7260-d78b-42e7-8537-3d98165300d4",
@@ -184,7 +184,7 @@ Cell[3959, 101, 130, 2, 38, "Output",ExpressionUUID->"4dba88a2-b946-404c-81f4-30
  CellID->1181321046]
 }, Open  ]]
 }, Open  ]],
-Cell[4116, 107, 78, 0, 43, "FooterCell",ExpressionUUID->"8853998a-621d-433a-9bb5-167fd053688e"]
+Cell[4116, 107, 78, 0, 43, "FooterCell",ExpressionUUID->"80dd6be3-a830-480a-8ab0-9ca65608c880"]
 }
 ]
 *)

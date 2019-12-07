@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     18478,        578]
-NotebookOptionsPosition[     14327,        491]
-NotebookOutlinePosition[     17451,        560]
-CellTagsIndexPosition[     17408,        557]
+NotebookDataLength[     18883,        589]
+NotebookOptionsPosition[     14620,        500]
+NotebookOutlinePosition[     17744,        569]
+CellTagsIndexPosition[     17701,        566]
 WindowTitle->Signal strength modifiers R_xOverscriptBox[StyleBox[x, TI], _] 
 WindowFrame->Normal*)
 
@@ -60,7 +60,7 @@ Signalstrength.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$20800], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$21167], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/tutorial/Signalstrength", ".html"]], None}]}]},
@@ -309,6 +309,15 @@ Cell[TextData[Cell[BoxData[
   TraditionalForm]], "NumberedEquation"]], "Text",
  CellID->777615139],
 
+Cell[TextData[{
+ "In the Table signalvalues we show the best fit, at ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"1", "\[Sigma]"}], TraditionalForm]], "InlineFormula"],
+ ", on the signal strength. "
+}], "Text",
+ CellID->460060784],
+
 Cell[BoxData[GridBox[{
    {
     RowBox[{"Signal", " ", "strength", 
@@ -476,13 +485,13 @@ Cell[BoxData[GridBox[{
  CellID->1255467794],
 
 Cell[TextData[{
- "Signal strength ",
+ "Best fit value and ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox[
-    StyleBox["R", "TI"], 
-    StyleBox["x", "TI"]], TraditionalForm]], "InlineFormula"],
- "."
+   RowBox[{"\[PlusMinus]", "1", "\[Sigma]"}], TraditionalForm]], 
+  "InlineFormula"],
+ " uncertainties for the Higgs boson production via gluon fusion and decay \
+modes. "
 }], "Caption",
  CellID->407841573]
 }, Open  ]],
@@ -503,7 +512,7 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2019, 12, 5, 14, 20, 37.910681}", 
+   "built" -> "{2019, 12, 7, 13, 37, 55.836056}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -522,7 +531,7 @@ _]\[LongEqual]bOverscriptBox[StyleBox[b, TI], _], \[Tau]^-\[Tau]^+, \[Mu]^-\
 \[Mu]^+, WW^*, ZZ^*, \[Gamma]\[Gamma]. In addition, we consider the \
 production of H_i via gluon fusion and we use the narrow width approximation: \
 ", "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$20752, "title" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$21119, "title" -> 
     "Signal strength modifiers R_xOverscriptBox[StyleBox[x, TI], _] ", 
     "titlemodifier" -> "", "windowtitle" -> 
     "Signal strength modifiers R_xOverscriptBox[StyleBox[x, TI], _] ", "type" -> 
@@ -559,7 +568,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[635, 21, 2329, 54, 70, "AnchorBarGrid",ExpressionUUID->"b10e4d37-24ba-472b-9013-923bbff94995",
+Cell[635, 21, 2329, 54, 70, "AnchorBarGrid",ExpressionUUID->"ed662b3d-d06c-40cb-8ce3-3225586741b3",
  CellID->1],
 Cell[CellGroupData[{
 Cell[2989, 79, 286, 12, 70, "Title",ExpressionUUID->"7f5e844f-2878-4e3c-bbdc-e2fc813b163f",
@@ -574,12 +583,14 @@ Cell[7789, 260, 289, 8, 70, "Text",ExpressionUUID->"714e0b7a-6f47-471c-8d38-a200
  CellID->1219722],
 Cell[8081, 270, 1138, 39, 70, "Text",ExpressionUUID->"77739cfc-9881-4610-9de0-aa06e31b67cc",
  CellID->777615139],
-Cell[9222, 311, 4852, 164, 70, "DefinitionBox3Col",ExpressionUUID->"7cbb1263-5615-4fe2-9cbc-10cf5f74127e",
+Cell[9222, 311, 226, 7, 70, "Text",ExpressionUUID->"9f39ebe8-3629-4ad7-bc49-f7616364ffad",
+ CellID->460060784],
+Cell[9451, 320, 4852, 164, 70, "DefinitionBox3Col",ExpressionUUID->"7cbb1263-5615-4fe2-9cbc-10cf5f74127e",
  CellID->1255467794],
-Cell[14077, 477, 208, 9, 70, "Caption",ExpressionUUID->"7cce8ebb-596c-4642-8d91-8629d4386b8f",
+Cell[14306, 486, 272, 9, 70, "Caption",ExpressionUUID->"7cce8ebb-596c-4642-8d91-8629d4386b8f",
  CellID->407841573]
 }, Open  ]],
-Cell[14300, 489, 23, 0, 70, "FooterCell",ExpressionUUID->"97a66169-1157-4544-9609-af6a8083e4fb"]
+Cell[14593, 498, 23, 0, 70, "FooterCell",ExpressionUUID->"fafb486f-556c-4821-8083-31bdb63b961c"]
 }
 ]
 *)

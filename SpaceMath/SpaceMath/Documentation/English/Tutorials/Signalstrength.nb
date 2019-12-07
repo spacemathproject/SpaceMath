@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     30970,        905]
-NotebookOptionsPosition[     26300,        809]
-NotebookOutlinePosition[     26711,        825]
-CellTagsIndexPosition[     26668,        822]
+NotebookDataLength[     23910,        699]
+NotebookOptionsPosition[     19489,        607]
+NotebookOutlinePosition[     19900,        623]
+CellTagsIndexPosition[     19857,        620]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -565,219 +565,17 @@ Cell[BoxData[GridBox[{
  CellID->1255467794,ExpressionUUID->"7cbb1263-5615-4fe2-9cbc-10cf5f74127e"],
 
 Cell[TextData[{
- "Signal strength ",
+ "Best fit value and ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox[
-    StyleBox["R", "TI"], 
-    StyleBox["x", "TI"]], TraditionalForm]], "InlineFormula",ExpressionUUID->
-  "2997d71a-e8dc-48b4-afc7-5d51e1ff4f83"],
- "."
+   RowBox[{"\[PlusMinus]", "1", "\[Sigma]"}], TraditionalForm]], 
+  "InlineFormula",ExpressionUUID->"f25e1319-e3ea-4b4e-b8b8-8be9fa3c745e"],
+ " uncertainties for the Higgs boson production via gluon fusion and decay \
+modes. "
 }], "Caption",
- CellChangeTimes->{{3.784565126651288*^9, 3.784565141241458*^9}},
+ CellChangeTimes->{{3.784565126651288*^9, 3.784565141241458*^9}, 
+   3.784638675411233*^9},
  CellID->407841573,ExpressionUUID->"7cce8ebb-596c-4642-8d91-8629d4386b8f"],
-
-Cell[BoxData[GridBox[{
-   {
-    RowBox[{"Signal", " ", "strength", 
-     FormBox[
-      SubscriptBox[
-       StyleBox["R", "TI"], 
-       StyleBox["x", "TI"]],
-      TraditionalForm]}], "    ", Cell["\<\
-
-\
-\>", "TableText",ExpressionUUID->"f402a60d-6423-47be-b719-65949d3bddd3"]},
-   {"ggh", 
-    RowBox[{"Best", " ", "fit", " ", "value"}], Cell[
-    "Uncertainty stat.      Uncertainty syst", "TableText",ExpressionUUID->
-     "96973dc4-8b90-410a-84c7-99b0dc56676f"]},
-   {
-    RowBox[{
-     FormBox[
-      RowBox[{
-       StyleBox["h", "TI"], "\[Rule]", 
-       RowBox[{
-        StyleBox["b", "TI"], 
-        OverscriptBox[
-         StyleBox["b", "TI"], "_"]}]}],
-      TraditionalForm], "\n", 
-     FormBox[
-      RowBox[{
-       StyleBox["h", "TI"], "\[Rule]", 
-       RowBox[{
-        SuperscriptBox["\[Tau]", "-"], 
-        SuperscriptBox["\[Tau]", "+"]}]}],
-      TraditionalForm], "\n", 
-     FormBox[
-      RowBox[{
-       StyleBox["h", "TI"], "\[Rule]", 
-       RowBox[{
-        StyleBox["W", "TI"], 
-        SuperscriptBox[
-         StyleBox["W", "TI"], "*"]}]}],
-      TraditionalForm], "\n", 
-     FormBox[
-      RowBox[{
-       StyleBox["h", "TI"], "\[Rule]", 
-       RowBox[{
-        StyleBox["Z", "TI"], 
-        SuperscriptBox[
-         StyleBox["Z", "TI"], "*"]}]}],
-      TraditionalForm], "\n", 
-     FormBox[
-      RowBox[{
-       StyleBox["h", "TI"], "\[Rule]", "\[Gamma]\[Gamma]"}],
-      TraditionalForm], "\n", 
-     FormBox[
-      RowBox[{
-       StyleBox["h", "TI"], "\[Rule]", 
-       RowBox[{
-        SuperscriptBox["\[Mu]", "-"], 
-        SuperscriptBox["\[Mu]", "+"]}]}],
-      TraditionalForm]}], 
-    RowBox[{
-     FormBox[
-      SubsuperscriptBox["2.51", 
-       RowBox[{"-", "2.01"}], 
-       RowBox[{"+", "2.43"}]],
-      TraditionalForm], "\n", 
-     FormBox[
-      SubsuperscriptBox["1.05", 
-       RowBox[{"-", "0.47"}], 
-       RowBox[{"+", "0.53"}]],
-      TraditionalForm], "\n", 
-     FormBox[
-      SubsuperscriptBox["1.35", 
-       RowBox[{"-", "0.19"}], 
-       RowBox[{"+", "0.21"}]],
-      TraditionalForm], "\n", 
-     FormBox[
-      SubsuperscriptBox["1.22", 
-       RowBox[{"-", "0.21"}], 
-       RowBox[{"+", "0.23"}]],
-      TraditionalForm], "\n", 
-     FormBox[
-      SubsuperscriptBox["1.16", 
-       RowBox[{"-", "0.18"}], 
-       RowBox[{"+", "0.21"}]],
-      TraditionalForm], "\n", 
-     FormBox[
-      SubsuperscriptBox["0.31", 
-       RowBox[{"-", "1.79"}], 
-       RowBox[{"+", "1.80"}]],
-      TraditionalForm]}], Cell[TextData[{
-     Cell[BoxData[
-      FormBox[
-       SubsuperscriptBox["\[Null]", 
-        RowBox[{"-", "1.92"}], 
-        RowBox[{"+", "1.96"}]], TraditionalForm]], "InlineFormula",
-      ExpressionUUID->"bb85d33b-3295-481e-ac94-5b31a2359c33"],
-     "                               ",
-     Cell[BoxData[
-      FormBox[
-       SubsuperscriptBox["\[Null]", 
-        RowBox[{"-", "0.59"}], 
-        RowBox[{"+", "1.44"}]], TraditionalForm]], "InlineFormula",
-      ExpressionUUID->"e0c8012c-7b4a-43b1-8dec-aba9352bf9f1"],
-     " \n",
-     Cell[BoxData[
-      FormBox[
-       SubsuperscriptBox["\[Null]", 
-        RowBox[{"-", "0.25"}], 
-        RowBox[{"+", "0.25"}]], TraditionalForm]], "InlineFormula",
-      ExpressionUUID->"6df876da-75ae-4cab-a526-3313f0bb99b7"],
-     "                               ",
-     Cell[BoxData[
-      FormBox[
-       SubsuperscriptBox["\[Null]", 
-        RowBox[{"-", "0.40"}], 
-        RowBox[{"+", "0.46"}]], TraditionalForm]], "InlineFormula",
-      ExpressionUUID->"f1759d7b-f0d3-4f8e-a8c6-889454ddd6a5"],
-     " \n",
-     Cell[BoxData[
-      FormBox[
-       SubsuperscriptBox["\[Null]", 
-        RowBox[{"-", "0.12"}], 
-        RowBox[{"+", "0.12"}]], TraditionalForm]], "InlineFormula",
-      ExpressionUUID->"4910f066-02e2-4537-aef3-8121eba0960b"],
-     "                               ",
-     Cell[BoxData[
-      FormBox[
-       SubsuperscriptBox["\[Null]", 
-        RowBox[{"-", "0.15"}], 
-        RowBox[{"+", "0.17"}]], TraditionalForm]], "InlineFormula",
-      ExpressionUUID->"0ae8e218-ed88-4464-9598-8a19228d761d"],
-     " \n",
-     Cell[BoxData[
-      FormBox[
-       SubsuperscriptBox["\[Null]", 
-        RowBox[{"-", "0.19"}], 
-        RowBox[{"+", "0.20"}]], TraditionalForm]], "InlineFormula",
-      ExpressionUUID->"a856a588-e87d-45c7-82da-64f94c4595ca"],
-     "                               ",
-     Cell[BoxData[
-      FormBox[
-       SubsuperscriptBox["\[Null]", 
-        RowBox[{"-", "0.10"}], 
-        RowBox[{"+", "0.12"}]], TraditionalForm]], "InlineFormula",
-      ExpressionUUID->"b831b5dd-6b16-49f6-8241-6d02edbdea4f"],
-     " \n",
-     Cell[BoxData[
-      FormBox[
-       SubsuperscriptBox["\[Null]", 
-        RowBox[{"-", "0.15"}], 
-        RowBox[{"+", "0.17"}]], TraditionalForm]], "InlineFormula",
-      ExpressionUUID->"80d3a232-cc58-4bf5-8dcb-57b49fbf6fcb"],
-     "                               ",
-     Cell[BoxData[
-      FormBox[
-       SubsuperscriptBox["\[Null]", 
-        RowBox[{"-", "0.10"}], 
-        RowBox[{"+", "0.13"}]], TraditionalForm]], "InlineFormula",
-      ExpressionUUID->"706bdd99-7c1b-4f62-b0ac-129486d133da"],
-     " \n",
-     Cell[BoxData[
-      FormBox[
-       SubsuperscriptBox["\[Null]", 
-        RowBox[{"-", "1.78"}], 
-        RowBox[{"+", "1.79"}]], TraditionalForm]], "InlineFormula",
-      ExpressionUUID->"1f33e966-b5d8-4763-b419-31287eba557c"],
-     "                               ",
-     Cell[BoxData[
-      FormBox[
-       SubsuperscriptBox["\[Null]", 
-        RowBox[{"-", "0.19"}], 
-        RowBox[{"+", "0.19"}]], TraditionalForm]], "InlineFormula",
-      ExpressionUUID->"17d0307b-9280-4550-9e6f-39734962877b"],
-     " "
-    }], "TableText",ExpressionUUID->"18d78e36-c466-409d-8767-346aab6eef29"]}
-  }]], "DefinitionBox3Col",
- CellFrame->{{0, 0}, {0, 2}},
- CellChangeTimes->{{3.784563505185094*^9, 3.784563565761099*^9}, {
-   3.784563598043044*^9, 3.784563622898271*^9}, 3.784563681554948*^9, {
-   3.784563714083768*^9, 3.784563715950386*^9}, {3.784563859977922*^9, 
-   3.7845638890992126`*^9}, {3.784563957464486*^9, 3.784563957464518*^9}, {
-   3.784564168036684*^9, 3.784564169783476*^9}, {3.784564247313861*^9, 
-   3.784564256401782*^9}, {3.784564317338285*^9, 3.78456447575725*^9}, {
-   3.78456493062254*^9, 3.784565028517866*^9}, {3.7845650748611298`*^9, 
-   3.7845650758577137`*^9}, {3.7845654583354273`*^9, 3.784565518506102*^9}, {
-   3.784565674597397*^9, 3.784565698266131*^9}, {3.784565931083441*^9, 
-   3.784565964827285*^9}},
- CellID->1750955192,ExpressionUUID->"50559f26-190b-46d0-b21c-fe49fa9e3f1e"],
-
-Cell[TextData[{
- "Signal strength ",
- Cell[BoxData[
-  FormBox[
-   SubscriptBox[
-    StyleBox["R", "TI"], 
-    StyleBox["x", "TI"]], TraditionalForm]], "InlineFormula",ExpressionUUID->
-  "12f1919b-9834-480e-a735-67a3caf914e6"],
- "."
-}], "Caption",
- CellChangeTimes->{{3.784565126651288*^9, 3.784565141241458*^9}},
- CellID->1570155392,ExpressionUUID->"da542945-0cc1-4bb8-bdc1-d3ccb881a876"],
 
 Cell[CellGroupData[{
 
@@ -882,28 +680,24 @@ Cell[11303, 367, 339, 8, 24, "Text",ExpressionUUID->"9f39ebe8-3629-4ad7-bc49-f76
  CellID->460060784],
 Cell[11645, 377, 6504, 187, 228, "DefinitionBox3Col",ExpressionUUID->"7cbb1263-5615-4fe2-9cbc-10cf5f74127e",
  CellID->1255467794],
-Cell[18152, 566, 387, 11, 30, "Caption",ExpressionUUID->"7cce8ebb-596c-4642-8d91-8629d4386b8f",
+Cell[18152, 566, 474, 11, 30, "Caption",ExpressionUUID->"7cce8ebb-596c-4642-8d91-8629d4386b8f",
  CellID->407841573],
-Cell[18542, 579, 6504, 187, 228, "DefinitionBox3Col",ExpressionUUID->"50559f26-190b-46d0-b21c-fe49fa9e3f1e",
- CellID->1750955192],
-Cell[25049, 768, 388, 11, 30, "Caption",ExpressionUUID->"da542945-0cc1-4bb8-bdc1-d3ccb881a876",
- CellID->1570155392],
 Cell[CellGroupData[{
-Cell[25462, 783, 120, 1, 67, "TutorialMoreAboutSection",ExpressionUUID->"14bfa6f6-3e33-4e37-8d2d-a4e3a68edbfc",
+Cell[18651, 581, 120, 1, 67, "TutorialMoreAboutSection",ExpressionUUID->"14bfa6f6-3e33-4e37-8d2d-a4e3a68edbfc",
  CellID->23220180],
-Cell[25585, 786, 109, 1, 23, "TutorialMoreAbout",ExpressionUUID->"54ebd727-0cca-4d49-93ed-51745212d73d",
+Cell[18774, 584, 109, 1, 23, "TutorialMoreAbout",ExpressionUUID->"54ebd727-0cca-4d49-93ed-51745212d73d",
  CellID->1567025153]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[25731, 792, 127, 1, 73, "RelatedTutorialsSection",ExpressionUUID->"b4bbc745-469c-423f-b385-648a8b419852",
+Cell[18920, 590, 127, 1, 73, "RelatedTutorialsSection",ExpressionUUID->"b4bbc745-469c-423f-b385-648a8b419852",
  CellID->415694126],
-Cell[25861, 795, 107, 1, 23, "RelatedTutorials",ExpressionUUID->"5f135d34-07e3-4dd6-a74b-87c5bea60bb2",
+Cell[19050, 593, 107, 1, 23, "RelatedTutorials",ExpressionUUID->"5f135d34-07e3-4dd6-a74b-87c5bea60bb2",
  CellID->806871991]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[26005, 801, 153, 1, 73, "TutorialRelatedLinksSection",ExpressionUUID->"786b237b-3b32-4c9d-bd1b-2d67014a518f",
+Cell[19194, 599, 153, 1, 73, "TutorialRelatedLinksSection",ExpressionUUID->"786b237b-3b32-4c9d-bd1b-2d67014a518f",
  CellID->415694148],
-Cell[26161, 804, 111, 1, 23, "TutorialRelatedLinks",ExpressionUUID->"0cdaf1a1-0fa4-4550-9d5c-8890dcd225ca",
+Cell[19350, 602, 111, 1, 23, "TutorialRelatedLinks",ExpressionUUID->"0cdaf1a1-0fa4-4550-9d5c-8890dcd225ca",
  CellID->415694149]
 }, Open  ]]
 }, Open  ]]
