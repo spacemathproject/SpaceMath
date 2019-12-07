@@ -1,0 +1,491 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     16997,        483]
+NotebookOptionsPosition[     12503,        387]
+NotebookOutlinePosition[     12915,        403]
+CellTagsIndexPosition[     12872,        400]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[{
+ "New in: ",
+ Cell["1.0", "HistoryData",
+  CellTags->"New",ExpressionUUID->"f0b446cf-b591-4c6a-9c57-86cec5fbf896"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified",ExpressionUUID->"3892f0ae-0bbc-4082-842c-493721a39d8d"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete",ExpressionUUID->"4d9d35c4-1089-4687-bec5-5a9a6449fbdd"],
+ " | Excised in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Excised",ExpressionUUID->"544f0196-4e44-4043-b556-f6bbcc864e2b"]
+}], "History",
+ CellID->1247902091,ExpressionUUID->"83b0a5dd-3419-4577-b0d1-5ac85e801d48"],
+
+Cell[CellGroupData[{
+
+Cell["Categorization", "CategorizationSection",
+ CellID->1122911449,ExpressionUUID->"ccf4df07-2863-42a3-8d1e-f5cbadfe251b"],
+
+Cell["Tutorial", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->686433507,ExpressionUUID->"04fc165b-4250-4102-90b1-8625beba04b6"],
+
+Cell["SpaceMath", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->605800465,ExpressionUUID->"256f1f5b-b272-4a67-9e19-e3524ac5663e"],
+
+Cell["SpaceMath`", "Categorization",
+ CellLabel->"Context",
+ CellID->468444828,ExpressionUUID->"bb0544c8-0d87-40d7-8374-305d31a256c4"],
+
+Cell["SpaceMath/tutorial/Introduction", "Categorization",
+ CellLabel->"URI",ExpressionUUID->"1754b5d8-8952-4356-a31c-727c9c3cb862"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->1427428552,ExpressionUUID->"1bd374b1-3742-4e57-abf6-2516c1cae8b4"],
+
+Cell["XXXX", "Keywords",
+ CellID->1251852827,ExpressionUUID->"3d23925d-6a44-49bd-bd74-0638c38fd8b0"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Details", "DetailsSection",
+ CellID->307771771,ExpressionUUID->"d3328645-4d08-42a5-a02c-48ce7371107a"],
+
+Cell["XXXX", "Details",
+ CellLabel->"Lead",
+ CellID->218895918,ExpressionUUID->"5d6d39bc-b61c-4dd9-9af9-3f9dae7c05da"],
+
+Cell["XXXX", "Details",
+ CellLabel->"Developers",
+ CellID->350963985,ExpressionUUID->"d0b1ac8b-f36c-4927-a2fa-77e97496b780"],
+
+Cell["XXXX", "Details",
+ CellLabel->"Authors",
+ CellID->795871300,ExpressionUUID->"6325e90d-50ac-4254-806e-c9740b1aa282"],
+
+Cell["XXXX", "Details",
+ CellLabel->"Feature Name",
+ CellID->199739161,ExpressionUUID->"418d2429-71ef-4a49-8256-e1a773e74682"],
+
+Cell["XXXX", "Details",
+ CellLabel->"QA",
+ CellID->40625308,ExpressionUUID->"6bbda9a3-a1db-4c57-a081-830c2983e2a7"],
+
+Cell["XXXX", "Details",
+ CellLabel->"DA",
+ CellID->357121918,ExpressionUUID->"84aaf003-9c32-484d-8799-5a06e32c940a"],
+
+Cell["XXXX", "Details",
+ CellLabel->"Docs",
+ CellID->35949532,ExpressionUUID->"2e6f53ba-b19f-4429-86ce-6660bddebf11"],
+
+Cell["XXXX", "Details",
+ CellLabel->"Features Page Notes",
+ CellID->929432370,ExpressionUUID->"8e3bc8a6-a70a-4d8b-9d88-27cf5556b3d4"],
+
+Cell["XXXX", "Details",
+ CellLabel->"Comments",
+ CellID->240026365,ExpressionUUID->"c55b40c0-fa31-4ce0-91af-b43fa6cd89cd"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Introduction", "Title",
+ CellID->509267359,ExpressionUUID->"c9039b3e-e09f-470e-99f8-244678fc8d91"],
+
+Cell[TextData[{
+ "With the discovery of the Higgs boson ",
+ ButtonBox["HiggsDiscoveryATLAS",
+  BaseStyle->"Citation",
+  ButtonData->"HiggsDiscoveryATLAS",
+  ButtonNote->"HiggsDiscoveryATLAS"],
+ ButtonBox["HiggsDiscoveryCMS",
+  BaseStyle->"Citation",
+  ButtonData->"HiggsDiscoveryCMS",
+  ButtonNote->"HiggsDiscoveryCMS"],
+ " is established that the Higgs mechanism explain the electroweak symmetry \
+breaking and it generate the mass of all particles of the Standard Model \
+(SM), omitting the neutrino masses. The SM is the most successful theory that \
+explain many experimental results. However, is well known that, despite its \
+great success, the SM cannot help us to understand several issues such as the \
+hierarchy problem, dark matter, the flavor problem etc. This encourages the \
+study of SM extensions ",
+ ButtonBox["ArkaniHamed:2002qy",
+  BaseStyle->"Citation",
+  ButtonData->"ArkaniHamed:2002qy",
+  ButtonNote->"ArkaniHamed:2002qy"],
+ ",",
+ ButtonBox["ArkaniHamed:2001nc",
+  BaseStyle->"Citation",
+  ButtonData->"ArkaniHamed:2001nc",
+  ButtonNote->"ArkaniHamed:2001nc"],
+ ",",
+ ButtonBox["FRAMPTON1987157",
+  BaseStyle->"Citation",
+  ButtonData->"FRAMPTON1987157",
+  ButtonNote->"FRAMPTON1987157"],
+ ",",
+ ButtonBox["GEORGI1985463",
+  BaseStyle->"Citation",
+  ButtonData->"GEORGI1985463",
+  ButtonNote->"GEORGI1985463"],
+ ",",
+ ButtonBox["Harari:1979gi",
+  BaseStyle->"Citation",
+  ButtonData->"Harari:1979gi",
+  ButtonNote->"Harari:1979gi"],
+ ",",
+ ButtonBox["Harari:1981uh",
+  BaseStyle->"Citation",
+  ButtonData->"Harari:1981uh",
+  ButtonNote->"Harari:1981uh"],
+ ",",
+ ButtonBox["book:1299422",
+  BaseStyle->"Citation",
+  ButtonData->"book:1299422",
+  ButtonNote->"book:1299422"],
+ ",",
+ ButtonBox["10.1143/PTP.36.1266",
+  BaseStyle->"Citation",
+  ButtonData->"10.1143/PTP.36.1266",
+  ButtonNote->"10.1143/PTP.36.1266"],
+ ",",
+ ButtonBox["PhysRevD.10.275",
+  BaseStyle->"Citation",
+  ButtonData->"PhysRevD.10.275",
+  ButtonNote->"PhysRevD.10.275"],
+ ",",
+ ButtonBox["Mohapatra:1974hk",
+  BaseStyle->"Citation",
+  ButtonData->"Mohapatra:1974hk",
+  ButtonNote->"Mohapatra:1974hk"],
+ ",",
+ ButtonBox["POLYAKOV1977429",
+  BaseStyle->"Citation",
+  ButtonData->"POLYAKOV1977429",
+  ButtonNote->"POLYAKOV1977429"],
+ ",",
+ ButtonBox["Randall:1999ee",
+  BaseStyle->"Citation",
+  ButtonData->"Randall:1999ee",
+  ButtonNote->"Randall:1999ee"],
+ ",",
+ ButtonBox["PhysRevD.20.2619",
+  BaseStyle->"Citation",
+  ButtonData->"PhysRevD.20.2619",
+  ButtonNote->"PhysRevD.20.2619"],
+ ",",
+ ButtonBox["PhysRevD.19.1277",
+  BaseStyle->"Citation",
+  ButtonData->"PhysRevD.19.1277",
+  ButtonNote->"PhysRevD.19.1277"],
+ " with the goal of solve some issue unexplained. The price to pay is the \
+emergence of free parameters which are not predicted by the theory. From a \
+phenomenological point of view, one frequently encounters these free \
+parameters which should be constrainted in some way, but at same time, \
+motivated and allowed by experimental measurements. With the ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox["SpaceMath", "MR"], TraditionalForm]], "InlineFormula",
+  ExpressionUUID->"685d0fec-9775-43e4-91a2-7a62ef99f303"],
+ " package, is possible to do it. Free model parameter spaces can be to \
+scanned of a semi\[Hyphen]automatic and intuitive way within a friendly work \
+environment. ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox["SpaceMath", "MR"], TraditionalForm]], "InlineFormula",
+  ExpressionUUID->"a4fbaa32-84ff-46a5-9aa9-2097534b9dec"],
+ " generate graphics and tables which show the allowed regions for the free \
+model parameters of BSM theories. Similar packages to ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox["SpaceMath", "MR"], TraditionalForm]], "InlineFormula",
+  ExpressionUUID->"82f55fa2-a833-4539-aced-197cb69a6574"],
+ " can be consulted in the Refs. ",
+ ButtonBox["EasyScanHEP",
+  BaseStyle->"Citation",
+  ButtonData->"EasyScanHEP",
+  ButtonNote->"EasyScanHEP"],
+ ButtonBox["GAMBIT",
+  BaseStyle->"Citation",
+  ButtonData->"GAMBIT",
+  ButtonNote->"GAMBIT"],
+ ButtonBox["CheckMATE",
+  BaseStyle->"Citation",
+  ButtonData->"CheckMATE",
+  ButtonNote->"CheckMATE"],
+ " The physical observables considered in ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox["SpaceMath", "MR"], TraditionalForm]], "InlineFormula",
+  ExpressionUUID->"3c1d3ed0-1b29-403b-967f-c224658bfc8e"],
+ " are the following: "
+}], "Text",
+ CellChangeTimes->{
+  3.784651392897293*^9, {3.784651538269189*^9, 3.7846515382707777`*^9}},
+ CellID->1534169418,ExpressionUUID->"dca9ba47-3fea-4c09-b1ea-a9a5de7d775a"],
+
+Cell[TextData[{
+ "Higgs boson data    \nHiggs boson coupling modifiers ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Kappa]", 
+    StyleBox["i", "TI"]], TraditionalForm]], "InlineFormula",ExpressionUUID->
+  "6ad837f9-e313-48e9-98d6-b0ba9de24dd2"],
+ "   \nSignal strength modifiers ",
+ Cell[BoxData[
+  FormBox["\[Mu]", TraditionalForm]], "InlineFormula",ExpressionUUID->
+  "b0fea1a4-e55c-4971-b749-c7376372a747"],
+ "   \nMeson physics    \n",
+ Cell[BoxData[
+  FormBox[
+   StyleBox["B", "TI"], TraditionalForm]], "InlineFormula",ExpressionUUID->
+  "dfa1d5c5-b815-4583-8253-54ebc26b7b1c"],
+ " mesons \n",
+ Cell[BoxData[
+  FormBox[
+   StyleBox["D", "TI"], TraditionalForm]], "InlineFormula",ExpressionUUID->
+  "509dddc3-69a8-4252-b23c-eb622a516daf"],
+ " mesons \n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    StyleBox["B", "TI"], "-", 
+    OverscriptBox[
+     StyleBox["B", "TI"], "_"]}], TraditionalForm]], "InlineFormula",
+  ExpressionUUID->"25d26895-e4b5-4e18-9d8e-b1ccb6148efb"],
+ " mixing \n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    StyleBox["K", "TI"], "-", 
+    OverscriptBox[
+     StyleBox["K", "TI"], "_"]}], TraditionalForm]], "InlineFormula",
+  ExpressionUUID->"3e1c47e8-1c40-41ab-b932-e6fa834709df"],
+ " mixing \n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    StyleBox["D", "TI"], "-", 
+    OverscriptBox[
+     StyleBox["D", "TI"], "_"]}], TraditionalForm]], "InlineFormula",
+  ExpressionUUID->"1702b2ce-c9ed-4ca0-a640-91f248515f99"],
+ " mixing \nFlavor\[Hyphen]violanting processes \nOblique parameters \n\
+Unitariety "
+}], "Text",
+ CellChangeTimes->{
+  3.784651392897293*^9, 3.784651539249003*^9, {3.7846516034425697`*^9, 
+   3.784651603442967*^9}},
+ CellID->1537123131,ExpressionUUID->"780da17c-da1c-49ff-80b3-cb1fc40aa24c"],
+
+Cell[TextData[{
+ "However, in this version only (",
+ 
+ CounterBox["Section", "kappaX"],
+ " ) is enabled. In addition, ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox["SpaceMath", "MR"], TraditionalForm]], "InlineFormula",
+  ExpressionUUID->"eb29789d-6677-46ca-8a78-da0ccd6f077d"],
+ " v1.0 is able to evaluate branching ratios of the SM\[Hyphen]like Higgs \
+boson, ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox[
+    RowBox[{"C", "P"}], "TI"], TraditionalForm]], "InlineFormula",
+  ExpressionUUID->"99d46d11-db76-4dbf-9de7-2869a383e440"],
+ "\[Hyphen]odd and ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox[
+    RowBox[{"C", "P"}], "TI"], TraditionalForm]], "InlineFormula",
+  ExpressionUUID->"5d4e457e-6044-43d0-9326-bf66b8e2a2ec"],
+ "\[Hyphen]even scalars.  "
+}], "Text",
+ CellChangeTimes->{3.784651392897293*^9, 3.784651539249003*^9, 
+  3.7846516049019814`*^9},
+ CellID->179312628,ExpressionUUID->"c31a14d3-9417-4be0-8480-a1e03a4c998d"],
+
+Cell[BoxData[GridBox[{
+   {"XXXX", Cell[
+    "XXXX", "TableText",ExpressionUUID->
+     "d8752ccc-1a15-45d4-93a5-157f1831f8bc"]},
+   {"XXXX", Cell[
+    "XXXX", "TableText",ExpressionUUID->
+     "e85f59b6-6489-4fb7-83cb-829406c116be"]},
+   {"XXXX", Cell[
+    "XXXX", "TableText",ExpressionUUID->
+     "e1f68bf1-df7a-4785-907b-43f78ee60bc5"]}
+  }]], "DefinitionBox",
+ CellID->2096742444,ExpressionUUID->"e609fae4-0344-42b8-9f2d-282001bd35d3"],
+
+Cell["XXXX.", "Caption",
+ CellID->1891092685,ExpressionUUID->"1b73c731-8658-4287-9c5d-5557d07855ba"],
+
+Cell[CellGroupData[{
+
+Cell["XXXX", "MathCaption",
+ CellID->836781195,ExpressionUUID->"6c15a82d-803c-4c8f-80a9-950f5826d4b1"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["XXXX"], "Input",
+ CellLabel->"In[1]:=",
+ CellID->2058623809,ExpressionUUID->"0be8721b-4fd1-47dd-838f-5580d6472d55"],
+
+Cell[BoxData["XXXX"], "Output",
+ CellLabel->"Out[1]=",
+ CellID->1181321046,ExpressionUUID->"8c5d09c2-08e0-45a4-a636-98ab8613009f"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More About", "TutorialMoreAboutSection",
+ CellID->23220180,ExpressionUUID->"0a35cfc4-e2cf-4a02-84a4-0a1b84b41ff2"],
+
+Cell["XXXX", "TutorialMoreAbout",
+ CellID->1567025153,ExpressionUUID->"f72947d3-ec79-468c-a9de-aebe5e54ebae"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Tutorials", "RelatedTutorialsSection",
+ CellID->415694126,ExpressionUUID->"9e910e7b-eef9-4cfc-85f7-f8834d455801"],
+
+Cell["XXXX", "RelatedTutorials",
+ CellID->806871991,ExpressionUUID->"dba5c716-b177-4e6b-9028-9539cd4662b7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Wolfram Education Group Courses", "TutorialRelatedLinksSection",
+ CellID->415694148,ExpressionUUID->"af1a36cc-bb66-4c64-a54d-2e75132b1d08"],
+
+Cell["XXXX", "TutorialRelatedLinks",
+ CellID->415694149,ExpressionUUID->"953ad8dc-2341-4c5c-8098-6b42adffc3ba"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{700, 770},
+WindowMargins->{{Automatic, 504}, {Automatic, 105}},
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "TutorialPageStyles.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 600, 14, 25, "History",ExpressionUUID->"83b0a5dd-3419-4577-b0d1-5ac85e801d48",
+ CellID->1247902091],
+Cell[CellGroupData[{
+Cell[1183, 38, 123, 1, 30, "CategorizationSection",ExpressionUUID->"ccf4df07-2863-42a3-8d1e-f5cbadfe251b",
+ CellID->1122911449],
+Cell[1309, 41, 136, 2, 70, "Categorization",ExpressionUUID->"04fc165b-4250-4102-90b1-8625beba04b6",
+ CellID->686433507],
+Cell[1448, 45, 137, 2, 70, "Categorization",ExpressionUUID->"256f1f5b-b272-4a67-9e19-e3524ac5663e",
+ CellID->605800465],
+Cell[1588, 49, 134, 2, 70, "Categorization",ExpressionUUID->"bb0544c8-0d87-40d7-8374-305d31a256c4",
+ CellID->468444828],
+Cell[1725, 53, 131, 1, 70, "Categorization",ExpressionUUID->"1754b5d8-8952-4356-a31c-727c9c3cb862"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1893, 59, 111, 1, 20, "KeywordsSection",ExpressionUUID->"1bd374b1-3742-4e57-abf6-2516c1cae8b4",
+ CellID->1427428552],
+Cell[2007, 62, 100, 1, 70, "Keywords",ExpressionUUID->"3d23925d-6a44-49bd-bd74-0638c38fd8b0",
+ CellID->1251852827]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[2144, 68, 108, 1, 20, "DetailsSection",ExpressionUUID->"d3328645-4d08-42a5-a02c-48ce7371107a",
+ CellID->307771771],
+Cell[2255, 71, 118, 2, 70, "Details",ExpressionUUID->"5d6d39bc-b61c-4dd9-9af9-3f9dae7c05da",
+ CellID->218895918],
+Cell[2376, 75, 124, 2, 70, "Details",ExpressionUUID->"d0b1ac8b-f36c-4927-a2fa-77e97496b780",
+ CellID->350963985],
+Cell[2503, 79, 121, 2, 70, "Details",ExpressionUUID->"6325e90d-50ac-4254-806e-c9740b1aa282",
+ CellID->795871300],
+Cell[2627, 83, 126, 2, 70, "Details",ExpressionUUID->"418d2429-71ef-4a49-8256-e1a773e74682",
+ CellID->199739161],
+Cell[2756, 87, 115, 2, 70, "Details",ExpressionUUID->"6bbda9a3-a1db-4c57-a081-830c2983e2a7",
+ CellID->40625308],
+Cell[2874, 91, 116, 2, 70, "Details",ExpressionUUID->"84aaf003-9c32-484d-8799-5a06e32c940a",
+ CellID->357121918],
+Cell[2993, 95, 117, 2, 70, "Details",ExpressionUUID->"2e6f53ba-b19f-4429-86ce-6660bddebf11",
+ CellID->35949532],
+Cell[3113, 99, 133, 2, 70, "Details",ExpressionUUID->"8e3bc8a6-a70a-4d8b-9d88-27cf5556b3d4",
+ CellID->929432370],
+Cell[3249, 103, 122, 2, 70, "Details",ExpressionUUID->"c55b40c0-fa31-4ce0-91af-b43fa6cd89cd",
+ CellID->240026365]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[3408, 110, 104, 1, 108, "Title",ExpressionUUID->"c9039b3e-e09f-470e-99f8-244678fc8d91",
+ CellID->509267359],
+Cell[3515, 113, 4482, 130, 298, "Text",ExpressionUUID->"dca9ba47-3fea-4c09-b1ea-a9a5de7d775a",
+ CellID->1534169418],
+Cell[8000, 245, 1737, 51, 357, "Text",ExpressionUUID->"780da17c-da1c-49ff-80b3-cb1fc40aa24c",
+ CellID->1537123131],
+Cell[9740, 298, 917, 26, 43, "Text",ExpressionUUID->"c31a14d3-9417-4be0-8480-a1e03a4c998d",
+ CellID->179312628],
+Cell[10660, 326, 439, 11, 92, "DefinitionBox",ExpressionUUID->"e609fae4-0344-42b8-9f2d-282001bd35d3",
+ CellID->2096742444],
+Cell[11102, 339, 100, 1, 30, "Caption",ExpressionUUID->"1b73c731-8658-4287-9c5d-5557d07855ba",
+ CellID->1891092685],
+Cell[CellGroupData[{
+Cell[11227, 344, 102, 1, 41, "MathCaption",ExpressionUUID->"6c15a82d-803c-4c8f-80a9-950f5826d4b1",
+ CellID->836781195],
+Cell[CellGroupData[{
+Cell[11354, 349, 129, 2, 28, "Input",ExpressionUUID->"0be8721b-4fd1-47dd-838f-5580d6472d55",
+ CellID->2058623809],
+Cell[11486, 353, 130, 2, 27, "Output",ExpressionUUID->"8c5d09c2-08e0-45a4-a636-98ab8613009f",
+ CellID->1181321046]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11665, 361, 120, 1, 73, "TutorialMoreAboutSection",ExpressionUUID->"0a35cfc4-e2cf-4a02-84a4-0a1b84b41ff2",
+ CellID->23220180],
+Cell[11788, 364, 109, 1, 23, "TutorialMoreAbout",ExpressionUUID->"f72947d3-ec79-468c-a9de-aebe5e54ebae",
+ CellID->1567025153]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11934, 370, 127, 1, 73, "RelatedTutorialsSection",ExpressionUUID->"9e910e7b-eef9-4cfc-85f7-f8834d455801",
+ CellID->415694126],
+Cell[12064, 373, 107, 1, 23, "RelatedTutorials",ExpressionUUID->"dba5c716-b177-4e6b-9028-9539cd4662b7",
+ CellID->806871991]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12208, 379, 153, 1, 73, "TutorialRelatedLinksSection",ExpressionUUID->"af1a36cc-bb66-4c64-a54d-2e75132b1d08",
+ CellID->415694148],
+Cell[12364, 382, 111, 1, 23, "TutorialRelatedLinks",ExpressionUUID->"953ad8dc-2341-4c5c-8098-6b42adffc3ba",
+ CellID->415694149]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
