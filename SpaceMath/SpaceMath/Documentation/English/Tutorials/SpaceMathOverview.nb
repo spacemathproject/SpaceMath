@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    642825,      10684]
-NotebookOptionsPosition[    636906,      10570]
-NotebookOutlinePosition[    637318,      10586]
-CellTagsIndexPosition[    637275,      10583]
+NotebookDataLength[    643145,      10694]
+NotebookOptionsPosition[    637227,      10580]
+NotebookOutlinePosition[    637638,      10596]
+CellTagsIndexPosition[    637595,      10593]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -10497,27 +10497,35 @@ Cell[TextData[ButtonBox["           Functions",
 
 Cell[TextData[StyleBox[ButtonBox["Lepton Flavor violating",
  BaseStyle->"Link",
- ButtonData->"paclet:SpaceMath/tutorial/Index#104793658"],
- FontColor->GrayLevel[0.5]]], "TOCSubsection",ExpressionUUID->"b14707ca-64d9-\
-4241-bee4-912fb56b86c5"],
+ ButtonData->"paclet:SpaceMath/tutorial/ComingSoon"],
+ FontColor->GrayLevel[0.5]]], "TOCSubsection",
+ CellChangeTimes->{{3.784745861176193*^9, 
+  3.784745864410754*^9}},ExpressionUUID->"b14707ca-64d9-4241-bee4-\
+912fb56b86c5"],
 
 Cell[TextData[StyleBox[ButtonBox["Pseudo Scalar Meson Physics",
  BaseStyle->"Link",
- ButtonData->"paclet:SpaceMath/tutorial/Index#768234615"],
- FontColor->GrayLevel[0.5]]], "TOCSubsection",ExpressionUUID->"4d18cb98-4b01-\
-4deb-b9d5-c67684544d8b"],
+ ButtonData->"paclet:SpaceMath/tutorial/ComingSoon"],
+ FontColor->GrayLevel[0.5]]], "TOCSubsection",
+ CellChangeTimes->{{3.78474589278508*^9, 
+  3.7847458955031433`*^9}},ExpressionUUID->"4d18cb98-4b01-4deb-b9d5-\
+c67684544d8b"],
 
 Cell[TextData[StyleBox[ButtonBox["Oblique Parameters",
  BaseStyle->"Link",
- ButtonData->"paclet:SpaceMath/tutorial/Index#773490071"],
- FontColor->GrayLevel[0.5]]], "TOCSubsection",ExpressionUUID->"4be27616-b432-\
-43f2-98ac-ca1080e07c77"],
+ ButtonData->"paclet:SpaceMath/tutorial/ComingSoon"],
+ FontColor->GrayLevel[0.5]]], "TOCSubsection",
+ CellChangeTimes->{{3.784745920577175*^9, 
+  3.784745922650922*^9}},ExpressionUUID->"4be27616-b432-43f2-98ac-\
+ca1080e07c77"],
 
 Cell[TextData[StyleBox[ButtonBox["Unitarity",
  BaseStyle->"Link",
- ButtonData->"paclet:SpaceMath/tutorial/Index#657122953"],
- FontColor->GrayLevel[0.5]]], "TOCSubsection",ExpressionUUID->"3998d54a-c492-\
-40d9-8695-146f32c1d11b"]
+ ButtonData->"paclet:SpaceMath/tutorial/ComingSoon"],
+ FontColor->GrayLevel[0.5]]], "TOCSubsection",
+ CellChangeTimes->{{3.784745941941547*^9, 
+  3.784745941970686*^9}},ExpressionUUID->"3998d54a-c492-40d9-8695-\
+146f32c1d11b"]
 }, Open  ]],
 
 Cell[TextData[ButtonBox["Validations",
@@ -10530,8 +10538,10 @@ Cell[TextData[ButtonBox["Validations",
 
 Cell[TextData[ButtonBox["CP-even and CP-odd branching ratios",
  BaseStyle->"Link",
- ButtonData->"paclet:SpaceMath/tutorial/Index#373894052"]], "TOCSection",Expre\
-ssionUUID->"804bb9e7-713a-4645-8375-190e708db0f3"],
+ ButtonData->"paclet:SpaceMath/tutorial/ComingSoon"]], "TOCSection",
+ CellChangeTimes->{{3.784745970055759*^9, 
+  3.784745971983817*^9}},ExpressionUUID->"804bb9e7-713a-4645-8375-\
+190e708db0f3"],
 
 Cell[CellGroupData[{
 
@@ -10569,7 +10579,7 @@ Cell[TextData[ButtonBox["Installation",
 }, Open  ]]
 },
 WindowSize->{700, 770},
-WindowMargins->{{390, Automatic}, {136, Automatic}},
+WindowMargins->{{Automatic, 499}, {Automatic, 61}},
 FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
 StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "TutorialPageStyles.nb", 
   CharacterEncoding -> "UTF-8"]
@@ -10670,18 +10680,18 @@ Cell[633550, 10484, 586, 9, 20, "TOCSubsection",ExpressionUUID->"08a92f96-aa3a-4
  CellID->973461846]
 }, Open  ]]
 }, Open  ]],
-Cell[634163, 10497, 242, 4, 20, "TOCSubsection",ExpressionUUID->"b14707ca-64d9-4241-bee4-912fb56b86c5"],
-Cell[634408, 10503, 246, 4, 20, "TOCSubsection",ExpressionUUID->"4d18cb98-4b01-4deb-b9d5-c67684544d8b"],
-Cell[634657, 10509, 237, 4, 20, "TOCSubsection",ExpressionUUID->"4be27616-b432-43f2-98ac-ca1080e07c77"],
-Cell[634897, 10515, 228, 4, 20, "TOCSubsection",ExpressionUUID->"3998d54a-c492-40d9-8695-146f32c1d11b"]
+Cell[634163, 10497, 306, 6, 20, "TOCSubsection",ExpressionUUID->"b14707ca-64d9-4241-bee4-912fb56b86c5"],
+Cell[634472, 10505, 311, 6, 20, "TOCSubsection",ExpressionUUID->"4d18cb98-4b01-4deb-b9d5-c67684544d8b"],
+Cell[634786, 10513, 301, 6, 20, "TOCSubsection",ExpressionUUID->"4be27616-b432-43f2-98ac-ca1080e07c77"],
+Cell[635090, 10521, 292, 6, 20, "TOCSubsection",ExpressionUUID->"3998d54a-c492-40d9-8695-146f32c1d11b"]
 }, Open  ]],
-Cell[635140, 10522, 270, 6, 29, "TOCSection",ExpressionUUID->"78611339-1ac0-4168-bd59-58550931567b"],
-Cell[635413, 10530, 213, 3, 23, "TOCSection",ExpressionUUID->"804bb9e7-713a-4645-8375-190e708db0f3"],
+Cell[635397, 10530, 270, 6, 29, "TOCSection",ExpressionUUID->"78611339-1ac0-4168-bd59-58550931567b"],
+Cell[635670, 10538, 277, 5, 23, "TOCSection",ExpressionUUID->"804bb9e7-713a-4645-8375-190e708db0f3"],
 Cell[CellGroupData[{
-Cell[635651, 10537, 259, 5, 23, "TOCSection",ExpressionUUID->"e5e1d1f0-0703-44d2-9d39-768537130c5a"],
-Cell[635913, 10544, 258, 5, 20, "TOCSubsection",ExpressionUUID->"d902c4bd-2794-4519-98ca-4a339810659b"],
-Cell[636174, 10551, 308, 6, 20, "TOCSubsection",ExpressionUUID->"c86940c4-6231-4d80-844f-109b8849fe42"],
-Cell[636485, 10559, 381, 6, 20, "TOCSubsection",ExpressionUUID->"3c1ae2e3-0a7d-4205-926b-b75de9b7a6ba",
+Cell[635972, 10547, 259, 5, 23, "TOCSection",ExpressionUUID->"e5e1d1f0-0703-44d2-9d39-768537130c5a"],
+Cell[636234, 10554, 258, 5, 20, "TOCSubsection",ExpressionUUID->"d902c4bd-2794-4519-98ca-4a339810659b"],
+Cell[636495, 10561, 308, 6, 20, "TOCSubsection",ExpressionUUID->"c86940c4-6231-4d80-844f-109b8849fe42"],
+Cell[636806, 10569, 381, 6, 20, "TOCSubsection",ExpressionUUID->"3c1ae2e3-0a7d-4205-926b-b75de9b7a6ba",
  CellID->1443574219]
 }, Open  ]]
 }, Open  ]]
