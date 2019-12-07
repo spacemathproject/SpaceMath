@@ -1,0 +1,219 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6596,        210]
+NotebookOptionsPosition[      5992,        186]
+NotebookOutlinePosition[      6325,        201]
+CellTagsIndexPosition[      6282,        198]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[{
+ "SpaceMath-Signal Strengths-Random ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["R", "b"], TraditionalForm]],
+  FormatType->"TraditionalForm"]
+}], "Title",
+ CellChangeTimes->{{3.784650239270749*^9, 3.784650291126005*^9}}],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"Load", " ", "SpaceMath"}], "Section"]], "Input",
+ CellChangeTimes->{{3.784650367123695*^9, 3.784650367125136*^9}}],
+
+Cell[BoxData[
+ RowBox[{"<<", "SpaceMath`"}]], "Input",
+ CellChangeTimes->{{3.784650344374549*^9, 3.784650351739778*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "(*", "**********************************************************************************)"}\
+], 
+  RowBox[{
+  "(*", "**********************************************************************************)"}\
+], 
+  RowBox[{
+  "(*", "**********************************************************************************)"}\
+]}]], "Input",
+ CellChangeTimes->{{3.784650639585388*^9, 3.784650639586866*^9}}],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"Enter", " ", "couplings"}], "Section"]], "Input",
+ CellChangeTimes->{{3.784650423089734*^9, 3.784650423091687*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"THDM", "-", 
+    RowBox[{"III", " ", "Couplings"}]}], "*)"}], "\n", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"ghtt", "[", 
+     RowBox[{"\[Alpha]_", ",", "Att_", ",", "Cab_", ",", "tb_"}], "]"}], ":=", 
+    RowBox[{
+     RowBox[{"g", "/", "2"}], " ", 
+     RowBox[{"(", 
+      RowBox[{"mt", "/", "mW"}], ")"}], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", 
+           RowBox[{"Cos", "[", "\[Alpha]", "]"}]}], "/", "tb"}], "*", 
+         RowBox[{"Cos", "[", 
+          RowBox[{"ArcTan", "[", "tb", "]"}], "]"}]}], ")"}], "+", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"Sqrt", "[", "2", "]"}], " ", 
+         RowBox[{"Cab", "/", 
+          RowBox[{"(", 
+           RowBox[{"g", "*", "tb", "*", 
+            RowBox[{"Cos", "[", 
+             RowBox[{"ArcTan", "[", "tb", "]"}], "]"}]}], ")"}]}], " ", 
+         RowBox[{"(", 
+          RowBox[{"mW", "/", "mt"}], ")"}], "*", 
+         RowBox[{"mt", "/", "vev"}], "*", "Att"}], ")"}]}], ")"}]}]}], "\n", 
+   RowBox[{
+    RowBox[{"ghbb", "[", 
+     RowBox[{"\[Alpha]_", ",", "Abb_", ",", "Cab_", ",", "tb_"}], "]"}], ":=", 
+    RowBox[{
+     RowBox[{"g", "/", "2"}], " ", 
+     RowBox[{"(", 
+      RowBox[{"mb", "/", "mW"}], ")"}], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          RowBox[{"Sin", "[", "\[Alpha]", "]"}]}], "*", 
+         RowBox[{"tb", "/", 
+          RowBox[{"Sin", "[", 
+           RowBox[{"ArcTan", "[", "tb", "]"}], "]"}]}]}], ")"}], "+", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"Sqrt", "[", "2", "]"}], " ", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"Cab", "*", "tb"}], ")"}], "/", 
+          RowBox[{"(", 
+           RowBox[{"g", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{"ArcTan", "[", "tb", "]"}], "]"}]}], ")"}]}], " ", 
+         RowBox[{"(", 
+          RowBox[{"mW", "/", "mb"}], ")"}], "*", 
+         RowBox[{"mb", "/", "vev"}], "*", "Abb"}], ")"}]}], 
+      ")"}]}]}]}]}]], "Input",
+ CellChangeTimes->{{3.784650214770639*^9, 3.784650235550658*^9}, {
+  3.78465030294097*^9, 3.78465032713072*^9}, {3.7846504400996017`*^9, 
+  3.784650460402377*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "(*", "**********************************************************************************)"}\
+], 
+  RowBox[{
+  "(*", "**********************************************************************************)"}\
+], 
+  RowBox[{
+  "(*", "**********************************************************************************)"}\
+]}]], "Input",
+ CellChangeTimes->{{3.784650644226416*^9, 3.7846506442276506`*^9}}],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"Evaluates", " ", 
+   SubscriptBox["R", "b"], " "}], "Section"]], "Input",
+ CellChangeTimes->{{3.784650553421466*^9, 3.78465059759659*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"Commad", " ", "for", " ", "evaluates", " ", 
+    SubscriptBox["R", "b"]}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"?", "RbRandom"}], "\n", 
+   RowBox[{
+    RowBox[{"RbRandom", "[", 
+     RowBox[{
+      RowBox[{"ghtt", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"ArcCos", "[", "cab", "]"}], "+", 
+         RowBox[{"ArcTan", "[", "tb", "]"}]}], ",", "Att", ",", "cab", ",", 
+        "tb"}], "]"}], ",", 
+      RowBox[{"ghbb", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"ArcCos", "[", "cab", "]"}], "+", 
+         RowBox[{"ArcTan", "[", "tb", "]"}]}], ",", "Abb", ",", "cab", ",", 
+        "tb"}], "]"}], ",", "cab", ",", 
+      RowBox[{"-", "0.05"}], ",", "0.05", ",", "tb", ",", "0.1", ",", "20", 
+      ",", "Att", ",", "0", ",", "1", ",", "Abb", ",", "0", ",", "1", ",", 
+      "5000"}], "]"}], ";"}]}]}]], "Input",
+ CellChangeTimes->{
+  3.784650318986457*^9, {3.784650471980188*^9, 3.784650521172223*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", "PLOT", "*)"}], "\n", 
+  RowBox[{
+   RowBox[{"?", "PlotRbRandom"}], "\n", 
+   RowBox[{
+    RowBox[{"PlotRbRandom", "[", 
+     RowBox[{
+     "1", ",", "5", ",", "\"\<cos(\[Alpha]-\[Beta])\>\"", ",", 
+      "\"\<tan\[Beta]\>\""}], "]"}], "[", 
+    RowBox[{"[", "1", "]"}], "]"}], "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{3.7846506211364937`*^9}]
+}, Open  ]]
+},
+WindowSize->{1301, 744},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"10.0 for Linux x86 (64-bit) (June 27, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 238, 7, 93, "Title"],
+Cell[821, 31, 150, 3, 49, "Input"],
+Cell[974, 36, 120, 2, 32, "Input"],
+Cell[1097, 40, 433, 11, 77, "Input"],
+Cell[1533, 53, 151, 3, 49, "Input"],
+Cell[1687, 58, 2269, 65, 121, "Input"],
+Cell[3959, 125, 435, 11, 77, "Input"],
+Cell[4397, 138, 174, 4, 51, "Input"],
+Cell[4574, 144, 1001, 26, 99, "Input"],
+Cell[5578, 172, 398, 11, 99, "Input"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

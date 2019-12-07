@@ -2,10 +2,6 @@
 
 (* Created by the Wolfram Workbench OCT/2019 *)
 
-(*
-  This package is a modified copy of the NumericalCalculus package, 
-  that is provided to help with documentation generation.
-*)
 
 If[ MemberQ[$Packages,"SpaceMath`"],
 	Print["SpaceMath is already loaded! To reload it, please restart the kernel."];
@@ -49,33 +45,33 @@ If[ Global`$SpaceMathStartupMessages=!=False,
 
 BeginPackage["SpaceMath`"]
 
-HiggsData::usage = "NumLimit[expr, x->x0] numerically finds the limiting \
-value of expr as x approaches x0."
+HiggsData::usage = "The implementation of the Higgs boson data within the SpaceMath code, \
+was closely following the reference : arXiv:1809.10733v2[hep-ex], 10.1140/epjc/s10052-019-6909-y."
 
 LFVprocesses::usage =
-"NumD[expr, x, x0] gives a numerical approximation to the derivative of expr \
-with respect to x at the point x0."
+"The implementation of the Higgs boson data within the SpaceMath code, \
+was closely following the reference : arXiv:1809.10733v2[hep-ex], 10.1140/epjc/s10052-019-6909-y."
 
 ObliquePar::usage =
-"NumSeries[f, {x, x0, n}] gives a numerical approximation to the series \
-expansion of f about the point x == x0 through (x-x0)^n."
+"The implementation of the Higgs boson data within the SpaceMath code, \
+was closely following the reference : arXiv:1809.10733v2[hep-ex], 10.1140/epjc/s10052-019-6909-y."
 
 (* Implementation of the package *)
 
-MakeFeynCalcPrivateContext::usage =
-"MakeFeynCalcPrivateContext[val] constructs
-FeynCalc`Private`val.";
+MakeSpaceMathPrivateContext::usage =
+"MakeSpaceMathPrivateContext[val] constructs
+SpaceMath`Private`val.";
 
-FCDeclareHeader::usage =
-"FCDeclareHeader is an internal SpeedPackage function to declare
+SMDeclareHeader::usage =
+"SMDeclareHeader is an internal SpaceMath function to declare
 objects inside an .m file in the same manner as it is done in
-the JLink package. It may be used by SpeedPackage addons."
+the JLink package. It may be used by SpaceMath addons."
 
 Begin["`Private`"]
 
 (* New features*)
 
-FCDeclareHeader[file_] :=
+SMDeclareHeader[file_] :=
 	Module[ {strm, einput, moreLines = True},
 		strm = OpenRead[file];
 		If[ Head[strm] =!= InputStream,
@@ -92,53 +88,50 @@ FCDeclareHeader[file_] :=
 		Close[file]
 	];
 
-MakeFeynCalcPrivateContext[x_String] :=
-	MakeFeynCalcPrivateContext[x] =	ToExpression["SpaceMath`Private`"<>x];
+MakeSpaceMathPrivateContext[x_String] :=
+	MakeSpaceMathPrivateContext[x] =	ToExpression["SpaceMath`Private`"<>x];
 
 End[];
 
-(*
-boostrappingList = Join[
-	Map[ToFileName[{$SpaceMathDirectory,"Utilities"},#]&, {"Utilities.m"}]
-];
-*)
 
 listHiggsData = FileNames[{"*.m"},ToFileName[{$SpaceMathDirectory,"HiggsData"}]];
 listLFVprocesses = FileNames[{"*.m"},ToFileName[{$SpaceMathDirectory,"LFVprocesses"}]];
 listObliquePar = FileNames[{"*.m"},ToFileName[{$SpaceMathDirectory,"ObliquePar"}]];
 listValues = FileNames[{"*.m"},ToFileName[{$SpaceMathDirectory,"Values"}]];
+listMisc = FileNames[{"*.m"},ToFileName[{$SpaceMathDirectory,"Miscellaneous"}]];
 
 AppendTo[$ContextPath, "SpaceMath`Package`"];
 
-FCDeclareHeader/@listHiggsData;
-FCDeclareHeader/@listLFVprocesses;
-FCDeclareHeader/@listObliquePar;
-FCDeclareHeader/@listValues;
-(*
-Get/@boostrappingList
-*)
+SMDeclareHeader/@listHiggsData;
+SMDeclareHeader/@listLFVprocesses;
+SMDeclareHeader/@listObliquePar;
+SMDeclareHeader/@listValues;
+SMDeclareHeader/@listMisc;
+
 Get/@listHiggsData;
 Get/@listLFVprocesses;
 Get/@listObliquePar;
 Get/@listValues;
+Get/@listMisc;
 
 
 EndPackage[];
 
+
 If[ Global`$SpaceMathStartupMessages =!= False,
 	Print[	Style["SpaceMath ", "Text", Bold], Style[$SpaceMathVersion <> ". For help, use the ",
 				"Text"],
-			Style[DisplayForm@ButtonBox["documentation center", BaseStyle->"Link", ButtonData :> "paclet:SpaceMath/",
-				ButtonNote -> "paclet:SpaceMathPackage/"], "Text"],
+			Style[DisplayForm@ButtonBox["documentation center", BaseStyle->"Link", ButtonData :> "paclet:SpaceMath/tutorial/SpaceMathOverview",
+				ButtonNote -> "paclet:SpaceMath/tutorial/SpaceMathOverview"], "Text"],
 			Style[", check out the ", "Text"],
-			Style[DisplayForm@ButtonBox["wiki",ButtonData :> {URL["https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"], None},BaseStyle -> "Hyperlink",
+				Style[DisplayForm@ButtonBox["wiki",ButtonData :> {URL["https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"], None},BaseStyle -> "Hyperlink",
 				ButtonNote -> "https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"],"Text"],
 			Style[" or write to the ", "Text"],
 			Style[DisplayForm@ButtonBox["mailing list.",ButtonData :> {URL["https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"], None},BaseStyle -> "Hyperlink",
 				ButtonNote -> "https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"],"Text"]];
 	Print[ Style["See also the supplied ","Text"],
 
-	Style[DisplayForm@ButtonBox["examples.", BaseStyle -> "Hyperlink",	ButtonFunction :>
+	Style[DisplayForm@ButtonBox["Examples.", BaseStyle -> "Hyperlink",	ButtonFunction :>
 							SystemOpen[FileNameJoin[{$SpaceMathDirectory, "Examples"}]],
 							Evaluator -> Automatic, Method -> "Preemptive"], "Text"],
 	Style[" If you use SpaceMath in your research, please cite","Text"]];
@@ -149,11 +142,12 @@ If[ Global`$SpaceMathStartupMessages =!= False,
 	Print [Style["T. A. Valencia-P\[EAcute]rez","Text"]];
 	Print [Style["Facultad de Ciencias F\[IAcute]sico Matem\[AAcute]ticas, Benem\[EAcute]rita Universidad Aut\[OAcute]noma de Puebla","Text"]];
 	];
-
+(*Style[DisplayForm@ButtonBox["SpaceMath_RXX", BaseStyle->"Link", ButtonData :> "paclet:SpaceMath/SPACEMATH_RXX",
+				ButtonNote -> "paclet:SpaceMath/SPACEMATH_RXX"], "Text"];*)
 
 BeginPackage["SpaceMath`"];
 If[ Global`$LoadAddOns=!={},
-	FCDeclareHeader/@Map[ToFileName[{$SpaceMathDirectory,  "AddOns",#},#<>".m"] &, Global`$LoadAddOns];
+	SMDeclareHeader/@Map[ToFileName[{$SpaceMathDirectory,  "AddOns",#},#<>".m"] &, Global`$LoadAddOns];
 	Get/@Map[ToFileName[{$SpaceMathDirectory,  "AddOns",#},#<>".m"] &, Global`$LoadAddOns]
 ];
 EndPackage[];

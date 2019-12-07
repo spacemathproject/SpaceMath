@@ -2,7 +2,7 @@ Automatic Installation
 
 Run the following instructions in a Notebook of Mathematica
 
-Import["https://raw.githubusercontent.com/spacemathproject/SpaceMath/master/SpaceMath/Install.m"]
+Import["https://raw.githubusercontent.com/spacemathproject/SpaceMath/developerTAVP/SpaceMath/Install.m"]
 
 InstallSpaceMath[]
 
@@ -12,4 +12,4 @@ Download (https://github.com/spacemathproject/SpaceMath/archive/master.zip)
 
 Unzip the folder inside $UserBaseDirectory/Applications
 
-This should install SpaceMathApp on your system.
+This should install SpaceMath on your system.

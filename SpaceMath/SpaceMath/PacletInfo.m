@@ -1,6 +1,6 @@
 (* Paclet Info File *)
 
-(* created 2019/10/31*)
+(* created 2019/12/04*)
 
 Paclet[
     Name -> "SpaceMath",
@@ -8,7 +8,7 @@ Paclet[
     MathematicaVersion -> "10+",
     Extensions -> 
         {
-            {"Documentation", Language -> "English"}
+            {"Documentation", Language -> "English", MainPage -> "Tutorials/Index"}
         }
 ]
 
