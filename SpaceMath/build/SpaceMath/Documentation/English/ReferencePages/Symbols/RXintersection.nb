@@ -139,7 +139,7 @@ TaggingRules->{
     Left], "HasOptions" -> False, "ExampleCounter" -> 1, "NeedPlatMsgIn" -> 
   None, "RootCaptions" -> "", 
   "Metadata" -> {
-   "built" -> "{2019, 12, 7, 16, 11, 44.897984}", 
+   "built" -> "{2019, 12, 7, 16, 13, 55.038149}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -190,12 +190,12 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[586, 21, 2302, 53, 70, "AnchorBarGrid",ExpressionUUID->"3e9d86b1-05bf-4d56-9311-548b9923a314",
+Cell[586, 21, 2302, 53, 70, "AnchorBarGrid",ExpressionUUID->"dcd2ec93-6429-4a5c-a4b8-3597541b94b5",
  CellID->1],
-Cell[2891, 76, 171, 6, 70, "ObjectNameGrid",ExpressionUUID->"884d4252-7180-4ac9-9169-379b42406838"],
+Cell[2891, 76, 171, 6, 70, "ObjectNameGrid",ExpressionUUID->"f1f288d9-b12f-4b6b-8f7b-8e11c96e186a"],
 Cell[3065, 84, 1986, 38, 70, "Usage",ExpressionUUID->"905414b2-d717-466f-ab0d-65bbd1e0ff31",
  CellID->982511436],
-Cell[5054, 124, 23, 0, 70, "FooterCell",ExpressionUUID->"554d5ceb-8da5-4c15-aa52-96e824b16ea4"]
+Cell[5054, 124, 23, 0, 70, "FooterCell",ExpressionUUID->"7671be13-c3dd-44ea-a156-75fbf1c06822"]
 }
 ]
 *)

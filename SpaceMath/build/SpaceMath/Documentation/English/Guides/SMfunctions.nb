@@ -191,7 +191,7 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2019, 12, 7, 16, 11, 30.388493}", 
+   "built" -> "{2019, 12, 7, 16, 13, 40.534882}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -216,21 +216,21 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[597, 21, 3863, 89, 70, "AnchorBarGrid",ExpressionUUID->"a3968e5c-6340-4848-8f79-0558bc8f83ac",
+Cell[597, 21, 3863, 89, 70, "AnchorBarGrid",ExpressionUUID->"ab913eff-fa0c-4504-92f6-2aa8d3c3d516",
  CellID->1],
 Cell[CellGroupData[{
 Cell[4485, 114, 67, 1, 70, "GuideTitle",ExpressionUUID->"6019245e-ea3a-4634-9817-b2913478a081",
  CellID->942062912],
-Cell[4555, 117, 56, 1, 70, "GuideAbstract",ExpressionUUID->"fc79c8af-e52c-43d0-bc2c-01627f017a7b",
+Cell[4555, 117, 56, 1, 70, "GuideAbstract",ExpressionUUID->"1b518b6c-c42f-4fab-ab35-8b5656e37dc6",
  CellID->1]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4648, 123, 137, 6, 70, "GuideReferenceSection",ExpressionUUID->"f55b1453-512a-41c3-8a8a-a155f8c3cd7e"],
-Cell[4788, 131, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"f4e0c38d-b657-4bd1-9ae7-4e5d52cd4219"],
+Cell[4648, 123, 137, 6, 70, "GuideReferenceSection",ExpressionUUID->"79d75981-0571-4a1d-87c9-912114e2ee99"],
+Cell[4788, 131, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"84bc7300-1699-4317-a685-2a951cee57ae"],
 Cell[4822, 133, 1033, 41, 70, "GuideText",ExpressionUUID->"9b263277-afad-45f7-903a-6f801b6afddd",
  CellID->1041229109]
 }, Open  ]],
-Cell[5870, 177, 23, 0, 70, "FooterCell",ExpressionUUID->"0d3a280c-628f-4508-84db-dd42abbf1685"]
+Cell[5870, 177, 23, 0, 70, "FooterCell",ExpressionUUID->"23563cb2-f45c-4072-8424-698630bb8e68"]
 }
 ]
 *)
