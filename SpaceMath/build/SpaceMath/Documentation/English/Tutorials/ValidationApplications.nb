@@ -21,14 +21,14 @@ WindowFrame->Normal*)
 Notebook[{
 Cell[BoxData[GridBox[{
    {Cell["SPACE MATH TUTORIAL", "PacletNameCell",ExpressionUUID->
-     "8d52bfd8-3500-46b3-8306-a11e363131c6"], Cell[TextData[Cell[BoxData[
+     "9598ca3e-0a42-48ea-898a-7477ae6e87bd"], Cell[TextData[Cell[BoxData[
      ActionMenuBox[
       FrameBox[
        InterpretationBox[Cell[TextData[{
          "URL",
          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
           StripOnInput->False]
-        }],ExpressionUUID->"002cb221-9d39-46bf-9015-9e57fdc368e4"],
+        }],ExpressionUUID->"62c3eff8-8448-4eb1-b672-d1f3ed21db9c"],
         TextCell[
          Row[{"URL", 
            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
@@ -71,14 +71,14 @@ ValidationApplications.html"], StandardForm]], "Input", TextClipboardType ->
       MenuAppearance->Automatic,
       MenuStyle->"URLMenu"]],
      LineSpacing->{1.4, 0},ExpressionUUID->
-     "35f0a221-424f-40ff-8d2a-d0a9f19e32bb"]], "AnchorBar",ExpressionUUID->
-     "6f558604-7d0b-468f-a53f-59a9039beb59"]}
+     "d56ad5ee-22a6-4943-b837-b8c549a047ed"]], "AnchorBar",ExpressionUUID->
+     "64df189d-940e-49a5-8358-73cbb8b8045c"]}
   }]], "AnchorBarGrid",
  GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
      Scaled[0.65], {
       Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
    "RowsIndexed" -> {}}},
- CellID->1,ExpressionUUID->"a0894686-d959-41be-ab66-f8d2c1f55541"],
+ CellID->1,ExpressionUUID->"77b59487-8370-452a-b041-46e891b68cf9"],
 
 Cell[CellGroupData[{
 
@@ -11007,7 +11007,7 @@ Cell[BoxData["XXXX"], "Output",
 }, Open  ]]
 }, Open  ]],
 
-Cell[" ", "FooterCell",ExpressionUUID->"c24d2d2e-dfee-498d-9a1a-153365d8bd14"]
+Cell[" ", "FooterCell",ExpressionUUID->"b601c214-a761-4764-99ca-bd92059151b5"]
 },
 Saveable->False,
 ScreenStyleEnvironment->"Working",
@@ -11023,7 +11023,7 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2019, 12, 7, 16, 21, 34.423432}", 
+   "built" -> "{2019, 12, 7, 16, 26, 21.291981}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -11068,7 +11068,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[599, 21, 2678, 59, 55, "AnchorBarGrid",ExpressionUUID->"a0894686-d959-41be-ab66-f8d2c1f55541",
+Cell[599, 21, 2678, 59, 55, "AnchorBarGrid",ExpressionUUID->"77b59487-8370-452a-b041-46e891b68cf9",
  CellID->1],
 Cell[CellGroupData[{
 Cell[3302, 84, 119, 1, 65, "Title",ExpressionUUID->"83b438ca-f2a0-40ab-bacc-daf5319775e4",
@@ -11090,7 +11090,7 @@ Cell[664670, 11003, 130, 2, 38, "Output",ExpressionUUID->"d26cd886-ff1a-42a3-a10
  CellID->1181321046]
 }, Open  ]]
 }, Open  ]],
-Cell[664827, 11009, 78, 0, 70, "FooterCell",ExpressionUUID->"c24d2d2e-dfee-498d-9a1a-153365d8bd14"]
+Cell[664827, 11009, 78, 0, 70, "FooterCell",ExpressionUUID->"b601c214-a761-4764-99ca-bd92059151b5"]
 }
 ]
 *)
