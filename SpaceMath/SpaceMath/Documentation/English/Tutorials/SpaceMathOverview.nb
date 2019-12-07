@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    642783,      10684]
-NotebookOptionsPosition[    636864,      10570]
-NotebookOutlinePosition[    637276,      10586]
-CellTagsIndexPosition[    637233,      10583]
+NotebookDataLength[    642825,      10684]
+NotebookOptionsPosition[    636906,      10570]
+NotebookOutlinePosition[    637318,      10586]
+CellTagsIndexPosition[    637275,      10583]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -10482,7 +10482,7 @@ Cell[TextData[ButtonBox["           Theoretical framework",
    3.784745436924733*^9}},
  CellID->1450112771,ExpressionUUID->"4388f2f3-91d5-4e54-a08d-ea818b1dfb2a"],
 
-Cell[TextData[ButtonBox["                 Functions",
+Cell[TextData[ButtonBox["           Functions",
  BaseStyle->"Link",
  ButtonData->"paclet:SpaceMath/tutorial/Index#382308300"]], "TOCSubsection",
  CellGroupingRules->{"GroupTogetherGrouping", 10001.},
@@ -10490,7 +10490,7 @@ Cell[TextData[ButtonBox["                 Functions",
   3.784553565664742*^9, {3.7846561503255157`*^9, 3.784656160927713*^9}, 
    3.784656192125065*^9, 3.784658860373638*^9, {3.78465902873903*^9, 
    3.784659033111771*^9}, 3.7846591048028584`*^9, {3.784745441603991*^9, 
-   3.784745444666394*^9}},
+   3.784745444666394*^9}, {3.784745561216214*^9, 3.7847455627784863`*^9}},
  CellID->973461846,ExpressionUUID->"08a92f96-aa3a-4888-855d-30f22d3a9b0f"]
 }, Open  ]]
 }, Open  ]],
@@ -10569,7 +10569,7 @@ Cell[TextData[ButtonBox["Installation",
 }, Open  ]]
 },
 WindowSize->{700, 770},
-WindowMargins->{{390, Automatic}, {Automatic, 122}},
+WindowMargins->{{390, Automatic}, {136, Automatic}},
 FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
 StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "TutorialPageStyles.nb", 
   CharacterEncoding -> "UTF-8"]
@@ -10665,23 +10665,23 @@ Cell[632418, 10461, 576, 10, 20, "TOCSubsection",ExpressionUUID->"3065c9d8-69dd-
 Cell[632997, 10473, 550, 9, 20, "TOCSubsection",ExpressionUUID->"4388f2f3-91d5-4e54-a08d-ea818b1dfb2a",
  CellGroupingRules->{"GroupTogetherGrouping", 10001.},
  CellID->1450112771],
-Cell[633550, 10484, 544, 9, 20, "TOCSubsection",ExpressionUUID->"08a92f96-aa3a-4888-855d-30f22d3a9b0f",
+Cell[633550, 10484, 586, 9, 20, "TOCSubsection",ExpressionUUID->"08a92f96-aa3a-4888-855d-30f22d3a9b0f",
  CellGroupingRules->{"GroupTogetherGrouping", 10001.},
  CellID->973461846]
 }, Open  ]]
 }, Open  ]],
-Cell[634121, 10497, 242, 4, 20, "TOCSubsection",ExpressionUUID->"b14707ca-64d9-4241-bee4-912fb56b86c5"],
-Cell[634366, 10503, 246, 4, 20, "TOCSubsection",ExpressionUUID->"4d18cb98-4b01-4deb-b9d5-c67684544d8b"],
-Cell[634615, 10509, 237, 4, 20, "TOCSubsection",ExpressionUUID->"4be27616-b432-43f2-98ac-ca1080e07c77"],
-Cell[634855, 10515, 228, 4, 20, "TOCSubsection",ExpressionUUID->"3998d54a-c492-40d9-8695-146f32c1d11b"]
+Cell[634163, 10497, 242, 4, 20, "TOCSubsection",ExpressionUUID->"b14707ca-64d9-4241-bee4-912fb56b86c5"],
+Cell[634408, 10503, 246, 4, 20, "TOCSubsection",ExpressionUUID->"4d18cb98-4b01-4deb-b9d5-c67684544d8b"],
+Cell[634657, 10509, 237, 4, 20, "TOCSubsection",ExpressionUUID->"4be27616-b432-43f2-98ac-ca1080e07c77"],
+Cell[634897, 10515, 228, 4, 20, "TOCSubsection",ExpressionUUID->"3998d54a-c492-40d9-8695-146f32c1d11b"]
 }, Open  ]],
-Cell[635098, 10522, 270, 6, 29, "TOCSection",ExpressionUUID->"78611339-1ac0-4168-bd59-58550931567b"],
-Cell[635371, 10530, 213, 3, 23, "TOCSection",ExpressionUUID->"804bb9e7-713a-4645-8375-190e708db0f3"],
+Cell[635140, 10522, 270, 6, 29, "TOCSection",ExpressionUUID->"78611339-1ac0-4168-bd59-58550931567b"],
+Cell[635413, 10530, 213, 3, 23, "TOCSection",ExpressionUUID->"804bb9e7-713a-4645-8375-190e708db0f3"],
 Cell[CellGroupData[{
-Cell[635609, 10537, 259, 5, 23, "TOCSection",ExpressionUUID->"e5e1d1f0-0703-44d2-9d39-768537130c5a"],
-Cell[635871, 10544, 258, 5, 20, "TOCSubsection",ExpressionUUID->"d902c4bd-2794-4519-98ca-4a339810659b"],
-Cell[636132, 10551, 308, 6, 20, "TOCSubsection",ExpressionUUID->"c86940c4-6231-4d80-844f-109b8849fe42"],
-Cell[636443, 10559, 381, 6, 20, "TOCSubsection",ExpressionUUID->"3c1ae2e3-0a7d-4205-926b-b75de9b7a6ba",
+Cell[635651, 10537, 259, 5, 23, "TOCSection",ExpressionUUID->"e5e1d1f0-0703-44d2-9d39-768537130c5a"],
+Cell[635913, 10544, 258, 5, 20, "TOCSubsection",ExpressionUUID->"d902c4bd-2794-4519-98ca-4a339810659b"],
+Cell[636174, 10551, 308, 6, 20, "TOCSubsection",ExpressionUUID->"c86940c4-6231-4d80-844f-109b8849fe42"],
+Cell[636485, 10559, 381, 6, 20, "TOCSubsection",ExpressionUUID->"3c1ae2e3-0a7d-4205-926b-b75de9b7a6ba",
  CellID->1443574219]
 }, Open  ]]
 }, Open  ]]
