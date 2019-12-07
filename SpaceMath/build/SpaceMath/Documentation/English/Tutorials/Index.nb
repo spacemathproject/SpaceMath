@@ -1,0 +1,1434 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     80973,       1425]
+NotebookOptionsPosition[     38428,        690]
+NotebookOutlinePosition[     80921,       1426]
+CellTagsIndexPosition[     80878,       1423]
+WindowTitle->Introduction to SpaceMath package
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ DocumentationBuild`Utils`Private`fixSplitHyperlinks[
+  DocumentationBuild`Make`Private`RenumberCells[
+   Insert[
+    Notebook[{
+      Cell[
+       BoxData[
+        GridBox[{{
+           Cell["SPACE MATH TUTORIAL", "PacletNameCell"], 
+           Cell[
+            TextData[{
+              Cell[
+               BoxData[
+                ActionMenuBox[
+                 FrameBox[
+                  InterpretationBox[
+                   Cell[
+                    TextData[{"URL", 
+                    StyleBox[
+                    " \[FilledDownTriangle]", "AnchorBarArrow", StripOnInput -> 
+                    False]}]], 
+                   TextCell[
+                    Row[{"URL", 
+                    Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]], 
+                  StripOnInput -> False], {
+                 "\"SpaceMath/tutorial/Index\"" :> None, 
+                  "\"Copy Wolfram Documentation Center URL\"" :> 
+                  Module[{DocumentationSearch`Private`nb$}, 
+                    DocumentationSearch`Private`nb$ = NotebookPut[
+                    Notebook[{
+                    Cell["SpaceMath/tutorial/Index"]}, Visible -> False]]; 
+                    SelectionMove[
+                    DocumentationSearch`Private`nb$, All, Notebook]; 
+                    FrontEndTokenExecute[
+                    DocumentationSearch`Private`nb$, "Copy"]; 
+                    NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+                  Delimiter, "\"Copy web URL\"" :> 
+                  Module[{DocumentationSearch`Private`nb$}, 
+                    DocumentationSearch`Private`nb$ = NotebookPut[
+                    Notebook[{
+                    Cell[
+                    BoxData[
+                    MakeBoxes[
+                    Hyperlink[
+                    "http://reference.wolfram.com/language/SpaceMath/tutorial/\
+Index.html"], StandardForm]], "Input", TextClipboardType -> "PlainText"]}, 
+                    Visible -> False]]; 
+                    SelectionMove[
+                    DocumentationSearch`Private`nb$, All, Notebook]; 
+                    FrontEndTokenExecute[
+                    DocumentationSearch`Private`nb$, "Copy"]; 
+                    NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+                  "\"Go to web URL\"" :> FrontEndExecute[{
+                    NotebookLocate[{
+                    URL[
+                    StringJoin[
+                    If[
+                    TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$19657], 
+                    "http://reference.wolfram.com/system-modeler/", 
+                    "http://reference.wolfram.com/language/"], 
+                    "SpaceMath/tutorial/Index", ".html"]], None}]}]}, 
+                 Appearance -> None, MenuAppearance -> Automatic, MenuStyle -> 
+                 "URLMenu"]], LineSpacing -> {1.4, 0}]}], "AnchorBar"]}}]], 
+       "AnchorBarGrid", GridBoxOptions -> {GridBoxItemSize -> {"Columns" -> {
+             Scaled[0.65], {
+              Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+           "RowsIndexed" -> {}}}, CellID -> 1], 
+      Cell[
+       CellGroupData[{
+         Cell[
+         "Introduction to SpaceMath package", "Section", CellID -> 256419101, 
+          ExpressionUUID -> "faaced62-6e3a-47b4-8ea4-5d5be50871d7"], 
+         Cell[
+         "Firs steps", "Subsection", CellID -> 170836305, ExpressionUUID -> 
+          "35da6da1-13a1-478d-8c01-6ce609a3e6a9"]}, Open]], 
+      Cell[
+       CellGroupData[{
+         Cell[
+         "Observables", "Section", CellID -> 937152397, ExpressionUUID -> 
+          "04e0b578-e618-4115-a722-0ecb17aa78ed"], 
+         Cell[
+         "Higgs Boson data", "Subsection", CellID -> 222407968, 
+          ExpressionUUID -> "e5aeb9de-4439-432d-9f66-51cc555bfacb"], 
+         Cell[
+         "Signal Strength", "Subsection", CellID -> 1976493996, 
+          ExpressionUUID -> "8ba4a180-d4dc-4037-803c-9da3925b54e9"], 
+         Cell[
+         "Kappa", "Subsection", CellID -> 382308300, ExpressionUUID -> 
+          "991eb4c0-71e5-487d-912f-b63b883f85dc"], 
+         Cell[
+         "Lepton Flavor violating", "Subsection", CellID -> 104793658, 
+          ExpressionUUID -> "527ae944-0a22-409b-94a6-3862d84d439f"], 
+         Cell[
+         "Pseudo Scalar Meson Physics", "Subsection", CellID -> 768234615, 
+          ExpressionUUID -> "10e76327-0f8c-4f05-971f-221890adfc39"], 
+         Cell[
+         "Oblique Parameters", "Subsection", CellID -> 773490071, 
+          ExpressionUUID -> "c112b163-6529-44c4-bcd1-bf07255050d3"], 
+         Cell[
+         "Unitarity", "Subsection", CellID -> 657122953, ExpressionUUID -> 
+          "35c76e6e-366e-4fbc-84ab-e666eb2f872c"]}, Open]], 
+      Cell[
+      "Validations", "Section", CellID -> 915214387, ExpressionUUID -> 
+       "f2d156cc-7b96-4d3d-86fd-70999cfdd43b"], 
+      Cell[
+      "CP-even and CP-odd branching ratios", "Section", CellID -> 373894052, 
+       ExpressionUUID -> "93350360-4042-450d-9a9d-61e34c5fdbec"], 
+      Cell[
+       CellGroupData[{
+         Cell[
+         "Appendix", "Section", CellID -> 1315917021, ExpressionUUID -> 
+          "2766786e-7868-4a99-af0f-5ff2bd816b5b"], 
+         Cell[
+         "SpaceMath data", "Subsection", CellID -> 1379020092, ExpressionUUID -> 
+          "808362fd-1bb5-43ca-bc20-42f9c2ab9011"], 
+         Cell[
+         "References", "Subsection", CellID -> 1484500713, ExpressionUUID -> 
+          "7ab6fd4e-ded3-4c32-a295-b7736022b5b4"]}, Open]]}, 
+     WindowSize -> {700, 770}, 
+     WindowMargins -> {{Automatic, 115}, {Automatic, 84}}, FrontEndVersion -> 
+     "12.0 for Linux x86 (64-bit) (April 8, 2019)", StyleDefinitions -> 
+     FrontEnd`FileName[{"Wolfram"}, "TutorialPageStyles.nb", 
+       CharacterEncoding -> "UTF-8"]], 
+    Cell[
+     BoxData[
+      GridBox[{{
+         TemplateBox[{
+           Cell["Introduction to SpaceMath package"], 
+           "paclet:SpaceMath/tutorial/Index#256419101", 
+           GraphicsBox[
+            TagBox[
+             RasterBox[
+             RawArray["UnsignedInteger8",{{{128, 128, 128, 32}, {128, 128, 
+               128, 16}, {128, 128, 128, 0}, {128, 128, 128, 0}, {128, 128, 
+               128, 0}, {128, 128, 128, 0}, {128, 128, 128, 0}, {128, 128, 
+               128, 48}}, {{128, 128, 128, 48}, {128, 128, 128, 239}, {128, 
+               128, 128, 112}, {128, 128, 128, 0}, {128, 128, 128, 0}, {128, 
+               128, 128, 16}, {128, 128, 128, 143}, {128, 128, 128, 239}}, {{
+               128, 128, 128, 0}, {128, 128, 128, 64}, {128, 128, 128, 223}, {
+               128, 128, 128, 191}, {128, 128, 128, 112}, {128, 128, 128, 
+               223}, {128, 128, 128, 191}, {128, 128, 128, 32}}, {{128, 128, 
+               128, 32}, {128, 128, 128, 16}, {128, 128, 128, 16}, {128, 128, 
+               128, 175}, {128, 128, 128, 255}, {128, 128, 128, 127}, {128, 
+               128, 128, 0}, {128, 128, 128, 48}}, {{128, 128, 128, 48}, {128,
+                128, 128, 239}, {128, 128, 128, 112}, {128, 128, 128, 0}, {
+               128, 128, 128, 16}, {128, 128, 128, 16}, {128, 128, 128, 
+               143}, {128, 128, 128, 239}}, {{128, 128, 128, 0}, {128, 128, 
+               128, 64}, {128, 128, 128, 223}, {128, 128, 128, 191}, {128, 
+               128, 128, 112}, {128, 128, 128, 223}, {128, 128, 128, 191}, {
+               128, 128, 128, 32}}, {{128, 128, 128, 0}, {128, 128, 128, 0}, {
+               128, 128, 128, 16}, {128, 128, 128, 175}, {128, 128, 128, 
+               255}, {128, 128, 128, 127}, {128, 128, 128, 0}, {128, 128, 128,
+                0}}, {{128, 128, 128, 0}, {128, 128, 128, 0}, {128, 128, 128, 
+               0}, {128, 128, 128, 0}, {128, 128, 128, 16}, {128, 128, 128, 
+               0}, {128, 128, 128, 0}, {128, 128, 128, 0}}}], {{0, 8}, {8, 
+              0}}, {0, 255}, ColorFunction -> RGBColor], 
+             BoxForm`ImageTag[
+             "Byte", ColorSpace -> "RGB", Interleaving -> True, Magnification -> 
+              Automatic, MetaInformation -> 
+              Association[{
+                "Comments" -> 
+                 Association[{"Software" -> "Adobe ImageReady"}]}]], 
+             Selectable -> False], DefaultBaseStyle -> "ImageGraphics", 
+            ImageSizeRaw -> {8, 8}, PlotRange -> {{0, 8}, {0, 8}}, 
+            ImageSize -> {8, 9}], 
+           GraphicsBox[
+            TagBox[
+             RasterBox[
+             RawArray["UnsignedInteger8",{{{229, 95, 28, 32}, {229, 95, 28, 
+               16}, {229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 0}, {
+               229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 48}}, {{229, 
+               95, 28, 48}, {229, 95, 28, 239}, {229, 95, 28, 112}, {229, 95, 
+               28, 0}, {229, 95, 28, 0}, {229, 95, 28, 16}, {229, 95, 28, 
+               143}, {229, 95, 28, 239}}, {{229, 95, 28, 0}, {229, 95, 28, 
+               64}, {229, 95, 28, 223}, {229, 95, 28, 191}, {229, 95, 28, 
+               112}, {229, 95, 28, 223}, {229, 95, 28, 191}, {229, 95, 28, 
+               32}}, {{229, 95, 28, 32}, {229, 95, 28, 16}, {229, 95, 28, 
+               16}, {229, 95, 28, 175}, {229, 95, 28, 255}, {229, 95, 28, 
+               127}, {229, 95, 28, 0}, {229, 95, 28, 48}}, {{229, 95, 28, 
+               48}, {229, 95, 28, 239}, {229, 95, 28, 112}, {229, 95, 28, 
+               0}, {229, 95, 28, 16}, {229, 95, 28, 16}, {229, 95, 28, 143}, {
+               229, 95, 28, 239}}, {{229, 95, 28, 0}, {229, 95, 28, 64}, {229,
+                95, 28, 223}, {229, 95, 28, 191}, {229, 95, 28, 112}, {229, 
+               95, 28, 223}, {229, 95, 28, 191}, {229, 95, 28, 32}}, {{229, 
+               95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 16}, {229, 95, 28, 
+               175}, {229, 95, 28, 255}, {229, 95, 28, 127}, {229, 95, 28, 
+               0}, {229, 95, 28, 0}}, {{229, 95, 28, 0}, {229, 95, 28, 0}, {
+               229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 16}, {229, 95,
+                28, 0}, {229, 95, 28, 0}, {229, 95, 28, 0}}}], {{0, 8}, {8, 
+              0}}, {0, 255}, ColorFunction -> RGBColor], 
+             BoxForm`ImageTag[
+             "Byte", ColorSpace -> "RGB", Interleaving -> True, Magnification -> 
+              Automatic, MetaInformation -> 
+              Association[{
+                "XMP" -> Association[{
+                   "BasicSchema" -> 
+                    Association[{
+                    "CreatorTool" -> "Adobe Photoshop CS5 Macintosh"}], 
+                    "MediaManagementSchema" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "InstanceID" -> 
+                    "xmp.iid:AA75CDB8059711E28ADB8BB95CCA5C5A", "DocumentID" -> 
+                    "xmp.did:AA75CDB9059711E28ADB8BB95CCA5C5A"}]}], 
+                    "DocumentID" -> 
+                    "xmp.did:AA75CDBB059711E28ADB8BB95CCA5C5A", "InstanceID" -> 
+                    "xmp.iid:AA75CDBA059711E28ADB8BB95CCA5C5A"}], 
+                    "RightsManagementSchema" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "InstanceID" -> 
+                    "xmp.iid:AA75CDB8059711E28ADB8BB95CCA5C5A", "DocumentID" -> 
+                    "xmp.did:AA75CDB9059711E28ADB8BB95CCA5C5A"}]}]}], 
+                    "PagedTextSchema" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "InstanceID" -> 
+                    "xmp.iid:AA75CDB8059711E28ADB8BB95CCA5C5A", "DocumentID" -> 
+                    "xmp.did:AA75CDB9059711E28ADB8BB95CCA5C5A"}]}]}]}], 
+                 "Comments" -> 
+                 Association[{"Software" -> "Adobe ImageReady"}]}]], 
+             Selectable -> False], DefaultBaseStyle -> "ImageGraphics", 
+            ImageSizeRaw -> {8, 8}, PlotRange -> {{0, 8}, {0, 8}}, 
+            ImageSize -> {8, 9}]}, "GrayLinkWithIcon", 
+          BaseStyle -> {"TutorialJumpBoxLink"}], 
+         TemplateBox[{
+           Cell["CP-even and CP-odd branching ratios"], 
+           "paclet:SpaceMath/tutorial/Index#373894052", 
+           GraphicsBox[
+            TagBox[
+             RasterBox[
+             RawArray["UnsignedInteger8",{{{128, 128, 128, 32}, {128, 128, 
+               128, 16}, {128, 128, 128, 0}, {128, 128, 128, 0}, {128, 128, 
+               128, 0}, {128, 128, 128, 0}, {128, 128, 128, 0}, {128, 128, 
+               128, 48}}, {{128, 128, 128, 48}, {128, 128, 128, 239}, {128, 
+               128, 128, 112}, {128, 128, 128, 0}, {128, 128, 128, 0}, {128, 
+               128, 128, 16}, {128, 128, 128, 143}, {128, 128, 128, 239}}, {{
+               128, 128, 128, 0}, {128, 128, 128, 64}, {128, 128, 128, 223}, {
+               128, 128, 128, 191}, {128, 128, 128, 112}, {128, 128, 128, 
+               223}, {128, 128, 128, 191}, {128, 128, 128, 32}}, {{128, 128, 
+               128, 32}, {128, 128, 128, 16}, {128, 128, 128, 16}, {128, 128, 
+               128, 175}, {128, 128, 128, 255}, {128, 128, 128, 127}, {128, 
+               128, 128, 0}, {128, 128, 128, 48}}, {{128, 128, 128, 48}, {128,
+                128, 128, 239}, {128, 128, 128, 112}, {128, 128, 128, 0}, {
+               128, 128, 128, 16}, {128, 128, 128, 16}, {128, 128, 128, 
+               143}, {128, 128, 128, 239}}, {{128, 128, 128, 0}, {128, 128, 
+               128, 64}, {128, 128, 128, 223}, {128, 128, 128, 191}, {128, 
+               128, 128, 112}, {128, 128, 128, 223}, {128, 128, 128, 191}, {
+               128, 128, 128, 32}}, {{128, 128, 128, 0}, {128, 128, 128, 0}, {
+               128, 128, 128, 16}, {128, 128, 128, 175}, {128, 128, 128, 
+               255}, {128, 128, 128, 127}, {128, 128, 128, 0}, {128, 128, 128,
+                0}}, {{128, 128, 128, 0}, {128, 128, 128, 0}, {128, 128, 128, 
+               0}, {128, 128, 128, 0}, {128, 128, 128, 16}, {128, 128, 128, 
+               0}, {128, 128, 128, 0}, {128, 128, 128, 0}}}], {{0, 8}, {8, 
+              0}}, {0, 255}, ColorFunction -> RGBColor], 
+             BoxForm`ImageTag[
+             "Byte", ColorSpace -> "RGB", Interleaving -> True, Magnification -> 
+              Automatic, MetaInformation -> 
+              Association[{
+                "Comments" -> 
+                 Association[{"Software" -> "Adobe ImageReady"}]}]], 
+             Selectable -> False], DefaultBaseStyle -> "ImageGraphics", 
+            ImageSizeRaw -> {8, 8}, PlotRange -> {{0, 8}, {0, 8}}, 
+            ImageSize -> {8, 9}], 
+           GraphicsBox[
+            TagBox[
+             RasterBox[
+             RawArray["UnsignedInteger8",{{{229, 95, 28, 32}, {229, 95, 28, 
+               16}, {229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 0}, {
+               229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 48}}, {{229, 
+               95, 28, 48}, {229, 95, 28, 239}, {229, 95, 28, 112}, {229, 95, 
+               28, 0}, {229, 95, 28, 0}, {229, 95, 28, 16}, {229, 95, 28, 
+               143}, {229, 95, 28, 239}}, {{229, 95, 28, 0}, {229, 95, 28, 
+               64}, {229, 95, 28, 223}, {229, 95, 28, 191}, {229, 95, 28, 
+               112}, {229, 95, 28, 223}, {229, 95, 28, 191}, {229, 95, 28, 
+               32}}, {{229, 95, 28, 32}, {229, 95, 28, 16}, {229, 95, 28, 
+               16}, {229, 95, 28, 175}, {229, 95, 28, 255}, {229, 95, 28, 
+               127}, {229, 95, 28, 0}, {229, 95, 28, 48}}, {{229, 95, 28, 
+               48}, {229, 95, 28, 239}, {229, 95, 28, 112}, {229, 95, 28, 
+               0}, {229, 95, 28, 16}, {229, 95, 28, 16}, {229, 95, 28, 143}, {
+               229, 95, 28, 239}}, {{229, 95, 28, 0}, {229, 95, 28, 64}, {229,
+                95, 28, 223}, {229, 95, 28, 191}, {229, 95, 28, 112}, {229, 
+               95, 28, 223}, {229, 95, 28, 191}, {229, 95, 28, 32}}, {{229, 
+               95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 16}, {229, 95, 28, 
+               175}, {229, 95, 28, 255}, {229, 95, 28, 127}, {229, 95, 28, 
+               0}, {229, 95, 28, 0}}, {{229, 95, 28, 0}, {229, 95, 28, 0}, {
+               229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 16}, {229, 95,
+                28, 0}, {229, 95, 28, 0}, {229, 95, 28, 0}}}], {{0, 8}, {8, 
+              0}}, {0, 255}, ColorFunction -> RGBColor], 
+             BoxForm`ImageTag[
+             "Byte", ColorSpace -> "RGB", Interleaving -> True, Magnification -> 
+              Automatic, MetaInformation -> 
+              Association[{
+                "XMP" -> Association[{
+                   "BasicSchema" -> 
+                    Association[{
+                    "CreatorTool" -> "Adobe Photoshop CS5 Macintosh"}], 
+                    "MediaManagementSchema" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "InstanceID" -> 
+                    "xmp.iid:AA75CDB8059711E28ADB8BB95CCA5C5A", "DocumentID" -> 
+                    "xmp.did:AA75CDB9059711E28ADB8BB95CCA5C5A"}]}], 
+                    "DocumentID" -> 
+                    "xmp.did:AA75CDBB059711E28ADB8BB95CCA5C5A", "InstanceID" -> 
+                    "xmp.iid:AA75CDBA059711E28ADB8BB95CCA5C5A"}], 
+                    "RightsManagementSchema" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "InstanceID" -> 
+                    "xmp.iid:AA75CDB8059711E28ADB8BB95CCA5C5A", "DocumentID" -> 
+                    "xmp.did:AA75CDB9059711E28ADB8BB95CCA5C5A"}]}]}], 
+                    "PagedTextSchema" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "InstanceID" -> 
+                    "xmp.iid:AA75CDB8059711E28ADB8BB95CCA5C5A", "DocumentID" -> 
+                    "xmp.did:AA75CDB9059711E28ADB8BB95CCA5C5A"}]}]}]}], 
+                 "Comments" -> 
+                 Association[{"Software" -> "Adobe ImageReady"}]}]], 
+             Selectable -> False], DefaultBaseStyle -> "ImageGraphics", 
+            ImageSizeRaw -> {8, 8}, PlotRange -> {{0, 8}, {0, 8}}, 
+            ImageSize -> {8, 9}]}, "GrayLinkWithIcon", 
+          BaseStyle -> {"TutorialJumpBoxLink"}]}, {
+         TemplateBox[{
+           Cell["Observables"], "paclet:SpaceMath/tutorial/Index#937152397", 
+           GraphicsBox[
+            TagBox[
+             RasterBox[
+             RawArray["UnsignedInteger8",{{{128, 128, 128, 32}, {128, 128, 
+               128, 16}, {128, 128, 128, 0}, {128, 128, 128, 0}, {128, 128, 
+               128, 0}, {128, 128, 128, 0}, {128, 128, 128, 0}, {128, 128, 
+               128, 48}}, {{128, 128, 128, 48}, {128, 128, 128, 239}, {128, 
+               128, 128, 112}, {128, 128, 128, 0}, {128, 128, 128, 0}, {128, 
+               128, 128, 16}, {128, 128, 128, 143}, {128, 128, 128, 239}}, {{
+               128, 128, 128, 0}, {128, 128, 128, 64}, {128, 128, 128, 223}, {
+               128, 128, 128, 191}, {128, 128, 128, 112}, {128, 128, 128, 
+               223}, {128, 128, 128, 191}, {128, 128, 128, 32}}, {{128, 128, 
+               128, 32}, {128, 128, 128, 16}, {128, 128, 128, 16}, {128, 128, 
+               128, 175}, {128, 128, 128, 255}, {128, 128, 128, 127}, {128, 
+               128, 128, 0}, {128, 128, 128, 48}}, {{128, 128, 128, 48}, {128,
+                128, 128, 239}, {128, 128, 128, 112}, {128, 128, 128, 0}, {
+               128, 128, 128, 16}, {128, 128, 128, 16}, {128, 128, 128, 
+               143}, {128, 128, 128, 239}}, {{128, 128, 128, 0}, {128, 128, 
+               128, 64}, {128, 128, 128, 223}, {128, 128, 128, 191}, {128, 
+               128, 128, 112}, {128, 128, 128, 223}, {128, 128, 128, 191}, {
+               128, 128, 128, 32}}, {{128, 128, 128, 0}, {128, 128, 128, 0}, {
+               128, 128, 128, 16}, {128, 128, 128, 175}, {128, 128, 128, 
+               255}, {128, 128, 128, 127}, {128, 128, 128, 0}, {128, 128, 128,
+                0}}, {{128, 128, 128, 0}, {128, 128, 128, 0}, {128, 128, 128, 
+               0}, {128, 128, 128, 0}, {128, 128, 128, 16}, {128, 128, 128, 
+               0}, {128, 128, 128, 0}, {128, 128, 128, 0}}}], {{0, 8}, {8, 
+              0}}, {0, 255}, ColorFunction -> RGBColor], 
+             BoxForm`ImageTag[
+             "Byte", ColorSpace -> "RGB", Interleaving -> True, Magnification -> 
+              Automatic, MetaInformation -> 
+              Association[{
+                "Comments" -> 
+                 Association[{"Software" -> "Adobe ImageReady"}]}]], 
+             Selectable -> False], DefaultBaseStyle -> "ImageGraphics", 
+            ImageSizeRaw -> {8, 8}, PlotRange -> {{0, 8}, {0, 8}}, 
+            ImageSize -> {8, 9}], 
+           GraphicsBox[
+            TagBox[
+             RasterBox[
+             RawArray["UnsignedInteger8",{{{229, 95, 28, 32}, {229, 95, 28, 
+               16}, {229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 0}, {
+               229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 48}}, {{229, 
+               95, 28, 48}, {229, 95, 28, 239}, {229, 95, 28, 112}, {229, 95, 
+               28, 0}, {229, 95, 28, 0}, {229, 95, 28, 16}, {229, 95, 28, 
+               143}, {229, 95, 28, 239}}, {{229, 95, 28, 0}, {229, 95, 28, 
+               64}, {229, 95, 28, 223}, {229, 95, 28, 191}, {229, 95, 28, 
+               112}, {229, 95, 28, 223}, {229, 95, 28, 191}, {229, 95, 28, 
+               32}}, {{229, 95, 28, 32}, {229, 95, 28, 16}, {229, 95, 28, 
+               16}, {229, 95, 28, 175}, {229, 95, 28, 255}, {229, 95, 28, 
+               127}, {229, 95, 28, 0}, {229, 95, 28, 48}}, {{229, 95, 28, 
+               48}, {229, 95, 28, 239}, {229, 95, 28, 112}, {229, 95, 28, 
+               0}, {229, 95, 28, 16}, {229, 95, 28, 16}, {229, 95, 28, 143}, {
+               229, 95, 28, 239}}, {{229, 95, 28, 0}, {229, 95, 28, 64}, {229,
+                95, 28, 223}, {229, 95, 28, 191}, {229, 95, 28, 112}, {229, 
+               95, 28, 223}, {229, 95, 28, 191}, {229, 95, 28, 32}}, {{229, 
+               95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 16}, {229, 95, 28, 
+               175}, {229, 95, 28, 255}, {229, 95, 28, 127}, {229, 95, 28, 
+               0}, {229, 95, 28, 0}}, {{229, 95, 28, 0}, {229, 95, 28, 0}, {
+               229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 16}, {229, 95,
+                28, 0}, {229, 95, 28, 0}, {229, 95, 28, 0}}}], {{0, 8}, {8, 
+              0}}, {0, 255}, ColorFunction -> RGBColor], 
+             BoxForm`ImageTag[
+             "Byte", ColorSpace -> "RGB", Interleaving -> True, Magnification -> 
+              Automatic, MetaInformation -> 
+              Association[{
+                "XMP" -> Association[{
+                   "BasicSchema" -> 
+                    Association[{
+                    "CreatorTool" -> "Adobe Photoshop CS5 Macintosh"}], 
+                    "MediaManagementSchema" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "InstanceID" -> 
+                    "xmp.iid:AA75CDB8059711E28ADB8BB95CCA5C5A", "DocumentID" -> 
+                    "xmp.did:AA75CDB9059711E28ADB8BB95CCA5C5A"}]}], 
+                    "DocumentID" -> 
+                    "xmp.did:AA75CDBB059711E28ADB8BB95CCA5C5A", "InstanceID" -> 
+                    "xmp.iid:AA75CDBA059711E28ADB8BB95CCA5C5A"}], 
+                    "RightsManagementSchema" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "InstanceID" -> 
+                    "xmp.iid:AA75CDB8059711E28ADB8BB95CCA5C5A", "DocumentID" -> 
+                    "xmp.did:AA75CDB9059711E28ADB8BB95CCA5C5A"}]}]}], 
+                    "PagedTextSchema" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "InstanceID" -> 
+                    "xmp.iid:AA75CDB8059711E28ADB8BB95CCA5C5A", "DocumentID" -> 
+                    "xmp.did:AA75CDB9059711E28ADB8BB95CCA5C5A"}]}]}]}], 
+                 "Comments" -> 
+                 Association[{"Software" -> "Adobe ImageReady"}]}]], 
+             Selectable -> False], DefaultBaseStyle -> "ImageGraphics", 
+            ImageSizeRaw -> {8, 8}, PlotRange -> {{0, 8}, {0, 8}}, 
+            ImageSize -> {8, 9}]}, "GrayLinkWithIcon", 
+          BaseStyle -> {"TutorialJumpBoxLink"}], 
+         TemplateBox[{
+           Cell["Appendix"], "paclet:SpaceMath/tutorial/Index#1315917021", 
+           GraphicsBox[
+            TagBox[
+             RasterBox[
+             RawArray["UnsignedInteger8",{{{128, 128, 128, 32}, {128, 128, 
+               128, 16}, {128, 128, 128, 0}, {128, 128, 128, 0}, {128, 128, 
+               128, 0}, {128, 128, 128, 0}, {128, 128, 128, 0}, {128, 128, 
+               128, 48}}, {{128, 128, 128, 48}, {128, 128, 128, 239}, {128, 
+               128, 128, 112}, {128, 128, 128, 0}, {128, 128, 128, 0}, {128, 
+               128, 128, 16}, {128, 128, 128, 143}, {128, 128, 128, 239}}, {{
+               128, 128, 128, 0}, {128, 128, 128, 64}, {128, 128, 128, 223}, {
+               128, 128, 128, 191}, {128, 128, 128, 112}, {128, 128, 128, 
+               223}, {128, 128, 128, 191}, {128, 128, 128, 32}}, {{128, 128, 
+               128, 32}, {128, 128, 128, 16}, {128, 128, 128, 16}, {128, 128, 
+               128, 175}, {128, 128, 128, 255}, {128, 128, 128, 127}, {128, 
+               128, 128, 0}, {128, 128, 128, 48}}, {{128, 128, 128, 48}, {128,
+                128, 128, 239}, {128, 128, 128, 112}, {128, 128, 128, 0}, {
+               128, 128, 128, 16}, {128, 128, 128, 16}, {128, 128, 128, 
+               143}, {128, 128, 128, 239}}, {{128, 128, 128, 0}, {128, 128, 
+               128, 64}, {128, 128, 128, 223}, {128, 128, 128, 191}, {128, 
+               128, 128, 112}, {128, 128, 128, 223}, {128, 128, 128, 191}, {
+               128, 128, 128, 32}}, {{128, 128, 128, 0}, {128, 128, 128, 0}, {
+               128, 128, 128, 16}, {128, 128, 128, 175}, {128, 128, 128, 
+               255}, {128, 128, 128, 127}, {128, 128, 128, 0}, {128, 128, 128,
+                0}}, {{128, 128, 128, 0}, {128, 128, 128, 0}, {128, 128, 128, 
+               0}, {128, 128, 128, 0}, {128, 128, 128, 16}, {128, 128, 128, 
+               0}, {128, 128, 128, 0}, {128, 128, 128, 0}}}], {{0, 8}, {8, 
+              0}}, {0, 255}, ColorFunction -> RGBColor], 
+             BoxForm`ImageTag[
+             "Byte", ColorSpace -> "RGB", Interleaving -> True, Magnification -> 
+              Automatic, MetaInformation -> 
+              Association[{
+                "Comments" -> 
+                 Association[{"Software" -> "Adobe ImageReady"}]}]], 
+             Selectable -> False], DefaultBaseStyle -> "ImageGraphics", 
+            ImageSizeRaw -> {8, 8}, PlotRange -> {{0, 8}, {0, 8}}, 
+            ImageSize -> {8, 9}], 
+           GraphicsBox[
+            TagBox[
+             RasterBox[
+             RawArray["UnsignedInteger8",{{{229, 95, 28, 32}, {229, 95, 28, 
+               16}, {229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 0}, {
+               229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 48}}, {{229, 
+               95, 28, 48}, {229, 95, 28, 239}, {229, 95, 28, 112}, {229, 95, 
+               28, 0}, {229, 95, 28, 0}, {229, 95, 28, 16}, {229, 95, 28, 
+               143}, {229, 95, 28, 239}}, {{229, 95, 28, 0}, {229, 95, 28, 
+               64}, {229, 95, 28, 223}, {229, 95, 28, 191}, {229, 95, 28, 
+               112}, {229, 95, 28, 223}, {229, 95, 28, 191}, {229, 95, 28, 
+               32}}, {{229, 95, 28, 32}, {229, 95, 28, 16}, {229, 95, 28, 
+               16}, {229, 95, 28, 175}, {229, 95, 28, 255}, {229, 95, 28, 
+               127}, {229, 95, 28, 0}, {229, 95, 28, 48}}, {{229, 95, 28, 
+               48}, {229, 95, 28, 239}, {229, 95, 28, 112}, {229, 95, 28, 
+               0}, {229, 95, 28, 16}, {229, 95, 28, 16}, {229, 95, 28, 143}, {
+               229, 95, 28, 239}}, {{229, 95, 28, 0}, {229, 95, 28, 64}, {229,
+                95, 28, 223}, {229, 95, 28, 191}, {229, 95, 28, 112}, {229, 
+               95, 28, 223}, {229, 95, 28, 191}, {229, 95, 28, 32}}, {{229, 
+               95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 16}, {229, 95, 28, 
+               175}, {229, 95, 28, 255}, {229, 95, 28, 127}, {229, 95, 28, 
+               0}, {229, 95, 28, 0}}, {{229, 95, 28, 0}, {229, 95, 28, 0}, {
+               229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 16}, {229, 95,
+                28, 0}, {229, 95, 28, 0}, {229, 95, 28, 0}}}], {{0, 8}, {8, 
+              0}}, {0, 255}, ColorFunction -> RGBColor], 
+             BoxForm`ImageTag[
+             "Byte", ColorSpace -> "RGB", Interleaving -> True, Magnification -> 
+              Automatic, MetaInformation -> 
+              Association[{
+                "XMP" -> Association[{
+                   "BasicSchema" -> 
+                    Association[{
+                    "CreatorTool" -> "Adobe Photoshop CS5 Macintosh"}], 
+                    "MediaManagementSchema" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "InstanceID" -> 
+                    "xmp.iid:AA75CDB8059711E28ADB8BB95CCA5C5A", "DocumentID" -> 
+                    "xmp.did:AA75CDB9059711E28ADB8BB95CCA5C5A"}]}], 
+                    "DocumentID" -> 
+                    "xmp.did:AA75CDBB059711E28ADB8BB95CCA5C5A", "InstanceID" -> 
+                    "xmp.iid:AA75CDBA059711E28ADB8BB95CCA5C5A"}], 
+                    "RightsManagementSchema" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "InstanceID" -> 
+                    "xmp.iid:AA75CDB8059711E28ADB8BB95CCA5C5A", "DocumentID" -> 
+                    "xmp.did:AA75CDB9059711E28ADB8BB95CCA5C5A"}]}]}], 
+                    "PagedTextSchema" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "InstanceID" -> 
+                    "xmp.iid:AA75CDB8059711E28ADB8BB95CCA5C5A", "DocumentID" -> 
+                    "xmp.did:AA75CDB9059711E28ADB8BB95CCA5C5A"}]}]}]}], 
+                 "Comments" -> 
+                 Association[{"Software" -> "Adobe ImageReady"}]}]], 
+             Selectable -> False], DefaultBaseStyle -> "ImageGraphics", 
+            ImageSizeRaw -> {8, 8}, PlotRange -> {{0, 8}, {0, 8}}, 
+            ImageSize -> {8, 9}]}, "GrayLinkWithIcon", 
+          BaseStyle -> {"TutorialJumpBoxLink"}]}, {
+         TemplateBox[{
+           Cell["Validations"], "paclet:SpaceMath/tutorial/Index#915214387", 
+           GraphicsBox[
+            TagBox[
+             RasterBox[
+             RawArray["UnsignedInteger8",{{{128, 128, 128, 32}, {128, 128, 
+               128, 16}, {128, 128, 128, 0}, {128, 128, 128, 0}, {128, 128, 
+               128, 0}, {128, 128, 128, 0}, {128, 128, 128, 0}, {128, 128, 
+               128, 48}}, {{128, 128, 128, 48}, {128, 128, 128, 239}, {128, 
+               128, 128, 112}, {128, 128, 128, 0}, {128, 128, 128, 0}, {128, 
+               128, 128, 16}, {128, 128, 128, 143}, {128, 128, 128, 239}}, {{
+               128, 128, 128, 0}, {128, 128, 128, 64}, {128, 128, 128, 223}, {
+               128, 128, 128, 191}, {128, 128, 128, 112}, {128, 128, 128, 
+               223}, {128, 128, 128, 191}, {128, 128, 128, 32}}, {{128, 128, 
+               128, 32}, {128, 128, 128, 16}, {128, 128, 128, 16}, {128, 128, 
+               128, 175}, {128, 128, 128, 255}, {128, 128, 128, 127}, {128, 
+               128, 128, 0}, {128, 128, 128, 48}}, {{128, 128, 128, 48}, {128,
+                128, 128, 239}, {128, 128, 128, 112}, {128, 128, 128, 0}, {
+               128, 128, 128, 16}, {128, 128, 128, 16}, {128, 128, 128, 
+               143}, {128, 128, 128, 239}}, {{128, 128, 128, 0}, {128, 128, 
+               128, 64}, {128, 128, 128, 223}, {128, 128, 128, 191}, {128, 
+               128, 128, 112}, {128, 128, 128, 223}, {128, 128, 128, 191}, {
+               128, 128, 128, 32}}, {{128, 128, 128, 0}, {128, 128, 128, 0}, {
+               128, 128, 128, 16}, {128, 128, 128, 175}, {128, 128, 128, 
+               255}, {128, 128, 128, 127}, {128, 128, 128, 0}, {128, 128, 128,
+                0}}, {{128, 128, 128, 0}, {128, 128, 128, 0}, {128, 128, 128, 
+               0}, {128, 128, 128, 0}, {128, 128, 128, 16}, {128, 128, 128, 
+               0}, {128, 128, 128, 0}, {128, 128, 128, 0}}}], {{0, 8}, {8, 
+              0}}, {0, 255}, ColorFunction -> RGBColor], 
+             BoxForm`ImageTag[
+             "Byte", ColorSpace -> "RGB", Interleaving -> True, Magnification -> 
+              Automatic, MetaInformation -> 
+              Association[{
+                "Comments" -> 
+                 Association[{"Software" -> "Adobe ImageReady"}]}]], 
+             Selectable -> False], DefaultBaseStyle -> "ImageGraphics", 
+            ImageSizeRaw -> {8, 8}, PlotRange -> {{0, 8}, {0, 8}}, 
+            ImageSize -> {8, 9}], 
+           GraphicsBox[
+            TagBox[
+             RasterBox[
+             RawArray["UnsignedInteger8",{{{229, 95, 28, 32}, {229, 95, 28, 
+               16}, {229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 0}, {
+               229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 48}}, {{229, 
+               95, 28, 48}, {229, 95, 28, 239}, {229, 95, 28, 112}, {229, 95, 
+               28, 0}, {229, 95, 28, 0}, {229, 95, 28, 16}, {229, 95, 28, 
+               143}, {229, 95, 28, 239}}, {{229, 95, 28, 0}, {229, 95, 28, 
+               64}, {229, 95, 28, 223}, {229, 95, 28, 191}, {229, 95, 28, 
+               112}, {229, 95, 28, 223}, {229, 95, 28, 191}, {229, 95, 28, 
+               32}}, {{229, 95, 28, 32}, {229, 95, 28, 16}, {229, 95, 28, 
+               16}, {229, 95, 28, 175}, {229, 95, 28, 255}, {229, 95, 28, 
+               127}, {229, 95, 28, 0}, {229, 95, 28, 48}}, {{229, 95, 28, 
+               48}, {229, 95, 28, 239}, {229, 95, 28, 112}, {229, 95, 28, 
+               0}, {229, 95, 28, 16}, {229, 95, 28, 16}, {229, 95, 28, 143}, {
+               229, 95, 28, 239}}, {{229, 95, 28, 0}, {229, 95, 28, 64}, {229,
+                95, 28, 223}, {229, 95, 28, 191}, {229, 95, 28, 112}, {229, 
+               95, 28, 223}, {229, 95, 28, 191}, {229, 95, 28, 32}}, {{229, 
+               95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 16}, {229, 95, 28, 
+               175}, {229, 95, 28, 255}, {229, 95, 28, 127}, {229, 95, 28, 
+               0}, {229, 95, 28, 0}}, {{229, 95, 28, 0}, {229, 95, 28, 0}, {
+               229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 16}, {229, 95,
+                28, 0}, {229, 95, 28, 0}, {229, 95, 28, 0}}}], {{0, 8}, {8, 
+              0}}, {0, 255}, ColorFunction -> RGBColor], 
+             BoxForm`ImageTag[
+             "Byte", ColorSpace -> "RGB", Interleaving -> True, Magnification -> 
+              Automatic, MetaInformation -> 
+              Association[{
+                "XMP" -> Association[{
+                   "BasicSchema" -> 
+                    Association[{
+                    "CreatorTool" -> "Adobe Photoshop CS5 Macintosh"}], 
+                    "MediaManagementSchema" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "InstanceID" -> 
+                    "xmp.iid:AA75CDB8059711E28ADB8BB95CCA5C5A", "DocumentID" -> 
+                    "xmp.did:AA75CDB9059711E28ADB8BB95CCA5C5A"}]}], 
+                    "DocumentID" -> 
+                    "xmp.did:AA75CDBB059711E28ADB8BB95CCA5C5A", "InstanceID" -> 
+                    "xmp.iid:AA75CDBA059711E28ADB8BB95CCA5C5A"}], 
+                    "RightsManagementSchema" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "InstanceID" -> 
+                    "xmp.iid:AA75CDB8059711E28ADB8BB95CCA5C5A", "DocumentID" -> 
+                    "xmp.did:AA75CDB9059711E28ADB8BB95CCA5C5A"}]}]}], 
+                    "PagedTextSchema" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "InstanceID" -> 
+                    "xmp.iid:AA75CDB8059711E28ADB8BB95CCA5C5A", "DocumentID" -> 
+                    "xmp.did:AA75CDB9059711E28ADB8BB95CCA5C5A"}]}]}]}], 
+                 "Comments" -> 
+                 Association[{"Software" -> "Adobe ImageReady"}]}]], 
+             Selectable -> False], DefaultBaseStyle -> "ImageGraphics", 
+            ImageSizeRaw -> {8, 8}, PlotRange -> {{0, 8}, {0, 8}}, 
+            ImageSize -> {8, 9}]}, "GrayLinkWithIcon", 
+          BaseStyle -> {"TutorialJumpBoxLink"}], ""}}]], "TutorialJumpBox"], 
+    MapAt[# + 1& , {}, {1, -1}]], {
+   "PrimaryExamplesSection", "ExtendedExamplesSection", "ExampleSection", 
+    "ExampleSubsection", "ExampleDelimiter", "Title"}]]], "Input"],
+
+Cell[" ", "FooterCell"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{725, 750},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"Introduction to SpaceMath package",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "TutorialColor", 
+  "LinkTrails" -> GridBox[{{
+      RowBox[{
+        ButtonBox[
+        "SpaceMath", ButtonData -> "paclet:SpaceMath/guide/SpaceMath", 
+         BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
+    Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
+  "", "Metadata" -> {
+   "built" -> "{2019, 12, 7, 15, 54, 35.108706}", 
+    "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
+    "keywords" -> {}, "specialkeywords" -> {}, 
+    "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
+    "Space Math Tutorial", "language" -> "en", "paclet" -> "SpaceMath", 
+    "status" -> "None", "summary" -> 
+    DocumentationBuild`Info`GetNotebookSummary[
+      DocumentationBuild`Utils`Private`fixSplitHyperlinks[
+       DocumentationBuild`Make`Private`RenumberCells[
+        Insert[
+         Notebook[{
+           Cell[
+            BoxData[
+             GridBox[{{
+                Cell["SPACE MATH TUTORIAL", "PacletNameCell"], 
+                Cell[
+                 TextData[{
+                   Cell[
+                    BoxData[
+                    ActionMenuBox[
+                    FrameBox[
+                    InterpretationBox[
+                    Cell[
+                    TextData[{"URL", 
+                    StyleBox[
+                    " \[FilledDownTriangle]", "AnchorBarArrow", StripOnInput -> 
+                    False]}]], 
+                    TextCell[
+                    Row[{"URL", 
+                    Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]], 
+                    StripOnInput -> False], {
+                    "\"SpaceMath/tutorial/Index\"" :> None, 
+                    "\"Copy Wolfram Documentation Center URL\"" :> 
+                    Module[{DocumentationSearch`Private`nb$}, 
+                    DocumentationSearch`Private`nb$ = NotebookPut[
+                    Notebook[{
+                    Cell["SpaceMath/tutorial/Index"]}, Visible -> False]]; 
+                    SelectionMove[
+                    DocumentationSearch`Private`nb$, All, Notebook]; 
+                    FrontEndTokenExecute[
+                    DocumentationSearch`Private`nb$, "Copy"]; 
+                    NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+                    Delimiter, "\"Copy web URL\"" :> 
+                    Module[{DocumentationSearch`Private`nb$}, 
+                    DocumentationSearch`Private`nb$ = NotebookPut[
+                    Notebook[{
+                    Cell[
+                    BoxData[
+                    MakeBoxes[
+                    Hyperlink[
+                    "http://reference.wolfram.com/language/SpaceMath/tutorial/\
+Index.html"], StandardForm]], "Input", TextClipboardType -> "PlainText"]}, 
+                    Visible -> False]]; 
+                    SelectionMove[
+                    DocumentationSearch`Private`nb$, All, Notebook]; 
+                    FrontEndTokenExecute[
+                    DocumentationSearch`Private`nb$, "Copy"]; 
+                    NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+                    "\"Go to web URL\"" :> FrontEndExecute[{
+                    NotebookLocate[{
+                    URL[
+                    StringJoin[
+                    If[
+                    TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$19657], 
+                    "http://reference.wolfram.com/system-modeler/", 
+                    "http://reference.wolfram.com/language/"], 
+                    "SpaceMath/tutorial/Index", ".html"]], None}]}]}, 
+                    Appearance -> None, MenuAppearance -> Automatic, 
+                    MenuStyle -> "URLMenu"]], LineSpacing -> {1.4, 0}]}], 
+                 "AnchorBar"]}}]], "AnchorBarGrid", 
+            GridBoxOptions -> {GridBoxItemSize -> {"Columns" -> {
+                  Scaled[0.65], {
+                   Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+                "RowsIndexed" -> {}}}, CellID -> 1], 
+           Cell[
+            CellGroupData[{
+              Cell[
+              "Introduction to SpaceMath package", "Section", CellID -> 
+               256419101, ExpressionUUID -> 
+               "faaced62-6e3a-47b4-8ea4-5d5be50871d7"], 
+              Cell[
+              "Firs steps", "Subsection", CellID -> 170836305, ExpressionUUID -> 
+               "35da6da1-13a1-478d-8c01-6ce609a3e6a9"]}, Open]], 
+           Cell[
+            CellGroupData[{
+              Cell[
+              "Observables", "Section", CellID -> 937152397, ExpressionUUID -> 
+               "04e0b578-e618-4115-a722-0ecb17aa78ed"], 
+              Cell[
+              "Higgs Boson data", "Subsection", CellID -> 222407968, 
+               ExpressionUUID -> "e5aeb9de-4439-432d-9f66-51cc555bfacb"], 
+              Cell[
+              "Signal Strength", "Subsection", CellID -> 1976493996, 
+               ExpressionUUID -> "8ba4a180-d4dc-4037-803c-9da3925b54e9"], 
+              Cell[
+              "Kappa", "Subsection", CellID -> 382308300, ExpressionUUID -> 
+               "991eb4c0-71e5-487d-912f-b63b883f85dc"], 
+              Cell[
+              "Lepton Flavor violating", "Subsection", CellID -> 104793658, 
+               ExpressionUUID -> "527ae944-0a22-409b-94a6-3862d84d439f"], 
+              Cell[
+              "Pseudo Scalar Meson Physics", "Subsection", CellID -> 
+               768234615, ExpressionUUID -> 
+               "10e76327-0f8c-4f05-971f-221890adfc39"], 
+              Cell[
+              "Oblique Parameters", "Subsection", CellID -> 773490071, 
+               ExpressionUUID -> "c112b163-6529-44c4-bcd1-bf07255050d3"], 
+              Cell[
+              "Unitarity", "Subsection", CellID -> 657122953, ExpressionUUID -> 
+               "35c76e6e-366e-4fbc-84ab-e666eb2f872c"]}, Open]], 
+           Cell[
+           "Validations", "Section", CellID -> 915214387, ExpressionUUID -> 
+            "f2d156cc-7b96-4d3d-86fd-70999cfdd43b"], 
+           Cell[
+           "CP-even and CP-odd branching ratios", "Section", CellID -> 
+            373894052, ExpressionUUID -> 
+            "93350360-4042-450d-9a9d-61e34c5fdbec"], 
+           Cell[
+            CellGroupData[{
+              Cell[
+              "Appendix", "Section", CellID -> 1315917021, ExpressionUUID -> 
+               "2766786e-7868-4a99-af0f-5ff2bd816b5b"], 
+              Cell[
+              "SpaceMath data", "Subsection", CellID -> 1379020092, 
+               ExpressionUUID -> "808362fd-1bb5-43ca-bc20-42f9c2ab9011"], 
+              Cell[
+              "References", "Subsection", CellID -> 1484500713, 
+               ExpressionUUID -> "7ab6fd4e-ded3-4c32-a295-b7736022b5b4"]}, 
+             Open]]}, WindowSize -> {700, 770}, 
+          WindowMargins -> {{Automatic, 115}, {Automatic, 84}}, 
+          FrontEndVersion -> "12.0 for Linux x86 (64-bit) (April 8, 2019)", 
+          StyleDefinitions -> 
+          FrontEnd`FileName[{"Wolfram"}, "TutorialPageStyles.nb", 
+            CharacterEncoding -> "UTF-8"]], 
+         Cell[
+          BoxData[
+           GridBox[{{
+              TemplateBox[{
+                Cell["Introduction to SpaceMath package"], 
+                "paclet:SpaceMath/tutorial/Index#256419101", 
+                GraphicsBox[
+                 TagBox[
+                  RasterBox[
+                  RawArray["UnsignedInteger8",{{{128, 128, 128, 32}, {128, 
+                    128, 128, 16}, {128, 128, 128, 0}, {128, 128, 128, 0}, {
+                    128, 128, 128, 0}, {128, 128, 128, 0}, {128, 128, 128, 
+                    0}, {128, 128, 128, 48}}, {{128, 128, 128, 48}, {128, 128,
+                     128, 239}, {128, 128, 128, 112}, {128, 128, 128, 0}, {
+                    128, 128, 128, 0}, {128, 128, 128, 16}, {128, 128, 128, 
+                    143}, {128, 128, 128, 239}}, {{128, 128, 128, 0}, {128, 
+                    128, 128, 64}, {128, 128, 128, 223}, {128, 128, 128, 
+                    191}, {128, 128, 128, 112}, {128, 128, 128, 223}, {128, 
+                    128, 128, 191}, {128, 128, 128, 32}}, {{128, 128, 128, 
+                    32}, {128, 128, 128, 16}, {128, 128, 128, 16}, {128, 128, 
+                    128, 175}, {128, 128, 128, 255}, {128, 128, 128, 127}, {
+                    128, 128, 128, 0}, {128, 128, 128, 48}}, {{128, 128, 128, 
+                    48}, {128, 128, 128, 239}, {128, 128, 128, 112}, {128, 
+                    128, 128, 0}, {128, 128, 128, 16}, {128, 128, 128, 16}, {
+                    128, 128, 128, 143}, {128, 128, 128, 239}}, {{128, 128, 
+                    128, 0}, {128, 128, 128, 64}, {128, 128, 128, 223}, {128, 
+                    128, 128, 191}, {128, 128, 128, 112}, {128, 128, 128, 
+                    223}, {128, 128, 128, 191}, {128, 128, 128, 32}}, {{128, 
+                    128, 128, 0}, {128, 128, 128, 0}, {128, 128, 128, 16}, {
+                    128, 128, 128, 175}, {128, 128, 128, 255}, {128, 128, 128,
+                     127}, {128, 128, 128, 0}, {128, 128, 128, 0}}, {{128, 
+                    128, 128, 0}, {128, 128, 128, 0}, {128, 128, 128, 0}, {
+                    128, 128, 128, 0}, {128, 128, 128, 16}, {128, 128, 128, 
+                    0}, {128, 128, 128, 0}, {128, 128, 128, 0}}}], {{0, 8}, {
+                   8, 0}}, {0, 255}, ColorFunction -> RGBColor], 
+                  BoxForm`ImageTag[
+                  "Byte", ColorSpace -> "RGB", Interleaving -> True, 
+                   Magnification -> Automatic, MetaInformation -> 
+                   Association[{
+                    "Comments" -> 
+                    Association[{"Software" -> "Adobe ImageReady"}]}]], 
+                  Selectable -> False], DefaultBaseStyle -> "ImageGraphics", 
+                 ImageSizeRaw -> {8, 8}, PlotRange -> {{0, 8}, {0, 8}}, 
+                 ImageSize -> {8, 9}], 
+                GraphicsBox[
+                 TagBox[
+                  RasterBox[
+                  RawArray["UnsignedInteger8",{{{229, 95, 28, 32}, {229, 95, 
+                    28, 16}, {229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28,
+                     0}, {229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 
+                    48}}, {{229, 95, 28, 48}, {229, 95, 28, 239}, {229, 95, 
+                    28, 112}, {229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 
+                    28, 16}, {229, 95, 28, 143}, {229, 95, 28, 239}}, {{229, 
+                    95, 28, 0}, {229, 95, 28, 64}, {229, 95, 28, 223}, {229, 
+                    95, 28, 191}, {229, 95, 28, 112}, {229, 95, 28, 223}, {
+                    229, 95, 28, 191}, {229, 95, 28, 32}}, {{229, 95, 28, 
+                    32}, {229, 95, 28, 16}, {229, 95, 28, 16}, {229, 95, 28, 
+                    175}, {229, 95, 28, 255}, {229, 95, 28, 127}, {229, 95, 
+                    28, 0}, {229, 95, 28, 48}}, {{229, 95, 28, 48}, {229, 95, 
+                    28, 239}, {229, 95, 28, 112}, {229, 95, 28, 0}, {229, 95, 
+                    28, 16}, {229, 95, 28, 16}, {229, 95, 28, 143}, {229, 95, 
+                    28, 239}}, {{229, 95, 28, 0}, {229, 95, 28, 64}, {229, 95,
+                     28, 223}, {229, 95, 28, 191}, {229, 95, 28, 112}, {229, 
+                    95, 28, 223}, {229, 95, 28, 191}, {229, 95, 28, 32}}, {{
+                    229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 16}, {
+                    229, 95, 28, 175}, {229, 95, 28, 255}, {229, 95, 28, 
+                    127}, {229, 95, 28, 0}, {229, 95, 28, 0}}, {{229, 95, 28, 
+                    0}, {229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 
+                    0}, {229, 95, 28, 16}, {229, 95, 28, 0}, {229, 95, 28, 
+                    0}, {229, 95, 28, 0}}}], {{0, 8}, {8, 0}}, {0, 255}, 
+                   ColorFunction -> RGBColor], 
+                  BoxForm`ImageTag[
+                  "Byte", ColorSpace -> "RGB", Interleaving -> True, 
+                   Magnification -> Automatic, MetaInformation -> 
+                   Association[{
+                    "XMP" -> Association[{
+                    "BasicSchema" -> 
+                    Association[{
+                    "CreatorTool" -> "Adobe Photoshop CS5 Macintosh"}], 
+                    "MediaManagementSchema" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{"InstanceID" -> 
+                    "xmp.iid:AA75CDB8059711E28ADB8BB95CCA5C5A", "DocumentID" -> 
+                    "xmp.did:AA75CDB9059711E28ADB8BB95CCA5C5A"}]}], 
+                    "DocumentID" -> 
+                    "xmp.did:AA75CDBB059711E28ADB8BB95CCA5C5A", "InstanceID" -> 
+                    "xmp.iid:AA75CDBA059711E28ADB8BB95CCA5C5A"}], 
+                    "RightsManagementSchema" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{"InstanceID" -> 
+                    "xmp.iid:AA75CDB8059711E28ADB8BB95CCA5C5A", "DocumentID" -> 
+                    "xmp.did:AA75CDB9059711E28ADB8BB95CCA5C5A"}]}]}], 
+                    "PagedTextSchema" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{"InstanceID" -> 
+                    "xmp.iid:AA75CDB8059711E28ADB8BB95CCA5C5A", "DocumentID" -> 
+                    "xmp.did:AA75CDB9059711E28ADB8BB95CCA5C5A"}]}]}]}], 
+                    "Comments" -> 
+                    Association[{"Software" -> "Adobe ImageReady"}]}]], 
+                  Selectable -> False], DefaultBaseStyle -> "ImageGraphics", 
+                 ImageSizeRaw -> {8, 8}, PlotRange -> {{0, 8}, {0, 8}}, 
+                 ImageSize -> {8, 9}]}, "GrayLinkWithIcon", 
+               BaseStyle -> {"TutorialJumpBoxLink"}], 
+              TemplateBox[{
+                Cell["CP-even and CP-odd branching ratios"], 
+                "paclet:SpaceMath/tutorial/Index#373894052", 
+                GraphicsBox[
+                 TagBox[
+                  RasterBox[
+                  RawArray["UnsignedInteger8",{{{128, 128, 128, 32}, {128, 
+                    128, 128, 16}, {128, 128, 128, 0}, {128, 128, 128, 0}, {
+                    128, 128, 128, 0}, {128, 128, 128, 0}, {128, 128, 128, 
+                    0}, {128, 128, 128, 48}}, {{128, 128, 128, 48}, {128, 128,
+                     128, 239}, {128, 128, 128, 112}, {128, 128, 128, 0}, {
+                    128, 128, 128, 0}, {128, 128, 128, 16}, {128, 128, 128, 
+                    143}, {128, 128, 128, 239}}, {{128, 128, 128, 0}, {128, 
+                    128, 128, 64}, {128, 128, 128, 223}, {128, 128, 128, 
+                    191}, {128, 128, 128, 112}, {128, 128, 128, 223}, {128, 
+                    128, 128, 191}, {128, 128, 128, 32}}, {{128, 128, 128, 
+                    32}, {128, 128, 128, 16}, {128, 128, 128, 16}, {128, 128, 
+                    128, 175}, {128, 128, 128, 255}, {128, 128, 128, 127}, {
+                    128, 128, 128, 0}, {128, 128, 128, 48}}, {{128, 128, 128, 
+                    48}, {128, 128, 128, 239}, {128, 128, 128, 112}, {128, 
+                    128, 128, 0}, {128, 128, 128, 16}, {128, 128, 128, 16}, {
+                    128, 128, 128, 143}, {128, 128, 128, 239}}, {{128, 128, 
+                    128, 0}, {128, 128, 128, 64}, {128, 128, 128, 223}, {128, 
+                    128, 128, 191}, {128, 128, 128, 112}, {128, 128, 128, 
+                    223}, {128, 128, 128, 191}, {128, 128, 128, 32}}, {{128, 
+                    128, 128, 0}, {128, 128, 128, 0}, {128, 128, 128, 16}, {
+                    128, 128, 128, 175}, {128, 128, 128, 255}, {128, 128, 128,
+                     127}, {128, 128, 128, 0}, {128, 128, 128, 0}}, {{128, 
+                    128, 128, 0}, {128, 128, 128, 0}, {128, 128, 128, 0}, {
+                    128, 128, 128, 0}, {128, 128, 128, 16}, {128, 128, 128, 
+                    0}, {128, 128, 128, 0}, {128, 128, 128, 0}}}], {{0, 8}, {
+                   8, 0}}, {0, 255}, ColorFunction -> RGBColor], 
+                  BoxForm`ImageTag[
+                  "Byte", ColorSpace -> "RGB", Interleaving -> True, 
+                   Magnification -> Automatic, MetaInformation -> 
+                   Association[{
+                    "Comments" -> 
+                    Association[{"Software" -> "Adobe ImageReady"}]}]], 
+                  Selectable -> False], DefaultBaseStyle -> "ImageGraphics", 
+                 ImageSizeRaw -> {8, 8}, PlotRange -> {{0, 8}, {0, 8}}, 
+                 ImageSize -> {8, 9}], 
+                GraphicsBox[
+                 TagBox[
+                  RasterBox[
+                  RawArray["UnsignedInteger8",{{{229, 95, 28, 32}, {229, 95, 
+                    28, 16}, {229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28,
+                     0}, {229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 
+                    48}}, {{229, 95, 28, 48}, {229, 95, 28, 239}, {229, 95, 
+                    28, 112}, {229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 
+                    28, 16}, {229, 95, 28, 143}, {229, 95, 28, 239}}, {{229, 
+                    95, 28, 0}, {229, 95, 28, 64}, {229, 95, 28, 223}, {229, 
+                    95, 28, 191}, {229, 95, 28, 112}, {229, 95, 28, 223}, {
+                    229, 95, 28, 191}, {229, 95, 28, 32}}, {{229, 95, 28, 
+                    32}, {229, 95, 28, 16}, {229, 95, 28, 16}, {229, 95, 28, 
+                    175}, {229, 95, 28, 255}, {229, 95, 28, 127}, {229, 95, 
+                    28, 0}, {229, 95, 28, 48}}, {{229, 95, 28, 48}, {229, 95, 
+                    28, 239}, {229, 95, 28, 112}, {229, 95, 28, 0}, {229, 95, 
+                    28, 16}, {229, 95, 28, 16}, {229, 95, 28, 143}, {229, 95, 
+                    28, 239}}, {{229, 95, 28, 0}, {229, 95, 28, 64}, {229, 95,
+                     28, 223}, {229, 95, 28, 191}, {229, 95, 28, 112}, {229, 
+                    95, 28, 223}, {229, 95, 28, 191}, {229, 95, 28, 32}}, {{
+                    229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 16}, {
+                    229, 95, 28, 175}, {229, 95, 28, 255}, {229, 95, 28, 
+                    127}, {229, 95, 28, 0}, {229, 95, 28, 0}}, {{229, 95, 28, 
+                    0}, {229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 
+                    0}, {229, 95, 28, 16}, {229, 95, 28, 0}, {229, 95, 28, 
+                    0}, {229, 95, 28, 0}}}], {{0, 8}, {8, 0}}, {0, 255}, 
+                   ColorFunction -> RGBColor], 
+                  BoxForm`ImageTag[
+                  "Byte", ColorSpace -> "RGB", Interleaving -> True, 
+                   Magnification -> Automatic, MetaInformation -> 
+                   Association[{
+                    "XMP" -> Association[{
+                    "BasicSchema" -> 
+                    Association[{
+                    "CreatorTool" -> "Adobe Photoshop CS5 Macintosh"}], 
+                    "MediaManagementSchema" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{"InstanceID" -> 
+                    "xmp.iid:AA75CDB8059711E28ADB8BB95CCA5C5A", "DocumentID" -> 
+                    "xmp.did:AA75CDB9059711E28ADB8BB95CCA5C5A"}]}], 
+                    "DocumentID" -> 
+                    "xmp.did:AA75CDBB059711E28ADB8BB95CCA5C5A", "InstanceID" -> 
+                    "xmp.iid:AA75CDBA059711E28ADB8BB95CCA5C5A"}], 
+                    "RightsManagementSchema" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{"InstanceID" -> 
+                    "xmp.iid:AA75CDB8059711E28ADB8BB95CCA5C5A", "DocumentID" -> 
+                    "xmp.did:AA75CDB9059711E28ADB8BB95CCA5C5A"}]}]}], 
+                    "PagedTextSchema" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{"InstanceID" -> 
+                    "xmp.iid:AA75CDB8059711E28ADB8BB95CCA5C5A", "DocumentID" -> 
+                    "xmp.did:AA75CDB9059711E28ADB8BB95CCA5C5A"}]}]}]}], 
+                    "Comments" -> 
+                    Association[{"Software" -> "Adobe ImageReady"}]}]], 
+                  Selectable -> False], DefaultBaseStyle -> "ImageGraphics", 
+                 ImageSizeRaw -> {8, 8}, PlotRange -> {{0, 8}, {0, 8}}, 
+                 ImageSize -> {8, 9}]}, "GrayLinkWithIcon", 
+               BaseStyle -> {"TutorialJumpBoxLink"}]}, {
+              TemplateBox[{
+                Cell["Observables"], 
+                "paclet:SpaceMath/tutorial/Index#937152397", 
+                GraphicsBox[
+                 TagBox[
+                  RasterBox[
+                  RawArray["UnsignedInteger8",{{{128, 128, 128, 32}, {128, 
+                    128, 128, 16}, {128, 128, 128, 0}, {128, 128, 128, 0}, {
+                    128, 128, 128, 0}, {128, 128, 128, 0}, {128, 128, 128, 
+                    0}, {128, 128, 128, 48}}, {{128, 128, 128, 48}, {128, 128,
+                     128, 239}, {128, 128, 128, 112}, {128, 128, 128, 0}, {
+                    128, 128, 128, 0}, {128, 128, 128, 16}, {128, 128, 128, 
+                    143}, {128, 128, 128, 239}}, {{128, 128, 128, 0}, {128, 
+                    128, 128, 64}, {128, 128, 128, 223}, {128, 128, 128, 
+                    191}, {128, 128, 128, 112}, {128, 128, 128, 223}, {128, 
+                    128, 128, 191}, {128, 128, 128, 32}}, {{128, 128, 128, 
+                    32}, {128, 128, 128, 16}, {128, 128, 128, 16}, {128, 128, 
+                    128, 175}, {128, 128, 128, 255}, {128, 128, 128, 127}, {
+                    128, 128, 128, 0}, {128, 128, 128, 48}}, {{128, 128, 128, 
+                    48}, {128, 128, 128, 239}, {128, 128, 128, 112}, {128, 
+                    128, 128, 0}, {128, 128, 128, 16}, {128, 128, 128, 16}, {
+                    128, 128, 128, 143}, {128, 128, 128, 239}}, {{128, 128, 
+                    128, 0}, {128, 128, 128, 64}, {128, 128, 128, 223}, {128, 
+                    128, 128, 191}, {128, 128, 128, 112}, {128, 128, 128, 
+                    223}, {128, 128, 128, 191}, {128, 128, 128, 32}}, {{128, 
+                    128, 128, 0}, {128, 128, 128, 0}, {128, 128, 128, 16}, {
+                    128, 128, 128, 175}, {128, 128, 128, 255}, {128, 128, 128,
+                     127}, {128, 128, 128, 0}, {128, 128, 128, 0}}, {{128, 
+                    128, 128, 0}, {128, 128, 128, 0}, {128, 128, 128, 0}, {
+                    128, 128, 128, 0}, {128, 128, 128, 16}, {128, 128, 128, 
+                    0}, {128, 128, 128, 0}, {128, 128, 128, 0}}}], {{0, 8}, {
+                   8, 0}}, {0, 255}, ColorFunction -> RGBColor], 
+                  BoxForm`ImageTag[
+                  "Byte", ColorSpace -> "RGB", Interleaving -> True, 
+                   Magnification -> Automatic, MetaInformation -> 
+                   Association[{
+                    "Comments" -> 
+                    Association[{"Software" -> "Adobe ImageReady"}]}]], 
+                  Selectable -> False], DefaultBaseStyle -> "ImageGraphics", 
+                 ImageSizeRaw -> {8, 8}, PlotRange -> {{0, 8}, {0, 8}}, 
+                 ImageSize -> {8, 9}], 
+                GraphicsBox[
+                 TagBox[
+                  RasterBox[
+                  RawArray["UnsignedInteger8",{{{229, 95, 28, 32}, {229, 95, 
+                    28, 16}, {229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28,
+                     0}, {229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 
+                    48}}, {{229, 95, 28, 48}, {229, 95, 28, 239}, {229, 95, 
+                    28, 112}, {229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 
+                    28, 16}, {229, 95, 28, 143}, {229, 95, 28, 239}}, {{229, 
+                    95, 28, 0}, {229, 95, 28, 64}, {229, 95, 28, 223}, {229, 
+                    95, 28, 191}, {229, 95, 28, 112}, {229, 95, 28, 223}, {
+                    229, 95, 28, 191}, {229, 95, 28, 32}}, {{229, 95, 28, 
+                    32}, {229, 95, 28, 16}, {229, 95, 28, 16}, {229, 95, 28, 
+                    175}, {229, 95, 28, 255}, {229, 95, 28, 127}, {229, 95, 
+                    28, 0}, {229, 95, 28, 48}}, {{229, 95, 28, 48}, {229, 95, 
+                    28, 239}, {229, 95, 28, 112}, {229, 95, 28, 0}, {229, 95, 
+                    28, 16}, {229, 95, 28, 16}, {229, 95, 28, 143}, {229, 95, 
+                    28, 239}}, {{229, 95, 28, 0}, {229, 95, 28, 64}, {229, 95,
+                     28, 223}, {229, 95, 28, 191}, {229, 95, 28, 112}, {229, 
+                    95, 28, 223}, {229, 95, 28, 191}, {229, 95, 28, 32}}, {{
+                    229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 16}, {
+                    229, 95, 28, 175}, {229, 95, 28, 255}, {229, 95, 28, 
+                    127}, {229, 95, 28, 0}, {229, 95, 28, 0}}, {{229, 95, 28, 
+                    0}, {229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 
+                    0}, {229, 95, 28, 16}, {229, 95, 28, 0}, {229, 95, 28, 
+                    0}, {229, 95, 28, 0}}}], {{0, 8}, {8, 0}}, {0, 255}, 
+                   ColorFunction -> RGBColor], 
+                  BoxForm`ImageTag[
+                  "Byte", ColorSpace -> "RGB", Interleaving -> True, 
+                   Magnification -> Automatic, MetaInformation -> 
+                   Association[{
+                    "XMP" -> Association[{
+                    "BasicSchema" -> 
+                    Association[{
+                    "CreatorTool" -> "Adobe Photoshop CS5 Macintosh"}], 
+                    "MediaManagementSchema" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{"InstanceID" -> 
+                    "xmp.iid:AA75CDB8059711E28ADB8BB95CCA5C5A", "DocumentID" -> 
+                    "xmp.did:AA75CDB9059711E28ADB8BB95CCA5C5A"}]}], 
+                    "DocumentID" -> 
+                    "xmp.did:AA75CDBB059711E28ADB8BB95CCA5C5A", "InstanceID" -> 
+                    "xmp.iid:AA75CDBA059711E28ADB8BB95CCA5C5A"}], 
+                    "RightsManagementSchema" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{"InstanceID" -> 
+                    "xmp.iid:AA75CDB8059711E28ADB8BB95CCA5C5A", "DocumentID" -> 
+                    "xmp.did:AA75CDB9059711E28ADB8BB95CCA5C5A"}]}]}], 
+                    "PagedTextSchema" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{"InstanceID" -> 
+                    "xmp.iid:AA75CDB8059711E28ADB8BB95CCA5C5A", "DocumentID" -> 
+                    "xmp.did:AA75CDB9059711E28ADB8BB95CCA5C5A"}]}]}]}], 
+                    "Comments" -> 
+                    Association[{"Software" -> "Adobe ImageReady"}]}]], 
+                  Selectable -> False], DefaultBaseStyle -> "ImageGraphics", 
+                 ImageSizeRaw -> {8, 8}, PlotRange -> {{0, 8}, {0, 8}}, 
+                 ImageSize -> {8, 9}]}, "GrayLinkWithIcon", 
+               BaseStyle -> {"TutorialJumpBoxLink"}], 
+              TemplateBox[{
+                Cell["Appendix"], 
+                "paclet:SpaceMath/tutorial/Index#1315917021", 
+                GraphicsBox[
+                 TagBox[
+                  RasterBox[
+                  RawArray["UnsignedInteger8",{{{128, 128, 128, 32}, {128, 
+                    128, 128, 16}, {128, 128, 128, 0}, {128, 128, 128, 0}, {
+                    128, 128, 128, 0}, {128, 128, 128, 0}, {128, 128, 128, 
+                    0}, {128, 128, 128, 48}}, {{128, 128, 128, 48}, {128, 128,
+                     128, 239}, {128, 128, 128, 112}, {128, 128, 128, 0}, {
+                    128, 128, 128, 0}, {128, 128, 128, 16}, {128, 128, 128, 
+                    143}, {128, 128, 128, 239}}, {{128, 128, 128, 0}, {128, 
+                    128, 128, 64}, {128, 128, 128, 223}, {128, 128, 128, 
+                    191}, {128, 128, 128, 112}, {128, 128, 128, 223}, {128, 
+                    128, 128, 191}, {128, 128, 128, 32}}, {{128, 128, 128, 
+                    32}, {128, 128, 128, 16}, {128, 128, 128, 16}, {128, 128, 
+                    128, 175}, {128, 128, 128, 255}, {128, 128, 128, 127}, {
+                    128, 128, 128, 0}, {128, 128, 128, 48}}, {{128, 128, 128, 
+                    48}, {128, 128, 128, 239}, {128, 128, 128, 112}, {128, 
+                    128, 128, 0}, {128, 128, 128, 16}, {128, 128, 128, 16}, {
+                    128, 128, 128, 143}, {128, 128, 128, 239}}, {{128, 128, 
+                    128, 0}, {128, 128, 128, 64}, {128, 128, 128, 223}, {128, 
+                    128, 128, 191}, {128, 128, 128, 112}, {128, 128, 128, 
+                    223}, {128, 128, 128, 191}, {128, 128, 128, 32}}, {{128, 
+                    128, 128, 0}, {128, 128, 128, 0}, {128, 128, 128, 16}, {
+                    128, 128, 128, 175}, {128, 128, 128, 255}, {128, 128, 128,
+                     127}, {128, 128, 128, 0}, {128, 128, 128, 0}}, {{128, 
+                    128, 128, 0}, {128, 128, 128, 0}, {128, 128, 128, 0}, {
+                    128, 128, 128, 0}, {128, 128, 128, 16}, {128, 128, 128, 
+                    0}, {128, 128, 128, 0}, {128, 128, 128, 0}}}], {{0, 8}, {
+                   8, 0}}, {0, 255}, ColorFunction -> RGBColor], 
+                  BoxForm`ImageTag[
+                  "Byte", ColorSpace -> "RGB", Interleaving -> True, 
+                   Magnification -> Automatic, MetaInformation -> 
+                   Association[{
+                    "Comments" -> 
+                    Association[{"Software" -> "Adobe ImageReady"}]}]], 
+                  Selectable -> False], DefaultBaseStyle -> "ImageGraphics", 
+                 ImageSizeRaw -> {8, 8}, PlotRange -> {{0, 8}, {0, 8}}, 
+                 ImageSize -> {8, 9}], 
+                GraphicsBox[
+                 TagBox[
+                  RasterBox[
+                  RawArray["UnsignedInteger8",{{{229, 95, 28, 32}, {229, 95, 
+                    28, 16}, {229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28,
+                     0}, {229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 
+                    48}}, {{229, 95, 28, 48}, {229, 95, 28, 239}, {229, 95, 
+                    28, 112}, {229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 
+                    28, 16}, {229, 95, 28, 143}, {229, 95, 28, 239}}, {{229, 
+                    95, 28, 0}, {229, 95, 28, 64}, {229, 95, 28, 223}, {229, 
+                    95, 28, 191}, {229, 95, 28, 112}, {229, 95, 28, 223}, {
+                    229, 95, 28, 191}, {229, 95, 28, 32}}, {{229, 95, 28, 
+                    32}, {229, 95, 28, 16}, {229, 95, 28, 16}, {229, 95, 28, 
+                    175}, {229, 95, 28, 255}, {229, 95, 28, 127}, {229, 95, 
+                    28, 0}, {229, 95, 28, 48}}, {{229, 95, 28, 48}, {229, 95, 
+                    28, 239}, {229, 95, 28, 112}, {229, 95, 28, 0}, {229, 95, 
+                    28, 16}, {229, 95, 28, 16}, {229, 95, 28, 143}, {229, 95, 
+                    28, 239}}, {{229, 95, 28, 0}, {229, 95, 28, 64}, {229, 95,
+                     28, 223}, {229, 95, 28, 191}, {229, 95, 28, 112}, {229, 
+                    95, 28, 223}, {229, 95, 28, 191}, {229, 95, 28, 32}}, {{
+                    229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 16}, {
+                    229, 95, 28, 175}, {229, 95, 28, 255}, {229, 95, 28, 
+                    127}, {229, 95, 28, 0}, {229, 95, 28, 0}}, {{229, 95, 28, 
+                    0}, {229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 
+                    0}, {229, 95, 28, 16}, {229, 95, 28, 0}, {229, 95, 28, 
+                    0}, {229, 95, 28, 0}}}], {{0, 8}, {8, 0}}, {0, 255}, 
+                   ColorFunction -> RGBColor], 
+                  BoxForm`ImageTag[
+                  "Byte", ColorSpace -> "RGB", Interleaving -> True, 
+                   Magnification -> Automatic, MetaInformation -> 
+                   Association[{
+                    "XMP" -> Association[{
+                    "BasicSchema" -> 
+                    Association[{
+                    "CreatorTool" -> "Adobe Photoshop CS5 Macintosh"}], 
+                    "MediaManagementSchema" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{"InstanceID" -> 
+                    "xmp.iid:AA75CDB8059711E28ADB8BB95CCA5C5A", "DocumentID" -> 
+                    "xmp.did:AA75CDB9059711E28ADB8BB95CCA5C5A"}]}], 
+                    "DocumentID" -> 
+                    "xmp.did:AA75CDBB059711E28ADB8BB95CCA5C5A", "InstanceID" -> 
+                    "xmp.iid:AA75CDBA059711E28ADB8BB95CCA5C5A"}], 
+                    "RightsManagementSchema" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{"InstanceID" -> 
+                    "xmp.iid:AA75CDB8059711E28ADB8BB95CCA5C5A", "DocumentID" -> 
+                    "xmp.did:AA75CDB9059711E28ADB8BB95CCA5C5A"}]}]}], 
+                    "PagedTextSchema" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{"InstanceID" -> 
+                    "xmp.iid:AA75CDB8059711E28ADB8BB95CCA5C5A", "DocumentID" -> 
+                    "xmp.did:AA75CDB9059711E28ADB8BB95CCA5C5A"}]}]}]}], 
+                    "Comments" -> 
+                    Association[{"Software" -> "Adobe ImageReady"}]}]], 
+                  Selectable -> False], DefaultBaseStyle -> "ImageGraphics", 
+                 ImageSizeRaw -> {8, 8}, PlotRange -> {{0, 8}, {0, 8}}, 
+                 ImageSize -> {8, 9}]}, "GrayLinkWithIcon", 
+               BaseStyle -> {"TutorialJumpBoxLink"}]}, {
+              TemplateBox[{
+                Cell["Validations"], 
+                "paclet:SpaceMath/tutorial/Index#915214387", 
+                GraphicsBox[
+                 TagBox[
+                  RasterBox[
+                  RawArray["UnsignedInteger8",{{{128, 128, 128, 32}, {128, 
+                    128, 128, 16}, {128, 128, 128, 0}, {128, 128, 128, 0}, {
+                    128, 128, 128, 0}, {128, 128, 128, 0}, {128, 128, 128, 
+                    0}, {128, 128, 128, 48}}, {{128, 128, 128, 48}, {128, 128,
+                     128, 239}, {128, 128, 128, 112}, {128, 128, 128, 0}, {
+                    128, 128, 128, 0}, {128, 128, 128, 16}, {128, 128, 128, 
+                    143}, {128, 128, 128, 239}}, {{128, 128, 128, 0}, {128, 
+                    128, 128, 64}, {128, 128, 128, 223}, {128, 128, 128, 
+                    191}, {128, 128, 128, 112}, {128, 128, 128, 223}, {128, 
+                    128, 128, 191}, {128, 128, 128, 32}}, {{128, 128, 128, 
+                    32}, {128, 128, 128, 16}, {128, 128, 128, 16}, {128, 128, 
+                    128, 175}, {128, 128, 128, 255}, {128, 128, 128, 127}, {
+                    128, 128, 128, 0}, {128, 128, 128, 48}}, {{128, 128, 128, 
+                    48}, {128, 128, 128, 239}, {128, 128, 128, 112}, {128, 
+                    128, 128, 0}, {128, 128, 128, 16}, {128, 128, 128, 16}, {
+                    128, 128, 128, 143}, {128, 128, 128, 239}}, {{128, 128, 
+                    128, 0}, {128, 128, 128, 64}, {128, 128, 128, 223}, {128, 
+                    128, 128, 191}, {128, 128, 128, 112}, {128, 128, 128, 
+                    223}, {128, 128, 128, 191}, {128, 128, 128, 32}}, {{128, 
+                    128, 128, 0}, {128, 128, 128, 0}, {128, 128, 128, 16}, {
+                    128, 128, 128, 175}, {128, 128, 128, 255}, {128, 128, 128,
+                     127}, {128, 128, 128, 0}, {128, 128, 128, 0}}, {{128, 
+                    128, 128, 0}, {128, 128, 128, 0}, {128, 128, 128, 0}, {
+                    128, 128, 128, 0}, {128, 128, 128, 16}, {128, 128, 128, 
+                    0}, {128, 128, 128, 0}, {128, 128, 128, 0}}}], {{0, 8}, {
+                   8, 0}}, {0, 255}, ColorFunction -> RGBColor], 
+                  BoxForm`ImageTag[
+                  "Byte", ColorSpace -> "RGB", Interleaving -> True, 
+                   Magnification -> Automatic, MetaInformation -> 
+                   Association[{
+                    "Comments" -> 
+                    Association[{"Software" -> "Adobe ImageReady"}]}]], 
+                  Selectable -> False], DefaultBaseStyle -> "ImageGraphics", 
+                 ImageSizeRaw -> {8, 8}, PlotRange -> {{0, 8}, {0, 8}}, 
+                 ImageSize -> {8, 9}], 
+                GraphicsBox[
+                 TagBox[
+                  RasterBox[
+                  RawArray["UnsignedInteger8",{{{229, 95, 28, 32}, {229, 95, 
+                    28, 16}, {229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28,
+                     0}, {229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 
+                    48}}, {{229, 95, 28, 48}, {229, 95, 28, 239}, {229, 95, 
+                    28, 112}, {229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 
+                    28, 16}, {229, 95, 28, 143}, {229, 95, 28, 239}}, {{229, 
+                    95, 28, 0}, {229, 95, 28, 64}, {229, 95, 28, 223}, {229, 
+                    95, 28, 191}, {229, 95, 28, 112}, {229, 95, 28, 223}, {
+                    229, 95, 28, 191}, {229, 95, 28, 32}}, {{229, 95, 28, 
+                    32}, {229, 95, 28, 16}, {229, 95, 28, 16}, {229, 95, 28, 
+                    175}, {229, 95, 28, 255}, {229, 95, 28, 127}, {229, 95, 
+                    28, 0}, {229, 95, 28, 48}}, {{229, 95, 28, 48}, {229, 95, 
+                    28, 239}, {229, 95, 28, 112}, {229, 95, 28, 0}, {229, 95, 
+                    28, 16}, {229, 95, 28, 16}, {229, 95, 28, 143}, {229, 95, 
+                    28, 239}}, {{229, 95, 28, 0}, {229, 95, 28, 64}, {229, 95,
+                     28, 223}, {229, 95, 28, 191}, {229, 95, 28, 112}, {229, 
+                    95, 28, 223}, {229, 95, 28, 191}, {229, 95, 28, 32}}, {{
+                    229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 16}, {
+                    229, 95, 28, 175}, {229, 95, 28, 255}, {229, 95, 28, 
+                    127}, {229, 95, 28, 0}, {229, 95, 28, 0}}, {{229, 95, 28, 
+                    0}, {229, 95, 28, 0}, {229, 95, 28, 0}, {229, 95, 28, 
+                    0}, {229, 95, 28, 16}, {229, 95, 28, 0}, {229, 95, 28, 
+                    0}, {229, 95, 28, 0}}}], {{0, 8}, {8, 0}}, {0, 255}, 
+                   ColorFunction -> RGBColor], 
+                  BoxForm`ImageTag[
+                  "Byte", ColorSpace -> "RGB", Interleaving -> True, 
+                   Magnification -> Automatic, MetaInformation -> 
+                   Association[{
+                    "XMP" -> Association[{
+                    "BasicSchema" -> 
+                    Association[{
+                    "CreatorTool" -> "Adobe Photoshop CS5 Macintosh"}], 
+                    "MediaManagementSchema" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{"InstanceID" -> 
+                    "xmp.iid:AA75CDB8059711E28ADB8BB95CCA5C5A", "DocumentID" -> 
+                    "xmp.did:AA75CDB9059711E28ADB8BB95CCA5C5A"}]}], 
+                    "DocumentID" -> 
+                    "xmp.did:AA75CDBB059711E28ADB8BB95CCA5C5A", "InstanceID" -> 
+                    "xmp.iid:AA75CDBA059711E28ADB8BB95CCA5C5A"}], 
+                    "RightsManagementSchema" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{"InstanceID" -> 
+                    "xmp.iid:AA75CDB8059711E28ADB8BB95CCA5C5A", "DocumentID" -> 
+                    "xmp.did:AA75CDB9059711E28ADB8BB95CCA5C5A"}]}]}], 
+                    "PagedTextSchema" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{
+                    "DerivedFrom" -> 
+                    Association[{"InstanceID" -> 
+                    "xmp.iid:AA75CDB8059711E28ADB8BB95CCA5C5A", "DocumentID" -> 
+                    "xmp.did:AA75CDB9059711E28ADB8BB95CCA5C5A"}]}]}]}], 
+                    "Comments" -> 
+                    Association[{"Software" -> "Adobe ImageReady"}]}]], 
+                  Selectable -> False], DefaultBaseStyle -> "ImageGraphics", 
+                 ImageSizeRaw -> {8, 8}, PlotRange -> {{0, 8}, {0, 8}}, 
+                 ImageSize -> {8, 9}]}, "GrayLinkWithIcon", 
+               BaseStyle -> {"TutorialJumpBoxLink"}], ""}}]], 
+          "TutorialJumpBox"], 
+         MapAt[# + 1& , {}, {1, -1}]], {
+        "PrimaryExamplesSection", "ExtendedExamplesSection", "ExampleSection",
+          "ExampleSubsection", "ExampleDelimiter", "Title"}]], "Tutorial", 
+      "Introduction to SpaceMath package"], "synonyms" -> {}, "tabletags" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$19596, "title" -> 
+    "Introduction to SpaceMath package", "titlemodifier" -> "", "windowtitle" -> 
+    "Introduction to SpaceMath package", "type" -> "Tutorial", "uri" -> 
+    "SpaceMath/tutorial/Index"}},
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> Notebook], 
+   Cell[
+    StyleData["Output"], CellContext -> Notebook], 
+   Cell[
+    StyleData["TutorialMoreAboutSection"], 
+    CellGroupingRules -> {"SectionGrouping", 30}], 
+   Cell[
+    StyleData["RelatedTutorialsSection"], 
+    CellGroupingRules -> {"SectionGrouping", 30}], 
+   Cell[
+    StyleData["TutorialRelatedLinksSection"], 
+    CellGroupingRules -> {"SectionGrouping", 30}]}, Visible -> False, 
+  FrontEndVersion -> "12.0 for Linux x86 (64-bit) (April 8, 2019)", 
+  StyleDefinitions -> "Default.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[605, 21, 37793, 665, 70, "Input",ExpressionUUID->"ccbc98ab-acdb-453c-a14c-c5c8cac6bb76"],
+Cell[38401, 688, 23, 0, 70, "FooterCell",ExpressionUUID->"ca3ca1b2-7d07-47ff-8050-de98818b2a4a"]
+}
+]
+*)
+
+(* End of internal cache information *)

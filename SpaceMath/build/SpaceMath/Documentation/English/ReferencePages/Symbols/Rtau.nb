@@ -1,0 +1,358 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     14421,        348]
+NotebookOptionsPosition[      9863,        257]
+NotebookOutlinePosition[     12740,        320]
+CellTagsIndexPosition[     12697,        317]
+WindowTitle->Rtau
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {Cell["SPACE MATH SYMBOL", "PacletNameCell",ExpressionUUID->
+     "7b0f5866-e341-4667-a5ab-89442ebff9fc"], Cell[TextData[{
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "Tutorials",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }],ExpressionUUID->"7d9f60f2-cdb6-4b9c-a3bb-b3787064709f"],
+         TextCell[
+          Row[{"Tutorials", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"SpaceMath PackageSpaceMath Overview\"\>":>
+       Documentation`HelpLookup[
+       "paclet:SpaceMath/tutorial/SpaceMath#509267359"]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"Tutorials"]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "8482a6b2-f930-4241-9234-b1ae3b684f0b"],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "Related Guides",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }],ExpressionUUID->"e3a26065-f8e9-4d35-a13c-03aca8da200b"],
+         TextCell[
+          Row[{"Related Guides", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"Higgs Boson data\"\>":>
+       Documentation`HelpLookup["paclet:SpaceMath/guide/HiggsBosondata"]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"MoreAbout"]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "5c924d67-753d-4237-a708-2ae8b5c0dce4"],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "URL",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }],ExpressionUUID->"93445d59-393b-4a8f-8efa-67b25ba0b924"],
+         TextCell[
+          Row[{"URL", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"SpaceMath/ref/Rtau\"\>":>
+       None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell["SpaceMath/ref/Rtau"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+       Delimiter, "\<\"Copy web URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell[
+              BoxData[
+               MakeBoxes[
+                Hyperlink[
+                "http://reference.wolfram.com/language/SpaceMath/ref/Rtau.\
+html"], StandardForm]], "Input", TextClipboardType -> "PlainText"]}, Visible -> 
+            False]]; SelectionMove[
+         DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; 
+        Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
+         NotebookLocate[{
+           URL[
+            StringJoin[
+             If[
+              TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$11935], 
+              "http://reference.wolfram.com/system-modeler/", 
+              "http://reference.wolfram.com/language/"], "SpaceMath/ref/Rtau",
+              ".html"]], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "c529f580-e114-4178-9db6-4aa7621a222b"]
+    }], "AnchorBar",ExpressionUUID->"726dcb0a-6e1a-465e-99aa-72660b145811"]}
+  }]], "AnchorBarGrid",
+ CellID->1,ExpressionUUID->"f47642b7-30d3-40ef-bd2f-b4fbf3247c3f"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell["Rtau", "ObjectName",ExpressionUUID->
+  "423f70d8-19ff-44ad-a3d3-5d84246dee3a"],
+ Cell[BoxData[
+  TemplateBox[{8},
+   "Spacer1"]],ExpressionUUID->"1e55746f-517d-4df3-9a70-81f070966152"],
+ Cell[BoxData[
+ ""], "ObjectNameTranslation",ExpressionUUID->
+  "74895d49-10c8-45fa-b07c-c16275ddceb9"]
+}], "ObjectNameGrid",ExpressionUUID->"b55d393d-4942-4ce0-bf83-5c3b99efe994"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"Rtau", "[", 
+       RowBox[{
+       "ghtt_", ",", " ", "ghbb_", ",", "ghtautau_", ",", "x_", ",", "y_", 
+        ",", "xmin_", ",", "xmax_", ",", "ymin_", ",", "ymax_", ",", 
+        "xlabel_", ",", "ylabel_", ",", "xfor_", ",", "yfor_", ",", 
+        "xformin_", ",", "xformax_", ",", "xforstep_", ",", "yformin_", ",", 
+        "yformax_", ",", "yforstep_", ",", "PP_"}], "]"}]], "InlineFormula",
+      ExpressionUUID->"7f5c8324-c496-40c3-821a-8923eaa74200"],
+     " \[LineSeparator]This command evaluates ",
+     Cell[BoxData[
+      SubscriptBox["R", "\[Tau]"]], "Output",
+      GeneratedCell->False,
+      CellAutoOverwrite->False,ExpressionUUID->
+      "fae531cf-eea8-42f9-aa0d-d17103fe8b51"],
+     " with V=W, Z when there is dependence on two or more parameters. The \
+arguments ghtt, ghbb, ghtautau are the htt, hbb, htautau couplings. Here, h \
+represents to SM-like Higgs boson while t, b and tau are the top and bottom \
+quarks and the tau-lepton. The label x indicate the parameters to constraint, \
+while xmin (ymin) and xmax (ymax) are the initial and final values defined by \
+users . Argument xlabel (ylabel) is used for indicates the X axis label (Y \
+axis label). The arguments xfor (yfor), xformin (yformin), xforstep \
+(yforstep) represent an additional parameter to constraint, namely: initial \
+value, final value and the steps from xformin (yformin) to xformax (yformax), \
+respectively. Label [[i]] stands for confidence level, i=1 (2) indicates 1\
+\[Sigma] (2\[Sigma]), Finally, PP is an option for plotting functions that \
+specifies how many initial sample points to use."
+    }],ExpressionUUID->"279d53e5-ffd5-481e-a621-002f40e7f613"]}
+  }]], "Usage",
+ GridBoxOptions->{
+ GridBoxBackground->{"Columns" -> {{None}}, "Rows" -> {{None}}}},
+ CellID->982511436,ExpressionUUID->"377d9880-344c-4046-8d29-209a7652b610"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{6},
+   "Spacer1"]],ExpressionUUID->"46144540-5ee4-4d45-a66c-b6dfee5653bc"],
+ "Tutorials"
+}], "TutorialsSection",
+ WholeCellGroupOpener->True,
+ CellID->250839057,ExpressionUUID->"77e2bbcb-2536-4318-bac5-489b139c6cd1"],
+
+Cell["", "SectionHeaderSpacer",ExpressionUUID->"82509496-2c45-4c54-8088-f4581bcc89fe"],
+
+Cell[BoxData[{
+ TemplateBox[{Cell[
+    TextData["SpaceMath Package"]],
+   "paclet:SpaceMath/tutorial/SpaceMath#509267359"},
+  "RefLink",
+  BaseStyle->"Tutorials"], "\n", 
+ TemplateBox[{Cell[
+    TextData["SpaceMath Overview"]],
+   "paclet:SpaceMath/tutorial/SpaceMathOverview"},
+  "RefLink",
+  BaseStyle->{"Tutorials", "Text"}]}], "Tutorials",
+ CellID->341631938,ExpressionUUID->"dfc49002-09b2-4602-a5cb-bb8852200b0e"],
+
+Cell["", "SectionFooterSpacer",ExpressionUUID->"ae2b546f-a871-4282-bb11-957184df5fcd"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{6},
+   "Spacer1"]],ExpressionUUID->"ba1c470a-7480-4a68-b54f-cf594ca7e1af"],
+ "Related Guides"
+}], "MoreAboutSection",
+ WholeCellGroupOpener->True,
+ CellID->38303248,ExpressionUUID->"55499672-a175-48c3-b97e-e7aa5a5393e7"],
+
+Cell["", "SectionHeaderSpacer",ExpressionUUID->"55256534-c88e-4f05-80fb-c038795bbb8a"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["Higgs Boson data"]],"paclet:SpaceMath/guide/HiggsBosondata"},
+  "RefLink",
+  BaseStyle->"MoreAbout"]], "MoreAbout",
+ CellID->909032424,ExpressionUUID->"a46a3723-9b8b-4101-bd79-68ce8a633585"],
+
+Cell["", "SectionFooterSpacer",ExpressionUUID->"cb93b602-824f-421e-9404-0f34ddacb55e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{6},
+   "Spacer1"]],ExpressionUUID->"cd1e4c32-1c21-4ca2-affc-e810ad0c0800"],
+ "Related Links"
+}], "RelatedLinksSection",
+ WholeCellGroupOpener->True,
+ CellID->1584193535,ExpressionUUID->"100103b2-cc2d-46c3-b707-be5488a09e14"],
+
+Cell["", "SectionHeaderSpacer",ExpressionUUID->"b22053a6-e350-4d13-b416-66fd534f48ae"],
+
+Cell[BoxData[{
+ TemplateBox[{Cell[
+    TextData["RBOTone"]],"paclet:SpaceMath/ref/RBOTone"},
+  "RefLink",
+  BaseStyle->"RelatedLinks"], "\n", 
+ TemplateBox[{Cell[
+    TextData["RGAMone"]],"paclet:SpaceMath/ref/RGAMone"},
+  "RefLink",
+  BaseStyle->"RelatedLinks"], "\n", 
+ TemplateBox[{Cell[
+    TextData["RTAUone"]],"paclet:SpaceMath/ref/RTAUone"},
+  "RefLink",
+  BaseStyle->"RelatedLinks"], "\n", 
+ TemplateBox[{Cell[
+    TextData["RV"]],"paclet:SpaceMath/ref/RV"},
+  "RefLink",
+  BaseStyle->"RelatedLinks"], "\n", 
+ TemplateBox[{Cell[
+    TextData["RXALL"]],"paclet:SpaceMath/ref/RXALL"},
+  "RefLink",
+  BaseStyle->"RelatedLinks"]}], "RelatedLinks",
+ CellID->1038487239,ExpressionUUID->"908a1998-ec32-481a-a23f-8b668c15ae2c"]
+}, Open  ]],
+
+Cell[" ", "FooterCell",ExpressionUUID->"9c2ebf29-b534-40bf-9f32-31eb66e2d7e9"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{725, 750},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"Rtau",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "SymbolColor", "LinkTrails" -> 
+  GridBox[{{
+      RowBox[{
+        ButtonBox[
+        "SpaceMath", ButtonData -> "paclet:SpaceMath/guide/SpaceMath", 
+         BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
+    Left], "HasOptions" -> False, "ExampleCounter" -> 1, "NeedPlatMsgIn" -> 
+  None, "RootCaptions" -> "", 
+  "Metadata" -> {
+   "built" -> "{2019, 12, 7, 15, 54, 15.221021}", 
+    "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
+    "keywords" -> {}, "specialkeywords" -> {}, 
+    "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
+    "Space Math Symbol", "language" -> "en", "paclet" -> "SpaceMath", 
+    "status" -> "None", "summary" -> 
+    "Rtau[ghtt_, ghbb_, ghtautau_, x_, y_, xmin_, xmax_, ymin_, ymax_, \\ \
+xlabel_, ylabel_, xfor_, yfor_, xformin_, xformax_, xforstep_, \\ yformin_, \
+yformax_, yforstep_, PP_] This command evaluates R\\[Tau] with V=W, Z when \
+there is dependence on two or more parameters. The arguments ghtt, ghbb, \
+ghtautau are the htt, hbb, htautau couplings. Here, h represents to SM-like \
+Higgs boson while t, b and tau are the top and bottom quarks and the \
+tau-lepton. The label x indicate the parameters to constraint, while xmin \
+(ymin) and xmax (ymax) are the initial and final values defined by users . \
+Argument xlabel (ylabel) is used for indicates the X axis label (Y axis \
+label). The arguments xfor (yfor), xformin (yformin), xforstep (yforstep) \
+represent an additional parameter to constraint, namely: initial value, final \
+value and the steps from xformin (yformin) to xformax (yformax), \
+respectively. Label [[i]] stands for confidence level, i=1 (2) indicates \
+1\\[Sigma] (2\\[Sigma]), Finally, PP is an option for plotting functions that \
+specifies how many initial sample points to use.", "synonyms" -> {}, 
+    "tabletags" -> {}, "title" -> "Rtau", "titlemodifier" -> "", 
+    "windowtitle" -> "Rtau", "type" -> "Symbol", "uri" -> 
+    "SpaceMath/ref/Rtau", "WorkflowDockedCell" -> ""}, "SearchTextTranslated" -> 
+  ""},
+CellContext->"Global`",
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> "12.0 for Linux x86 (64-bit) (April 8, 2019)", 
+  StyleDefinitions -> "Default.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[576, 21, 4107, 94, 55, "AnchorBarGrid",ExpressionUUID->"f47642b7-30d3-40ef-bd2f-b4fbf3247c3f",
+ CellID->1],
+Cell[CellGroupData[{
+Cell[4708, 119, 389, 9, 55, "ObjectNameGrid",ExpressionUUID->"b55d393d-4942-4ce0-bf83-5c3b99efe994"],
+Cell[5100, 130, 1920, 33, 343, "Usage",ExpressionUUID->"377d9880-344c-4046-8d29-209a7652b610",
+ CellID->982511436]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7057, 168, 262, 7, 74, "TutorialsSection",ExpressionUUID->"77e2bbcb-2536-4318-bac5-489b139c6cd1",
+ CellID->250839057],
+Cell[7322, 177, 86, 0, 14, "SectionHeaderSpacer",ExpressionUUID->"82509496-2c45-4c54-8088-f4581bcc89fe"],
+Cell[7411, 179, 418, 11, 48, "Tutorials",ExpressionUUID->"dfc49002-09b2-4602-a5cb-bb8852200b0e",
+ CellID->341631938],
+Cell[7832, 192, 86, 0, 29, "SectionFooterSpacer",ExpressionUUID->"ae2b546f-a871-4282-bb11-957184df5fcd"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7955, 197, 266, 7, 74, "MoreAboutSection",ExpressionUUID->"55499672-a175-48c3-b97e-e7aa5a5393e7",
+ CellID->38303248],
+Cell[8224, 206, 86, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"55256534-c88e-4f05-80fb-c038795bbb8a"],
+Cell[8313, 208, 238, 5, 70, "MoreAbout",ExpressionUUID->"a46a3723-9b8b-4101-bd79-68ce8a633585",
+ CellID->909032424],
+Cell[8554, 215, 86, 0, 70, "SectionFooterSpacer",ExpressionUUID->"cb93b602-824f-421e-9404-0f34ddacb55e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8677, 220, 270, 7, 70, "RelatedLinksSection",ExpressionUUID->"100103b2-cc2d-46c3-b707-be5488a09e14",
+ CellID->1584193535],
+Cell[8950, 229, 86, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"b22053a6-e350-4d13-b416-66fd534f48ae"],
+Cell[9039, 231, 727, 21, 70, "RelatedLinks",ExpressionUUID->"908a1998-ec32-481a-a23f-8b668c15ae2c",
+ CellID->1038487239]
+}, Open  ]],
+Cell[9781, 255, 78, 0, 70, "FooterCell",ExpressionUUID->"9c2ebf29-b534-40bf-9f32-31eb66e2d7e9"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
