@@ -10508,7 +10508,7 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2019, 12, 7, 15, 54, 41.313748}", 
+   "built" -> "{2019, 12, 7, 15, 58, 17.067527}", 
     "history" -> {"XX", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -10554,7 +10554,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[590, 21, 2349, 54, 70, "AnchorBarGrid",ExpressionUUID->"1d2dad4d-8dd5-460b-a1d6-04b8cdb8bef1",
+Cell[590, 21, 2349, 54, 70, "AnchorBarGrid",ExpressionUUID->"59b3a2b9-6e20-4a2b-8f0d-fa3115e1db44",
  CellID->1],
 Cell[CellGroupData[{
 Cell[2964, 79, 46, 0, 70, "TOCDocumentTitle",ExpressionUUID->"db9d61f8-df94-4f56-9f8d-576d4664116c"],
@@ -10608,7 +10608,7 @@ Cell[631659, 10484, 189, 5, 70, "TOCSubsection",ExpressionUUID->"3c1ae2e3-0a7d-4
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
-Cell[631887, 10494, 23, 0, 70, "FooterCell",ExpressionUUID->"3a252a87-cf6c-4277-96a6-66b7cee9619f"]
+Cell[631887, 10494, 23, 0, 70, "FooterCell",ExpressionUUID->"87c11bda-3ea5-4139-b122-decc83700c25"]
 }
 ]
 *)
