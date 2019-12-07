@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     19969,        576]
+NotebookDataLength[     19970,        576]
 NotebookOptionsPosition[     16077,        491]
-NotebookOutlinePosition[     18786,        554]
-CellTagsIndexPosition[     18743,        551]
+NotebookOutlinePosition[     18787,        554]
+CellTagsIndexPosition[     18744,        551]
 WindowTitle->Higgs boson coupling modifiers \:03BA_i 
 WindowFrame->Normal*)
 
@@ -21,14 +21,14 @@ WindowFrame->Normal*)
 Notebook[{
 Cell[BoxData[GridBox[{
    {Cell["SPACE MATH TUTORIAL", "PacletNameCell",ExpressionUUID->
-     "0111b3f0-e4db-4026-b58c-e094e5cef674"], Cell[TextData[Cell[BoxData[
+     "c928db3f-26a1-48f2-beb5-3e74ba0746ec"], Cell[TextData[Cell[BoxData[
      ActionMenuBox[
       FrameBox[
        InterpretationBox[Cell[TextData[{
          "URL",
          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
           StripOnInput->False]
-        }],ExpressionUUID->"a081a52c-19b5-4034-abe6-3299294efe7a"],
+        }],ExpressionUUID->"3d84ceb0-0d7f-4ce2-9968-ab3fea2af307"],
         TextCell[
          Row[{"URL", 
            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
@@ -61,7 +61,7 @@ HiggsBosonCoupling.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$19393], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$19668], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/tutorial/HiggsBosonCoupling", ".html"]], None}]}]},
@@ -69,14 +69,14 @@ HiggsBosonCoupling.html"], StandardForm]], "Input", TextClipboardType ->
       MenuAppearance->Automatic,
       MenuStyle->"URLMenu"]],
      LineSpacing->{1.4, 0},ExpressionUUID->
-     "cc21dec8-cc4a-4439-846a-74d3fc7a090f"]], "AnchorBar",ExpressionUUID->
-     "4f8b43b3-1a61-44e9-8014-7219941e8eea"]}
+     "e2124d38-1afe-4d3e-b6c3-5cd4ced13126"]], "AnchorBar",ExpressionUUID->
+     "1429fec6-d482-4acc-adf1-182c71945cc3"]}
   }]], "AnchorBarGrid",
  GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
      Scaled[0.65], {
       Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
    "RowsIndexed" -> {}}},
- CellID->1,ExpressionUUID->"26516fa8-589a-4f0a-a20a-8790ec3adb63"],
+ CellID->1,ExpressionUUID->"87c4e602-31d1-4141-849d-e4e22e4b31c8"],
 
 Cell[CellGroupData[{
 
@@ -487,7 +487,7 @@ Cell[BoxData["XXXX"], "Output",
 }, Open  ]]
 }, Open  ]],
 
-Cell[" ", "FooterCell",ExpressionUUID->"36d4b7a6-46e7-4bdb-aa22-51fa73d45ccc"]
+Cell[" ", "FooterCell",ExpressionUUID->"4930d18b-590a-45ac-8fb2-6360b22e4135"]
 },
 Saveable->False,
 ScreenStyleEnvironment->"Working",
@@ -503,7 +503,7 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2019, 12, 7, 16, 14, 6.983531}", 
+   "built" -> "{2019, 12, 7, 16, 21, 24.156703}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -516,7 +516,7 @@ follows: \[Kappa]_StyleBox[i^TI, 2]\[LongEqual] ( \[Sigma](pp\[Rule]h) ) / ( \
 \[Sigma](pp\[Rule]h^SM) ) or \[Kappa]_StyleBox[j^TI, 2]\[LongEqual] ( \
 \[CapitalGamma](h\[Rule]xOverscriptBox[x, _]) ) / ( \[CapitalGamma](h^SM\
 \[Rule]xOverscriptBox[x, _]) ) . ", "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$19337, "title" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$19612, "title" -> 
     "Higgs boson coupling modifiers \[Kappa]_i ", "titlemodifier" -> "", 
     "windowtitle" -> "Higgs boson coupling modifiers \[Kappa]_i ", "type" -> 
     "Tutorial", "uri" -> "SpaceMath/tutorial/HiggsBosonCoupling", 
@@ -553,7 +553,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[612, 21, 2646, 57, 55, "AnchorBarGrid",ExpressionUUID->"26516fa8-589a-4f0a-a20a-8790ec3adb63",
+Cell[612, 21, 2646, 57, 55, "AnchorBarGrid",ExpressionUUID->"87c4e602-31d1-4141-849d-e4e22e4b31c8",
  CellID->1],
 Cell[CellGroupData[{
 Cell[3283, 82, 320, 9, 124, "Title",ExpressionUUID->"ed525615-a963-48d1-9cf4-5b6d6423d1f2",
@@ -577,7 +577,7 @@ Cell[15838, 483, 130, 2, 38, "Output",ExpressionUUID->"284ca16e-2861-4e46-857f-c
  CellID->1181321046]
 }, Open  ]]
 }, Open  ]],
-Cell[15995, 489, 78, 0, 70, "FooterCell",ExpressionUUID->"36d4b7a6-46e7-4bdb-aa22-51fa73d45ccc"]
+Cell[15995, 489, 78, 0, 70, "FooterCell",ExpressionUUID->"4930d18b-590a-45ac-8fb2-6360b22e4135"]
 }
 ]
 *)

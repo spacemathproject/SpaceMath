@@ -59,7 +59,7 @@ HiggsBosondata.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$6779], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$6802], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/guide/HiggsBosondata", ".html"]], None}]}]},
@@ -290,7 +290,7 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2019, 12, 7, 16, 13, 39.641088}", 
+   "built" -> "{2019, 12, 7, 16, 20, 56.709123}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -299,7 +299,7 @@ TaggingRules->{
     "The implementation of the Higgs boson data within the SpaceMath code , \
 was closely following the reference : arXiv:1809.10733v2[hep-ex], \
 10.1140/epjc/s10052-019-6909-y. ", "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$6713, "title" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$6736, "title" -> 
     "Higgs Boson data", "titlemodifier" -> "", "windowtitle" -> 
     "Higgs Boson data", "type" -> "Guide", "uri" -> 
     "SpaceMath/guide/HiggsBosondata"}},
@@ -318,7 +318,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[588, 21, 2308, 53, 70, "AnchorBarGrid",ExpressionUUID->"e73555a0-8deb-4f53-addf-92fd3d092d97",
+Cell[588, 21, 2308, 53, 70, "AnchorBarGrid",ExpressionUUID->"2111b18f-23d8-4f22-b8a9-acb28e51aed3",
  CellID->1],
 Cell[CellGroupData[{
 Cell[2921, 78, 58, 1, 70, "GuideTitle",ExpressionUUID->"1cf58ebc-fd8f-44bf-946e-5568fe607611",
@@ -337,10 +337,10 @@ Cell[7457, 233, 857, 26, 70, "Text",ExpressionUUID->"346953d6-a187-4753-8920-92d
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[8363, 265, 137, 6, 70, "GuideReferenceSection",ExpressionUUID->"e82dc16a-a255-4f7e-8cd8-813266cf91a2"],
-Cell[8503, 273, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"9cf4030a-0302-4904-a300-2e7507e3510f"]
+Cell[8363, 265, 137, 6, 70, "GuideReferenceSection",ExpressionUUID->"e9013df9-08c0-4a32-838e-0beb2b65da67"],
+Cell[8503, 273, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"ab6b7f1e-9267-46aa-abda-534cad2a5483"]
 }, Open  ]],
-Cell[8549, 276, 23, 0, 70, "FooterCell",ExpressionUUID->"ad98aca2-507c-4838-9541-df77554cdf80"]
+Cell[8549, 276, 23, 0, 70, "FooterCell",ExpressionUUID->"0b604dc3-f6fb-4b5d-8728-2cb8d1b8873c"]
 }
 ]
 *)
