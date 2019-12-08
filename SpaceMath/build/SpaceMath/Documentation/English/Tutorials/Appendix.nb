@@ -1,0 +1,178 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6504,        168]
+NotebookOptionsPosition[      3795,        101]
+NotebookOutlinePosition[      5916,        156]
+CellTagsIndexPosition[      5873,        153]
+WindowTitle->Appendix
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {Cell["SPACE MATH TUTORIAL", "PacletNameCell",ExpressionUUID->
+     "cc9ce437-949e-4d7d-bcf6-5b3f24c3792e"], Cell[TextData[Cell[BoxData[
+     ActionMenuBox[
+      FrameBox[
+       InterpretationBox[Cell[TextData[{
+         "URL",
+         StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+          StripOnInput->False]
+        }],ExpressionUUID->"12a51006-7346-4578-9fdb-cd48671c221f"],
+        TextCell[
+         Row[{"URL", 
+           Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+       StripOnInput->False], {"\<\"SpaceMath/tutorial/Appendix\"\>":>
+      None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
+      Module[{DocumentationSearch`Private`nb$}, 
+       DocumentationSearch`Private`nb$ = NotebookPut[
+          Notebook[{
+            Cell["SpaceMath/tutorial/Appendix"]}, Visible -> False]]; 
+       SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+       FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+       NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+      Delimiter, "\<\"Copy web URL\"\>":>
+      Module[{DocumentationSearch`Private`nb$}, 
+       DocumentationSearch`Private`nb$ = NotebookPut[
+          Notebook[{
+            Cell[
+             BoxData[
+              MakeBoxes[
+               Hyperlink[
+               "http://reference.wolfram.com/language/SpaceMath/tutorial/\
+Appendix.html"], StandardForm]], "Input", TextClipboardType -> "PlainText"]}, 
+           Visible -> False]]; 
+       SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+       FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+       NotebookClose[DocumentationSearch`Private`nb$]; 
+       Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
+        NotebookLocate[{
+          URL[
+           StringJoin[
+            If[
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$18898], 
+             "http://reference.wolfram.com/system-modeler/", 
+             "http://reference.wolfram.com/language/"], 
+            "SpaceMath/tutorial/Appendix", ".html"]], None}]}]},
+      Appearance->None,
+      MenuAppearance->Automatic,
+      MenuStyle->"URLMenu"]],
+     LineSpacing->{1.4, 0},ExpressionUUID->
+     "273601e8-2d57-46e6-8495-7da32b84e09a"]], "AnchorBar",ExpressionUUID->
+     "d819a0f7-370d-4a57-be29-e127e0dab838"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1,ExpressionUUID->"8e275154-2f9c-487e-bbd1-660f0bfb443b"],
+
+Cell[CellGroupData[{
+
+Cell["Appendix", "Title",
+ CellID->509267359,ExpressionUUID->"9e87ea93-3665-4ace-80e8-207a76f3ea66"],
+
+Cell["XXXX.", "Caption",
+ CellID->1891092685,ExpressionUUID->"b0f06f39-8c24-45c1-bcb7-15f61d58cd08"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["XXXX"], "Input",
+ CellLabel->"In[1]:=",
+ CellID->2058623809,ExpressionUUID->"10c6cafb-e187-457e-8c40-1c6c7ff8ce52"],
+
+Cell[BoxData["XXXX"], "Output",
+ CellLabel->"Out[1]=",
+ CellID->1181321046,ExpressionUUID->"ce52ed92-4a75-452a-933a-40e15ed26f25"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[" ", "FooterCell",ExpressionUUID->"244b71f2-fd0b-4f84-8c91-3e71c76f4180"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{725, 750},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"Appendix",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "TutorialColor", 
+  "LinkTrails" -> GridBox[{{
+      RowBox[{
+        ButtonBox[
+        "SpaceMath", ButtonData -> "paclet:SpaceMath/guide/SpaceMath", 
+         BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
+    Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
+  "", "Metadata" -> {
+   "built" -> "{2019, 12, 8, 12, 38, 21.132808}", 
+    "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
+    "keywords" -> {}, "specialkeywords" -> {}, 
+    "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
+    "Space Math Tutorial", "language" -> "en", "paclet" -> "SpaceMath", 
+    "status" -> "None", "summary" -> "XXXX.", "synonyms" -> {}, "tabletags" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$18849, "title" -> 
+    "Appendix", "titlemodifier" -> "", "windowtitle" -> "Appendix", "type" -> 
+    "Tutorial", "uri" -> "SpaceMath/tutorial/Appendix", "WorkflowDockedCell" -> 
+    ""}, "SearchTextTranslated" -> ""},
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> Notebook], 
+   Cell[
+    StyleData["Output"], CellContext -> Notebook], 
+   Cell[
+    StyleData["TutorialMoreAboutSection"], 
+    CellGroupingRules -> {"SectionGrouping", 30}], 
+   Cell[
+    StyleData["RelatedTutorialsSection"], 
+    CellGroupingRules -> {"SectionGrouping", 30}], 
+   Cell[
+    StyleData["TutorialRelatedLinksSection"], 
+    CellGroupingRules -> {"SectionGrouping", 30}]}, Visible -> False, 
+  FrontEndVersion -> "12.0 for Linux x86 (64-bit) (April 8, 2019)", 
+  StyleDefinitions -> "Default.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[580, 21, 2591, 56, 55, "AnchorBarGrid",ExpressionUUID->"8e275154-2f9c-487e-bbd1-660f0bfb443b",
+ CellID->1],
+Cell[CellGroupData[{
+Cell[3196, 81, 100, 1, 65, "Title",ExpressionUUID->"9e87ea93-3665-4ace-80e8-207a76f3ea66",
+ CellID->509267359],
+Cell[3299, 84, 100, 1, 38, "Caption",ExpressionUUID->"b0f06f39-8c24-45c1-bcb7-15f61d58cd08",
+ CellID->1891092685],
+Cell[CellGroupData[{
+Cell[3424, 89, 129, 2, 29, "Input",ExpressionUUID->"10c6cafb-e187-457e-8c40-1c6c7ff8ce52",
+ CellID->2058623809],
+Cell[3556, 93, 130, 2, 38, "Output",ExpressionUUID->"ce52ed92-4a75-452a-933a-40e15ed26f25",
+ CellID->1181321046]
+}, Open  ]]
+}, Open  ]],
+Cell[3713, 99, 78, 0, 43, "FooterCell",ExpressionUUID->"244b71f2-fd0b-4f84-8c91-3e71c76f4180"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

@@ -1,0 +1,419 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     15860,        409]
+NotebookOptionsPosition[     10663,        307]
+NotebookOutlinePosition[     14919,        391]
+CellTagsIndexPosition[     14876,        388]
+WindowTitle->Introduction
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {Cell["SPACE MATH TUTORIAL", "PacletNameCell",ExpressionUUID->
+     "96f30b8b-2f25-410a-87d2-5091e4348252"], Cell[TextData[Cell[BoxData[
+     ActionMenuBox[
+      FrameBox[
+       InterpretationBox[Cell[TextData[{
+         "URL",
+         StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+          StripOnInput->False]
+        }],ExpressionUUID->"746a4627-d9a5-4255-bc69-afc61b8803a9"],
+        TextCell[
+         Row[{"URL", 
+           Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+       StripOnInput->False], {"\<\"SpaceMath/tutorial/Introduction\"\>":>
+      None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
+      Module[{DocumentationSearch`Private`nb$}, 
+       DocumentationSearch`Private`nb$ = NotebookPut[
+          Notebook[{
+            Cell["SpaceMath/tutorial/Introduction"]}, Visible -> False]]; 
+       SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+       FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+       NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+      Delimiter, "\<\"Copy web URL\"\>":>
+      Module[{DocumentationSearch`Private`nb$}, 
+       DocumentationSearch`Private`nb$ = NotebookPut[
+          Notebook[{
+            Cell[
+             BoxData[
+              MakeBoxes[
+               Hyperlink[
+               "http://reference.wolfram.com/language/SpaceMath/tutorial/\
+Introduction.html"], StandardForm]], "Input", TextClipboardType -> 
+             "PlainText"]}, Visible -> False]]; 
+       SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+       FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+       NotebookClose[DocumentationSearch`Private`nb$]; 
+       Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
+        NotebookLocate[{
+          URL[
+           StringJoin[
+            If[
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$20652], 
+             "http://reference.wolfram.com/system-modeler/", 
+             "http://reference.wolfram.com/language/"], 
+            "SpaceMath/tutorial/Introduction", ".html"]], None}]}]},
+      Appearance->None,
+      MenuAppearance->Automatic,
+      MenuStyle->"URLMenu"]],
+     LineSpacing->{1.4, 0},ExpressionUUID->
+     "59f807c5-5668-4f44-892f-e1b588ba38bf"]], "AnchorBar",ExpressionUUID->
+     "404be77b-e95b-4361-9b40-53d78534c08f"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1,ExpressionUUID->"8532cede-a458-4165-89ff-cf4ad047096a"],
+
+Cell[CellGroupData[{
+
+Cell["Introduction", "Title",
+ CellID->509267359,ExpressionUUID->"c9039b3e-e09f-470e-99f8-244678fc8d91"],
+
+Cell[TextData[{
+ "With the discovery of the Higgs boson ",
+ ButtonBox["HiggsDiscoveryATLAS",
+  BaseStyle->"Citation",
+  ButtonData->"HiggsDiscoveryATLAS",
+  ButtonNote->"HiggsDiscoveryATLAS"],
+ ButtonBox["HiggsDiscoveryCMS",
+  BaseStyle->"Citation",
+  ButtonData->"HiggsDiscoveryCMS",
+  ButtonNote->"HiggsDiscoveryCMS"],
+ " is established that the Higgs mechanism explain the electroweak symmetry \
+breaking and it generate the mass of all particles of the Standard Model \
+(SM), omitting the neutrino masses. The SM is the most successful theory that \
+explain many experimental results. However, is well known that, despite its \
+great success, the SM cannot help us to understand several issues such as the \
+hierarchy problem, dark matter, the flavor problem etc. This encourages the \
+study of SM extensions ",
+ ButtonBox["ArkaniHamed:2002qy",
+  BaseStyle->"Citation",
+  ButtonData->"ArkaniHamed:2002qy",
+  ButtonNote->"ArkaniHamed:2002qy"],
+ ",",
+ ButtonBox["ArkaniHamed:2001nc",
+  BaseStyle->"Citation",
+  ButtonData->"ArkaniHamed:2001nc",
+  ButtonNote->"ArkaniHamed:2001nc"],
+ ",",
+ ButtonBox["FRAMPTON1987157",
+  BaseStyle->"Citation",
+  ButtonData->"FRAMPTON1987157",
+  ButtonNote->"FRAMPTON1987157"],
+ ",",
+ ButtonBox["GEORGI1985463",
+  BaseStyle->"Citation",
+  ButtonData->"GEORGI1985463",
+  ButtonNote->"GEORGI1985463"],
+ ",",
+ ButtonBox["Harari:1979gi",
+  BaseStyle->"Citation",
+  ButtonData->"Harari:1979gi",
+  ButtonNote->"Harari:1979gi"],
+ ",",
+ ButtonBox["Harari:1981uh",
+  BaseStyle->"Citation",
+  ButtonData->"Harari:1981uh",
+  ButtonNote->"Harari:1981uh"],
+ ",",
+ ButtonBox["book:1299422",
+  BaseStyle->"Citation",
+  ButtonData->"book:1299422",
+  ButtonNote->"book:1299422"],
+ ",",
+ ButtonBox["10.1143/PTP.36.1266",
+  BaseStyle->"Citation",
+  ButtonData->"10.1143/PTP.36.1266",
+  ButtonNote->"10.1143/PTP.36.1266"],
+ ",",
+ ButtonBox["PhysRevD.10.275",
+  BaseStyle->"Citation",
+  ButtonData->"PhysRevD.10.275",
+  ButtonNote->"PhysRevD.10.275"],
+ ",",
+ ButtonBox["Mohapatra:1974hk",
+  BaseStyle->"Citation",
+  ButtonData->"Mohapatra:1974hk",
+  ButtonNote->"Mohapatra:1974hk"],
+ ",",
+ ButtonBox["POLYAKOV1977429",
+  BaseStyle->"Citation",
+  ButtonData->"POLYAKOV1977429",
+  ButtonNote->"POLYAKOV1977429"],
+ ",",
+ ButtonBox["Randall:1999ee",
+  BaseStyle->"Citation",
+  ButtonData->"Randall:1999ee",
+  ButtonNote->"Randall:1999ee"],
+ ",",
+ ButtonBox["PhysRevD.20.2619",
+  BaseStyle->"Citation",
+  ButtonData->"PhysRevD.20.2619",
+  ButtonNote->"PhysRevD.20.2619"],
+ ",",
+ ButtonBox["PhysRevD.19.1277",
+  BaseStyle->"Citation",
+  ButtonData->"PhysRevD.19.1277",
+  ButtonNote->"PhysRevD.19.1277"],
+ " with the goal of solve some issue unexplained. The price to pay is the \
+emergence of free parameters which are not predicted by the theory. From a \
+phenomenological point of view, one frequently encounters these free \
+parameters which should be constrainted in some way, but at same time, \
+motivated and allowed by experimental measurements. With the ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox["SpaceMath", "MR"], TraditionalForm]], "InlineFormula",
+  ExpressionUUID->"685d0fec-9775-43e4-91a2-7a62ef99f303"],
+ " package, is possible to do it. Free model parameter spaces can be to \
+scanned of a semi\[Hyphen]automatic and intuitive way within a friendly work \
+environment. ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox["SpaceMath", "MR"], TraditionalForm]], "InlineFormula",
+  ExpressionUUID->"a4fbaa32-84ff-46a5-9aa9-2097534b9dec"],
+ " generate graphics and tables which show the allowed regions for the free \
+model parameters of BSM theories. Similar packages to ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox["SpaceMath", "MR"], TraditionalForm]], "InlineFormula",
+  ExpressionUUID->"82f55fa2-a833-4539-aced-197cb69a6574"],
+ " can be consulted in the Refs. ",
+ ButtonBox["EasyScanHEP",
+  BaseStyle->"Citation",
+  ButtonData->"EasyScanHEP",
+  ButtonNote->"EasyScanHEP"],
+ ButtonBox["GAMBIT",
+  BaseStyle->"Citation",
+  ButtonData->"GAMBIT",
+  ButtonNote->"GAMBIT"],
+ ButtonBox["CheckMATE",
+  BaseStyle->"Citation",
+  ButtonData->"CheckMATE",
+  ButtonNote->"CheckMATE"],
+ " The physical observables considered in ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox["SpaceMath", "MR"], TraditionalForm]], "InlineFormula",
+  ExpressionUUID->"3c1d3ed0-1b29-403b-967f-c224658bfc8e"],
+ " are the following: "
+}], "Text",
+ CellID->1534169418,ExpressionUUID->"dca9ba47-3fea-4c09-b1ea-a9a5de7d775a"],
+
+Cell[TextData[{
+ "Higgs boson data    \nHiggs boson coupling modifiers ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Kappa]", 
+    StyleBox["i", "TI"]], TraditionalForm]], "InlineFormula",ExpressionUUID->
+  "6ad837f9-e313-48e9-98d6-b0ba9de24dd2"],
+ "   \nSignal strength modifiers ",
+ Cell[BoxData[
+  FormBox["\[Mu]", TraditionalForm]], "InlineFormula",ExpressionUUID->
+  "b0fea1a4-e55c-4971-b749-c7376372a747"],
+ "   \nMeson physics    \n",
+ Cell[BoxData[
+  FormBox[
+   StyleBox["B", "TI"], TraditionalForm]], "InlineFormula",ExpressionUUID->
+  "dfa1d5c5-b815-4583-8253-54ebc26b7b1c"],
+ " mesons \n",
+ Cell[BoxData[
+  FormBox[
+   StyleBox["D", "TI"], TraditionalForm]], "InlineFormula",ExpressionUUID->
+  "509dddc3-69a8-4252-b23c-eb622a516daf"],
+ " mesons \n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    StyleBox["B", "TI"], "-", 
+    OverscriptBox[
+     StyleBox["B", "TI"], "_"]}], TraditionalForm]], "InlineFormula",
+  ExpressionUUID->"25d26895-e4b5-4e18-9d8e-b1ccb6148efb"],
+ " mixing \n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    StyleBox["K", "TI"], "-", 
+    OverscriptBox[
+     StyleBox["K", "TI"], "_"]}], TraditionalForm]], "InlineFormula",
+  ExpressionUUID->"3e1c47e8-1c40-41ab-b932-e6fa834709df"],
+ " mixing \n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    StyleBox["D", "TI"], "-", 
+    OverscriptBox[
+     StyleBox["D", "TI"], "_"]}], TraditionalForm]], "InlineFormula",
+  ExpressionUUID->"1702b2ce-c9ed-4ca0-a640-91f248515f99"],
+ " mixing \nFlavor\[Hyphen]violanting processes \nOblique parameters \n\
+Unitariety "
+}], "Text",
+ CellID->1537123131,ExpressionUUID->"780da17c-da1c-49ff-80b3-cb1fc40aa24c"],
+
+Cell[TextData[{
+ "However, in this version only (",
+ 
+ CounterBox["Section", "kappaX"],
+ " ) is enabled. In addition, ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox["SpaceMath", "MR"], TraditionalForm]], "InlineFormula",
+  ExpressionUUID->"eb29789d-6677-46ca-8a78-da0ccd6f077d"],
+ " v1.0 is able to evaluate branching ratios of the SM\[Hyphen]like Higgs \
+boson, ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox[
+    RowBox[{"C", "P"}], "TI"], TraditionalForm]], "InlineFormula",
+  ExpressionUUID->"99d46d11-db76-4dbf-9de7-2869a383e440"],
+ "\[Hyphen]odd and ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox[
+    RowBox[{"C", "P"}], "TI"], TraditionalForm]], "InlineFormula",
+  ExpressionUUID->"5d4e457e-6044-43d0-9326-bf66b8e2a2ec"],
+ "\[Hyphen]even scalars.  "
+}], "Text",
+ CellID->179312628,ExpressionUUID->"c31a14d3-9417-4be0-8480-a1e03a4c998d"],
+
+Cell["XXXX.", "Caption",
+ CellID->1891092685,ExpressionUUID->"1b73c731-8658-4287-9c5d-5557d07855ba"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["XXXX"], "Input",
+ CellLabel->"In[1]:=",
+ CellID->2058623809,ExpressionUUID->"0be8721b-4fd1-47dd-838f-5580d6472d55"],
+
+Cell[BoxData["XXXX"], "Output",
+ CellLabel->"Out[1]=",
+ CellID->1181321046,ExpressionUUID->"8c5d09c2-08e0-45a4-a636-98ab8613009f"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[" ", "FooterCell",ExpressionUUID->"1c4cf0fd-1f0c-42c6-9715-48c78232b0a4"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{725, 750},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"Introduction",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "TutorialColor", 
+  "LinkTrails" -> GridBox[{{
+      RowBox[{
+        ButtonBox[
+        "SpaceMath", ButtonData -> "paclet:SpaceMath/guide/SpaceMath", 
+         BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
+    Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
+  "", "Metadata" -> {
+   "built" -> "{2019, 12, 8, 12, 38, 26.580631}", 
+    "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
+    "keywords" -> {}, "specialkeywords" -> {}, 
+    "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
+    "Space Math Tutorial", "language" -> "en", "paclet" -> "SpaceMath", 
+    "status" -> "None", "summary" -> 
+    "With the discovery of the Higgs boson \
+HiggsDiscoveryATLASHiggsDiscoveryCMS is established that the Higgs mechanism \
+explain the electroweak symmetry breaking and it generate the mass of all \
+particles of the Standard Model (SM), omitting the neutrino masses. The SM is \
+the most successful theory that explain many experimental results. However, \
+is well known that, despite its great success, the SM cannot help us to \
+understand several issues such as the hierarchy problem, dark matter, the \
+flavor problem etc. This encourages the study of SM extensions \
+ArkaniHamed:2002qy,ArkaniHamed:2001nc,FRAMPTON1987157,GEORGI1985463,Harari:\
+1979gi,Harari:1981uh,book:1299422,10.1143/PTP.36.1266,PhysRevD.10.275,\
+Mohapatra:1974hk,POLYAKOV1977429,Randall:1999ee,PhysRevD.20.2619,PhysRevD.19.\
+1277 with the goal of solve some issue unexplained. The price to pay is the \
+emergence of free parameters which are not predicted by the theory. From a \
+phenomenological point of view, one frequently encounters these free \
+parameters which should be constrainted in some way, but at same time, \
+motivated and allowed by experimental measurements. With the SpaceMath \
+package, is possible to do it. Free model parameter spaces can be to scanned \
+of a semi-automatic and intuitive way within a friendly work environment. \
+SpaceMath generate graphics and tables which show the allowed regions for the \
+free model parameters of BSM theories. Similar packages to SpaceMath can be \
+consulted in the Refs. EasyScanHEPGAMBITCheckMATE The physical observables \
+considered in SpaceMath are the following: Higgs boson data Higgs boson \
+coupling modifiers \[Kappa]_i Signal strength modifiers \[Mu] Meson physics B \
+mesons D mesons B-OverscriptBox[StyleBox[B, TI], _] mixing \
+K-OverscriptBox[StyleBox[K, TI], _] mixing D-OverscriptBox[StyleBox[D, TI], \
+_] mixing Flavor-violanting processes Oblique parameters Unitariety However, \
+in this version only (CounterBox[Section, kappaX] ) is enabled. In addition, \
+SpaceMath v1.0 is able to evaluate branching ratios of the SM-like Higgs \
+boson, CP-odd and CP-even scalars. ", "synonyms" -> {}, "tabletags" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$20584, "title" -> 
+    "Introduction", "titlemodifier" -> "", "windowtitle" -> "Introduction", 
+    "type" -> "Tutorial", "uri" -> "SpaceMath/tutorial/Introduction", 
+    "WorkflowDockedCell" -> ""}, "SearchTextTranslated" -> ""},
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> Notebook], 
+   Cell[
+    StyleData["Output"], CellContext -> Notebook], 
+   Cell[
+    StyleData["TutorialMoreAboutSection"], 
+    CellGroupingRules -> {"SectionGrouping", 30}], 
+   Cell[
+    StyleData["RelatedTutorialsSection"], 
+    CellGroupingRules -> {"SectionGrouping", 30}], 
+   Cell[
+    StyleData["TutorialRelatedLinksSection"], 
+    CellGroupingRules -> {"SectionGrouping", 30}]}, Visible -> False, 
+  FrontEndVersion -> "12.0 for Linux x86 (64-bit) (April 8, 2019)", 
+  StyleDefinitions -> "Default.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[584, 21, 2609, 56, 55, "AnchorBarGrid",ExpressionUUID->"8532cede-a458-4165-89ff-cf4ad047096a",
+ CellID->1],
+Cell[CellGroupData[{
+Cell[3218, 81, 104, 1, 65, "Title",ExpressionUUID->"c9039b3e-e09f-470e-99f8-244678fc8d91",
+ CellID->509267359],
+Cell[3325, 84, 4389, 128, 487, "Text",ExpressionUUID->"dca9ba47-3fea-4c09-b1ea-a9a5de7d775a",
+ CellID->1534169418],
+Cell[7717, 214, 1618, 48, 442, "Text",ExpressionUUID->"780da17c-da1c-49ff-80b3-cb1fc40aa24c",
+ CellID->1537123131],
+Cell[9338, 264, 826, 24, 70, "Text",ExpressionUUID->"c31a14d3-9417-4be0-8480-a1e03a4c998d",
+ CellID->179312628],
+Cell[10167, 290, 100, 1, 70, "Caption",ExpressionUUID->"1b73c731-8658-4287-9c5d-5557d07855ba",
+ CellID->1891092685],
+Cell[CellGroupData[{
+Cell[10292, 295, 129, 2, 70, "Input",ExpressionUUID->"0be8721b-4fd1-47dd-838f-5580d6472d55",
+ CellID->2058623809],
+Cell[10424, 299, 130, 2, 38, "Output",ExpressionUUID->"8c5d09c2-08e0-45a4-a636-98ab8613009f",
+ CellID->1181321046]
+}, Open  ]]
+}, Open  ]],
+Cell[10581, 305, 78, 0, 70, "FooterCell",ExpressionUUID->"1c4cf0fd-1f0c-42c6-9715-48c78232b0a4"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
