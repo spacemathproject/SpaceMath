@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    637283,      10608]
+NotebookDataLength[    637282,      10608]
 NotebookOptionsPosition[    631937,      10497]
-NotebookOutlinePosition[    634161,      10556]
-CellTagsIndexPosition[    634118,      10553]
+NotebookOutlinePosition[    634160,      10556]
+CellTagsIndexPosition[    634117,      10553]
 WindowTitle->SpaceMath Overview
 WindowFrame->Normal*)
 
@@ -10509,7 +10509,7 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2019, 12, 8, 12, 38, 31.841639}", 
+   "built" -> "{2019, 12, 8, 12, 49, 4.059544}", 
     "history" -> {"XX", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -10555,7 +10555,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[590, 21, 2349, 54, 70, "AnchorBarGrid",ExpressionUUID->"627bf51a-578d-4b80-ad96-58af744349ec",
+Cell[590, 21, 2349, 54, 70, "AnchorBarGrid",ExpressionUUID->"ef104e3c-be0f-4574-9a3a-e9597c0f1b6a",
  CellID->1],
 Cell[CellGroupData[{
 Cell[2964, 79, 46, 0, 70, "TOCDocumentTitle",ExpressionUUID->"db9d61f8-df94-4f56-9f8d-576d4664116c"],
@@ -10609,7 +10609,7 @@ Cell[631682, 10485, 189, 5, 70, "TOCSubsection",ExpressionUUID->"3c1ae2e3-0a7d-4
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
-Cell[631910, 10495, 23, 0, 70, "FooterCell",ExpressionUUID->"da712ef5-297d-4cd0-bc12-a3c70c052a08"]
+Cell[631910, 10495, 23, 0, 70, "FooterCell",ExpressionUUID->"59f72843-3362-4d1c-bd44-d48edd37d2b7"]
 }
 ]
 *)

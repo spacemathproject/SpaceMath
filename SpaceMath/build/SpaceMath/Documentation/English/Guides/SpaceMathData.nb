@@ -1142,7 +1142,7 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2019, 12, 8, 12, 37, 53.687369}", 
+   "built" -> "{2019, 12, 8, 12, 48, 29.509221}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -1167,17 +1167,17 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[586, 21, 2304, 53, 70, "AnchorBarGrid",ExpressionUUID->"4ba1a37e-f9e0-4d9e-be1a-a157b839fbec",
+Cell[586, 21, 2304, 53, 70, "AnchorBarGrid",ExpressionUUID->"67c73b91-bc43-42fe-a74c-03dfed3eb774",
  CellID->1],
 Cell[CellGroupData[{
 Cell[2915, 78, 56, 1, 70, "GuideTitle",ExpressionUUID->"7c0254fa-7fd8-40c6-b9ce-733143feee1b",
  CellID->942062912],
-Cell[2974, 81, 56, 1, 70, "GuideAbstract",ExpressionUUID->"09dc06f5-1b6c-4b75-8ce5-570c2d7dda1b",
+Cell[2974, 81, 56, 1, 70, "GuideAbstract",ExpressionUUID->"7e39acfc-e5a3-419a-b921-87c70cb0340c",
  CellID->1]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3067, 87, 137, 6, 70, "GuideReferenceSection",ExpressionUUID->"81bee431-096a-4f9d-865d-fdce76398a5b"],
-Cell[3207, 95, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"b1527fa6-3ae8-4ffa-ad03-f533c2e39acd"],
+Cell[3067, 87, 137, 6, 70, "GuideReferenceSection",ExpressionUUID->"9008c238-6a81-4127-9a8a-39185f9fac19"],
+Cell[3207, 95, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"99bceefd-fa73-41bd-b0cf-f28f7a8fdc61"],
 Cell[CellGroupData[{
 Cell[3263, 99, 93, 1, 70, "GuideFunctionsSubsection",ExpressionUUID->"5c0d64ca-a240-4cfe-8cb6-91181067e4aa",
  CellID->2030737033],
@@ -1487,7 +1487,7 @@ Cell[24434, 1118, 162, 6, 70, "GuideText",ExpressionUUID->"5b71afe6-b428-4b00-b3
  CellID->2000145589]
 }, Open  ]]
 }, Open  ]],
-Cell[24623, 1128, 23, 0, 70, "FooterCell",ExpressionUUID->"f0d8dc74-b2d8-415a-a40e-6868bca5bc69"]
+Cell[24623, 1128, 23, 0, 70, "FooterCell",ExpressionUUID->"819a40f5-53c5-45a3-bcef-43f80e473e8c"]
 }
 ]
 *)
