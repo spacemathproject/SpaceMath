@@ -21,14 +21,14 @@ WindowFrame->Normal*)
 Notebook[{
 Cell[BoxData[GridBox[{
    {Cell["SPACE MATH TUTORIAL", "PacletNameCell",ExpressionUUID->
-     "4173f5c6-321d-4a84-be30-59c8dbae7fa2"], Cell[TextData[Cell[BoxData[
+     "39159763-eda6-47a3-b9b3-ace6cf36d563"], Cell[TextData[Cell[BoxData[
      ActionMenuBox[
       FrameBox[
        InterpretationBox[Cell[TextData[{
          "URL",
          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
           StripOnInput->False]
-        }],ExpressionUUID->"83cea965-21b4-4cd4-8214-7601956c040b"],
+        }],ExpressionUUID->"22a00c44-1c25-451c-af9f-9c99bbedec89"],
         TextCell[
          Row[{"URL", 
            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
@@ -68,36 +68,36 @@ Appendix.html"], StandardForm]], "Input", TextClipboardType -> "PlainText"]},
       MenuAppearance->Automatic,
       MenuStyle->"URLMenu"]],
      LineSpacing->{1.4, 0},ExpressionUUID->
-     "6bc0e16f-37ab-46c2-a8a5-b8350b2ec2ed"]], "AnchorBar",ExpressionUUID->
-     "d7ffa909-5dce-4eb5-aad0-604fdcb33f6f"]}
+     "0b875f6b-6bba-4e19-8901-064b5c539e24"]], "AnchorBar",ExpressionUUID->
+     "58c0c7a0-749a-4d0a-b931-68493db7b32e"]}
   }]], "AnchorBarGrid",
  GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
      Scaled[0.65], {
       Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
    "RowsIndexed" -> {}}},
- CellID->1,ExpressionUUID->"4e4746ab-a303-4789-98cc-33a47f3b69fc"],
+ CellID->1,ExpressionUUID->"a5e0ea44-aff7-4d01-8c9f-8e3b320bd59d"],
 
 Cell[CellGroupData[{
 
 Cell["Appendix", "Title",
- CellID->509267359,ExpressionUUID->"d101b9b6-adc1-4e1b-9a56-24520119d747"],
+ CellID->509267359,ExpressionUUID->"b33497b2-e507-4778-a931-be5112cc64e8"],
 
 Cell["XXXX.", "Caption",
- CellID->1891092685,ExpressionUUID->"94463f5b-61bc-4ef2-95df-60622e3ded3f"],
+ CellID->1891092685,ExpressionUUID->"0f17d1f4-8be0-484a-b1ff-3ee35c0f9239"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData["XXXX"], "Input",
  CellLabel->"In[1]:=",
- CellID->2058623809,ExpressionUUID->"e19c9a81-e166-4a72-a892-8b4693d02acc"],
+ CellID->2058623809,ExpressionUUID->"993bf8e5-2b1b-4485-a059-cbcafd2916aa"],
 
 Cell[BoxData["XXXX"], "Output",
  CellLabel->"Out[1]=",
- CellID->1181321046,ExpressionUUID->"a2f3a0ff-7203-4a83-92fd-dc58345eccfb"]
+ CellID->1181321046,ExpressionUUID->"5bcfbbe5-8737-4041-9a49-d58722597209"]
 }, Open  ]]
 }, Open  ]],
 
-Cell[" ", "FooterCell",ExpressionUUID->"dd241ece-c8bb-4478-b898-856a9d7c3425"]
+Cell[" ", "FooterCell",ExpressionUUID->"8c4a777d-6622-4edc-9e1e-0045cce073d9"]
 },
 Saveable->False,
 ScreenStyleEnvironment->"Working",
@@ -113,7 +113,7 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2019, 12, 8, 13, 9, 52.643771}", 
+   "built" -> "{2019, 12, 8, 13, 15, 7.651656}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -155,21 +155,21 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[580, 21, 2591, 56, 55, "AnchorBarGrid",ExpressionUUID->"4e4746ab-a303-4789-98cc-33a47f3b69fc",
+Cell[580, 21, 2591, 56, 55, "AnchorBarGrid",ExpressionUUID->"a5e0ea44-aff7-4d01-8c9f-8e3b320bd59d",
  CellID->1],
 Cell[CellGroupData[{
-Cell[3196, 81, 100, 1, 65, "Title",ExpressionUUID->"d101b9b6-adc1-4e1b-9a56-24520119d747",
+Cell[3196, 81, 100, 1, 65, "Title",ExpressionUUID->"b33497b2-e507-4778-a931-be5112cc64e8",
  CellID->509267359],
-Cell[3299, 84, 100, 1, 38, "Caption",ExpressionUUID->"94463f5b-61bc-4ef2-95df-60622e3ded3f",
+Cell[3299, 84, 100, 1, 38, "Caption",ExpressionUUID->"0f17d1f4-8be0-484a-b1ff-3ee35c0f9239",
  CellID->1891092685],
 Cell[CellGroupData[{
-Cell[3424, 89, 129, 2, 29, "Input",ExpressionUUID->"e19c9a81-e166-4a72-a892-8b4693d02acc",
+Cell[3424, 89, 129, 2, 29, "Input",ExpressionUUID->"993bf8e5-2b1b-4485-a059-cbcafd2916aa",
  CellID->2058623809],
-Cell[3556, 93, 130, 2, 38, "Output",ExpressionUUID->"a2f3a0ff-7203-4a83-92fd-dc58345eccfb",
+Cell[3556, 93, 130, 2, 38, "Output",ExpressionUUID->"5bcfbbe5-8737-4041-9a49-d58722597209",
  CellID->1181321046]
 }, Open  ]]
 }, Open  ]],
-Cell[3713, 99, 78, 0, 43, "FooterCell",ExpressionUUID->"dd241ece-c8bb-4478-b898-856a9d7c3425"]
+Cell[3713, 99, 78, 0, 43, "FooterCell",ExpressionUUID->"8c4a777d-6622-4edc-9e1e-0045cce073d9"]
 }
 ]
 *)

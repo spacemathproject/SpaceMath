@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     80972,       1425]
+NotebookDataLength[     80973,       1425]
 NotebookOptionsPosition[     38428,        690]
-NotebookOutlinePosition[     80920,       1426]
-CellTagsIndexPosition[     80877,       1423]
+NotebookOutlinePosition[     80921,       1426]
+CellTagsIndexPosition[     80878,       1423]
 WindowTitle->Introduction to SpaceMath package
 WindowFrame->Normal*)
 
@@ -702,7 +702,7 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2019, 12, 8, 13, 9, 56.121844}", 
+   "built" -> "{2019, 12, 8, 13, 15, 11.142236}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -1425,8 +1425,8 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[605, 21, 37793, 665, 70, "Input",ExpressionUUID->"cf9aae41-3476-447e-b3a8-c2ade7f38bce"],
-Cell[38401, 688, 23, 0, 70, "FooterCell",ExpressionUUID->"314cca97-9af8-4b23-a5ee-6020b045d12d"]
+Cell[605, 21, 37793, 665, 70, "Input",ExpressionUUID->"6011f279-a9df-4c72-9f98-3fce16986439"],
+Cell[38401, 688, 23, 0, 70, "FooterCell",ExpressionUUID->"cfde8a68-5546-4e4b-9fbf-6fc9ebe5526d"]
 }
 ]
 *)

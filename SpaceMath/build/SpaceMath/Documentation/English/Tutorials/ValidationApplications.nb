@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1399496,      23154]
+NotebookDataLength[   1399497,      23154]
 NotebookOptionsPosition[   1395859,      23073]
-NotebookOutlinePosition[   1398082,      23130]
-CellTagsIndexPosition[   1398039,      23127]
+NotebookOutlinePosition[   1398083,      23130]
+CellTagsIndexPosition[   1398040,      23127]
 WindowTitle->Validation and Applications
 WindowFrame->Normal*)
 
@@ -62,7 +62,7 @@ ValidationApplications.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$22261], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$22259], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/tutorial/ValidationApplications", ".html"]], None}]}]},
@@ -23085,7 +23085,7 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2019, 12, 8, 13, 10, 4.483414}", 
+   "built" -> "{2019, 12, 8, 13, 15, 19.783596}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -23093,7 +23093,7 @@ TaggingRules->{
     "status" -> "None", "summary" -> 
     "In order to validate SpaceMath v1.0, we reproduce some figures of refs. \
 Nathaniel, BUAP ", "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$22214, "title" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$22212, "title" -> 
     "Validation and Applications", "titlemodifier" -> "", "windowtitle" -> 
     "Validation and Applications", "type" -> "Tutorial", "uri" -> 
     "SpaceMath/tutorial/ValidationApplications"}},
@@ -23129,7 +23129,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[599, 21, 2390, 57, 70, "AnchorBarGrid",ExpressionUUID->"4eb840a2-85ed-4036-bf6f-ea65bcd32b04",
+Cell[599, 21, 2390, 57, 70, "AnchorBarGrid",ExpressionUUID->"7f425d57-82cd-4d47-a302-4be27b841138",
  CellID->1],
 Cell[CellGroupData[{
 Cell[3014, 82, 64, 1, 70, "Title",ExpressionUUID->"83b438ca-f2a0-40ab-bacc-daf5319775e4",
@@ -23155,7 +23155,7 @@ Cell[1237726, 20441, 79096, 1305, 70, "Text",ExpressionUUID->"327eaa2e-c23b-49c6
 Cell[1316825, 21748, 78992, 1320, 70, "Text",ExpressionUUID->"1ce1f179-c416-4860-a049-a5bd248ef3eb",
  CellID->1690932283]
 }, Open  ]],
-Cell[1395832, 23071, 23, 0, 70, "FooterCell",ExpressionUUID->"2b3a264b-3e52-4e01-814d-0e282e6ab66e"]
+Cell[1395832, 23071, 23, 0, 70, "FooterCell",ExpressionUUID->"05935265-ccc8-4f69-9e9d-13b128b81d43"]
 }
 ]
 *)

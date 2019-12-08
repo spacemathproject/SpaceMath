@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     15859,        409]
+NotebookDataLength[     15860,        409]
 NotebookOptionsPosition[     10663,        307]
-NotebookOutlinePosition[     14918,        391]
-CellTagsIndexPosition[     14875,        388]
+NotebookOutlinePosition[     14919,        391]
+CellTagsIndexPosition[     14876,        388]
 WindowTitle->Introduction
 WindowFrame->Normal*)
 
@@ -21,14 +21,14 @@ WindowFrame->Normal*)
 Notebook[{
 Cell[BoxData[GridBox[{
    {Cell["SPACE MATH TUTORIAL", "PacletNameCell",ExpressionUUID->
-     "65e5b00b-e597-40b1-8be4-a2a50a39280d"], Cell[TextData[Cell[BoxData[
+     "33083c8c-de7f-442a-9926-138fb759bc63"], Cell[TextData[Cell[BoxData[
      ActionMenuBox[
       FrameBox[
        InterpretationBox[Cell[TextData[{
          "URL",
          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
           StripOnInput->False]
-        }],ExpressionUUID->"f28c8b6b-abe1-4d38-86e9-4775c5b23b13"],
+        }],ExpressionUUID->"ceae3d4f-3ab2-4379-a013-d44be4237c4e"],
         TextCell[
          Row[{"URL", 
            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
@@ -68,14 +68,14 @@ Introduction.html"], StandardForm]], "Input", TextClipboardType ->
       MenuAppearance->Automatic,
       MenuStyle->"URLMenu"]],
      LineSpacing->{1.4, 0},ExpressionUUID->
-     "7dd0c2ff-5edf-4de1-bf8c-330961cda46b"]], "AnchorBar",ExpressionUUID->
-     "5fdf906e-2c3b-447d-89ca-2ff7035bc87f"]}
+     "56e233aa-6c78-4eba-8bae-8db1bda1473c"]], "AnchorBar",ExpressionUUID->
+     "b895837e-e680-40ef-b9f8-2b662054e4c4"]}
   }]], "AnchorBarGrid",
  GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
      Scaled[0.65], {
       Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
    "RowsIndexed" -> {}}},
- CellID->1,ExpressionUUID->"f364a255-3e01-4267-ac33-ab052fe4a91b"],
+ CellID->1,ExpressionUUID->"89b5f0ef-64de-4837-bdae-0209cc4a5fc8"],
 
 Cell[CellGroupData[{
 
@@ -303,7 +303,7 @@ Cell[BoxData["XXXX"], "Output",
 }, Open  ]]
 }, Open  ]],
 
-Cell[" ", "FooterCell",ExpressionUUID->"17fe03a5-d96f-4f16-8532-1f2fe5d8bbe0"]
+Cell[" ", "FooterCell",ExpressionUUID->"4fbfc34c-7b31-4bd5-8edf-2959c98957b1"]
 },
 Saveable->False,
 ScreenStyleEnvironment->"Working",
@@ -319,7 +319,7 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2019, 12, 8, 13, 9, 57.477470}", 
+   "built" -> "{2019, 12, 8, 13, 15, 12.701669}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -390,7 +390,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[584, 21, 2609, 56, 55, "AnchorBarGrid",ExpressionUUID->"f364a255-3e01-4267-ac33-ab052fe4a91b",
+Cell[584, 21, 2609, 56, 55, "AnchorBarGrid",ExpressionUUID->"89b5f0ef-64de-4837-bdae-0209cc4a5fc8",
  CellID->1],
 Cell[CellGroupData[{
 Cell[3218, 81, 104, 1, 65, "Title",ExpressionUUID->"c9039b3e-e09f-470e-99f8-244678fc8d91",
@@ -410,7 +410,7 @@ Cell[10424, 299, 130, 2, 38, "Output",ExpressionUUID->"8c5d09c2-08e0-45a4-a636-9
  CellID->1181321046]
 }, Open  ]]
 }, Open  ]],
-Cell[10581, 305, 78, 0, 70, "FooterCell",ExpressionUUID->"17fe03a5-d96f-4f16-8532-1f2fe5d8bbe0"]
+Cell[10581, 305, 78, 0, 70, "FooterCell",ExpressionUUID->"4fbfc34c-7b31-4bd5-8edf-2959c98957b1"]
 }
 ]
 *)
