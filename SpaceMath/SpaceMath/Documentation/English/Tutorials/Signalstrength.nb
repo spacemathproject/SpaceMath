@@ -10,70 +10,101 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     18884,        589]
-NotebookOptionsPosition[     14620,        500]
-NotebookOutlinePosition[     17745,        569]
-CellTagsIndexPosition[     17702,        566]
-WindowTitle->Signal strength modifiers R_xOverscriptBox[StyleBox[x, TI], _] 
+NotebookDataLength[     23910,        699]
+NotebookOptionsPosition[     19489,        607]
+NotebookOutlinePosition[     19900,        623]
+CellTagsIndexPosition[     19857,        620]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
-Cell[BoxData[GridBox[{
-   {Cell["SPACE MATH TUTORIAL", "PacletNameCell"], Cell[TextData[Cell[BoxData[
-    
-     ActionMenuBox[
-      FrameBox[
-       InterpretationBox[Cell[TextData[{
-         "URL",
-         StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
-          StripOnInput->False]
-        }]],
-        TextCell[
-         Row[{"URL", 
-           Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
-       StripOnInput->False], {"\<\"SpaceMath/tutorial/Signalstrength\"\>":>
-      None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
-      Module[{DocumentationSearch`Private`nb$}, 
-       DocumentationSearch`Private`nb$ = NotebookPut[
-          Notebook[{
-            Cell["SpaceMath/tutorial/Signalstrength"]}, Visible -> False]]; 
-       SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
-       FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
-       NotebookClose[DocumentationSearch`Private`nb$]; Null], 
-      Delimiter, "\<\"Copy web URL\"\>":>
-      Module[{DocumentationSearch`Private`nb$}, 
-       DocumentationSearch`Private`nb$ = NotebookPut[
-          Notebook[{
-            Cell[
-             BoxData[
-              MakeBoxes[
-               Hyperlink[
-               "http://reference.wolfram.com/language/SpaceMath/tutorial/\
-Signalstrength.html"], StandardForm]], "Input", TextClipboardType -> 
-             "PlainText"]}, Visible -> False]]; 
-       SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
-       FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
-       NotebookClose[DocumentationSearch`Private`nb$]; 
-       Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
-        NotebookLocate[{
-          URL[
-           StringJoin[
-            If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$20969], 
-             "http://reference.wolfram.com/system-modeler/", 
-             "http://reference.wolfram.com/language/"], 
-            "SpaceMath/tutorial/Signalstrength", ".html"]], None}]}]},
-      Appearance->None,
-      MenuAppearance->Automatic,
-      MenuStyle->"URLMenu"]],
-     LineSpacing->{1.4, 0}]], "AnchorBar"]}
-  }]], "AnchorBarGrid",
- GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
-     Scaled[0.65], {
-      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
-   "RowsIndexed" -> {}}},
- CellID->1],
+Cell[TextData[{
+ "New in: ",
+ Cell["1.0", "HistoryData",
+  CellTags->"New",ExpressionUUID->"4bd715eb-d856-44a8-8878-0a66f789d6b7"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified",ExpressionUUID->"3cfe66ce-1e99-4c8b-aeab-a4404c2a7c76"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete",ExpressionUUID->"2fa2284b-f932-401f-b9d1-297d3b04edd6"],
+ " | Excised in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Excised",ExpressionUUID->"589f98e4-2229-4bd0-97a3-649fe9bc87e2"]
+}], "History",
+ CellID->1247902091,ExpressionUUID->"e375c59f-fca0-44d9-80af-cb6918e5cd2d"],
+
+Cell[CellGroupData[{
+
+Cell["Categorization", "CategorizationSection",
+ CellID->1122911449,ExpressionUUID->"fba3fd20-503c-4241-99d9-9702cc1a4b0e"],
+
+Cell["Tutorial", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->686433507,ExpressionUUID->"c58481c4-1f86-4d41-8f3d-8378d3e440c2"],
+
+Cell["SpaceMath", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->605800465,ExpressionUUID->"b9c0678d-1254-4d69-8c01-4a11c2459b10"],
+
+Cell["SpaceMath`", "Categorization",
+ CellLabel->"Context",
+ CellID->468444828,ExpressionUUID->"54591ced-3695-43a1-b154-501acb398fc7"],
+
+Cell["SpaceMath/tutorial/Signalstrength", "Categorization",
+ CellLabel->"URI",ExpressionUUID->"d9d5221a-8107-4440-acb9-211418cbff44"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->1427428552,ExpressionUUID->"500cfe3a-71ad-48e3-b0c5-a1da020bbb49"],
+
+Cell["XXXX", "Keywords",
+ CellID->1251852827,ExpressionUUID->"7d9ec5d4-1fab-4c87-bc5d-1e1aa56af4e4"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Details", "DetailsSection",
+ CellID->307771771,ExpressionUUID->"8aa1360c-cb7a-49b3-9f3d-e83d1797c036"],
+
+Cell["XXXX", "Details",
+ CellLabel->"Lead",
+ CellID->218895918,ExpressionUUID->"ba724ffc-2ecf-4344-9237-de29e7981122"],
+
+Cell["XXXX", "Details",
+ CellLabel->"Developers",
+ CellID->350963985,ExpressionUUID->"996d4c01-de9b-4261-b7db-a339e08b58f4"],
+
+Cell["XXXX", "Details",
+ CellLabel->"Authors",
+ CellID->795871300,ExpressionUUID->"56f92e88-ea9f-4bd4-a680-d13e52d8633c"],
+
+Cell["XXXX", "Details",
+ CellLabel->"Feature Name",
+ CellID->199739161,ExpressionUUID->"03029278-05a4-4d76-9091-714929fcd87b"],
+
+Cell["XXXX", "Details",
+ CellLabel->"QA",
+ CellID->40625308,ExpressionUUID->"10b49af9-39d3-4a40-a2cd-9542adf6cca1"],
+
+Cell["XXXX", "Details",
+ CellLabel->"DA",
+ CellID->357121918,ExpressionUUID->"0d6a58b5-4056-4a4f-9d8a-465cbcf2b786"],
+
+Cell["XXXX", "Details",
+ CellLabel->"Docs",
+ CellID->35949532,ExpressionUUID->"72a3ee4e-445c-454a-80ba-553c25d532e5"],
+
+Cell["XXXX", "Details",
+ CellLabel->"Features Page Notes",
+ CellID->929432370,ExpressionUUID->"9e640ea6-2336-41a5-b769-c7b9016b9263"],
+
+Cell["XXXX", "Details",
+ CellLabel->"Comments",
+ CellID->240026365,ExpressionUUID->"c8b8187f-b32b-4660-a7f7-a19c582e4794"]
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -86,10 +117,14 @@ Cell[TextData[{
     RowBox[{
      StyleBox["x", "TI"], 
      OverscriptBox[
-      StyleBox["x", "TI"], "_"]}]], TraditionalForm]], "InlineFormula"],
+      StyleBox["x", "TI"], "_"]}]], TraditionalForm]], "InlineFormula",
+  ExpressionUUID->"7e46b24c-eb7d-4a7a-9f19-f22907969b3d"],
  " "
 }], "Title",
- CellID->509267359],
+ CellChangeTimes->{
+  3.784556189998554*^9, {3.7845562404496937`*^9, 3.784556247523549*^9}, {
+   3.784556922398007*^9, 3.784556929831366*^9}},
+ CellID->509267359,ExpressionUUID->"7f5e844f-2878-4e3c-bbdc-e2fc813b163f"],
 
 Cell[TextData[{
  "For a production process ",
@@ -101,7 +136,8 @@ Cell[TextData[{
      StyleBox["p", "TI"], "\[Rule]", 
      SubscriptBox[
       StyleBox["H", "TI"], 
-      StyleBox["i", "TI"]]}], ")"}], TraditionalForm]], "InlineFormula"],
+      StyleBox["i", "TI"]]}], ")"}], TraditionalForm]], "InlineFormula",
+  ExpressionUUID->"3722c52d-d6f2-4bac-b14d-bdea855ddaac"],
  " and a decay ",
  Cell[BoxData[
   FormBox[
@@ -111,10 +147,12 @@ Cell[TextData[{
      StyleBox["i", "TI"]], "\[Rule]", 
     StyleBox["x", "TI"], 
     OverscriptBox[
-     StyleBox["x", "TI"], "_"]}], TraditionalForm]], "InlineFormula"],
+     StyleBox["x", "TI"], "_"]}], TraditionalForm]], "InlineFormula",
+  ExpressionUUID->"664a5b2d-779e-4d40-a805-a395a5b5e161"],
  ", the signal strength is defined as follows: "
 }], "Text",
- CellID->1534169418],
+ CellChangeTimes->{3.784556950798945*^9},
+ CellID->1534169418,ExpressionUUID->"57d8259a-65df-4bb4-a409-f348bfa2e434"],
 
 Cell[TextData[Cell[BoxData[
  FormBox[
@@ -154,8 +192,11 @@ Cell[TextData[Cell[BoxData[
        StyleBox["x", "TI"], 
        OverscriptBox[
         StyleBox["x", "TI"], "_"]}], ")"}]}]], ","}], 
-  TraditionalForm]], "NumberedEquation"]], "Text",
- CellID->1438509970],
+  TraditionalForm]], \
+"NumberedEquation",ExpressionUUID->"6f21081e-1a38-4847-8433-9e07a0220550"]], \
+"Text",
+ CellChangeTimes->{{3.78455696479281*^9, 3.7845569738340797`*^9}},
+ CellID->1438509970,ExpressionUUID->"ad508e61-4f58-42fd-9487-53a27e92ae34"],
 
 Cell[TextData[{
  "where ",
@@ -167,13 +208,15 @@ Cell[TextData[{
      StyleBox["p", "TI"], "\[Rule]", 
      SubscriptBox[
       StyleBox["H", "TI"], 
-      StyleBox["i", "TI"]]}], ")"}], TraditionalForm]], "InlineFormula"],
+      StyleBox["i", "TI"]]}], ")"}], TraditionalForm]], "InlineFormula",
+  ExpressionUUID->"6c1745fa-8ce9-4964-9920-5fc57d507122"],
  " is the production cross section of ",
  Cell[BoxData[
   FormBox[
    SubscriptBox[
     StyleBox["H", "TI"], 
-    StyleBox["i", "TI"]], TraditionalForm]], "InlineFormula"],
+    StyleBox["i", "TI"]], TraditionalForm]], "InlineFormula",ExpressionUUID->
+  "a2e608e5-1a3c-402b-84f3-40d213ea5f34"],
  ", with ",
  Cell[BoxData[
   FormBox[
@@ -184,16 +227,19 @@ Cell[TextData[{
       StyleBox["i", "TI"]], "\[LongEqual]", 
      StyleBox["h", "TI"]}], ",", " ", 
     SuperscriptBox[
-     StyleBox["h", "TI"], "SM"]}], TraditionalForm]], "InlineFormula"],
+     StyleBox["h", "TI"], "SM"]}], TraditionalForm]], "InlineFormula",
+  ExpressionUUID->"cd7799f3-8b8c-45a6-a4a9-083b609ad1b6"],
  ", here ",
  Cell[BoxData[
   FormBox[
-   StyleBox["h", "TI"], TraditionalForm]], "InlineFormula"],
+   StyleBox["h", "TI"], TraditionalForm]], "InlineFormula",ExpressionUUID->
+  "f344b450-b0b0-4337-a6a5-f1d1e876e432"],
  " is the SM\[Hyphen]like Higgs boson coming from an extension of the SM and ",
  Cell[BoxData[
   FormBox[
    SuperscriptBox[
-    StyleBox["h", "TI"], "SM"], TraditionalForm]], "InlineFormula"],
+    StyleBox["h", "TI"], "SM"], TraditionalForm]], "InlineFormula",
+  ExpressionUUID->"c81a0a08-c95c-4382-b649-6c7c57385c3b"],
  " is the SM Higgs boson; ",
  Cell[BoxData[
   FormBox[
@@ -205,21 +251,23 @@ Cell[TextData[{
       StyleBox["i", "TI"]], "\[Rule]", 
      StyleBox["x", "TI"], 
      OverscriptBox[
-      StyleBox["x", "TI"], "_"]}], ")"}], TraditionalForm]], 
-  "InlineFormula"],
+      StyleBox["x", "TI"], "_"]}], ")"}], TraditionalForm]], "InlineFormula",
+  ExpressionUUID->"fdbe1317-c809-479c-82ce-07aaff380953"],
  " is the branching ratio of ",
  Cell[BoxData[
   FormBox[
    SubscriptBox[
     StyleBox["H", "TI"], 
-    StyleBox["i", "TI"]], TraditionalForm]], "InlineFormula"],
+    StyleBox["i", "TI"]], TraditionalForm]], "InlineFormula",ExpressionUUID->
+  "97832f19-0a70-4d4d-afbe-dad84dda87ad"],
  " decaying into a ",
  Cell[BoxData[
   FormBox[
    RowBox[{
     StyleBox["x", "TI"], 
     OverscriptBox[
-     StyleBox["x", "TI"], "_"]}], TraditionalForm]], "InlineFormula"],
+     StyleBox["x", "TI"], "_"]}], TraditionalForm]], "InlineFormula",
+  ExpressionUUID->"65364578-9c55-42a4-b198-20bf05f80ff8"],
  " where ",
  Cell[BoxData[
   FormBox[
@@ -247,26 +295,31 @@ Cell[TextData[{
      StyleBox["Z", "TI"], 
      SuperscriptBox[
       StyleBox["Z", "TI"], "*"]}], ",", " ", "\[Gamma]\[Gamma]"}], 
-   TraditionalForm]], "InlineFormula"],
+   TraditionalForm]], "InlineFormula",ExpressionUUID->
+  "5e3bfe88-ed1b-412b-9d30-ec59edd0585c"],
  ". In addition, we consider the production of ",
  Cell[BoxData[
   FormBox[
    SubscriptBox[
     StyleBox["H", "TI"], 
-    StyleBox["i", "TI"]], TraditionalForm]], "InlineFormula"],
+    StyleBox["i", "TI"]], TraditionalForm]], "InlineFormula",ExpressionUUID->
+  "31bddbec-ab1d-47fc-b2dc-571847d3d77e"],
  " via gluon fusion and we use the narrow width approximation: "
 }], "Text",
- CellID->648002154],
+ CellChangeTimes->{3.78455699033385*^9},
+ CellID->648002154,ExpressionUUID->"1d1a8056-6730-46cc-9d47-be1d5c3f83ab"],
 
 Cell[TextData[{
  "In this version of ",
  Cell[BoxData[
   FormBox[
-   StyleBox["SpaceMath", "MR"], TraditionalForm]], "InlineFormula"],
+   StyleBox["SpaceMath", "MR"], TraditionalForm]], "InlineFormula",
+  ExpressionUUID->"e6f98adb-fdad-4d4e-9b4e-036ec371a869"],
  " we only consider the Higgs boson production cross section via gluon fusion \
 and we use the narrow width approximation: "
 }], "Text",
- CellID->1219722],
+ CellChangeTimes->{{3.784557057192767*^9, 3.7845570597729063`*^9}},
+ CellID->1219722,ExpressionUUID->"714e0b7a-6f47-471c-8d38-a2007ed3a0e0"],
 
 Cell[TextData[Cell[BoxData[
  FormBox[
@@ -306,17 +359,21 @@ Cell[TextData[Cell[BoxData[
        StyleBox["x", "TI"], 
        OverscriptBox[
         StyleBox["x", "TI"], "_"]}], ")"}]}]], "."}], 
-  TraditionalForm]], "NumberedEquation"]], "Text",
- CellID->777615139],
+  TraditionalForm]], \
+"NumberedEquation",ExpressionUUID->"7b7b23f5-c4ae-41c6-9eb7-1f1a4e270d43"]], \
+"Text",
+ CellChangeTimes->{3.784557071728963*^9},
+ CellID->777615139,ExpressionUUID->"77739cfc-9881-4610-9de0-aa06e31b67cc"],
 
 Cell[TextData[{
  "In the Table signalvalues we show the best fit, at ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"1", "\[Sigma]"}], TraditionalForm]], "InlineFormula"],
+   RowBox[{"1", "\[Sigma]"}], TraditionalForm]], "InlineFormula",
+  ExpressionUUID->"6b482b1f-8a26-45b1-a02b-d48efe56fe5f"],
  ", on the signal strength. "
 }], "Text",
- CellID->460060784],
+ CellID->460060784,ExpressionUUID->"9f39ebe8-3629-4ad7-bc49-f7616364ffad"],
 
 Cell[BoxData[GridBox[{
    {
@@ -328,10 +385,11 @@ Cell[BoxData[GridBox[{
       TraditionalForm]}], "    ", Cell["\<\
 
 \
-\>", "TableText"]},
+\>", "TableText",ExpressionUUID->"3d560a6f-a9df-4dce-a88e-cf8c93972898"]},
    {"ggh", 
     RowBox[{"Best", " ", "fit", " ", "value"}], Cell[
-    "Uncertainty stat.      Uncertainty syst", "TableText"]},
+    "Uncertainty stat.      Uncertainty syst", "TableText",ExpressionUUID->
+     "d1a1c5dd-ee13-44bf-b603-423f0ad32ec7"]},
    {
     RowBox[{
      FormBox[
@@ -411,151 +469,147 @@ Cell[BoxData[GridBox[{
       FormBox[
        SubsuperscriptBox["\[Null]", 
         RowBox[{"-", "1.92"}], 
-        RowBox[{"+", "1.96"}]], TraditionalForm]], "InlineFormula"],
+        RowBox[{"+", "1.96"}]], TraditionalForm]], "InlineFormula",
+      ExpressionUUID->"e646094a-56ba-41f4-95c3-f45e242f4354"],
      "                               ",
      Cell[BoxData[
       FormBox[
        SubsuperscriptBox["\[Null]", 
         RowBox[{"-", "0.59"}], 
-        RowBox[{"+", "1.44"}]], TraditionalForm]], "InlineFormula"],
+        RowBox[{"+", "1.44"}]], TraditionalForm]], "InlineFormula",
+      ExpressionUUID->"a109039a-77c1-40b6-a78d-da2090c3f85e"],
      " \n",
      Cell[BoxData[
       FormBox[
        SubsuperscriptBox["\[Null]", 
         RowBox[{"-", "0.25"}], 
-        RowBox[{"+", "0.25"}]], TraditionalForm]], "InlineFormula"],
+        RowBox[{"+", "0.25"}]], TraditionalForm]], "InlineFormula",
+      ExpressionUUID->"528d00f5-b94d-4bc8-a0ba-82cbf62b642b"],
      "                               ",
      Cell[BoxData[
       FormBox[
        SubsuperscriptBox["\[Null]", 
         RowBox[{"-", "0.40"}], 
-        RowBox[{"+", "0.46"}]], TraditionalForm]], "InlineFormula"],
+        RowBox[{"+", "0.46"}]], TraditionalForm]], "InlineFormula",
+      ExpressionUUID->"6634c8af-6384-49a5-bb79-760e2f7132e9"],
      " \n",
      Cell[BoxData[
       FormBox[
        SubsuperscriptBox["\[Null]", 
         RowBox[{"-", "0.12"}], 
-        RowBox[{"+", "0.12"}]], TraditionalForm]], "InlineFormula"],
+        RowBox[{"+", "0.12"}]], TraditionalForm]], "InlineFormula",
+      ExpressionUUID->"125b2f96-7023-4a89-a05b-7887036cfb37"],
      "                               ",
      Cell[BoxData[
       FormBox[
        SubsuperscriptBox["\[Null]", 
         RowBox[{"-", "0.15"}], 
-        RowBox[{"+", "0.17"}]], TraditionalForm]], "InlineFormula"],
+        RowBox[{"+", "0.17"}]], TraditionalForm]], "InlineFormula",
+      ExpressionUUID->"b9631402-6fb3-44ba-9fd6-b422cbf598d3"],
      " \n",
      Cell[BoxData[
       FormBox[
        SubsuperscriptBox["\[Null]", 
         RowBox[{"-", "0.19"}], 
-        RowBox[{"+", "0.20"}]], TraditionalForm]], "InlineFormula"],
+        RowBox[{"+", "0.20"}]], TraditionalForm]], "InlineFormula",
+      ExpressionUUID->"41ae666f-368b-47e6-ac57-a46dbcc58914"],
      "                               ",
      Cell[BoxData[
       FormBox[
        SubsuperscriptBox["\[Null]", 
         RowBox[{"-", "0.10"}], 
-        RowBox[{"+", "0.12"}]], TraditionalForm]], "InlineFormula"],
+        RowBox[{"+", "0.12"}]], TraditionalForm]], "InlineFormula",
+      ExpressionUUID->"842fe46a-d828-4120-9a3a-e9e9a8cd5854"],
      " \n",
      Cell[BoxData[
       FormBox[
        SubsuperscriptBox["\[Null]", 
         RowBox[{"-", "0.15"}], 
-        RowBox[{"+", "0.17"}]], TraditionalForm]], "InlineFormula"],
+        RowBox[{"+", "0.17"}]], TraditionalForm]], "InlineFormula",
+      ExpressionUUID->"4d5a0b00-e3a6-4e38-a5fa-cbfdde49bc66"],
      "                               ",
      Cell[BoxData[
       FormBox[
        SubsuperscriptBox["\[Null]", 
         RowBox[{"-", "0.10"}], 
-        RowBox[{"+", "0.13"}]], TraditionalForm]], "InlineFormula"],
+        RowBox[{"+", "0.13"}]], TraditionalForm]], "InlineFormula",
+      ExpressionUUID->"e714a117-58b6-47c3-ba18-0be66a240440"],
      " \n",
      Cell[BoxData[
       FormBox[
        SubsuperscriptBox["\[Null]", 
         RowBox[{"-", "1.78"}], 
-        RowBox[{"+", "1.79"}]], TraditionalForm]], "InlineFormula"],
+        RowBox[{"+", "1.79"}]], TraditionalForm]], "InlineFormula",
+      ExpressionUUID->"75368649-01e2-44c8-84df-24627b40a173"],
      "                               ",
      Cell[BoxData[
       FormBox[
        SubsuperscriptBox["\[Null]", 
         RowBox[{"-", "0.19"}], 
-        RowBox[{"+", "0.19"}]], TraditionalForm]], "InlineFormula"],
+        RowBox[{"+", "0.19"}]], TraditionalForm]], "InlineFormula",
+      ExpressionUUID->"c3029f77-cf51-4163-bb20-8fa3ce0c65f5"],
      " "
-    }], "TableText"]}
+    }], "TableText",ExpressionUUID->"b437331b-8664-46ec-9155-4af471b8a384"]}
   }]], "DefinitionBox3Col",
  CellFrame->{{0, 0}, {0, 2}},
- CellID->1255467794],
+ CellChangeTimes->{{3.784563505185094*^9, 3.784563565761099*^9}, {
+   3.784563598043044*^9, 3.784563622898271*^9}, 3.784563681554948*^9, {
+   3.784563714083768*^9, 3.784563715950386*^9}, {3.784563859977922*^9, 
+   3.7845638890992126`*^9}, {3.784563957464486*^9, 3.784563957464518*^9}, {
+   3.784564168036684*^9, 3.784564169783476*^9}, {3.784564247313861*^9, 
+   3.784564256401782*^9}, {3.784564317338285*^9, 3.78456447575725*^9}, {
+   3.78456493062254*^9, 3.784565028517866*^9}, {3.7845650748611298`*^9, 
+   3.7845650758577137`*^9}, {3.7845654583354273`*^9, 3.784565518506102*^9}, {
+   3.784565674597397*^9, 3.784565698266131*^9}, {3.784565931083441*^9, 
+   3.784565964827285*^9}},
+ CellID->1255467794,ExpressionUUID->"7cbb1263-5615-4fe2-9cbc-10cf5f74127e"],
 
 Cell[TextData[{
  "Best fit value and ",
  Cell[BoxData[
   FormBox[
    RowBox[{"\[PlusMinus]", "1", "\[Sigma]"}], TraditionalForm]], 
-  "InlineFormula"],
+  "InlineFormula",ExpressionUUID->"f25e1319-e3ea-4b4e-b8b8-8be9fa3c745e"],
  " uncertainties for the Higgs boson production via gluon fusion and decay \
 modes. "
 }], "Caption",
- CellID->407841573]
+ CellChangeTimes->{{3.784565126651288*^9, 3.784565141241458*^9}, 
+   3.784638675411233*^9},
+ CellID->407841573,ExpressionUUID->"7cce8ebb-596c-4642-8d91-8629d4386b8f"],
+
+Cell[CellGroupData[{
+
+Cell["More About", "TutorialMoreAboutSection",
+ CellID->23220180,ExpressionUUID->"14bfa6f6-3e33-4e37-8d2d-a4e3a68edbfc"],
+
+Cell["XXXX", "TutorialMoreAbout",
+ CellID->1567025153,ExpressionUUID->"54ebd727-0cca-4d49-93ed-51745212d73d"]
 }, Open  ]],
 
-Cell[" ", "FooterCell"]
+Cell[CellGroupData[{
+
+Cell["Related Tutorials", "RelatedTutorialsSection",
+ CellID->415694126,ExpressionUUID->"b4bbc745-469c-423f-b385-648a8b419852"],
+
+Cell["XXXX", "RelatedTutorials",
+ CellID->806871991,ExpressionUUID->"5f135d34-07e3-4dd6-a74b-87c5bea60bb2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Wolfram Education Group Courses", "TutorialRelatedLinksSection",
+ CellID->415694148,ExpressionUUID->"786b237b-3b32-4c9d-bd1b-2d67014a518f"],
+
+Cell["XXXX", "TutorialRelatedLinks",
+ CellID->415694149,ExpressionUUID->"0cdaf1a1-0fa4-4550-9d5c-8890dcd225ca"]
+}, Open  ]]
+}, Open  ]]
 },
-Saveable->False,
-ScreenStyleEnvironment->"Working",
-WindowSize->{725, 750},
-WindowMargins->{{0, Automatic}, {Automatic, 0}},
-WindowTitle->"Signal strength modifiers R_xOverscriptBox[StyleBox[x, TI], _] ",
-TaggingRules->{
- "ModificationHighlight" -> False, "ColorType" -> "TutorialColor", 
-  "LinkTrails" -> GridBox[{{
-      RowBox[{
-        ButtonBox[
-        "SpaceMath", ButtonData -> "paclet:SpaceMath/guide/SpaceMath", 
-         BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
-    Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
-  "", "Metadata" -> {
-   "built" -> "{2019, 12, 10, 10, 20, 17.384793}", 
-    "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
-    "keywords" -> {}, "specialkeywords" -> {}, 
-    "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
-    "Space Math Tutorial", "language" -> "en", "paclet" -> "SpaceMath", 
-    "status" -> "None", "summary" -> 
-    "For a production process \[Sigma](pp\[Rule]H_i) and a decay \
-H_i\[Rule]xOverscriptBox[x, _], the signal strength is defined as follows: \
-R_xOverscriptBox[x, _]\[LongEqual] ( \[Sigma](pp\[Rule]h)\[CenterDot]B(h\
-\[Rule]xOverscriptBox[x, _]) ) / ( \[Sigma](pp\[Rule]h^SM)\[CenterDot]B(h^SM\
-\[Rule]xOverscriptBox[x, _]) ) , where \[Sigma](pp\[Rule]H_i) is the \
-production cross section of H_i, with H_i\[LongEqual]h, h^SM, here h is the \
-SM-like Higgs boson coming from an extension of the SM and h^SM is the SM \
-Higgs boson; B(H_i\[Rule]xOverscriptBox[x, _]) is the branching ratio of H_i \
-decaying into a xOverscriptBox[x, _] where xOverscriptBox[x, \
-_]\[LongEqual]bOverscriptBox[StyleBox[b, TI], _], \[Tau]^-\[Tau]^+, \[Mu]^-\
-\[Mu]^+, WW^*, ZZ^*, \[Gamma]\[Gamma]. In addition, we consider the \
-production of H_i via gluon fusion and we use the narrow width approximation: \
-", "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$20920, "title" -> 
-    "Signal strength modifiers R_xOverscriptBox[StyleBox[x, TI], _] ", 
-    "titlemodifier" -> "", "windowtitle" -> 
-    "Signal strength modifiers R_xOverscriptBox[StyleBox[x, TI], _] ", "type" -> 
-    "Tutorial", "uri" -> "SpaceMath/tutorial/Signalstrength"}},
+WindowSize->{685, 1028},
+WindowMargins->{{Automatic, 254}, {0, Automatic}},
 FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
-StyleDefinitions->Notebook[{
-   Cell[
-    StyleData[
-    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
-   Cell[
-    StyleData["Input"], CellContext -> Notebook], 
-   Cell[
-    StyleData["Output"], CellContext -> Notebook], 
-   Cell[
-    StyleData["TutorialMoreAboutSection"], 
-    CellGroupingRules -> {"SectionGrouping", 30}], 
-   Cell[
-    StyleData["RelatedTutorialsSection"], 
-    CellGroupingRules -> {"SectionGrouping", 30}], 
-   Cell[
-    StyleData["TutorialRelatedLinksSection"], 
-    CellGroupingRules -> {"SectionGrouping", 30}]}, Visible -> False, 
-  FrontEndVersion -> "12.0 for Linux x86 (64-bit) (April 8, 2019)", 
-  StyleDefinitions -> "Default.nb"]
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "TutorialPageStyles.nb", 
+  CharacterEncoding -> "UTF-8"]
 ]
 (* End of Notebook Content *)
 
@@ -568,31 +622,86 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[635, 21, 2329, 54, 70, "AnchorBarGrid",ExpressionUUID->"32cece66-4ee7-4990-b9be-11251417eb6f",
- CellID->1],
+Cell[558, 20, 600, 14, 25, "History",ExpressionUUID->"e375c59f-fca0-44d9-80af-cb6918e5cd2d",
+ CellID->1247902091],
 Cell[CellGroupData[{
-Cell[2989, 79, 286, 12, 70, "Title",ExpressionUUID->"7f5e844f-2878-4e3c-bbdc-e2fc813b163f",
+Cell[1183, 38, 123, 1, 30, "CategorizationSection",ExpressionUUID->"fba3fd20-503c-4241-99d9-9702cc1a4b0e",
+ CellID->1122911449],
+Cell[1309, 41, 136, 2, 35, "Categorization",ExpressionUUID->"c58481c4-1f86-4d41-8f3d-8378d3e440c2",
+ CellID->686433507],
+Cell[1448, 45, 137, 2, 35, "Categorization",ExpressionUUID->"b9c0678d-1254-4d69-8c01-4a11c2459b10",
+ CellID->605800465],
+Cell[1588, 49, 134, 2, 35, "Categorization",ExpressionUUID->"54591ced-3695-43a1-b154-501acb398fc7",
+ CellID->468444828],
+Cell[1725, 53, 133, 1, 35, "Categorization",ExpressionUUID->"d9d5221a-8107-4440-acb9-211418cbff44"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1895, 59, 111, 1, 20, "KeywordsSection",ExpressionUUID->"500cfe3a-71ad-48e3-b0c5-a1da020bbb49",
+ CellID->1427428552],
+Cell[2009, 62, 100, 1, 70, "Keywords",ExpressionUUID->"7d9ec5d4-1fab-4c87-bc5d-1e1aa56af4e4",
+ CellID->1251852827]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[2146, 68, 108, 1, 20, "DetailsSection",ExpressionUUID->"8aa1360c-cb7a-49b3-9f3d-e83d1797c036",
+ CellID->307771771],
+Cell[2257, 71, 118, 2, 70, "Details",ExpressionUUID->"ba724ffc-2ecf-4344-9237-de29e7981122",
+ CellID->218895918],
+Cell[2378, 75, 124, 2, 70, "Details",ExpressionUUID->"996d4c01-de9b-4261-b7db-a339e08b58f4",
+ CellID->350963985],
+Cell[2505, 79, 121, 2, 70, "Details",ExpressionUUID->"56f92e88-ea9f-4bd4-a680-d13e52d8633c",
+ CellID->795871300],
+Cell[2629, 83, 126, 2, 70, "Details",ExpressionUUID->"03029278-05a4-4d76-9091-714929fcd87b",
+ CellID->199739161],
+Cell[2758, 87, 115, 2, 70, "Details",ExpressionUUID->"10b49af9-39d3-4a40-a2cd-9542adf6cca1",
+ CellID->40625308],
+Cell[2876, 91, 116, 2, 70, "Details",ExpressionUUID->"0d6a58b5-4056-4a4f-9d8a-465cbcf2b786",
+ CellID->357121918],
+Cell[2995, 95, 117, 2, 70, "Details",ExpressionUUID->"72a3ee4e-445c-454a-80ba-553c25d532e5",
+ CellID->35949532],
+Cell[3115, 99, 133, 2, 70, "Details",ExpressionUUID->"9e640ea6-2336-41a5-b769-c7b9016b9263",
+ CellID->929432370],
+Cell[3251, 103, 122, 2, 70, "Details",ExpressionUUID->"c8b8187f-b32b-4660-a7f7-a19c582e4794",
+ CellID->240026365]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[3410, 110, 542, 16, 108, "Title",ExpressionUUID->"7f5e844f-2878-4e3c-bbdc-e2fc813b163f",
  CellID->509267359],
-Cell[3278, 93, 637, 23, 70, "Text",ExpressionUUID->"57d8259a-65df-4bb4-a409-f348bfa2e434",
+Cell[3955, 128, 850, 26, 24, "Text",ExpressionUUID->"57d8259a-65df-4bb4-a409-f348bfa2e434",
  CellID->1534169418],
-Cell[3918, 118, 1124, 39, 70, "Text",ExpressionUUID->"ad508e61-4f58-42fd-9487-53a27e92ae34",
+Cell[4808, 156, 1305, 42, 45, "Text",ExpressionUUID->"ad508e61-4f58-42fd-9487-53a27e92ae34",
  CellID->1438509970],
-Cell[5045, 159, 2741, 99, 70, "Text",ExpressionUUID->"1d1a8056-6730-46cc-9d47-be1d5c3f83ab",
+Cell[6116, 200, 3414, 109, 80, "Text",ExpressionUUID->"1d1a8056-6730-46cc-9d47-be1d5c3f83ab",
  CellID->648002154],
-Cell[7789, 260, 289, 8, 70, "Text",ExpressionUUID->"714e0b7a-6f47-471c-8d38-a2007ed3a0e0",
+Cell[9533, 311, 470, 10, 43, "Text",ExpressionUUID->"714e0b7a-6f47-471c-8d38-a2007ed3a0e0",
  CellID->1219722],
-Cell[8081, 270, 1138, 39, 70, "Text",ExpressionUUID->"77739cfc-9881-4610-9de0-aa06e31b67cc",
+Cell[10006, 323, 1294, 42, 45, "Text",ExpressionUUID->"77739cfc-9881-4610-9de0-aa06e31b67cc",
  CellID->777615139],
-Cell[9222, 311, 226, 7, 70, "Text",ExpressionUUID->"9f39ebe8-3629-4ad7-bc49-f7616364ffad",
+Cell[11303, 367, 339, 8, 24, "Text",ExpressionUUID->"9f39ebe8-3629-4ad7-bc49-f7616364ffad",
  CellID->460060784],
-Cell[9451, 320, 4852, 164, 70, "DefinitionBox3Col",ExpressionUUID->"7cbb1263-5615-4fe2-9cbc-10cf5f74127e",
+Cell[11645, 377, 6504, 187, 228, "DefinitionBox3Col",ExpressionUUID->"7cbb1263-5615-4fe2-9cbc-10cf5f74127e",
  CellID->1255467794],
-Cell[14306, 486, 272, 9, 70, "Caption",ExpressionUUID->"7cce8ebb-596c-4642-8d91-8629d4386b8f",
- CellID->407841573]
+Cell[18152, 566, 474, 11, 30, "Caption",ExpressionUUID->"7cce8ebb-596c-4642-8d91-8629d4386b8f",
+ CellID->407841573],
+Cell[CellGroupData[{
+Cell[18651, 581, 120, 1, 67, "TutorialMoreAboutSection",ExpressionUUID->"14bfa6f6-3e33-4e37-8d2d-a4e3a68edbfc",
+ CellID->23220180],
+Cell[18774, 584, 109, 1, 23, "TutorialMoreAbout",ExpressionUUID->"54ebd727-0cca-4d49-93ed-51745212d73d",
+ CellID->1567025153]
 }, Open  ]],
-Cell[14593, 498, 23, 0, 70, "FooterCell",ExpressionUUID->"5e04b289-02d5-44b2-809f-7773672259ae"]
+Cell[CellGroupData[{
+Cell[18920, 590, 127, 1, 73, "RelatedTutorialsSection",ExpressionUUID->"b4bbc745-469c-423f-b385-648a8b419852",
+ CellID->415694126],
+Cell[19050, 593, 107, 1, 23, "RelatedTutorials",ExpressionUUID->"5f135d34-07e3-4dd6-a74b-87c5bea60bb2",
+ CellID->806871991]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19194, 599, 153, 1, 73, "TutorialRelatedLinksSection",ExpressionUUID->"786b237b-3b32-4c9d-bd1b-2d67014a518f",
+ CellID->415694148],
+Cell[19350, 602, 111, 1, 23, "TutorialRelatedLinks",ExpressionUUID->"0cdaf1a1-0fa4-4550-9d5c-8890dcd225ca",
+ CellID->415694149]
+}, Open  ]]
+}, Open  ]]
 }
 ]
 *)
 
-(* End of internal cache information *)
