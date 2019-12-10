@@ -8,7 +8,7 @@ InstallSpaceMath[]
 
 Manual installation
 
-Download (https://github.com/spacemathproject/SpaceMath/archive/master.zip)
+Download (https://github.com/spacemathproject/SpaceMath/archive/finale.zip)
 
 Unzip the folder inside $UserBaseDirectory/Applications
 
