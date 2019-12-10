@@ -564,7 +564,7 @@ Cell[BoxData[
 }, Open  ]]
 },
 WindowSize->{700, 770},
-WindowMargins->{{Automatic, 67}, {Automatic, 131}},
+WindowMargins->{{Automatic, 67}, {127, Automatic}},
 CellContext->"Global`",
 FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
 StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStyles.nb", 
@@ -694,7 +694,7 @@ Cell[14513, 399, 1643, 25, 28, "Input",ExpressionUUID->"0f5738ce-dda1-4bdf-a1df-
  CellID->785542046],
 Cell[16159, 426, 1673, 25, 28, "Input",ExpressionUUID->"3470c1a8-abfb-4f36-96d1-94bd9c4ddbdd",
  CellID->1055765423],
-Cell[17835, 453, 1038, 29, 142, "Input",ExpressionUUID->"5eb125a0-c9f5-46f3-8af9-58b59b106a13",
+Cell[17835, 453, 1038, 29, 144, "Input",ExpressionUUID->"5eb125a0-c9f5-46f3-8af9-58b59b106a13",
  CellID->126586028]
 }, Open  ]],
 Cell[CellGroupData[{
