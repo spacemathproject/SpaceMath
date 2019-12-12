@@ -18,11 +18,11 @@ fb::usage ="fb"
 gt::usage ="gt"
 gb::usage ="gb"
 
-At::usage ="See later"
-Ab::usage ="See later"
+At::usage ="At"
+Ab::usage ="Ab"
 
-Ft::usage ="See later"
-Fb::usage ="See later"
+Ft::usage ="Ft"
+Fb::usage ="Fb"
 AHgg::usage ="We consider the contribution of bottom and top quarks inside the loop"
 
 (*Decay width of the Scalar boson into gluon pair*)
@@ -57,9 +57,9 @@ WidthHgaga::usage ="See later"
 
 (*Scalar boson decay into vector pair*)
 (*Definitions*)
-RTW::usage ="See later"
-RTZ::usage ="See later"
-\[Delta]Z::usage ="See later"
+RTW::usage ="Scalar boson decay into vector pair"
+RTZ::usage ="Scalar boson decay into vector pair"
+\[Delta]Z::usage ="Scalar boson decay into vector pair"
 
 (*Decay width of Higgs boson into WW pair*)
 WidthHWW::usage ="See later"
@@ -73,12 +73,12 @@ BRhZZ::usage ="See later"
 BRhgg::usage ="See later"
 
 (*Signal strengths*)
-Rbotbot::usage ="See later"
-Rtata::usage ="See later"
-RWW::usage ="See later"
-RZZ::usage ="See later"
-Rgaga::usage ="See later"
-Rgg::usage ="See later"
+Rbotbot::usage ="Signal strengths"
+Rtata::usage ="Signal strengths"
+RWW::usage ="Signal strengths"
+RZZ::usage ="Signal strengths"
+Rgaga::usage ="Signal strengths"
+Rgg::usage ="Signal strengths"
 
 (* ------------------------------------------------------------------------ *)
 
