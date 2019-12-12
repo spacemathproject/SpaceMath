@@ -5,18 +5,18 @@
 
 (*Scalar boson decays into fermion pair;*)
 (*Definitions;*)
-\[Tau]fi::usage ="See later"
-\[Tau]fj::usage ="See later"
+\[Tau]fi::usage ="\[Tau]fi"
+\[Tau]fj::usage ="\[Tau]fj"
 
 (*Decay width of the Scalar boson into fermion pair*)
-WidthHff::usage ="See later"
+WidthHff::usage ="WidthHff"
 
 (*Scalar boson decay into gluon pair at one-loop level*)
 (*Definitions*)
-ft::usage ="See later"
-fb::usage ="See later"
-gt::usage ="See later"
-gb::usage ="See later"
+ft::usage ="ft"
+fb::usage ="fb"
+gt::usage ="gt"
+gb::usage ="gb"
 
 At::usage ="See later"
 Ab::usage ="See later"
