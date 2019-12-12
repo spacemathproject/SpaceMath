@@ -38,19 +38,19 @@ Ahb::usage ="See later"
 Af::usage ="See later"
 
 (*W contribution*)
-fW::usage ="See later"
-gW::usage ="See later"
-AW::usage ="See later"
-FW::usage ="See later"
-AhW::usage ="See later"
+fW::usage ="W contribution"
+gW::usage ="W contribution"
+AW::usage ="W contribution"
+FW::usage ="W contribution"
+AhW::usage ="W contribution"
 
 (*Charged scalar contribution*)
-fH::usage ="See later"
-gH::usage ="See later"
-AH::usage ="See later"
-FH::usage ="See later"
-AHc::usage ="See later"
-Ahgaga::usage ="See later"
+fH::usage ="Charged scalar contribution"
+gH::usage ="Charged scalar contribution"
+AH::usage ="Charged scalar contribution"
+FH::usage ="Charged scalar contribution"
+AHc::usage ="Charged scalar contribution"
+Ahgaga::usage ="Charged scalar contribution"
 
 (*Decay width of Scalar boson into photon-photon*)
 WidthHgaga::usage ="See later"
