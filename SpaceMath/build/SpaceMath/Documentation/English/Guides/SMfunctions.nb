@@ -1,0 +1,223 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7835,        214]
+NotebookOptionsPosition[      5878,        168]
+NotebookOutlinePosition[      7384,        206]
+CellTagsIndexPosition[      7341,        203]
+WindowTitle->Signal Strength functions
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {Cell["SPACE MATH GUIDE", "PacletNameCell"], Cell[TextData[{
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "Functions",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"Functions", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"RBOTone\"\>":>Documentation`HelpLookup[
+       "paclet:SpaceMath/ref/RBOTone"], "\<\"RGAMone\"\>":>
+       Documentation`HelpLookup[
+       "paclet:SpaceMath/ref/RGAMone"], "\<\"RTAUone\"\>":>
+       Documentation`HelpLookup["paclet:SpaceMath/ref/RTAUone"], "\<\"RV\"\>":>
+       Documentation`HelpLookup["paclet:SpaceMath/ref/RV"], "\<\"RVone\"\>":>
+       Documentation`HelpLookup[
+       "paclet:SpaceMath/ref/RVone"], "\<\"RXALL\"\>":>
+       Documentation`HelpLookup[
+       "paclet:SpaceMath/ref/RXALL"], "\<\"TableRBOTone\"\>":>
+       Documentation`HelpLookup[
+       "paclet:SpaceMath/ref/TableRBOTone"], "\<\"TableRGAMone\"\>":>
+       Documentation`HelpLookup[
+       "paclet:SpaceMath/ref/TableRGAMone"], "\<\"TableRTAUone\"\>":>
+       Documentation`HelpLookup["paclet:SpaceMath/ref/TableRTAUone"]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"GuideFunction"]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "URL",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"URL", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"SpaceMath/guide/SMfunctions\"\>":>
+       None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell["SpaceMath/guide/SMfunctions"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+       Delimiter, "\<\"Copy web URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell[
+              BoxData[
+               MakeBoxes[
+                Hyperlink[
+                "http://reference.wolfram.com/language/SpaceMath/guide/\
+SMfunctions.html"], StandardForm]], "Input", TextClipboardType -> 
+              "PlainText"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; 
+        Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
+         NotebookLocate[{
+           URL[
+            StringJoin[
+             If[
+              TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$8562], 
+              "http://reference.wolfram.com/system-modeler/", 
+              "http://reference.wolfram.com/language/"], 
+             "SpaceMath/guide/SMfunctions", ".html"]], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"]],
+      LineSpacing->{1.4, 0}]
+    }], "AnchorBar"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1],
+
+Cell[CellGroupData[{
+
+Cell["Signal Strength functions", "GuideTitle",
+ CellID->942062912],
+
+Cell["\[NonBreakingSpace]", "GuideAbstract",
+ CellID->1]
+}, Open  ]],
+
+Cell[TextData[{
+ ButtonBox["RBOTone",
+  BaseStyle->"Link",
+  ButtonData->"paclet:SpaceMath/ref/RBOTone"],
+ "\n",
+ ButtonBox["RGAMone",
+  BaseStyle->"Link",
+  ButtonData->"paclet:SpaceMath/ref/RGAMone"],
+ "\n",
+ ButtonBox["RTAUone",
+  BaseStyle->"Link",
+  ButtonData->"paclet:SpaceMath/ref/RTAUone"],
+ "\n",
+ ButtonBox["RV",
+  BaseStyle->"Link",
+  ButtonData->"paclet:SpaceMath/ref/RV"],
+ "\n",
+ ButtonBox["RVone",
+  BaseStyle->"Link",
+  ButtonData->"paclet:SpaceMath/ref/RVone"],
+ "\n",
+ ButtonBox["RXALL",
+  BaseStyle->"Link",
+  ButtonData->"paclet:SpaceMath/ref/RXALL"],
+ "\n",
+ ButtonBox["TableRBOTone",
+  BaseStyle->"Link",
+  ButtonData->"paclet:SpaceMath/ref/TableRBOTone"],
+ "\n",
+ ButtonBox["TableRGAMone",
+  BaseStyle->"Link",
+  ButtonData->"paclet:SpaceMath/ref/TableRGAMone"],
+ "\n",
+ ButtonBox["TableRTAUone",
+  BaseStyle->"Link",
+  ButtonData->"paclet:SpaceMath/ref/TableRTAUone"],
+ "\n",
+ ButtonBox["TableRVone\nSalidaRb1sig\nSalidaRb2sig\nRbRandom\nPlotRbRandom\n\
+SalidaRgamma1sig\nSalidaRgamma2sig\nRgamRandom\nPlotRgamRandom\n\
+SalidaRtau1sig\nSalidaRtau2sig\nRtauRandom\nPlotRtauRandom\nSalidaRW1sig\n\
+SalidaRW2sig\nRWRandom\nPlotRWRandom\nSalidaRZ1sig\nSalidaRZ2sig\nRZRandom\n\
+PlotRZRandom",
+  BaseStyle->"Link",
+  ButtonData->"paclet:SpaceMath/ref/TableRVone"]
+}], "GuideText",
+ CellID->1041229109],
+
+Cell[" ", "FooterCell"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{725, 750},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"Signal Strength functions",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "GuideColor", "LinkTrails" -> 
+  GridBox[{{
+      RowBox[{
+        ButtonBox[
+        "SpaceMath", ButtonData -> "paclet:SpaceMath/guide/SpaceMath", 
+         BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
+    Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
+  "", "Metadata" -> {
+   "built" -> "{2019, 12, 12, 12, 5, 6.329180}", 
+    "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
+    "keywords" -> {}, "specialkeywords" -> {}, 
+    "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
+    "Space Math Guide", "language" -> "en", "paclet" -> "SpaceMath", "status" -> 
+    "None", "summary" -> "", "synonyms" -> {}, "tabletags" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$8505, "title" -> 
+    "Signal Strength functions", "titlemodifier" -> "", "windowtitle" -> 
+    "Signal Strength functions", "type" -> "Guide", "uri" -> 
+    "SpaceMath/guide/SMfunctions"}},
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "Reference.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[597, 21, 3764, 87, 70, "AnchorBarGrid",ExpressionUUID->"8983ea53-fd96-414f-9938-c2fd598b9bbc",
+ CellID->1],
+Cell[CellGroupData[{
+Cell[4386, 112, 67, 1, 70, "GuideTitle",ExpressionUUID->"6019245e-ea3a-4634-9817-b2913478a081",
+ CellID->942062912],
+Cell[4456, 115, 56, 1, 70, "GuideAbstract",ExpressionUUID->"00934d7c-4901-4c4f-af44-327f8512e541",
+ CellID->1]
+}, Open  ]],
+Cell[4527, 119, 1321, 45, 70, "GuideText",ExpressionUUID->"9b263277-afad-45f7-903a-6f801b6afddd",
+ CellID->1041229109],
+Cell[5851, 166, 23, 0, 70, "FooterCell",ExpressionUUID->"6d25d52c-15e6-4d59-8b35-344329c782eb"]
+}
+]
+*)
+
+(* End of internal cache information *)

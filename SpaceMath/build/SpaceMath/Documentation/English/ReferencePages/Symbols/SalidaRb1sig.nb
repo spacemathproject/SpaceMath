@@ -1,0 +1,177 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6605,        167]
+NotebookOptionsPosition[      4397,        113]
+NotebookOutlinePosition[      6288,        162]
+CellTagsIndexPosition[      6245,        159]
+WindowTitle->SalidaRb1sig
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {Cell["SPACE MATH SYMBOL", "PacletNameCell",ExpressionUUID->
+     "b43de831-8beb-4908-8129-298f53b2f2ae"], Cell[TextData[Cell[BoxData[
+     ActionMenuBox[
+      FrameBox[
+       InterpretationBox[Cell[TextData[{
+         "URL",
+         StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+          StripOnInput->False]
+        }],ExpressionUUID->"5505c658-9bf1-4c32-98a5-af1c98163b73"],
+        TextCell[
+         Row[{"URL", 
+           Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+       StripOnInput->False], {"\<\"SpaceMath/ref/SalidaRb1sig\"\>":>
+      None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
+      Module[{DocumentationSearch`Private`nb$}, 
+       DocumentationSearch`Private`nb$ = NotebookPut[
+          Notebook[{
+            Cell["SpaceMath/ref/SalidaRb1sig"]}, Visible -> False]]; 
+       SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+       FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+       NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+      Delimiter, "\<\"Copy web URL\"\>":>
+      Module[{DocumentationSearch`Private`nb$}, 
+       DocumentationSearch`Private`nb$ = NotebookPut[
+          Notebook[{
+            Cell[
+             BoxData[
+              MakeBoxes[
+               Hyperlink[
+               "http://reference.wolfram.com/language/SpaceMath/ref/\
+SalidaRb1sig.html"], StandardForm]], "Input", TextClipboardType -> 
+             "PlainText"]}, Visible -> False]]; 
+       SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+       FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+       NotebookClose[DocumentationSearch`Private`nb$]; 
+       Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
+        NotebookLocate[{
+          URL[
+           StringJoin[
+            If[
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$20143], 
+             "http://reference.wolfram.com/system-modeler/", 
+             "http://reference.wolfram.com/language/"], 
+            "SpaceMath/ref/SalidaRb1sig", ".html"]], None}]}]},
+      Appearance->None,
+      MenuAppearance->Automatic,
+      MenuStyle->"URLMenu"]],
+     LineSpacing->{1.4, 0},ExpressionUUID->
+     "d3696857-739e-422a-a2ff-336493eccbdf"]], "AnchorBar",ExpressionUUID->
+     "73d5dc3c-980b-49b2-8a49-5c441f4061a6"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1,ExpressionUUID->"ee131395-396c-46df-9622-5c1774da8fa3"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell["SalidaRb1sig", "ObjectName",ExpressionUUID->
+  "9602c4bb-29d0-485f-b41c-8d31401d0937"],
+ Cell[BoxData[
+  TemplateBox[{8},
+   "Spacer1"]],ExpressionUUID->"50bbb81d-5e89-4ef9-ae64-9efe2a277a47"],
+ Cell[BoxData[
+ ""], "ObjectNameTranslation",ExpressionUUID->
+  "fdb8ba71-0a84-4828-8d8e-563c3bfa5524"]
+}], "ObjectNameGrid",ExpressionUUID->"4164a5b4-1fd8-4f7a-bbda-6a075dcac66f"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"SalidaRb1sig", "[", "]"}]], "InlineFormula",ExpressionUUID->
+      "356a6e51-9c9c-4a3c-a36a-40f583f8b3f0"],
+     " \[LineSeparator]",
+     Cell[
+     BoxData["\<\"SalidaRb1sig \[Rule] Output file \!\(\*SubscriptBox[\(R\), \
+\(b\)]\) at 1 sigma.\"\>"], "Output",
+      GeneratedCell->False,
+      CellAutoOverwrite->False,ExpressionUUID->
+      "221a3ac6-738d-4c9d-a92a-06a0e59999b2"]
+    }],ExpressionUUID->"37e2fe8b-62ab-4b4c-ae1b-008b0afdb550"]}
+  }]], "Usage",
+ GridBoxOptions->{
+ GridBoxBackground->{"Columns" -> {{None}}, "Rows" -> {{None}}}},
+ CellID->982511436,ExpressionUUID->"9f190bf1-4d82-401b-8314-6550ca79345e"]
+}, Open  ]],
+
+Cell[" ", "FooterCell",ExpressionUUID->"900b4392-13f0-4f64-b674-6bcdf341f457"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{725, 750},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"SalidaRb1sig",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "SymbolColor", "LinkTrails" -> 
+  GridBox[{{
+      RowBox[{
+        ButtonBox[
+        "SpaceMath", ButtonData -> "paclet:SpaceMath/guide/SpaceMath", 
+         BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
+    Left], "HasOptions" -> False, "ExampleCounter" -> 1, "NeedPlatMsgIn" -> 
+  None, "RootCaptions" -> "", 
+  "Metadata" -> {
+   "built" -> "{2019, 12, 12, 12, 5, 35.634466}", 
+    "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
+    "keywords" -> {}, "specialkeywords" -> {}, 
+    "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
+    "Space Math Symbol", "language" -> "en", "paclet" -> "SpaceMath", 
+    "status" -> "None", "summary" -> 
+    "SalidaRb1sig[] \"SalidaRb1sig \\[Rule] Output file SubscriptBox[R, b] \\ \
+at 1 sigma.\"", "synonyms" -> {}, "tabletags" -> {}, "title" -> 
+    "SalidaRb1sig", "titlemodifier" -> "", "windowtitle" -> "SalidaRb1sig", 
+    "type" -> "Symbol", "uri" -> "SpaceMath/ref/SalidaRb1sig", 
+    "WorkflowDockedCell" -> ""}, "SearchTextTranslated" -> ""},
+CellContext->"Global`",
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> "12.0 for Linux x86 (64-bit) (April 8, 2019)", 
+  StyleDefinitions -> "Default.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[584, 21, 2587, 56, 55, "AnchorBarGrid",ExpressionUUID->"ee131395-396c-46df-9622-5c1774da8fa3",
+ CellID->1],
+Cell[CellGroupData[{
+Cell[3196, 81, 397, 9, 55, "ObjectNameGrid",ExpressionUUID->"4164a5b4-1fd8-4f7a-bbda-6a075dcac66f"],
+Cell[3596, 92, 704, 16, 112, "Usage",ExpressionUUID->"9f190bf1-4d82-401b-8314-6550ca79345e",
+ CellID->982511436]
+}, Open  ]],
+Cell[4315, 111, 78, 0, 43, "FooterCell",ExpressionUUID->"900b4392-13f0-4f64-b674-6bcdf341f457"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
