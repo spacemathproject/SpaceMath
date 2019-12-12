@@ -33,9 +33,9 @@ Qt::usage ="2/3"
 Qb::usage ="-1/3"
 
 (*Main fermion contribution come from top and bottom quark*)
-Aht::usage ="See later"
-Ahb::usage ="See later"
-Af::usage ="See later"
+Aht::usage ="Aht"
+Ahb::usage ="Ahb"
+Af::usage ="Af"
 
 (*W contribution*)
 fW::usage ="W contribution"
@@ -53,7 +53,7 @@ AHc::usage ="Charged scalar contribution"
 Ahgaga::usage ="Charged scalar contribution"
 
 (*Decay width of Scalar boson into photon-photon*)
-WidthHgaga::usage ="See later"
+WidthHgaga::usage ="WidthHgaga"
 
 (*Scalar boson decay into vector pair*)
 (*Definitions*)
@@ -62,15 +62,15 @@ RTZ::usage ="Scalar boson decay into vector pair"
 \[Delta]Z::usage ="Scalar boson decay into vector pair"
 
 (*Decay width of Higgs boson into WW pair*)
-WidthHWW::usage ="See later"
+WidthHWW::usage ="WidthHWW"
 
 (* Decay width of Scalar boson into ZZ pair *)
-WidthHZZ::usage ="See later"
-BRhfifj::usage ="See later"
-BRhgaga::usage ="See later"
-BRhWW::usage ="See later"
-BRhZZ::usage ="See later"
-BRhgg::usage ="See later"
+WidthHZZ::usage ="WidthHZZ"
+BRhfifj::usage ="BRhfifj"
+BRhgaga::usage ="BRhgaga"
+BRhWW::usage ="BRhWW"
+BRhZZ::usage ="BRhZZ"
+BRhgg::usage ="BRhgg"
 
 (*Signal strengths*)
 Rbotbot::usage ="Signal strengths"
