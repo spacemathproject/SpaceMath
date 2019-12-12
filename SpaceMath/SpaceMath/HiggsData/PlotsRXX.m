@@ -313,126 +313,126 @@ for indicates the X axis label (Y axis label). The arguments xfor (yfor), xformi
 (*********************************************************************************************
 *******************************All signal strenghts*************************************************************
 *********************************************************************************************)
-RXALL1sig::usage ="See later"
+RXALL1sig::usage ="RXALL1sig"
 
-RXALL2sig::usage ="See later"
+RXALL2sig::usage ="RXALL2sig"
 
-RZ1sigX::usage ="See later"
+RZ1sigX::usage ="RZ1sigX"
 
-RZ2sigX::usage ="See later"
+RZ2sigX::usage ="RZ2sigX"
 
-RZone::usage ="See later"
+RZone::usage ="RZone"
 
 (*TABLES FOR RVone*)
-dataRZone1sig::usage ="See later"
-dataRZone2sig::usage ="See later"
+dataRZone1sig::usage ="dataRZone1sig"
+dataRZone2sig::usage ="dataRZone2sig"
 
 (*EXPORTING TABLES FOR RVone*)
-TableRZone::usage ="See later"
+TableRZone::usage ="TableRZone"
 
 (*RZ to 2\[Sigma] in the case in which there is dependence in more than two parameters*)
 (*\[Mu]ZZ*)
-RZ2sig::usage ="See later"
-RZ2sigWXYZ::usage ="See later"
+RZ2sig::usage ="RZ2sig"
+RZ2sigWXYZ::usage ="RZ2sigWXYZ"
 
 (*RZ to 1\[Sigma] in the case in which there is dependence in more than two parameters*)
 (*\[Mu]ZZ*)
-RZ1sig::usage ="See later"
-RZ1sigWXYZ::usage ="See later"
-RZ::usage ="See later"
+RZ1sig::usage ="RZ1sig"
+RZ1sigWXYZ::usage ="RZ1sigWXYZ"
+RZ::usage ="RZ"
 
 (*TABLES FOR RZ*)
-dataRZ1sig::usage ="See later"
-dataRZ2sig::usage ="See later"
+dataRZ1sig::usage ="dataRZ1sig"
+dataRZ2sig::usage ="dataRZ2sig"
 
 (*EXPORTING TABLES FOR RZ*)
-TableRZ::usage ="See later"
+TableRZ::usage ="TableRZ"
 
 (* Individual process *)
 (* R W *)
 (*R W to 1\[Sigma] in the case in which there is dependence in one parameter*)
-RW1sigX::usage ="See later"
+RW1sigX::usage ="RW1sigX"
 
 (*kappa bottom to 2\[Sigma] in the case in which there is dependence in one parameter*)
-RW2sigX::usage ="See later"
-RWone::usage ="See later"
+RW2sigX::usage ="RW2sigX"
+RWone::usage ="RWone"
 
 (*TABLES FOR RWone*)
-dataRWone1sig::usage ="See later"
-dataRWone2sig::usage ="See later"
+dataRWone1sig::usage ="dataRWone1sig"
+dataRWone2sig::usage ="dataRWone2sig"
 
 (*EXPORTING TABLES FOR RVone*)
-TableRWone::usage ="See later"
+TableRWone::usage ="TableRWone"
 
 (*RW to 2\[Sigma] in the case in which there is dependence in more than two parameters*)
 (*\[Mu]WW*)
-RW2sig::usage ="See later"
-RW2sigWXYZ::usage ="See later"
+RW2sig::usage ="RW2sig"
+RW2sigWXYZ::usage ="RW2sigWXYZ"
 
 (*RW to 1\[Sigma] in the case in which there is dependence in more than two parameters*)
 (*\[Mu]WW*)
-RW1sig::usage ="See later"
-RW1sigWXYZ::usage ="See later"
-RW::usage ="See later"
+RW1sig::usage ="RW1sig"
+RW1sigWXYZ::usage ="RW1sigWXYZ"
+RW::usage ="RW"
 
 (*TABLES FOR RW*)
-dataRW1sig::usage ="See later"
-dataRW2sig::usage ="See later"
+dataRW1sig::usage ="dataRW1sig"
+dataRW2sig::usage ="dataRW2sig"
 
 (*EXPORTING TABLES FOR RZ*)
-TableRW::usage ="See later"
+TableRW::usage ="TableRW"
 
 (* Individual process *)
 (* R Gamma *)
 (*R Gamma to 1\[Sigma] in the case in which there is dependence in one parameter*)
-RGam1sigX::usage ="See later"
+RGam1sigX::usage ="RGam1sigX"
 
 (*R gamma to 2\[Sigma] in the case in which there is dependence in one parameter*)
-RGam2sigX::usage ="See later"
+RGam2sigX::usage ="RGam2sigX"
 
 
 (*TABLES FOR RGAMone*)
-dataRGAMone1sig::usage ="See later"
-dataRGAMone2sig::usage ="See later"
+dataRGAMone1sig::usage ="dataRGAMone1sig"
+dataRGAMone2sig::usage ="dataRGAMone2sig"
 
 (*R gamma to 2\[Sigma] in the case in which there is dependence in more than two parameters*)
 (*\[Mu]\[Gamma]\[Gamma]*)
-Rgam2sig::usage ="See later"
-RGam2sigWXYZ::usage ="See later"
+Rgam2sig::usage ="Rgam2sig"
+RGam2sigWXYZ::usage ="RGam2sigWXYZ"
 
 (*R gamma to 2\[Sigma] in the case in which there is dependence in more than two parameters*)
 (*\[Mu]\[Gamma]\[Gamma]*)
-Rgam1sig::usage ="See later"
-RGam1sigWXYZ::usage ="See later"
+Rgam1sig::usage ="Rgam1sig"
+RGam1sigWXYZ::usage ="RGam1sigWXYZ"
 
 (*R gamma to 1\[Sigma] in the case in which there is dependence in more than two parameters*)
 (* Individual process *)
 (* R botton *)
 (*************************************************************************************************************************************************************************************)
 (*R bottom to 1\[Sigma] in the case in which there is dependence in one parameter*)
-Rb1sigX::usage ="See later"
+Rb1sigX::usage ="Rb1sigX"
 
 (*kappa bottom to 2\[Sigma] in the case in which there is dependence in one parameter*)
-Rb2sigX::usage ="See later"
+Rb2sigX::usage ="Rb2sigX"
 
 (*TABLES FOR RBOTone*)
-dataRBOTone1sig::usage ="See later"
-dataRBOTone2sig::usage ="See later"
+dataRBOTone1sig::usage ="dataRBOTone1sig"
+dataRBOTone2sig::usage ="dataRBOTone2sig"
 
 (* Individual process *)
 (* R tau *)
 (*R tau to 1\[Sigma] in the case in which there is dependence in one parameter*)
-Rtau1sigX::usage ="See later"
+Rtau1sigX::usage ="Rtau1sigX"
 
 (*R tau to 2\[Sigma] in the case in which there is dependence in one parameter*)
-Rtau2sigX::usage ="See later"
+Rtau2sigX::usage ="Rtau2sigX"
 
 (*TABLES FOR RTAUone*)
-dataRTAUone1sig::usage ="See later"
-dataRTAUone2sig::usage ="See later"
+dataRTAUone1sig::usage ="dataRTAUone1sig"
+dataRTAUone2sig::usage ="dataRTAUone2sig"
 
-Intersection2sigRXX::usage ="See later"
-Intersection1sigRXX::usage ="See later"
+Intersection2sigRXX::usage ="Intersection2sigRXX"
+Intersection1sigRXX::usage ="Intersection1sigRXX"
 (* ------------------------------------------------------------------------ *)
 
 Begin["`Package`"]
