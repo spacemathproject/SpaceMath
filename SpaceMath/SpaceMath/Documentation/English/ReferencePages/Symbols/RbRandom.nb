@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     17023,        446]
-NotebookOptionsPosition[     10311,        305]
-NotebookOutlinePosition[     10974,        329]
-CellTagsIndexPosition[     10895,        324]
+NotebookDataLength[     17204,        448]
+NotebookOptionsPosition[     10492,        307]
+NotebookOutlinePosition[     11155,        331]
+CellTagsIndexPosition[     11076,        326]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -143,22 +143,24 @@ Cell[TextData[{
     " ", "x3_", ",", " ", "x3min_", ",", " ", "x3max_", ",", " ", "x4_", ",", 
     " ", "x4min_", ",", " ", "x4max_", ",", " ", "NN_"}], "]"}]], 
   "InlineFormula",ExpressionUUID->"ed5438c3-8d3e-4dca-892b-e4b2f22f8d3b"],
- " \[LineSeparator]",
+ " \[LineSeparator]RbRandom[ghtt_, ghbb_, x1_, x1min_, x1max_, x2_, x2min_, \
+x2max_, x3_, x3min_, x3max_, x4_, x4min_, x4max_, NN_] \[Rule] This command \
+generates random points that agree with the signal strength   ",
  Cell[BoxData[
- "\"\<This command generates random points that agree with the signal \
-strength \!\(\*SubscriptBox[\(R\), \(b\)]\) measurements. The arguments ghtt \
-and ghbb stand for the SM-like Higgs boson to top and bottom quarks \
-couplings, respectively. While xi, with i= 1, 2, 3, 4, are the parameters to \
-constraint and ximin-ximax represent the initial-final values of the interval \
-to evaluate. Finally, NN represents the random points to generate. Here [[i]] \
-indicates the confidence level: i=1 (2) at 1\[Sigma] (2\[Sigma]). The output \
-file will be saved in $UserDocumentsDirectory.\>\""], "Output",
-  GeneratedCell->False,
-  CellAutoOverwrite->False,
-  CellChangeTimes->{3.785099157349964*^9},ExpressionUUID->
-  "c3578223-8452-4d6d-9e6f-b33525417082"]
+  SubscriptBox["R", "b"]], "Input",
+  CellChangeTimes->{{3.785100924567649*^9, 3.785100924568244*^9}},
+  ExpressionUUID->"c0bbae1a-00f3-4af4-9561-236c65c7ca4c"],
+ " measurements. The arguments ghtt and ghbb stand for the SM-like Higgs \
+boson to top and bottom quarks couplings, respectively. While xi, with i= 1, \
+2, 3, 4, are the parameters to constraint and ximin-ximax represent the \
+initial-final values of the interval to evaluate. Finally, NN represents the \
+random points to generate. Here [[i]] indicates the confidence level: i=1 (2) \
+at 1\[Sigma] (2\[Sigma]). The output file will be saved in \
+$UserDocumentsDirectory."
 }], "Usage",
- CellChangeTimes->{{3.7850991936995583`*^9, 3.785099245078764*^9}},
+ CellChangeTimes->{{3.7850991936995583`*^9, 3.785099245078764*^9}, {
+  3.785100991381262*^9, 3.7851010101875134`*^9}, {3.7851010484811487`*^9, 
+  3.785101075653945*^9}},
  CellID->982511436,ExpressionUUID->"96d136d4-055e-423a-bcba-7fc6dfe38a30"],
 
 Cell["XXXX", "Notes",
@@ -304,7 +306,7 @@ Cell[BoxData[
 }, Open  ]]
 },
 WindowSize->{700, 770},
-WindowMargins->{{4, Automatic}, {Automatic, 28}},
+WindowMargins->{{4, Automatic}, {Automatic, 56}},
 CellContext->"Global`",
 FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
 StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStyles.nb", 
@@ -316,14 +318,14 @@ StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStyles.nb",
 (*CellTagsOutline
 CellTagsIndex->{
  "ExtendedExamples"->{
-  Cell[7566, 227, 155, 2, 57, "ExtendedExamplesSection",ExpressionUUID->"fa31dae9-168f-45d7-afc1-1d1b179e44f6",
+  Cell[7747, 229, 155, 2, 57, "ExtendedExamplesSection",ExpressionUUID->"fa31dae9-168f-45d7-afc1-1d1b179e44f6",
    CellTags->"ExtendedExamples",
    CellID->1854448968]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"ExtendedExamples", 10702, 317}
+ {"ExtendedExamples", 10883, 319}
  }
 *)
 (*NotebookFileOutline
@@ -384,73 +386,71 @@ Cell[3963, 125, 122, 2, 70, "Details",ExpressionUUID->"d59b41d0-87a2-440b-99b4-b
 Cell[CellGroupData[{
 Cell[4122, 132, 106, 1, 65, "ObjectName",ExpressionUUID->"e2f0f4ad-6a39-43fc-a6dc-76c86f9c1de7",
  CellID->1224892054],
-Cell[4231, 135, 1476, 26, 221, "Usage",ExpressionUUID->"96d136d4-055e-423a-bcba-7fc6dfe38a30",
+Cell[4231, 135, 1657, 28, 203, "Usage",ExpressionUUID->"96d136d4-055e-423a-bcba-7fc6dfe38a30",
  CellID->982511436],
-Cell[5710, 163, 97, 1, 26, "Notes",ExpressionUUID->"f889951d-3752-493a-b82b-fab6f415aa98",
+Cell[5891, 165, 97, 1, 26, "Notes",ExpressionUUID->"f889951d-3752-493a-b82b-fab6f415aa98",
  CellID->1067943069]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5844, 169, 112, 1, 46, "TutorialsSection",ExpressionUUID->"c35a4d25-7576-4be6-8fdc-2d1d7069df12",
+Cell[6025, 171, 112, 1, 46, "TutorialsSection",ExpressionUUID->"c35a4d25-7576-4be6-8fdc-2d1d7069df12",
  CellID->250839057],
-Cell[5959, 172, 100, 1, 17, "Tutorials",ExpressionUUID->"27ac286b-9657-492d-b4e7-4ccc17c7b54a",
+Cell[6140, 174, 100, 1, 17, "Tutorials",ExpressionUUID->"27ac286b-9657-492d-b4e7-4ccc17c7b54a",
  CellID->341631938]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6096, 178, 138, 1, 33, "RelatedDemonstrationsSection",ExpressionUUID->"98094ed6-fe57-4558-9cb1-d32476f0c9f1",
+Cell[6277, 180, 138, 1, 33, "RelatedDemonstrationsSection",ExpressionUUID->"98094ed6-fe57-4558-9cb1-d32476f0c9f1",
  CellID->1268215905],
-Cell[6237, 181, 113, 1, 17, "RelatedDemonstrations",ExpressionUUID->"2e755078-cb2c-4868-b4b9-1b2c1155b570",
+Cell[6418, 183, 113, 1, 17, "RelatedDemonstrations",ExpressionUUID->"2e755078-cb2c-4868-b4b9-1b2c1155b570",
  CellID->1129518860]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6387, 187, 120, 1, 33, "RelatedLinksSection",ExpressionUUID->"6fe76a18-06ee-414a-acee-f30a12558091",
+Cell[6568, 189, 120, 1, 33, "RelatedLinksSection",ExpressionUUID->"6fe76a18-06ee-414a-acee-f30a12558091",
  CellID->1584193535],
-Cell[6510, 190, 104, 1, 17, "RelatedLinks",ExpressionUUID->"e7a90958-0977-48e8-8eee-d0e4d3934ee1",
+Cell[6691, 192, 104, 1, 17, "RelatedLinks",ExpressionUUID->"e7a90958-0977-48e8-8eee-d0e4d3934ee1",
  CellID->1038487239]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6651, 196, 110, 1, 33, "SeeAlsoSection",ExpressionUUID->"99fee67b-6317-4101-bff7-84d7a4a7ca27",
+Cell[6832, 198, 110, 1, 33, "SeeAlsoSection",ExpressionUUID->"99fee67b-6317-4101-bff7-84d7a4a7ca27",
  CellID->1255426704],
-Cell[6764, 199, 98, 1, 17, "SeeAlso",ExpressionUUID->"ce3ec467-8a23-4702-8d2a-bbd563c54c8d",
+Cell[6945, 201, 98, 1, 17, "SeeAlso",ExpressionUUID->"ce3ec467-8a23-4702-8d2a-bbd563c54c8d",
  CellID->929782353]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6899, 205, 112, 1, 33, "MoreAboutSection",ExpressionUUID->"e07aec7b-c687-49b6-a5f7-15c467f26cee",
+Cell[7080, 207, 112, 1, 33, "MoreAboutSection",ExpressionUUID->"e07aec7b-c687-49b6-a5f7-15c467f26cee",
  CellID->38303248],
-Cell[7014, 208, 101, 1, 17, "MoreAbout",ExpressionUUID->"c029dd49-9204-47fb-8220-61fe3735bcb5",
+Cell[7195, 210, 101, 1, 17, "MoreAbout",ExpressionUUID->"c029dd49-9204-47fb-8220-61fe3735bcb5",
  CellID->1665078683]
 }, Open  ]],
-Cell[7130, 212, 411, 11, 71, "PrimaryExamplesSection",ExpressionUUID->"0f76eaa8-545f-481e-a012-aff4ebdbd13e",
+Cell[7311, 214, 411, 11, 71, "PrimaryExamplesSection",ExpressionUUID->"0f76eaa8-545f-481e-a012-aff4ebdbd13e",
  CellID->880084151],
 Cell[CellGroupData[{
-Cell[7566, 227, 155, 2, 57, "ExtendedExamplesSection",ExpressionUUID->"fa31dae9-168f-45d7-afc1-1d1b179e44f6",
+Cell[7747, 229, 155, 2, 57, "ExtendedExamplesSection",ExpressionUUID->"fa31dae9-168f-45d7-afc1-1d1b179e44f6",
  CellTags->"ExtendedExamples",
  CellID->1854448968],
-Cell[7724, 231, 242, 5, 32, "ExampleSection",ExpressionUUID->"c02fb196-319b-4b59-a1f9-d2686e22bf82",
+Cell[7905, 233, 242, 5, 32, "ExampleSection",ExpressionUUID->"c02fb196-319b-4b59-a1f9-d2686e22bf82",
  CellID->1293636265],
-Cell[7969, 238, 265, 5, 20, "ExampleSection",ExpressionUUID->"bd48c737-e2a3-490d-b881-3278daec826f",
+Cell[8150, 240, 265, 5, 20, "ExampleSection",ExpressionUUID->"bd48c737-e2a3-490d-b881-3278daec826f",
  CellID->1020263627],
 Cell[CellGroupData[{
-Cell[8259, 247, 244, 5, 20, "ExampleSection",ExpressionUUID->"7162069d-db13-4af0-a6fb-06a2bc49f716",
+Cell[8440, 249, 244, 5, 20, "ExampleSection",ExpressionUUID->"7162069d-db13-4af0-a6fb-06a2bc49f716",
  CellID->2061341341],
-Cell[8506, 254, 247, 5, 70, "ExampleSubsection",ExpressionUUID->"194cfe06-8bc6-4073-b986-c54638455e46",
+Cell[8687, 256, 247, 5, 70, "ExampleSubsection",ExpressionUUID->"194cfe06-8bc6-4073-b986-c54638455e46",
  CellID->1757724783],
-Cell[8756, 261, 247, 5, 70, "ExampleSubsection",ExpressionUUID->"ea53c401-012a-42dc-9c80-0f591c91fca7",
+Cell[8937, 263, 247, 5, 70, "ExampleSubsection",ExpressionUUID->"ea53c401-012a-42dc-9c80-0f591c91fca7",
  CellID->1295379749]
 }, Closed]],
-Cell[9018, 269, 248, 5, 20, "ExampleSection",ExpressionUUID->"9322488e-3dea-45be-b0c4-ff184d153e61",
+Cell[9199, 271, 248, 5, 20, "ExampleSection",ExpressionUUID->"9322488e-3dea-45be-b0c4-ff184d153e61",
  CellID->258228157],
-Cell[9269, 276, 259, 5, 20, "ExampleSection",ExpressionUUID->"b6ad6597-e89c-466c-8cf1-1cf95bd9aba5",
+Cell[9450, 278, 259, 5, 20, "ExampleSection",ExpressionUUID->"b6ad6597-e89c-466c-8cf1-1cf95bd9aba5",
  CellID->2123667759],
-Cell[9531, 283, 252, 5, 20, "ExampleSection",ExpressionUUID->"f876c3ea-f352-4a95-bfe2-4f793888aae4",
+Cell[9712, 285, 252, 5, 20, "ExampleSection",ExpressionUUID->"f876c3ea-f352-4a95-bfe2-4f793888aae4",
  CellID->1305812373],
-Cell[9786, 290, 257, 5, 20, "ExampleSection",ExpressionUUID->"fa46a4fc-3221-424f-bb43-8b037a64d51a",
+Cell[9967, 292, 257, 5, 20, "ExampleSection",ExpressionUUID->"fa46a4fc-3221-424f-bb43-8b037a64d51a",
  CellID->1653164318],
-Cell[10046, 297, 249, 5, 20, "ExampleSection",ExpressionUUID->"f1ccdfcd-2dcd-4662-842d-3c9e8b7d59a5",
+Cell[10227, 299, 249, 5, 20, "ExampleSection",ExpressionUUID->"f1ccdfcd-2dcd-4662-842d-3c9e8b7d59a5",
  CellID->589267740]
 }, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
