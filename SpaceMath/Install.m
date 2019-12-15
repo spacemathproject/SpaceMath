@@ -43,8 +43,8 @@ Needs["Utilities`URLTools`"];
 Options[InstallSpaceMath]={
 	AutoDisableInsufficientVersionWarning-> None,
 	AutoOverwriteSpaceMathDirectory-> None,
-	SpaceMathDevelopmentVersionLink->"https://github.com/spacemathproject/SpaceMath/archive/finale.zip",
-	SpaceMathStableVersionLink->"https://github.com/spacemathproject/SpaceMath/archive/finale.zip",
+	SpaceMathDevelopmentVersionLink->"https://github.com/spacemathproject/SpaceMath/archive/developerTAVP.zip",
+	SpaceMathStableVersionLink->"https://github.com/spacemathproject/SpaceMath/archive/developerTAVP.zip",
 	InstallSpaceMathDevelopmentVersion->False,
 	InstallSpaceMathTo->FileNameJoin[{$UserBaseDirectory, "Applications","SpaceMath"}]
 };
