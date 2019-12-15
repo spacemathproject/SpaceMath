@@ -19,19 +19,12 @@ If[ FileNames["*",{SpaceMath`$SpaceMathDirectory}] === {},
 	Abort[];
   ];
 
-(*    Set the version number    *)
 SpaceMath`$SpaceMathVersion = "1.0";
 
-(*    Set defaults here, not in the config file    *)
+
 If[ !ValueQ[Global`$SpaceMathStartupMessages],
 	Global`$SpaceMathStartupMessages = True
 ];
-
-(*
-If[ !ValueQ[Global`$LoadAddOns],
-	Global`$LoadAddOns = {}
-];
-*)
 
 If[ Global`$SpaceMathStartupMessages=!=False,
 	PrintTemporary[Style["Loading SpaceMath from "<>
@@ -51,22 +44,12 @@ ObliquePar::usage =
 "The implementation of the Higgs boson data within the SpaceMath code, \
 was closely following the reference : arXiv:1809.10733v2[hep-ex], 10.1140/epjc/s10052-019-6909-y."
 
-(* Implementation of the package *)
-
-(*
-MakeSpaceMathPrivateContext::usage =
-"MakeSpaceMathPrivateContext[val] constructs
-SpaceMath`Private`val.";
-*)
-
 SMDeclareHeader::usage =
 "SMDeclareHeader is an internal SpaceMath function to declare
 objects inside an .m file in the same manner as it is done in
 the JLink package. It may be used by SpaceMath addons."
 
 Begin["`Private`"]
-
-(* New features*)
 
 SMDeclareHeader[file_] :=
 	Module[ {strm, einput, moreLines = True},
@@ -84,11 +67,6 @@ SMDeclareHeader[file_] :=
 		];
 		Close[file]
 	];
-
-(*
-MakeSpaceMathPrivateContext[x_String] :=
-	MakeSpaceMathPrivateContext[x] =	ToExpression["SpaceMath`Private`"<>x];
-*)
 
 End[];
 
@@ -140,14 +118,8 @@ If[ Global`$SpaceMathStartupMessages =!= False,
 	Print [Style["Facultad de Estudios Superiores-Cuautitl\[AAcute]n, Universidad Nacional Aut\[OAcute]noma de M\[EAcute]xico","Text"]];
 	Print [Style["T. A. Valencia-P\[EAcute]rez","Text"]];
 	Print [Style["Facultad de Ciencias F\[IAcute]sico Matem\[AAcute]ticas, Benem\[EAcute]rita Universidad Aut\[OAcute]noma de Puebla","Text"]];
-	];
-(*Style[DisplayForm@ButtonBox["SpaceMath_RXX", BaseStyle->"Link", ButtonData :> "paclet:SpaceMath/SPACEMATH_RXX",
-				ButtonNote -> "paclet:SpaceMath/SPACEMATH_RXX"], "Text"];*)
-(*
-BeginPackage["SpaceMath`"];
-If[ Global`$LoadAddOns=!={},
-	SMDeclareHeader/@Map[ToFileName[{$SpaceMathDirectory,  "AddOns",#},#<>".m"] &, Global`$LoadAddOns];
-	Get/@Map[ToFileName[{$SpaceMathDirectory,  "AddOns",#},#<>".m"] &, Global`$LoadAddOns]
-];
-EndPackage[];
-*)
+	
+  ];
+
+
+
