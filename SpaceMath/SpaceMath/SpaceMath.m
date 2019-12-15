@@ -21,7 +21,6 @@ If[ FileNames["*",{SpaceMath`$SpaceMathDirectory}] === {},
 
 SpaceMath`$SpaceMathVersion = "1.0";
 
-
 If[ !ValueQ[Global`$SpaceMathStartupMessages],
 	Global`$SpaceMathStartupMessages = True
 ];
@@ -44,10 +43,7 @@ ObliquePar::usage =
 "The implementation of the Higgs boson data within the SpaceMath code, \
 was closely following the reference : arXiv:1809.10733v2[hep-ex], 10.1140/epjc/s10052-019-6909-y."
 
-SMDeclareHeader::usage =
-"SMDeclareHeader is an internal SpaceMath function to declare
-objects inside an .m file in the same manner as it is done in
-the JLink package. It may be used by SpaceMath addons."
+SMDeclareHeader::usage = "SMDeclareHeader is an internal SpaceMath function to declare objects inside an .m file."
 
 Begin["`Private`"]
 
@@ -69,7 +65,6 @@ SMDeclareHeader[file_] :=
 	];
 
 End[];
-
 
 listHiggsData = FileNames[{"*.m"},ToFileName[{$SpaceMathDirectory,"HiggsData"}]];
 listLFVprocesses = FileNames[{"*.m"},ToFileName[{$SpaceMathDirectory,"LFVprocesses"}]];
