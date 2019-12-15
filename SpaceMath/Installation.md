@@ -2,13 +2,13 @@ Automatic Installation
 
 Run the following instructions in a Notebook of Mathematica
 
-Import["https://raw.githubusercontent.com/spacemathproject/SpaceMath/finale/SpaceMath/Install.m"]
+Import["https://raw.githubusercontent.com/spacemathproject/SpaceMath/developerTAVP/SpaceMath/Install.m"]
 
 InstallSpaceMath[]
 
 Manual installation
 
-Download (https://github.com/spacemathproject/SpaceMath/archive/finale.zip)
+Download (https://github.com/spacemathproject/SpaceMath/archive/developerTAVP.zip)
 
 Unzip the folder inside $UserBaseDirectory/Applications
 
