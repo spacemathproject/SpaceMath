@@ -1,29 +1,23 @@
 (* Mathematica Package *)
 
-(* Created by the Wolfram Workbench OCT/2019 *)
-
-
 If[ MemberQ[$Packages,"SpaceMath`"],
-	Print["SpaceMath is already loaded! To reload it, please restart the kernel."];
+	Print["SpaceMath package is already loaded! To reload it, please restart the kernel."];
 	Abort[]
-];
+  ];
 
 If[ ($VersionNumber < 10.0),
-	Print["You need at least Mathematica 10.0 to run SpaceMath. Quitting the Mathematica kernel."];
+	Print["You need at least Mathematica 10.0 to run SpaceMath package. Please update your Mathematica version."];
 	Abort[]
-];
+  ];
 
-(*    Find out where SpaceMath is installed    *)
-If[ !ValueQ[SpaceMath`$SpaceMathDirectory],
-	SpaceMath`$SpaceMathDirectory =
-	DirectoryName[$InputFileName]
-];
+If[ !ValueQ[SpaceMath`$SpaceMathDirectory], SpaceMath`$SpaceMathDirectory = DirectoryName[$InputFileName]
+  ];
 
 If[ FileNames["*",{SpaceMath`$SpaceMathDirectory}] === {},
 	Print["Could not find a SpaceMath installation. Quitting the Mathematica kernel."];
 	Clear[SpaceMath`$SpaceMathDirectory];
 	Abort[];
-];
+  ];
 
 (*    Set the version number    *)
 SpaceMath`$SpaceMathVersion = "1.0";
@@ -33,10 +27,11 @@ If[ !ValueQ[Global`$SpaceMathStartupMessages],
 	Global`$SpaceMathStartupMessages = True
 ];
 
-
+(*
 If[ !ValueQ[Global`$LoadAddOns],
 	Global`$LoadAddOns = {}
 ];
+*)
 
 If[ Global`$SpaceMathStartupMessages=!=False,
 	PrintTemporary[Style["Loading SpaceMath from "<>
@@ -88,8 +83,10 @@ SMDeclareHeader[file_] :=
 		Close[file]
 	];
 
+(*
 MakeSpaceMathPrivateContext[x_String] :=
 	MakeSpaceMathPrivateContext[x] =	ToExpression["SpaceMath`Private`"<>x];
+*)
 
 End[];
 
