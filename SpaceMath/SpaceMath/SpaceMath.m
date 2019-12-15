@@ -141,11 +141,11 @@ If[ Global`$SpaceMathStartupMessages =!= False,
 	];
 (*Style[DisplayForm@ButtonBox["SpaceMath_RXX", BaseStyle->"Link", ButtonData :> "paclet:SpaceMath/SPACEMATH_RXX",
 				ButtonNote -> "paclet:SpaceMath/SPACEMATH_RXX"], "Text"];*)
-
+(*
 BeginPackage["SpaceMath`"];
 If[ Global`$LoadAddOns=!={},
 	SMDeclareHeader/@Map[ToFileName[{$SpaceMathDirectory,  "AddOns",#},#<>".m"] &, Global`$LoadAddOns];
 	Get/@Map[ToFileName[{$SpaceMathDirectory,  "AddOns",#},#<>".m"] &, Global`$LoadAddOns]
 ];
 EndPackage[];
-
+*)
