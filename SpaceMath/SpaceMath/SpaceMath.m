@@ -53,9 +53,11 @@ was closely following the reference : arXiv:1809.10733v2[hep-ex], 10.1140/epjc/s
 
 (* Implementation of the package *)
 
+(*
 MakeSpaceMathPrivateContext::usage =
 "MakeSpaceMathPrivateContext[val] constructs
 SpaceMath`Private`val.";
+*)
 
 SMDeclareHeader::usage =
 "SMDeclareHeader is an internal SpaceMath function to declare
