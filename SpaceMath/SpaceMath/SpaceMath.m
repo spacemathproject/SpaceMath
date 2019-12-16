@@ -21,6 +21,7 @@ If[ FileNames["*",{SpaceMath`$SpaceMathDirectory}] === {},
 
 SpaceMath`$SpaceMathVersion = "1.0";
 
+(*
 If[ !ValueQ[Global`$SpaceMathStartupMessages],
 	Global`$SpaceMathStartupMessages = True
 ];
@@ -29,6 +30,7 @@ If[ Global`$SpaceMathStartupMessages=!=False,
 	PrintTemporary[Style["Loading SpaceMath from "<>
 	SpaceMath`$SpaceMathDirectory, "Text"]]
 ];
+*)
 
 BeginPackage["SpaceMath`"]
 
@@ -91,29 +93,25 @@ EndPackage[];
 
 
 If[ Global`$SpaceMathStartupMessages =!= False,
-	Print[	Style["SpaceMath ", "Text", Bold], Style[$SpaceMathVersion <> ". For help, use the ",
-				"Text"],
-			Style[DisplayForm@ButtonBox["documentation center", BaseStyle->"Link", ButtonData :> "paclet:SpaceMath/tutorial/SpaceMathOverview",
+    Print[Style["SpaceMath ", "Text", Bold], Style[$SpaceMathVersion <> ". For help, use the ", "Text"],
+		  Style[DisplayForm@ButtonBox["documentation center", BaseStyle->"Link", ButtonData :> "paclet:SpaceMath/tutorial/SpaceMathOverview",
 				ButtonNote -> "paclet:SpaceMath/tutorial/SpaceMathOverview"], "Text"],
-			Style[", check out the ", "Text"],
-				Style[DisplayForm@ButtonBox["wiki",ButtonData :> {URL["https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"], None},BaseStyle -> "Hyperlink",
+		  Style[", check out the ", "Text"],
+		  Style[DisplayForm@ButtonBox["wiki",ButtonData :> {URL["https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"], None},BaseStyle -> "Hyperlink",
 				ButtonNote -> "https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"],"Text"],
-			Style[" or write to the ", "Text"],
-			Style[DisplayForm@ButtonBox["mailing list.",ButtonData :> {URL["https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"], None},BaseStyle -> "Hyperlink",
+		  Style[" or write to the ", "Text"],
+		  Style[DisplayForm@ButtonBox["mailing list.",ButtonData :> {URL["https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"], None},BaseStyle -> "Hyperlink",
 				ButtonNote -> "https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"],"Text"]];
-	Print[ Style["See also the supplied ","Text"],
-
-	Style[DisplayForm@ButtonBox["Examples.", BaseStyle -> "Hyperlink",	ButtonFunction :>
-							SystemOpen[FileNameJoin[{$SpaceMathDirectory, "Examples"}]],
-							Evaluator -> Automatic, Method -> "Preemptive"], "Text"],
-	Style[" If you use SpaceMath in your research, please cite","Text"]];
+	Print[Style["See also the supplied ","Text"],
+	      Style[DisplayForm@ButtonBox["Examples.", BaseStyle -> "Hyperlink", 
+	      	    ButtonFunction :> SystemOpen[FileNameJoin[{$SpaceMathDirectory, "Examples"}]], Evaluator -> Automatic, Method -> "Preemptive"], "Text"],
+	      Style[" If you use SpaceMath in your research, please cite","Text"]];
 	Print [Style["\[Bullet] SpaceMath Version 1.0","Text"]];
 	Print [Style["\[Bullet] Authors:  ","Text"]];
 	Print [Style["M. A. Arroyo-Ure\[NTilde]a","Text"]];
 	Print [Style["Facultad de Estudios Superiores-Cuautitl\[AAcute]n, Universidad Nacional Aut\[OAcute]noma de M\[EAcute]xico","Text"]];
 	Print [Style["T. A. Valencia-P\[EAcute]rez","Text"]];
 	Print [Style["Facultad de Ciencias F\[IAcute]sico Matem\[AAcute]ticas, Benem\[EAcute]rita Universidad Aut\[OAcute]noma de Puebla","Text"]];
-	
   ];
 
 
