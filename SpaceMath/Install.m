@@ -15,15 +15,8 @@ This is needed to use SpaceMath documentation in Mathematica 8 and 9, since othe
 time one opens a help page for a SpaceMath function. The default value None means that the user will be asked by a dialog. \
 False means that the warning will not be disabled.";
 
-SpaceMathDevelopmentVersionLink::usage="SpaceMathDevelopmentVersionLink is an option of InstallSpaceMath. It specifies the url \
-to the main repository of SpaceMath. This repository is used to install the development version of SpaceMath.";
-
 SpaceMathStableVersionLink::usage="SpaceMathStableVersionLink is an option of InstallSpaceMath. It specifies the url \
 to the latest stable release of SpaceMath.";
-
-InstallSpaceMathDevelopmentVersion::usage="InstallSpaceMathDevelopmentVersion is an option of InstallSpaceMath. If \
-set to True, the installer will download the latest development version of SpaceMath from the git repository. \
-Otherwise it will install the latest stable version.";
 
 InstallSpaceMathTo::usage="InstallSpaceMathTo is an option of InstallSpaceMath. It specifies, the full path \
 to the directory where SpaceMath will be installed.";
@@ -43,25 +36,21 @@ Needs["Utilities`URLTools`"];
 Options[InstallSpaceMath]={
 	AutoDisableInsufficientVersionWarning-> None,
 	AutoOverwriteSpaceMathDirectory-> None,
-	SpaceMathDevelopmentVersionLink->"https://github.com/spacemathproject/SpaceMath/archive/developerTAVP.zip",
 	SpaceMathStableVersionLink->"https://github.com/spacemathproject/SpaceMath/archive/developerTAVP.zip",
-	InstallSpaceMathDevelopmentVersion->False,
 	InstallSpaceMathTo->FileNameJoin[{$UserBaseDirectory, "Applications","SpaceMath"}]
 };
 	
 InstallSpaceMath[OptionsPattern[]]:=
 	Module[{	unzipDir, tmpzip, gitzip, packageName, packageDir, fullPath,
-				SMgetUrl, configFileProlog,
-				OverwriteSM, zipDir,
-				useTraditionalForm},
-
+				SMgetUrl,OverwriteSM, zipDir},
+(*
 	If[OptionValue[InstallSpaceMathDevelopmentVersion],
 		gitzip = OptionValue[SpaceMathDevelopmentVersionLink],
 		gitzip = OptionValue[SpaceMathStableVersionLink]
 	];
 
 	useTraditionalForm=True;
-
+*)
 	packageName = "SpaceMath";
 	packageDir = OptionValue[InstallSpaceMathTo];
 
@@ -69,9 +58,10 @@ OverwriteSM="Looks like SpaceMath is already installed. Do you want to replace t
 of " <> packageDir <> " with the downloaded version of SpaceMath? If you are using any custom configuration \
 files or add-ons that are located in that directory, please backup them in advance.";
 
+(*
 configFileProlog ="(*Here you can put some commands and settings to be evaluated on every start of SpaceMath. \n
 This allows you to customize your SpaceMath installation to fit your needs best.*)";
-(*
+
 	If[$VersionNumber < 8,
 		Message[InstallSpaceMath::notcomp];
 		Abort[]
@@ -82,7 +72,10 @@ This allows you to customize your SpaceMath installation to fit your needs best.
 		SMgetUrl[x_]:= URLSave[x,CreateTemporary[]]
 	];
 *)
+
 SMgetUrl[x_]:= URLSave[x,CreateTemporary[]];
+
+
 	(* If the package directory already exists, ask the user about overwriting *)
 	If[ DirectoryQ[packageDir],
 
