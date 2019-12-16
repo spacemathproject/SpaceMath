@@ -29,9 +29,11 @@ If[ !ValueQ[$PathToSPArc],
 	$PathToSPArc = ""
 ];
 
+(*
 If[  $VersionNumber == 8,
 Needs["Utilities`URLTools`"];
 ];
+*)
 
 Options[InstallSpaceMath]={
 	AutoDisableInsufficientVersionWarning-> None,
@@ -43,12 +45,12 @@ Options[InstallSpaceMath]={
 InstallSpaceMath[OptionsPattern[]]:=
 	Module[{	unzipDir, tmpzip, gitzip, packageName, packageDir, fullPath,
 				SMgetUrl,OverwriteSM, zipDir},
-
+(*
 	If[OptionValue[InstallSpaceMathDevelopmentVersion],
 		gitzip = OptionValue[SpaceMathDevelopmentVersionLink],
 		gitzip = OptionValue[SpaceMathStableVersionLink]
 	];
-
+*)
 	useTraditionalForm=True;
 
 	packageName = "SpaceMath";
