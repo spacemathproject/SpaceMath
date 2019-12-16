@@ -82,7 +82,7 @@ This allows you to customize your SpaceMath installation to fit your needs best.
 		SMgetUrl[x_]:= URLSave[x,CreateTemporary[]]
 	];
 *)
-
+SMgetUrl[x_]:= URLSave[x,CreateTemporary[]];
 	(* If the package directory already exists, ask the user about overwriting *)
 	If[ DirectoryQ[packageDir],
 
