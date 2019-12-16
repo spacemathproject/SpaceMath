@@ -43,12 +43,12 @@ Options[InstallSpaceMath]={
 InstallSpaceMath[OptionsPattern[]]:=
 	Module[{	unzipDir, tmpzip, gitzip, packageName, packageDir, fullPath,
 				SMgetUrl,OverwriteSM, zipDir},
-(*
+
 	If[OptionValue[InstallSpaceMathDevelopmentVersion],
 		gitzip = OptionValue[SpaceMathDevelopmentVersionLink],
 		gitzip = OptionValue[SpaceMathStableVersionLink]
 	];
-*)
+
 	useTraditionalForm=True;
 
 	packageName = "SpaceMath";
