@@ -141,7 +141,7 @@ unzipDir= tmpzip<>".dir";
 	WriteString["stdout", "done! \n"];
 
 	(* To have the documentation available immediately after installing SpaceMath (following the advice of Szabolcs Horv'at) *)
-	(*RebuildPacletData[];*)
+	RebuildPacletData[];
 
 	WriteString["stdout", "\nInstallation complete! Loading SpaceMath ... \n"];
 
