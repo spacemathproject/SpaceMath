@@ -51,6 +51,7 @@ InstallSpaceMath[OptionsPattern[]]:=
 		gitzip = OptionValue[SpaceMathStableVersionLink]
 	];
 *)
+gitzip = OptionValue[SpaceMathStableVersionLink]
 	useTraditionalForm=True;
 
 	packageName = "SpaceMath";
