@@ -9,21 +9,8 @@ AutoOverwriteSpaceMathDirectory::usage="AutoOverwriteSpaceMathDirectory is an op
 set to True, the existing SpaceMath directory will be deleted without any further notice. The default
 value None means that the user will be asked by a dialog. False means that the directory will be overwritten.";
 
-AutoDisableInsufficientVersionWarning::usage="AutoDisableInsufficientVersionWarning is an option of InstallSpaceMath. If \
-set to True, warning messages for notebooks that were created with a newer Mathematica version will be silently disabled. \
-This is needed to use SpaceMath documentation in Mathematica 8 and 9, since otherwise the warning message will appear every \
-time one opens a help page for a SpaceMath function. The default value None means that the user will be asked by a dialog. \
-False means that the warning will not be disabled.";
-
-SpaceMathDevelopmentVersionLink::usage="SpaceMathDevelopmentVersionLink is an option of InstallSpaceMath. It specifies the url \
-to the main repository of SpaceMath. This repository is used to install the development version of SpaceMath.";
-
 SpaceMathStableVersionLink::usage="SpaceMathStableVersionLink is an option of InstallSpaceMath. It specifies the url \
 to the latest stable release of SpaceMath.";
-
-InstallSpaceMathDevelopmentVersion::usage="InstallSpaceMathDevelopmentVersion is an option of InstallSpaceMath. If \
-set to True, the installer will download the latest development version of SpaceMath from the git repository. \
-Otherwise it will install the latest stable version.";
 
 InstallSpaceMathTo::usage="InstallSpaceMathTo is an option of InstallSpaceMath. It specifies, the full path \
 to the directory where SpaceMath will be installed.";
