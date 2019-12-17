@@ -97,7 +97,7 @@ SMgetUrl[x_]:= URLSave[x,CreateTemporary[]];
 		WriteString["stdout", "Downloading SpaceMath from ", gitzip," ..."];
 		tmpzip=SMgetUrl[gitzip];
 	];
-
+(*
 	If[tmpzip===$Failed,
 		WriteString["stdout", "\nFailed to download SpaceMath. Please check your interent connection.\nInstallation aborted!"];
 		Abort[],
@@ -105,7 +105,8 @@ SMgetUrl[x_]:= URLSave[x,CreateTemporary[]];
 		unzipDir= tmpzip<>".dir";
 		WriteString["stdout", "done! \n"];
 	];
-
+*)	
+unzipDir= tmpzip<>".dir";
 	(* Extract to the content	*)
 	WriteString["stdout", "SpaceMath zip file was saved to ", tmpzip,".\n"];
 	WriteString["stdout", "Extracting SpaceMath zip file to ", unzipDir, " ..."];
