@@ -43,7 +43,9 @@ Needs["Utilities`URLTools`"];
 Options[InstallSpaceMath]={
 	AutoDisableInsufficientVersionWarning-> None,
 	AutoOverwriteSpaceMathDirectory-> None,
+	SpaceMathDevelopmentVersionLink->"https://github.com/spacemathproject/SpaceMath/archive/developerTAVP.zip",
 	SpaceMathStableVersionLink->"https://github.com/spacemathproject/SpaceMath/archive/developerTAVP.zip",
+	InstallSpaceMathDevelopmentVersion->False,
 	InstallSpaceMathTo->FileNameJoin[{$UserBaseDirectory, "Applications","SpaceMath"}]
 };
 	
@@ -70,8 +72,16 @@ files or add-ons that are located in that directory, please backup them in advan
 configFileProlog ="(*Here you can put some commands and settings to be evaluated on every start of SpaceMath. \n
 This allows you to customize your SpaceMath installation to fit your needs best.*)";
 
+	If[$VersionNumber < 8,
+		Message[InstallSpaceMath::notcomp];
+		Abort[]
+	];
 
-SMgetUrl[x_]:= URLSave[x,CreateTemporary[]];
+	If[$VersionNumber == 8,
+		SMgetUrl[x_]:= Utilities`URLTools`FetchURL[x],
+		SMgetUrl[x_]:= URLSave[x,CreateTemporary[]]
+	];
+
 
 	(* If the package directory already exists, ask the user about overwriting *)
 	If[ DirectoryQ[packageDir],
@@ -97,14 +107,27 @@ SMgetUrl[x_]:= URLSave[x,CreateTemporary[]];
 		tmpzip=SMgetUrl[gitzip];
 	];
 
+	If[tmpzip===$Failed,
+		WriteString["stdout", "\nFailed to download SpaceMath. Please check your interent connection.\nInstallation aborted!"];
+		Abort[],
 
-	unzipDir= tmpzip<>".dir";
-	ExtractArchive[tmpzip, unzipDir];
-	If[ $PathToSPArc==="",
-		Quiet@DeleteFile[tmpzip];
-	  ];
+		unzipDir= tmpzip<>".dir";
+		WriteString["stdout", "done! \n"];
+	];
 
+	(* Extract to the content	*)
+	WriteString["stdout", "SpaceMath zip file was saved to ", tmpzip,".\n"];
+	WriteString["stdout", "Extracting SpaceMath zip file to ", unzipDir, " ..."];
 
+	If[	ExtractArchive[tmpzip, unzipDir]===$Failed,
+		WriteString["stdout", "\nFailed to extract the SpaceMath zip. The file might be corrupted.\nInstallation aborted!"];
+		Abort[],
+		WriteString["stdout", "done! \n"];
+		(* Delete the downloaded file	*)
+		If[ $PathToSPArc==="",
+			Quiet@DeleteFile[tmpzip];
+		]
+	];
 
 	WriteString["stdout", "Recognizing the directory structure..."];
 	zipDir = FileNames["SpaceMath.m", unzipDir, Infinity];
