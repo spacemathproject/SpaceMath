@@ -49,7 +49,7 @@ Options[InstallSpaceMath]={
 	
 InstallSpaceMath[OptionsPattern[]]:=
 	Module[{	unzipDir, tmpzip, gitzip, packageName, packageDir, fullPath,
-				SMgetUrl,
+				SMgetUrl, configFileProlog,
 				OverwriteSM, zipDir,
 				useTraditionalForm},
 (*
