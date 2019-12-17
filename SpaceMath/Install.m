@@ -78,12 +78,20 @@ SMgetUrl[x_]:= URLSave[x,CreateTemporary[]];
 	];
 
 	(* Download SpaceMath tarball	*)
+(*	
 	If[ $PathToSPArc=!="",
 		tmpzip = $PathToSPArc;
 		WriteString["stdout", "Installing SpaceMath from ", tmpzip," ..."],
 		WriteString["stdout", "Downloading SpaceMath from ", gitzip," ..."];
 		tmpzip=SMgetUrl[gitzip];
 	];
+*)
+
+		tmpzip = $PathToSPArc;
+		WriteString["stdout", "Installing SpaceMath from ", tmpzip," ..."];
+		WriteString["stdout", "Downloading SpaceMath from ", gitzip," ..."];
+		tmpzip=SMgetUrl[gitzip];
+
 
 unzipDir= tmpzip<>".dir";
 	(* Extract to the content	*)
