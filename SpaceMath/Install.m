@@ -15,8 +15,15 @@ This is needed to use SpaceMath documentation in Mathematica 8 and 9, since othe
 time one opens a help page for a SpaceMath function. The default value None means that the user will be asked by a dialog. \
 False means that the warning will not be disabled.";
 
+SpaceMathDevelopmentVersionLink::usage="SpaceMathDevelopmentVersionLink is an option of InstallSpaceMath. It specifies the url \
+to the main repository of SpaceMath. This repository is used to install the development version of SpaceMath.";
+
 SpaceMathStableVersionLink::usage="SpaceMathStableVersionLink is an option of InstallSpaceMath. It specifies the url \
 to the latest stable release of SpaceMath.";
+
+InstallSpaceMathDevelopmentVersion::usage="InstallSpaceMathDevelopmentVersion is an option of InstallSpaceMath. If \
+set to True, the installer will download the latest development version of SpaceMath from the git repository. \
+Otherwise it will install the latest stable version.";
 
 InstallSpaceMathTo::usage="InstallSpaceMathTo is an option of InstallSpaceMath. It specifies, the full path \
 to the directory where SpaceMath will be installed.";
@@ -29,29 +36,30 @@ If[ !ValueQ[$PathToSPArc],
 	$PathToSPArc = ""
 ];
 
-(*
 If[  $VersionNumber == 8,
 Needs["Utilities`URLTools`"];
 ];
-*)
 
 Options[InstallSpaceMath]={
 	AutoDisableInsufficientVersionWarning-> None,
 	AutoOverwriteSpaceMathDirectory-> None,
+	SpaceMathDevelopmentVersionLink->"https://github.com/spacemathproject/SpaceMath/archive/developerTAVP.zip",
 	SpaceMathStableVersionLink->"https://github.com/spacemathproject/SpaceMath/archive/developerTAVP.zip",
+	InstallSpaceMathDevelopmentVersion->False,
 	InstallSpaceMathTo->FileNameJoin[{$UserBaseDirectory, "Applications","SpaceMath"}]
 };
 	
 InstallSpaceMath[OptionsPattern[]]:=
 	Module[{	unzipDir, tmpzip, gitzip, packageName, packageDir, fullPath,
-				SMgetUrl,OverwriteSM, zipDir},
-(*
+				SMgetUrl, configFileProlog,
+				OverwriteSM, zipDir,
+				useTraditionalForm},
+
 	If[OptionValue[InstallSpaceMathDevelopmentVersion],
 		gitzip = OptionValue[SpaceMathDevelopmentVersionLink],
 		gitzip = OptionValue[SpaceMathStableVersionLink]
 	];
-*)
-gitzip = OptionValue[SpaceMathStableVersionLink]
+
 	useTraditionalForm=True;
 
 	packageName = "SpaceMath";
@@ -61,7 +69,6 @@ OverwriteSM="Looks like SpaceMath is already installed. Do you want to replace t
 of " <> packageDir <> " with the downloaded version of SpaceMath? If you are using any custom configuration \
 files or add-ons that are located in that directory, please backup them in advance.";
 
-(*
 configFileProlog ="(*Here you can put some commands and settings to be evaluated on every start of SpaceMath. \n
 This allows you to customize your SpaceMath installation to fit your needs best.*)";
 
@@ -74,9 +81,6 @@ This allows you to customize your SpaceMath installation to fit your needs best.
 		SMgetUrl[x_]:= Utilities`URLTools`FetchURL[x],
 		SMgetUrl[x_]:= URLSave[x,CreateTemporary[]]
 	];
-*)
-
-SMgetUrl[x_]:= URLSave[x,CreateTemporary[]];
 
 
 	(* If the package directory already exists, ask the user about overwriting *)
@@ -103,18 +107,18 @@ SMgetUrl[x_]:= URLSave[x,CreateTemporary[]];
 		tmpzip=SMgetUrl[gitzip];
 	];
 
-	(*If[tmpzip===$Failed,
+	If[tmpzip===$Failed,
 		WriteString["stdout", "\nFailed to download SpaceMath. Please check your interent connection.\nInstallation aborted!"];
 		Abort[],
 
 		unzipDir= tmpzip<>".dir";
 		WriteString["stdout", "done! \n"];
 	];
-*)
+
 	(* Extract to the content	*)
 	WriteString["stdout", "SpaceMath zip file was saved to ", tmpzip,".\n"];
 	WriteString["stdout", "Extracting SpaceMath zip file to ", unzipDir, " ..."];
-(*
+
 	If[	ExtractArchive[tmpzip, unzipDir]===$Failed,
 		WriteString["stdout", "\nFailed to extract the SpaceMath zip. The file might be corrupted.\nInstallation aborted!"];
 		Abort[],
@@ -124,7 +128,7 @@ SMgetUrl[x_]:= URLSave[x,CreateTemporary[]];
 			Quiet@DeleteFile[tmpzip];
 		]
 	];
-*)
+
 	WriteString["stdout", "Recognizing the directory structure..."];
 	zipDir = FileNames["SpaceMath.m", unzipDir, Infinity];
 	If[ Length[zipDir]===1,
