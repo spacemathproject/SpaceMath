@@ -72,16 +72,7 @@ files or add-ons that are located in that directory, please backup them in advan
 configFileProlog ="(*Here you can put some commands and settings to be evaluated on every start of SpaceMath. \n
 This allows you to customize your SpaceMath installation to fit your needs best.*)";
 
-	If[$VersionNumber < 8,
-		Message[InstallSpaceMath::notcomp];
-		Abort[]
-	];
-
-	If[$VersionNumber == 8,
-		SMgetUrl[x_]:= Utilities`URLTools`FetchURL[x],
-		SMgetUrl[x_]:= URLSave[x,CreateTemporary[]]
-	];
-
+SMgetUrl[x_]:= URLSave[x,CreateTemporary[]];
 
 	(* If the package directory already exists, ask the user about overwriting *)
 	If[ DirectoryQ[packageDir],
