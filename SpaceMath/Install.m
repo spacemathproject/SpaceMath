@@ -23,9 +23,11 @@ If[ !ValueQ[$PathToSPArc],
 	$PathToSPArc = ""
 ];
 
+(*
 If[  $VersionNumber == 8,
 Needs["Utilities`URLTools`"];
 ];
+*)
 
 Options[InstallSpaceMath]={
 	AutoOverwriteSpaceMathDirectory-> None,
