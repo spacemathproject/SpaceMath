@@ -52,12 +52,12 @@ InstallSpaceMath[OptionsPattern[]]:=
 				SMgetUrl, configFileProlog,
 				OverwriteSM, zipDir,
 				useTraditionalForm},
-(*
+
 	If[OptionValue[InstallSpaceMathDevelopmentVersion],
 		gitzip = OptionValue[SpaceMathDevelopmentVersionLink],
 		gitzip = OptionValue[SpaceMathStableVersionLink]
 	];
-*)
+
 	useTraditionalForm=True;
 
 	packageName = "SpaceMath";
