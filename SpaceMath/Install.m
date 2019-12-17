@@ -49,17 +49,17 @@ Options[InstallSpaceMath]={
 	
 InstallSpaceMath[OptionsPattern[]]:=
 	Module[{	unzipDir, tmpzip, gitzip, packageName, packageDir, fullPath,
-				SMgetUrl, configFileProlog,
-				OverwriteSM, zipDir,
-				useTraditionalForm},
+				SMgetUrl,
+				OverwriteSM, zipDir
+		    },
 (*
 	If[OptionValue[InstallSpaceMathDevelopmentVersion],
 		gitzip = OptionValue[SpaceMathDevelopmentVersionLink],
 		gitzip = OptionValue[SpaceMathStableVersionLink]
 	];
-*)
-	useTraditionalForm=True;
 
+	useTraditionalForm=True;
+*)
 	packageName = "SpaceMath";
 	packageDir = OptionValue[InstallSpaceMathTo];
 
