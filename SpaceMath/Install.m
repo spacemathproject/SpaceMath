@@ -35,9 +35,9 @@ Options[InstallSpaceMath]={
 	
 InstallSpaceMath[OptionsPattern[]]:=
 	Module[{	unzipDir, tmpzip, gitzip, packageName, packageDir, fullPath,
-				SMgetUrl, configFileProlog,
-				OverwriteSM, zipDir,
-				useTraditionalForm},
+				SMgetUrl,
+				OverwriteSM, zipDir
+				},
 (*
 	If[OptionValue[InstallSpaceMathDevelopmentVersion],
 		gitzip = OptionValue[SpaceMathDevelopmentVersionLink],
@@ -45,7 +45,8 @@ InstallSpaceMath[OptionsPattern[]]:=
 	];
 *)
 gitzip = OptionValue[SpaceMathStableVersionLink];
-	useTraditionalForm=True;
+
+(*	useTraditionalForm=True; *)
 
 	packageName = "SpaceMath";
 	packageDir = OptionValue[InstallSpaceMathTo];
@@ -54,9 +55,10 @@ OverwriteSM="Looks like SpaceMath is already installed. Do you want to replace t
 of " <> packageDir <> " with the downloaded version of SpaceMath? If you are using any custom configuration \
 files or add-ons that are located in that directory, please backup them in advance.";
 
+(*
 configFileProlog ="(*Here you can put some commands and settings to be evaluated on every start of SpaceMath. \n
 This allows you to customize your SpaceMath installation to fit your needs best.*)";
-
+*)
 SMgetUrl[x_]:= URLSave[x,CreateTemporary[]];
 
 	(* If the package directory already exists, ask the user about overwriting *)
