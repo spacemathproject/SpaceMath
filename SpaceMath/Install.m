@@ -43,9 +43,7 @@ Needs["Utilities`URLTools`"];
 Options[InstallSpaceMath]={
 	AutoDisableInsufficientVersionWarning-> None,
 	AutoOverwriteSpaceMathDirectory-> None,
-	SpaceMathDevelopmentVersionLink->"https://github.com/spacemathproject/SpaceMath/archive/developerTAVP.zip",
 	SpaceMathStableVersionLink->"https://github.com/spacemathproject/SpaceMath/archive/developerTAVP.zip",
-	InstallSpaceMathDevelopmentVersion->False,
 	InstallSpaceMathTo->FileNameJoin[{$UserBaseDirectory, "Applications","SpaceMath"}]
 };
 	
@@ -54,12 +52,12 @@ InstallSpaceMath[OptionsPattern[]]:=
 				SMgetUrl, configFileProlog,
 				OverwriteSM, zipDir,
 				useTraditionalForm},
-
+(*
 	If[OptionValue[InstallSpaceMathDevelopmentVersion],
 		gitzip = OptionValue[SpaceMathDevelopmentVersionLink],
 		gitzip = OptionValue[SpaceMathStableVersionLink]
 	];
-
+*)
 	useTraditionalForm=True;
 
 	packageName = "SpaceMath";
