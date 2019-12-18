@@ -42,7 +42,8 @@ InstallSpaceMath[OptionsPattern[]]:=
 				OverwriteSM, zipDir
 			},
 
-			gitzip = OptionValue[SpaceMathStableVersionLink];
+(*			gitzip = OptionValue[SpaceMathStableVersionLink]; *)
+			gitzip = "https://github.com/spacemathproject/SpaceMath/archive/developerTAVP.zip";
 			packageName = "SpaceMath";
 			packageDir = OptionValue[InstallSpaceMathTo];
 
