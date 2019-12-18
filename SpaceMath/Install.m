@@ -91,9 +91,11 @@ zipDir = FileNames["SpaceMath.m", unzipDir, Infinity];
 		Abort[]
 	];
 
-	(* Move the files to the final destination	*)
-	WriteString["stdout", "Copying "<>packageName<>" to ", packageDir, " ..."];
-
+(* Move the files to the final destination	*)
+WriteString["stdout", "Copying "<>packageName<>" to ", packageDir, " ..."];
+CopyDirectory[fullPath,packageDir];
+Quiet@DeleteDirectory[unzipDir, DeleteContents -> True];
+(*
 	If[	CopyDirectory[fullPath,packageDir]===$Failed,
 		WriteString["stdout", "\nFailed to copy "  <>fullPath<>" to ", packageDir <>". \nInstallation aborted!"];
 		Abort[],
@@ -101,7 +103,7 @@ zipDir = FileNames["SpaceMath.m", unzipDir, Infinity];
 		(* Delete the extracted archive *)
 		Quiet@DeleteDirectory[unzipDir, DeleteContents -> True];
 	];
-
+*)
 WriteString["stdout", "done! \n"];
 WriteString["stdout", "\nInstallation complete! Loading SpaceMath ... \n"];
 Get["SpaceMath`"];
