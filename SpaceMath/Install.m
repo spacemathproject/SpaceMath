@@ -39,7 +39,7 @@ Options[InstallSpaceMath]={
 (*	
 InstallSpaceMath[OptionsPattern[]]:=
 *)
-InstallSpaceMath[OptionsPattern[]]:=
+InstallSpaceMath[]:=
 	Module[
 			{	unzipDir, tmpzip, gitzip, packageName, packageDir, fullPath,
 				SMgetUrl,
