@@ -36,32 +36,21 @@ Options[InstallSpaceMath]={
 };
 	
 InstallSpaceMath[OptionsPattern[]]:=
-	Module[{	unzipDir, tmpzip, gitzip, packageName, packageDir, fullPath,
+	Module[
+			{	unzipDir, tmpzip, gitzip, packageName, packageDir, fullPath,
 				SMgetUrl,
 				OverwriteSM, zipDir
-				},
-(*
-	If[OptionValue[InstallSpaceMathDevelopmentVersion],
-		gitzip = OptionValue[SpaceMathDevelopmentVersionLink],
-		gitzip = OptionValue[SpaceMathStableVersionLink]
-	];
-*)
-gitzip = OptionValue[SpaceMathStableVersionLink];
+			},
 
-(*	useTraditionalForm=True; *)
+			gitzip = OptionValue[SpaceMathStableVersionLink];
+			packageName = "SpaceMath";
+			packageDir = OptionValue[InstallSpaceMathTo];
 
-	packageName = "SpaceMath";
-	packageDir = OptionValue[InstallSpaceMathTo];
+			OverwriteSM="Looks like SpaceMath is already installed. Do you want to replace the content \
+			of " <> packageDir <> " with the downloaded version of SpaceMath? If you are using any custom configuration \
+			files or add-ons that are located in that directory, please backup them in advance.";
 
-OverwriteSM="Looks like SpaceMath is already installed. Do you want to replace the content \
-of " <> packageDir <> " with the downloaded version of SpaceMath? If you are using any custom configuration \
-files or add-ons that are located in that directory, please backup them in advance.";
-
-(*
-configFileProlog ="(*Here you can put some commands and settings to be evaluated on every start of SpaceMath. \n
-This allows you to customize your SpaceMath installation to fit your needs best.*)";
-*)
-SMgetUrl[x_]:= URLSave[x,CreateTemporary[]];
+			SMgetUrl[x_]:= URLSave[x,CreateTemporary[]];
 
 	(* If the package directory already exists, ask the user about overwriting *)
 	If[ DirectoryQ[packageDir],
@@ -79,43 +68,21 @@ SMgetUrl[x_]:= URLSave[x,CreateTemporary[]];
 		]
 	];
 
-	(* Download SpaceMath tarball	*)
-(*	
-	If[ $PathToSPArc=!="",
-		tmpzip = $PathToSPArc;
-		WriteString["stdout", "Installing SpaceMath from ", tmpzip," ..."],
-		WriteString["stdout", "Downloading SpaceMath from ", gitzip," ..."];
-		tmpzip=SMgetUrl[gitzip];
-	];
-*)
-
-		tmpzip = $PathToSPArc;
-		WriteString["stdout", "Installing SpaceMath from ", tmpzip," ..."];
-		WriteString["stdout", "Downloading SpaceMath from ", gitzip," ..."];
-		tmpzip=SMgetUrl[gitzip];
-
+tmpzip = $PathToSPArc;
+WriteString["stdout", "Installing SpaceMath from ", tmpzip," ..."];
+WriteString["stdout", "Downloading SpaceMath from ", gitzip," ..."];
+tmpzip=SMgetUrl[gitzip];
 
 unzipDir= tmpzip<>".dir";
-	(* Extract to the content	*)
-	WriteString["stdout", "SpaceMath zip file was saved to ", tmpzip,".\n"];
-	WriteString["stdout", "Extracting SpaceMath zip file to ", unzipDir, " ..."];
-(*
-	If[	ExtractArchive[tmpzip, unzipDir]===$Failed,
-		WriteString["stdout", "\nFailed to extract the SpaceMath zip. The file might be corrupted.\nInstallation aborted!"];
-		Abort[],
-		WriteString["stdout", "done! \n"];
-		(* Delete the downloaded file	*)
-		If[ $PathToSPArc==="",
-			Quiet@DeleteFile[tmpzip];
-		]
-	];
-*)
+WriteString["stdout", "SpaceMath zip file was saved to ", tmpzip,".\n"];
+WriteString["stdout", "Extracting SpaceMath zip file to ", unzipDir, " ..."];
 
-	ExtractArchive[tmpzip, unzipDir];
-	Quiet@DeleteFile[tmpzip];
+ExtractArchive[tmpzip, unzipDir];
+Quiet@DeleteFile[tmpzip];
 
-	WriteString["stdout", "Recognizing the directory structure..."];
-	zipDir = FileNames["SpaceMath.m", unzipDir, Infinity];
+WriteString["stdout", "Recognizing the directory structure..."];
+zipDir = FileNames["SpaceMath.m", unzipDir, Infinity];
+
 	If[ Length[zipDir]===1,
 		fullPath = DirectoryName[zipDir[[1]]];
 		zipDir = Last[FileNameSplit[DirectoryName[zipDir[[1]]]]];
@@ -135,13 +102,8 @@ unzipDir= tmpzip<>".dir";
 		Quiet@DeleteDirectory[unzipDir, DeleteContents -> True];
 	];
 
-	WriteString["stdout", "done! \n"];
-
-	(* To have the documentation available immediately after installing SpaceMath (following the advice of Szabolcs Horv'at) *)
-(*	RebuildPacletData[]; *)
-
-	WriteString["stdout", "\nInstallation complete! Loading SpaceMath ... \n"];
-
-	Get["SpaceMath`"];
+WriteString["stdout", "done! \n"];
+WriteString["stdout", "\nInstallation complete! Loading SpaceMath ... \n"];
+Get["SpaceMath`"];
 
 ];
