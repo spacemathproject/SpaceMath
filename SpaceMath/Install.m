@@ -83,6 +83,9 @@ Quiet@DeleteFile[tmpzip];
 WriteString["stdout", "Recognizing the directory structure..."];
 zipDir = FileNames["SpaceMath.m", unzipDir, Infinity];
 
+		fullPath = DirectoryName[zipDir[[1]]];
+		zipDir = Last[FileNameSplit[DirectoryName[zipDir[[1]]]]];
+(**
 	If[ Length[zipDir]===1,
 		fullPath = DirectoryName[zipDir[[1]]];
 		zipDir = Last[FileNameSplit[DirectoryName[zipDir[[1]]]]];
@@ -90,7 +93,7 @@ zipDir = FileNames["SpaceMath.m", unzipDir, Infinity];
 		WriteString["stdout", "\nFailed to recognize the directory structure of the downloaded zip file. \nInstallation aborted!"];
 		Abort[]
 	];
-
+*)
 (* Move the files to the final destination	*)
 WriteString["stdout", "Copying "<>packageName<>" to ", packageDir, " ..."];
 CopyDirectory[fullPath,packageDir];
