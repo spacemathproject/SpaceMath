@@ -29,12 +29,16 @@ Needs["Utilities`URLTools`"];
 ];
 *)
 
+(*
 Options[InstallSpaceMath]={
 	AutoOverwriteSpaceMathDirectory-> None,
 	SpaceMathStableVersionLink->"https://github.com/spacemathproject/SpaceMath/archive/developerTAVP.zip",
 	InstallSpaceMathTo->FileNameJoin[{$UserBaseDirectory, "Applications","SpaceMath"}]
 };
-	
+*)
+(*	
+InstallSpaceMath[OptionsPattern[]]:=
+*)
 InstallSpaceMath[OptionsPattern[]]:=
 	Module[
 			{	unzipDir, tmpzip, gitzip, packageName, packageDir, fullPath,
@@ -60,7 +64,6 @@ InstallSpaceMath[OptionsPattern[]]:=
 (*		If[ OptionValue[AutoOverwriteSpaceMathDirectory], *)
 		If[ None,
 			Quiet@DeleteDirectory[packageDir, DeleteContents -> True],
-
 			Null,
 			If[ ChoiceDialog[OverwriteSM,{"Yes, overwrite the " <> packageName <>" directory"->True,
 				"No, I need to do a backup first. Abort installation."->False}, WindowFloating->True, WindowTitle->"Existing SpaceMath Installation detected"],
