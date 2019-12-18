@@ -57,8 +57,8 @@ InstallSpaceMath[OptionsPattern[]]:=
 	(* If the package directory already exists, ask the user about overwriting *)
 	If[ DirectoryQ[packageDir],
 
-		If[ OptionValue[AutoOverwriteSpaceMathDirectory],
-
+(*		If[ OptionValue[AutoOverwriteSpaceMathDirectory], *)
+		If[ None,
 			Quiet@DeleteDirectory[packageDir, DeleteContents -> True],
 
 			Null,
