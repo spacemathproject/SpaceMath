@@ -45,7 +45,8 @@ InstallSpaceMath[OptionsPattern[]]:=
 (*			gitzip = OptionValue[SpaceMathStableVersionLink]; *)
 			gitzip = "https://github.com/spacemathproject/SpaceMath/archive/developerTAVP.zip";
 			packageName = "SpaceMath";
-			packageDir = OptionValue[InstallSpaceMathTo];
+		(*	packageDir = OptionValue[InstallSpaceMathTo]; *)
+			packageDir = FileNameJoin[{$UserBaseDirectory, "Applications","SpaceMath"}];			
 
 			OverwriteSM="Looks like SpaceMath is already installed. Do you want to replace the content \
 			of " <> packageDir <> " with the downloaded version of SpaceMath? If you are using any custom configuration \
