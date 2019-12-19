@@ -40,12 +40,12 @@ Options[InstallSpaceMath]={
 InstallSpaceMath[OptionsPattern[]]:=
 *)
 InstallSpaceMath[]:=
-		(*Module[
+		Module[
 	     	{	unzipDir, tmpzip, gitzip, packageName, packageDir, fullPath,
 				SMgetUrl,
 				OverwriteSM, zipDir
 			},
-         *)
+        
 (*			gitzip = OptionValue[SpaceMathStableVersionLink]; *)
 			gitzip = "https://github.com/spacemathproject/SpaceMath/archive/developerTAVP.zip";
 			packageName = "SpaceMath";
@@ -115,5 +115,5 @@ Quiet@DeleteDirectory[unzipDir, DeleteContents -> True];
 WriteString["stdout", "done! \n"];
 WriteString["stdout", "\nInstallation complete! Loading SpaceMath ... \n"];
 Get["SpaceMath`"];
-(*
-];*)
+
+];
