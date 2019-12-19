@@ -1,10 +1,4 @@
 
-InstallSpaceMath::notcomp =
-"Your Mathematica version is too old. SpaceMath requires at least Mathematica 8. Installation aborted!";
-
-InstallSpaceMath::failed =
-"Download of `1` failed. Installation aborted!";
-
 $PathToSPArc::usage="$PathToSPArc specifies where the installer should look for the zipped SpaceMath version. \
 If the value is not empty, the installer will use the specified file instead of downloading it from the official \
 website."
