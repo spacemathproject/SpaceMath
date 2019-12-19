@@ -35,7 +35,7 @@ InstallSpaceMath[]:=
 				  ]
 			  ];
 
-			tmpzip = $PathToSPArc;
+(*			tmpzip = $PathToSPArc; *)
 			tmpzip=SMgetUrl[gitzip];
 			unzipDir= tmpzip<>".dir";
 
