@@ -21,17 +21,6 @@ If[ FileNames["*",{SpaceMath`$SpaceMathDirectory}] === {},
 
 SpaceMath`$SpaceMathVersion = "1.0";
 
-(*
-If[ !ValueQ[Global`$SpaceMathStartupMessages],
-	Global`$SpaceMathStartupMessages = True
-];
-
-If[ Global`$SpaceMathStartupMessages=!=False,
-	PrintTemporary[Style["Loading SpaceMath from "<>
-	SpaceMath`$SpaceMathDirectory, "Text"]]
-];
-*)
-
 BeginPackage["SpaceMath`"]
 
 HiggsData::usage = "The implementation of the Higgs boson data within the SpaceMath code, \
