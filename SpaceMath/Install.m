@@ -17,13 +17,14 @@ InstallSpaceMath[]:=
 			packageName = "SpaceMath";
 			PackageLocation = FileNameJoin[{$UserBaseDirectory, "Applications","SpaceMath"}];			
 
-			OverwritePackage = "Looks like SpaceMath is already installed. Do you want to replace the current content \
-			of " <> PackageLocation <> " with the downloaded version of SpaceMath?";
+			OverwritePackage = "Looks like SpaceMath is already installed. Do you want to replace the current content of " <> PackageLocation <> 
+			" with the downloaded version of SpaceMath?";
 
 			If[ DirectoryQ[PackageLocation],
 				If[ None, Quiet@DeleteDirectory[PackageLocation, DeleteContents -> True], Null,
 					If[ ChoiceDialog[OverwritePackage,{"Yes, overwrite the " <> packageName <>" directory"->True,
-						"No, I need to do a backup first. Abort installation."->False}, WindowFloating->True, WindowTitle->"Existing SpaceMath Installation detected"],
+						"No, I need to do a backup first. Abort installation."->False}, WindowFloating->True, WindowTitle->
+						"Existing SpaceMath Installation detected"],
 						Quiet@DeleteDirectory[PackageLocation, DeleteContents -> True],
 						Abort[]
 					  ]
