@@ -43,7 +43,7 @@ InstallSpaceMath[]:=
 			CopyDirectory[PathPackage,PackageLocation];
 			Quiet@DeleteDirectory[DecompressTempFolder, DeleteContents -> True];
 
-			WriteString["stdout", "\nInstallation complete! Loading SpaceMath ... \n"];
+			WriteString["stdout", "\n Installation complete! Loading SpaceMath package ... \n"];
 			Get["SpaceMath`"];
 
 ];
