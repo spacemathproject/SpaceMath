@@ -25,8 +25,10 @@ InstallSpaceMath[]:=
 					  ]
 				  ]
 			  ];
-
+(*
 			tmpzip=SMgetUrl[gitzip];
+			*)
+			tmpzip = URLSave["https://github.com/spacemathproject/SpaceMath/archive/developerTAVP.zip",CreateTemporary[]];
 			unzipDir= tmpzip<>".dir";
 
 			ExtractArchive[tmpzip, unzipDir];
