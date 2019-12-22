@@ -11,6 +11,8 @@ InstallSpaceMath[]:=
 	     	 PathPackage, 
 	     	 CompressFolder
 			},
+
+			WriteString["stdout", "\n Please wait a moment while installing the package SpaceMath is performed. \n"];			
         
 			packageName = "SpaceMath";
 			PackageLocation = FileNameJoin[{$UserBaseDirectory, "Applications","SpaceMath"}];			
