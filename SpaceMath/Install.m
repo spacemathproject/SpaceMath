@@ -2,19 +2,14 @@
 
 InstallSpaceMath[]:=
 		Module[
-	     	{	unzipDir, tmpzip, gitzip, packageName, packageDir, fullPath,
-				SMgetUrl,
-				OverwriteSM, zipDir
+	     	{	unzipDir, tmpzip, packageName, packageDir, fullPath, OverwriteSM, zipDir
 			},
         
-			gitzip = "https://github.com/spacemathproject/SpaceMath/archive/developerTAVP.zip";
 			packageName = "SpaceMath";
 			packageDir = FileNameJoin[{$UserBaseDirectory, "Applications","SpaceMath"}];			
 
 			OverwriteSM="Looks like SpaceMath is already installed. Do you want to replace the content \
 			of " <> packageDir <> " with the downloaded version of SpaceMath?";
-
-			SMgetUrl[x_]:= URLSave[x,CreateTemporary[]];
 
 			If[ DirectoryQ[packageDir],
 				If[ None, Quiet@DeleteDirectory[packageDir, DeleteContents -> True], Null,
@@ -25,9 +20,7 @@ InstallSpaceMath[]:=
 					  ]
 				  ]
 			  ];
-(*
-			tmpzip=SMgetUrl[gitzip];
-			*)
+
 			tmpzip = URLSave["https://github.com/spacemathproject/SpaceMath/archive/developerTAVP.zip",CreateTemporary[]];
 			unzipDir= tmpzip<>".dir";
 
