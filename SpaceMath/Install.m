@@ -2,8 +2,14 @@
 
 InstallSpaceMath[]:=
 		Module[
-	     	{ 
-	     	 DecompressTempFolder, TempCompressFolder, packageName, PackageLocation, fullPath, OverwritePackage, zipDir
+	     	{
+	     	 packageName,
+	     	 PackageLocation,
+	     	 OverwritePackage, 	 
+	     	 TempCompressFolder, 	     	     	      	 	     		
+	     	 DecompressTempFolder, 
+	     	 PathPackage, 
+	     	 CompressFolder
 			},
         
 			packageName = "SpaceMath";
@@ -28,11 +34,11 @@ InstallSpaceMath[]:=
 			ExtractArchive[TempCompressFolder, DecompressTempFolder];
 			Quiet@DeleteFile[TempCompressFolder];
 
-			zipDir = FileNames["SpaceMath.m", DecompressTempFolder, Infinity];
-			fullPath = DirectoryName[zipDir[[1]]];
-			zipDir = Last[FileNameSplit[DirectoryName[zipDir[[1]]]]];
+			CompressFolder = FileNames["SpaceMath.m", DecompressTempFolder, Infinity];
+			PathPackage = DirectoryName[CompressFolder[[1]]];
+			CompressFolder = Last[FileNameSplit[DirectoryName[CompressFolder[[1]]]]];
 
-			CopyDirectory[fullPath,PackageLocation];
+			CopyDirectory[PathPackage,PackageLocation];
 			Quiet@DeleteDirectory[DecompressTempFolder, DeleteContents -> True];
 
 			WriteString["stdout", "\nInstallation complete! Loading SpaceMath ... \n"];
