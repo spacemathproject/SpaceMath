@@ -15,7 +15,7 @@ InstallSpaceMath[]:=
 			packageName = "SpaceMath";
 			PackageLocation = FileNameJoin[{$UserBaseDirectory, "Applications","SpaceMath"}];			
 
-			OverwritePackage="Looks like SpaceMath is already installed. Do you want to replace the content \
+			OverwritePackage = "Looks like SpaceMath is already installed. Do you want to replace the content \
 			of " <> PackageLocation <> " with the downloaded version of SpaceMath?";
 
 			If[ DirectoryQ[PackageLocation],
@@ -29,7 +29,7 @@ InstallSpaceMath[]:=
 			  ];
 
 			TempCompressFolder = URLSave["https://github.com/spacemathproject/SpaceMath/archive/developerTAVP.zip",CreateTemporary[]];
-			DecompressTempFolder= TempCompressFolder<>".dir";
+			DecompressTempFolder = TempCompressFolder<>".dir";
 
 			ExtractArchive[TempCompressFolder, DecompressTempFolder];
 			Quiet@DeleteFile[TempCompressFolder];
