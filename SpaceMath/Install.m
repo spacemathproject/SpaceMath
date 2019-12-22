@@ -17,7 +17,7 @@ InstallSpaceMath[]:=
 			packageName = "SpaceMath";
 			PackageLocation = FileNameJoin[{$UserBaseDirectory, "Applications","SpaceMath"}];			
 
-			OverwritePackage = "Looks like SpaceMath is already installed. Do you want to replace the content \
+			OverwritePackage = "Looks like SpaceMath is already installed. Do you want to replace the current content \
 			of " <> PackageLocation <> " with the downloaded version of SpaceMath?";
 
 			If[ DirectoryQ[PackageLocation],
