@@ -23,11 +23,6 @@ SpaceMath`$SpaceMathVersion = "1.0";
 
 BeginPackage["SpaceMath`"]
 
-
-Unprotect[HiggsBosondata, FlavorViolatingProcesses, ObliqueParameters, Unitariety, MesonPhysics];
-
-HiggsBosondata::usage = ToString[Row[{"The implementation of the ", Style[Hyperlink["Higgs boson data", "paclet:SpaceMathAPPv0p1/tutorial/SpaceMathAPP_Tutorial"], Italic]," within the SpaceMath code , was closely following the reference : arXiv:1809.10733v2[hep-ex], 10.1140/epjc/s10052-019-6909-y."}], StandardForm];
-
 HiggsData::usage = "The implementation of the Higgs boson data within the SpaceMath code, \
 was closely following the reference : arXiv:1809.10733v2[hep-ex], 10.1140/epjc/s10052-019-6909-y."
 
@@ -38,14 +33,6 @@ was closely following the reference : arXiv:1809.10733v2[hep-ex], 10.1140/epjc/s
 ObliquePar::usage =
 "The implementation of the Higgs boson data within the SpaceMath code, \
 was closely following the reference : arXiv:1809.10733v2[hep-ex], 10.1140/epjc/s10052-019-6909-y."
-
-HiggsBosondata::usage = ToString[Row[{"The implementation of the ", Style[Hyperlink["Higgs boson data", "paclet:SpaceMathAPPv0p1/tutorial/SpaceMathAPP_Tutorial"], Italic]," within the SpaceMath code , was closely following the reference : arXiv:1809.10733v2[hep-ex], 10.1140/epjc/s10052-019-6909-y."}], StandardForm];
-
-FlavorViolatingProcesses::usage =  ToString[Row[{"The implementation of the ", Style[Hyperlink["Flavor Violating Processes", "paclet:SpaceMathAPPv0p1/tutorial/HiggsbosondataINFO"], Italic]," within the SpaceMath code , was closely following the reference : arXiv:1809.10733v2[hep-ex], 10.1140/epjc/s10052-019-6909-y."}], StandardForm];
-ObliqueParameters::usage = "Coming Soon";
-Unitariety::usage = "Coming Soon";
-MesonPhysics::usage = "Coming Soon";
-
 
 SMDeclareHeader::usage = "SMDeclareHeader is an internal SpaceMath function to declare objects inside an .m file."
 
