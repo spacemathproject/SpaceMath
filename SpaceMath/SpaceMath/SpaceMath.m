@@ -93,9 +93,7 @@ MessageDialog["Higgs boson"];
 				ButtonNote -> "https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"],"Text"]];
 	Print[Style["See also the supplied ","Text"],
 	      Style[DisplayForm@ButtonBox["Examples.", BaseStyle -> "Hyperlink", 
-	      	    ButtonFunction :> SystemOpen[FileNameJoin[{$SpaceMathDirectory, "Examples"}]], Evaluator -> Automatic, Method -> "Preemptive"], "Text"],
-	      Style[DisplayForm@ButtonBox["Higgs boson.", BaseStyle -> "Hyperlink", 
-	      	    ButtonFunction :> SystemOpen[FileNameJoin[{$SpaceMathDirectory, "Examples"}]], Evaluator -> Automatic, Method -> "Preemptive"], "Text"],	      	    
+	      	    ButtonFunction :> SystemOpen[FileNameJoin[{$SpaceMathDirectory, "Examples"}]], Evaluator -> Automatic, Method -> "Preemptive"], "Text"],     	    	      	    
 	      Style[" If you use SpaceMath in your research, please cite","Text"]];
 	Print [Style["\[Bullet] SpaceMath Version 1.0","Text"]];
 	Print [Style["\[Bullet] Authors:  ","Text"]];
@@ -103,7 +101,10 @@ MessageDialog["Higgs boson"];
 	Print [Style["Facultad de Estudios Superiores-Cuautitl\[AAcute]n, Universidad Nacional Aut\[OAcute]noma de M\[EAcute]xico","Text"]];
 	Print [Style["T. A. Valencia-P\[EAcute]rez","Text"]];
 	Print [Style["Facultad de Ciencias F\[IAcute]sico Matem\[AAcute]ticas, Benem\[EAcute]rita Universidad Aut\[OAcute]noma de Puebla","Text"]];
-
+		Print [Style["Index","Text"]];
+		Print [Style["HiggsData","Text"]];		
+		Print [Style["LFVprocesses","Text"]];
+		Print [Style["ObliquePar","Text"]];		
 
 
 
