@@ -23,6 +23,8 @@ SpaceMath`$SpaceMathVersion = "1.0";
 
 BeginPackage["SpaceMath`"]
 
+HiggsBosondata::usage = ToString[Row[{"The implementation of the ", Style[Hyperlink["Higgs boson data", "paclet:SpaceMathAPPv0p1/tutorial/SpaceMathAPP_Tutorial"], Italic]," within the SpaceMath code , was closely following the reference : arXiv:1809.10733v2[hep-ex], 10.1140/epjc/s10052-019-6909-y."}], StandardForm];
+
 HiggsData::usage = "The implementation of the Higgs boson data within the SpaceMath code, \
 was closely following the reference : arXiv:1809.10733v2[hep-ex], 10.1140/epjc/s10052-019-6909-y."
 
