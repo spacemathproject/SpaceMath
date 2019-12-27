@@ -80,8 +80,6 @@ Get/@listMisc;
 
 EndPackage[];
 
-
-(* If[ Global`$SpaceMathStartupMessages =!= False, *)
     Print[Style["SpaceMath ", "Text", Bold], Style[$SpaceMathVersion <> ". For help, use the ", "Text"],
 		  Style[DisplayForm@ButtonBox["documentation center", BaseStyle->"Link", ButtonData :> "paclet:SpaceMath/tutorial/SpaceMathOverview",
 				ButtonNote -> "paclet:SpaceMath/tutorial/SpaceMathOverview"], "Text"],
@@ -101,7 +99,7 @@ EndPackage[];
 	Print [Style["Facultad de Estudios Superiores-Cuautitl\[AAcute]n, Universidad Nacional Aut\[OAcute]noma de M\[EAcute]xico","Text"]];
 	Print [Style["T. A. Valencia-P\[EAcute]rez","Text"]];
 	Print [Style["Facultad de Ciencias F\[IAcute]sico Matem\[AAcute]ticas, Benem\[EAcute]rita Universidad Aut\[OAcute]noma de Puebla","Text"]];
-(*  ];*)
+
 
 
 
