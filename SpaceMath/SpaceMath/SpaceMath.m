@@ -80,6 +80,8 @@ Get/@listMisc;
 
 EndPackage[];
 
+MessageDialog["Higgs boson"];
+
     Print[Style["SpaceMath ", "Text", Bold], Style[$SpaceMathVersion <> ". For help, use the ", "Text"],
 		  Style[DisplayForm@ButtonBox["documentation center", BaseStyle->"Link", ButtonData :> "paclet:SpaceMath/tutorial/SpaceMathOverview",
 				ButtonNote -> "paclet:SpaceMath/tutorial/SpaceMathOverview"], "Text"],
@@ -92,6 +94,8 @@ EndPackage[];
 	Print[Style["See also the supplied ","Text"],
 	      Style[DisplayForm@ButtonBox["Examples.", BaseStyle -> "Hyperlink", 
 	      	    ButtonFunction :> SystemOpen[FileNameJoin[{$SpaceMathDirectory, "Examples"}]], Evaluator -> Automatic, Method -> "Preemptive"], "Text"],
+	      Style[DisplayForm@ButtonBox["Higgs boson.", BaseStyle -> "Hyperlink", 
+	      	    ButtonFunction :> SystemOpen[FileNameJoin[{$SpaceMathDirectory, "Examples"}]], Evaluator -> Automatic, Method -> "Preemptive"], "Text"],	      	    
 	      Style[" If you use SpaceMath in your research, please cite","Text"]];
 	Print [Style["\[Bullet] SpaceMath Version 1.0","Text"]];
 	Print [Style["\[Bullet] Authors:  ","Text"]];
