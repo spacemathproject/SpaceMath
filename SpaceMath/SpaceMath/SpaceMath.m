@@ -92,9 +92,20 @@ Print[Style["
 \[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
 \[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
 \[Proportion]\[NestedGreaterGreater]
-  \n", Blue, 20, Bold, FontFamily -> "TimesRoman", 
- LineSpacing -> {1, 0}]]
- 
+", Blue, 20, Bold, FontFamily -> "TimesRoman"]]
+
+Print[Style["			SpaceMath 			", Black, 20, Bold, FontFamily -> "TimesRoman", LineSpacing -> {0, 0}]]
+Print[Style["\[RightTee]	a subparagraph goes here; \[LeftTee]", Black, 12, Plain, FontFamily -> "TimesRoman", LineSpacing -> {1, 0}]]
+Print[Style["\[RightTee]	a subparagraph goes here; \[LeftTee]", Black, 12, Plain, FontFamily -> "TimesRoman", LineSpacing -> {1, 0}]]
+Print[Style["\[RightTee]	a subparagraph goes here; \[LeftTee]", Black, 12, Plain, FontFamily -> "TimesRoman", LineSpacing -> {1, 0}]]
+Print[Style["\[RightTee]	a subparagraph goes here; \[LeftTee]", Black, 12, Plain, FontFamily -> "TimesRoman", LineSpacing -> {1, 0}]]
+Print[Style["\[RightTee]	a subparagraph goes here; \[LeftTee]", Black, 12, Plain, FontFamily -> "TimesRoman", LineSpacing -> {1, 0}]]
+Print[Style["\[RightTee]	a subparagraph goes here; \[LeftTee]", Black, 12, Plain, FontFamily -> "TimesRoman", LineSpacing -> {1, 0}]]
+Print[Style["\[RightTee]	a subparagraph goes here; \[LeftTee]", Black, 12, Plain, FontFamily -> "TimesRoman", LineSpacing -> {1, 0}]]
+Print[Style["\[RightTee]	a subparagraph goes here; \[LeftTee]", Black, 12, Plain, FontFamily -> "TimesRoman", LineSpacing -> {1, 0}]]
+Print[Style["\[RightTee]	a subparagraph goes here; \[LeftTee]", Black, 12, Plain, FontFamily -> "TimesRoman", LineSpacing -> {1, 0}]]
+Print[Style["\[RightTee]	a subparagraph goes here; \[LeftTee]", Black, 12, Plain, FontFamily -> "TimesRoman", LineSpacing -> {1, 0}]]
+
  
 Print[ 
 Style["
@@ -108,8 +119,7 @@ Style["
 \[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
 \[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
 \[Proportion]\[NestedGreaterGreater]
-  \n", Blue, 20, Bold, FontFamily -> "TimesRoman", 
- LineSpacing -> {1, 0}]]   
+", Blue, 20, Bold, FontFamily -> "TimesRoman"]   
  
 
     Print[Style["SpaceMath ", "Text", Bold], Style[$SpaceMathVersion <> ". For help, use the ", "Text"],
