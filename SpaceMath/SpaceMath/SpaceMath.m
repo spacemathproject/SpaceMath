@@ -80,7 +80,37 @@ Get/@listMisc;
 
 EndPackage[];
 
-MessageDialog["Higgs boson"];
+ 
+Print[Style["
+ \[NestedLessLess]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
+\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
+\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
+\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
+\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
+\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
+\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
+\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
+\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
+\[Proportion]\[NestedGreaterGreater]
+  \n", Blue, 20, Bold, FontFamily -> "TimesRoman", 
+ LineSpacing -> {1, 0}]]
+ 
+ 
+Print[ 
+Style["
+ \[NestedLessLess]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
+\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
+\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
+\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
+\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
+\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
+\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
+\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
+\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
+\[Proportion]\[NestedGreaterGreater]
+  \n", Blue, 20, Bold, FontFamily -> "TimesRoman", 
+ LineSpacing -> {1, 0}]]   
+ 
 
     Print[Style["SpaceMath ", "Text", Bold], Style[$SpaceMathVersion <> ". For help, use the ", "Text"],
 		  Style[DisplayForm@ButtonBox["documentation center", BaseStyle->"Link", ButtonData :> "paclet:SpaceMath/tutorial/SpaceMathOverview",
@@ -105,6 +135,7 @@ MessageDialog["Higgs boson"];
 		Print [Style["HiggsData","Text"]];		
 		Print [Style["LFVprocesses","Text"]];
 		Print [Style["ObliquePar","Text"]];		
+	
 
 
 
