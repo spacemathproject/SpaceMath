@@ -10,97 +10,168 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      5353,        123]
-NotebookOptionsPosition[      4514,        104]
-NotebookOutlinePosition[      4848,        119]
-CellTagsIndexPosition[      4805,        116]
+NotebookDataLength[      6437,        191]
+NotebookOptionsPosition[      6025,        175]
+NotebookOutlinePosition[      6359,        190]
+CellTagsIndexPosition[      6316,        187]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+
+Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"<<", "SpaceMath`"}]], "Input",
  CellChangeTimes->{{3.786466837293223*^9, 3.786466843588715*^9}},
  CellLabel->"In[1]:=",ExpressionUUID->"6cb1e71d-6c53-4412-a1fb-d4f8dc552723"],
 
 Cell[BoxData[
- RowBox[{"??", "SpaceMath`*"}]], "Input",
- CellChangeTimes->{{3.786467649811377*^9, 3.786467664915689*^9}},
- CellLabel->"In[1]:=",ExpressionUUID->"ce153152-db26-4aef-a7a9-8423ff106798"],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.786469367268116*^9, 
-  3.7864693750201263`*^9}},ExpressionUUID->"575231b3-28cb-4b74-b76a-\
-4a31bacc1720"],
-
-Cell[BoxData[
- RowBox[{"Style", "[", 
-  RowBox[{
-  "\"\<A paragraph goes in here; \\n a subparagraph goes here; \\n etc.\>\"", 
-   ",", "Blue", ",", "24", ",", "Italic", ",", 
-   RowBox[{"FontFamily", "\[Rule]", "\"\<Courier\>\""}], ",", 
-   RowBox[{"LineSpacing", "\[Rule]", 
-    RowBox[{"{", 
-     RowBox[{"1", ",", "0"}], "}"}]}]}], "]"}]], "Input",
- CellChangeTimes->{{3.787867788322817*^9, 3.7878677883232*^9}},
- CellLabel->"In[8]:=",ExpressionUUID->"8158e3b0-f72e-4e26-a5e2-edc5a69a2eed"],
-
-Cell[BoxData[
- RowBox[{"Style", "[", 
-  RowBox[{
-  "\"\<\n\[NestedLessLess]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
-\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
-\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
-\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
-\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
-\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
-\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
-\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
-\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
-\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
-\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
-\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
-\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
-\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\[Proportion]\
-\[Proportion]\[NestedGreaterGreater]\n\[DoubleVerticalBar]\n a subparagraph \
-goes here; \\n \n==========================================\>\"", ",", "Blue",
-    ",", "12", ",", "Bold", ",", 
-   RowBox[{"FontFamily", "\[Rule]", "\"\<TimesRoman\>\""}], ",", 
-   RowBox[{"LineSpacing", "\[Rule]", 
-    RowBox[{"{", 
-     RowBox[{"1", ",", "0"}], "}"}]}]}], "]"}]], "Input",
- CellChangeTimes->{{3.7878712289832163`*^9, 3.787871356808199*^9}, {
-   3.787872466182702*^9, 3.787872517247541*^9}, {3.787878132012905*^9, 
-   3.78787817451807*^9}, 3.787878396006987*^9, {3.787878464080233*^9, 
-   3.7878784666966343`*^9}, {3.787878511701342*^9, 3.787878529024169*^9}, {
-   3.787878573092548*^9, 3.78787864546661*^9}, {3.787878699220284*^9, 
-   3.7878787184826202`*^9}},
- CellLabel->"In[40]:=",ExpressionUUID->"59a8f5e8-d442-42ae-8dfc-a2c227c47617"],
-
-Cell[BoxData[
- StyleBox[
-  "\"\<\\n\[NestedLessLess]\[LongEqual]\[LongEqual]\[Proportion]==============\
-=========================================================================\
-\[NestedGreaterGreater]\\n\\n\\n|| a subparagraph goes here; \\n \
-\\n==========================================\>\"",
-  StripOnInput->False,
-  LineSpacing->{1, 0},
-  LineColor->RGBColor[0, 0, 1],
-  FrontFaceColor->RGBColor[0, 0, 1],
-  BackFaceColor->RGBColor[0, 0, 1],
-  GraphicsColor->RGBColor[0, 0, 1],
-  FontFamily->"TimesRoman",
-  FontSize->12,
-  FontWeight->Bold,
-  FontColor->RGBColor[0, 0, 1]]], "Input",
- CellChangeTimes->{{3.7878785667974167`*^9, 
-  3.787878567632903*^9}},ExpressionUUID->"abe7d3ba-62ec-4121-b131-\
-535602cbf09e"],
-
-Cell[BoxData["\[CirclePlus]"], "Input",
- CellChangeTimes->{{3.7878783309161*^9, 
-  3.787878330916494*^9}},ExpressionUUID->"5722b7b3-1cbc-4187-aa9b-\
-3d111ee354e4"]
+ TagBox[GridBox[{
+    {
+     StyleBox["\<\"SpaceMath\"\>",
+      StripOnInput->False,
+      LineColor->GrayLevel[0],
+      FrontFaceColor->GrayLevel[0],
+      BackFaceColor->GrayLevel[0],
+      GraphicsColor->GrayLevel[0],
+      FontFamily->"TimesRoman",
+      FontSize->20,
+      FontWeight->Bold,
+      FontColor->GrayLevel[0]], "\[SpanFromLeft]", "\[SpanFromLeft]", 
+     "\[SpanFromLeft]", "\[SpanFromLeft]", "\[SpanFromLeft]"},
+    {
+     StyleBox["\<\"We present a Mathematica application in development, \
+so-called     SpaceMath, for the search of Beyond Standard Model (BSM) \
+parameter spaces     which be agree with the most up-to-date experimental \
+measurements.\"\>",
+      StripOnInput->False,
+      LineColor->GrayLevel[0],
+      FrontFaceColor->GrayLevel[0],
+      BackFaceColor->GrayLevel[0],
+      GraphicsColor->GrayLevel[0],
+      FontFamily->"TimesRoman",
+      FontSize->12,
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontVariations->{"Underline"->False},
+      FontColor->GrayLevel[0]], "\[SpanFromLeft]", "\[SpanFromLeft]", 
+     "\[SpanFromLeft]", "\[SpanFromLeft]", "\[SpanFromLeft]"},
+    {
+     StyleBox["\<\"Authors: \"\>",
+      StripOnInput->False,
+      LineColor->GrayLevel[0],
+      FrontFaceColor->GrayLevel[0],
+      BackFaceColor->GrayLevel[0],
+      GraphicsColor->GrayLevel[0],
+      FontFamily->"TimesRoman",
+      FontSize->12,
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontVariations->{"Underline"->False},
+      FontColor->GrayLevel[
+       0]], "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\[SpanFromLeft]"},
+    {
+     StyleBox["\<\"M. A. Arroyo-Ure\[NTilde]a\"\>",
+      StripOnInput->False,
+      LineColor->GrayLevel[0],
+      FrontFaceColor->GrayLevel[0],
+      BackFaceColor->GrayLevel[0],
+      GraphicsColor->GrayLevel[0],
+      FontFamily->"TimesRoman",
+      FontSize->12,
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontVariations->{"Underline"->False},
+      FontColor->GrayLevel[
+       0]], "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\[SpanFromLeft]"},
+    {
+     StyleBox["\<\"Facultad de Estudios Superiores-Cuautitl\[AAcute]n, \
+Universidad Nacional Aut\[OAcute]noma de M\[EAcute]xico\"\>",
+      StripOnInput->False,
+      LineColor->GrayLevel[0],
+      FrontFaceColor->GrayLevel[0],
+      BackFaceColor->GrayLevel[0],
+      GraphicsColor->GrayLevel[0],
+      FontFamily->"TimesRoman",
+      FontSize->12,
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontVariations->{"Underline"->False},
+      FontColor->GrayLevel[
+       0]], "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\[SpanFromLeft]"},
+    {
+     StyleBox["\<\"T. A. Valencia-P\[EAcute]rez\"\>",
+      StripOnInput->False,
+      LineColor->GrayLevel[0],
+      FrontFaceColor->GrayLevel[0],
+      BackFaceColor->GrayLevel[0],
+      GraphicsColor->GrayLevel[0],
+      FontFamily->"TimesRoman",
+      FontSize->12,
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontVariations->{"Underline"->False},
+      FontColor->GrayLevel[
+       0]], "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\[SpanFromLeft]"},
+    {
+     StyleBox["\<\"Facultad de Ciencias F\[IAcute]sico Matem\[AAcute]ticas, \
+Benem\[EAcute]rita Universidad Aut\[OAcute]noma de Puebla\"\>",
+      StripOnInput->False,
+      LineColor->GrayLevel[0],
+      FrontFaceColor->GrayLevel[0],
+      BackFaceColor->GrayLevel[0],
+      GraphicsColor->GrayLevel[0],
+      FontFamily->"TimesRoman",
+      FontSize->12,
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontVariations->{"Underline"->False},
+      FontColor->GrayLevel[
+       0]], "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\[SpanFromLeft]"},
+    {
+     StyleBox["\<\"We.\"\>",
+      StripOnInput->False,
+      LineColor->GrayLevel[0],
+      FrontFaceColor->GrayLevel[0],
+      BackFaceColor->GrayLevel[0],
+      GraphicsColor->GrayLevel[0],
+      FontFamily->"TimesRoman",
+      FontSize->12,
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontVariations->{"Underline"->False},
+      FontColor->GrayLevel[
+       0]], "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\[SpanFromLeft]"},
+    {
+     StyleBox["\<\"We.\"\>",
+      StripOnInput->False,
+      LineColor->GrayLevel[0],
+      FrontFaceColor->GrayLevel[0],
+      BackFaceColor->GrayLevel[0],
+      GraphicsColor->GrayLevel[0],
+      FontFamily->"TimesRoman",
+      FontSize->12,
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontVariations->{"Underline"->False},
+      FontColor->GrayLevel[
+       0]], "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\[SpanFromLeft]"},
+    {
+     StyleBox["\<\"SpaceMath Version 1.0\"\>", "Text",
+      StripOnInput->False], "", "", "", "", ""}
+   },
+   AutoDelete->False,
+   GridBoxBackground->{"Columns" -> {None, None}, "Rows" -> {None, None}},
+   GridBoxFrame->{"ColumnsIndexed" -> {{{1, -1}, {1, -1}} -> True}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+   GridBoxItemStyle->{"Columns" -> {{"Text"}}, "Rows" -> {{"Text"}}},
+   GridBoxSpacings->{"Columns" -> {{2}}, "Rows" -> {{1}}}],
+  "Grid"]], "Print",
+ CellChangeTimes->{3.788108974976902*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"dfb84e12-a91c-4aa4-bb6c-4a5274542a7b"]
+}, Open  ]]
 },
 WindowSize->{1869, 1056},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
@@ -118,13 +189,10 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 198, 3, 31, "Input",ExpressionUUID->"6cb1e71d-6c53-4412-a1fb-d4f8dc552723"],
-Cell[759, 25, 199, 3, 31, "Input",ExpressionUUID->"ce153152-db26-4aef-a7a9-8423ff106798"],
-Cell[961, 30, 154, 3, 31, "Input",ExpressionUUID->"575231b3-28cb-4b74-b76a-4a31bacc1720"],
-Cell[1118, 35, 494, 10, 31, "Input",ExpressionUUID->"8158e3b0-f72e-4e26-a5e2-edc5a69a2eed"],
-Cell[1615, 47, 2006, 30, 124, "Input",ExpressionUUID->"59a8f5e8-d442-42ae-8dfc-a2c227c47617"],
-Cell[3624, 79, 720, 18, 30, "Input",ExpressionUUID->"abe7d3ba-62ec-4121-b131-535602cbf09e"],
-Cell[4347, 99, 163, 3, 44, "Input",ExpressionUUID->"5722b7b3-1cbc-4187-aa9b-3d111ee354e4"]
+Cell[CellGroupData[{
+Cell[580, 22, 198, 3, 31, "Input",ExpressionUUID->"6cb1e71d-6c53-4412-a1fb-d4f8dc552723"],
+Cell[781, 27, 5228, 145, 270, "Print",ExpressionUUID->"dfb84e12-a91c-4aa4-bb6c-4a5274542a7b"]
+}, Open  ]]
 }
 ]
 *)
