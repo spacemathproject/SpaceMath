@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     67742,       1264]
-NotebookOptionsPosition[     67328,       1248]
-NotebookOutlinePosition[     67662,       1263]
-CellTagsIndexPosition[     67619,       1260]
+NotebookDataLength[     68618,       1293]
+NotebookOptionsPosition[     68204,       1277]
+NotebookOutlinePosition[     68538,       1292]
+CellTagsIndexPosition[     68495,       1289]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -991,9 +991,34 @@ VhHQ/wMigCPC
        FontColor->GrayLevel[0]]},
      {
       StyleBox["\<\"We present a Mathematica application in development, \
-so-called \\n    SpaceMath, for the search of Beyond Standard Model (BSM) \
-parameter spaces\\n    which be agree with the most up-to-date experimental \
-measurements.\"\>",
+so-called SpaceMath,\"\>",
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"TimesRoman",
+       FontSize->12,
+       FontWeight->Plain,
+       FontSlant->Plain,
+       FontVariations->{"Underline"->False},
+       FontColor->GrayLevel[0]]},
+     {
+      StyleBox["\<\"for the search of Beyond Standard Model (BSM) parameter \
+spaces which be agree\"\>",
+       StripOnInput->False,
+       LineColor->GrayLevel[0],
+       FrontFaceColor->GrayLevel[0],
+       BackFaceColor->GrayLevel[0],
+       GraphicsColor->GrayLevel[0],
+       FontFamily->"TimesRoman",
+       FontSize->12,
+       FontWeight->Plain,
+       FontSlant->Plain,
+       FontVariations->{"Underline"->False},
+       FontColor->GrayLevel[0]]},
+     {
+      StyleBox["\<\"with the most up-to-date experimental measurements.\"\>",
        StripOnInput->False,
        LineColor->GrayLevel[0],
        FrontFaceColor->GrayLevel[0],
@@ -1075,6 +1100,7 @@ Benem\[EAcute]rita Universidad Aut\[OAcute]noma de Puebla\"\>",
      {
       StyleBox["\<\"Index SpaceMath\"\>",
        StripOnInput->False,
+       TextAlignment->Right,
        LineColor->GrayLevel[0],
        FrontFaceColor->GrayLevel[0],
        BackFaceColor->GrayLevel[0],
@@ -1088,6 +1114,7 @@ Benem\[EAcute]rita Universidad Aut\[OAcute]noma de Puebla\"\>",
      {
       StyleBox["\<\"Version\"\>",
        StripOnInput->False,
+       TextAlignment->Center,
        LineColor->GrayLevel[0],
        FrontFaceColor->GrayLevel[0],
        BackFaceColor->GrayLevel[0],
@@ -1101,6 +1128,7 @@ Benem\[EAcute]rita Universidad Aut\[OAcute]noma de Puebla\"\>",
      {
       StyleBox["\<\"1.0 \"\>",
        StripOnInput->False,
+       TextAlignment->Left,
        LineColor->GrayLevel[0],
        FrontFaceColor->GrayLevel[0],
        BackFaceColor->GrayLevel[0],
@@ -1188,7 +1216,8 @@ Benem\[EAcute]rita Universidad Aut\[OAcute]noma de Puebla\"\>",
      {
       StyleBox[
        TagBox[
-        ButtonBox["Wiki",
+        ButtonBox[
+         RowBox[{"Wiki", " ", "site"}],
          BaseStyle->"Hyperlink",
          ButtonData:>{
            URL[
@@ -1240,10 +1269,10 @@ Benem\[EAcute]rita Universidad Aut\[OAcute]noma de Puebla\"\>",
     GridBoxSpacings->{"Columns" -> {{2}}, "Rows" -> {{1}}}],
    "Grid"]},
   Alignment->Center]], "Print",
- CellChangeTimes->{3.788126455005499*^9},
+ CellChangeTimes->{3.78814724574288*^9},
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"207ba113-63b3-4005-9194-6992855457f4"]
+In[1]:=",ExpressionUUID->"26e94aba-d407-40d1-9950-ae374fc7b81a"]
 }, Open  ]]
 },
 WindowSize->{1869, 1056},
@@ -1264,7 +1293,7 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 198, 3, 31, "Input",ExpressionUUID->"6cb1e71d-6c53-4412-a1fb-d4f8dc552723"],
-Cell[781, 27, 66531, 1218, 483, "Print",ExpressionUUID->"207ba113-63b3-4005-9194-6992855457f4"]
+Cell[781, 27, 67407, 1247, 489, "Print",ExpressionUUID->"26e94aba-d407-40d1-9950-ae374fc7b81a"]
 }, Open  ]]
 }
 ]
