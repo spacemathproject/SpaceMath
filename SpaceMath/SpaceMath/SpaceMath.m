@@ -85,10 +85,12 @@ Print[Overlay[{Show[imageSM],
 Grid[
   {
    {Style["SpaceMath", Black, 20, Bold, FontFamily -> "TimesRoman"]},
-   {Style["We present a Mathematica application in development, so-called SpaceMath,\n
-    for the search of Beyond Standard Model (BSM) parameter spaces which be agree \n
-    with the most up-to-date experimental measurements.", 
-    Black, 12,Plain, FontFamily -> "TimesRoman", Spacings -> {1, 1}]},
+   {Style["We present a Mathematica application in development, so-called SpaceMath,", 
+    Black, 12,Plain, FontFamily -> "TimesRoman"]},
+    {Style["for the search of Beyond Standard Model (BSM) parameter spaces which be agree", 
+    Black, 12,Plain, FontFamily -> "TimesRoman"]},
+    {Style["with the most up-to-date experimental measurements.", 
+    Black, 12,Plain, FontFamily -> "TimesRoman"]},
    {Style["If you use FeynCalc in your research, please cite:", Black, 12, Plain,Bold, FontFamily -> "TimesRoman"]},
    {Style["M. A. Arroyo-Ure\[NTilde]a", Black, 12, Plain,FontFamily -> "TimesRoman"]},
    {Style["Facultad de Estudios Superiores-Cuautitl\[AAcute]n, Universidad Nacional Aut\[OAcute]noma de M\[EAcute]xico", Black, 12, Plain, FontFamily -> "TimesRoman"]},
@@ -143,7 +145,7 @@ Print[Grid[
    {
    	Style[DisplayForm@ButtonBox["LHC Higgs Boson data", BaseStyle->"Link", ButtonData :> "paclet:SpaceMath/tutorial/SpaceMathOverview",
 	ButtonNote -> "paclet:SpaceMath/tutorial/SpaceMathOverview"],Black, 12, Plain,FontFamily -> "TimesRoman"]
-   },
+   },Style["SpaceMath ", "Text", Bold], Style[$SpaceMathVersion <> ". For more help, use the ", "Text"]
    {
    	Style[DisplayForm@ButtonBox["Examples", BaseStyle -> "Hyperlink", 
 	ButtonFunction :> SystemOpen[FileNameJoin[{$SpaceMathDirectory, "Examples"}]], Evaluator -> Automatic, Method -> "Preemptive"],
