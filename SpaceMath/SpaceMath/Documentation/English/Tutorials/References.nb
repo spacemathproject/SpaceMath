@@ -1,149 +1,403 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     15792,        395]
+NotebookOptionsPosition[     10051,        279]
+NotebookOutlinePosition[     10462,        295]
+CellTagsIndexPosition[     10419,        292]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
 Notebook[{
 Cell[TextData[{
  "New in: ",
- Cell["1.0", "HistoryData", CellTags -> "New"],
+ Cell["1.0", "HistoryData",
+  CellTags->"New",ExpressionUUID->"e52b836f-71db-4999-a2a4-e57ca44b2222"],
  " | Modified in: ",
  Cell[" ", "HistoryData",
-  CellTags->"Modified"],
+  CellTags->"Modified",ExpressionUUID->"4792bf5a-fb73-4498-8ba2-753035b5d988"],
  " | Obsolete in: ",
  Cell[" ", "HistoryData",
-  CellTags->"Obsolete"],
+  CellTags->"Obsolete",ExpressionUUID->"fd86ec9b-e53b-4eaf-aadd-c0cb2ea14a7f"],
  " | Excised in: ",
  Cell[" ", "HistoryData",
-  CellTags->"Excised"]
+  CellTags->"Excised",ExpressionUUID->"0cff0639-b641-4781-8d9d-5375609064d2"]
 }], "History",
- CellID->1247902091],
+ CellID->1247902091,ExpressionUUID->"5bd28b21-0cb9-492d-9108-a08e52001850"],
 
 Cell[CellGroupData[{
 
 Cell["Categorization", "CategorizationSection",
- CellID->1122911449],
+ CellID->1122911449,ExpressionUUID->"a4d520cc-680f-4ade-8454-acd5d7fff479"],
 
 Cell["Tutorial", "Categorization",
  CellLabel->"Entity Type",
- CellID->686433507],
+ CellID->686433507,ExpressionUUID->"2ab73155-5f56-4b29-a84b-e5ec59a77f51"],
 
-Cell["SpaceMath", "Categorization", CellLabel->"Paclet Name", CellID->605800465],
+Cell["SpaceMath", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->605800465,ExpressionUUID->"0b8c41c6-eadd-4b9b-a7c2-98d69b4db93e"],
 
-Cell["SpaceMath`", "Categorization", CellLabel->"Context", CellID->468444828],
+Cell["SpaceMath`", "Categorization",
+ CellLabel->"Context",
+ CellID->468444828,ExpressionUUID->"9a1f9963-859c-426b-a556-5cacce4f84ad"],
 
-Cell["SpaceMath/tutorial/References", "Categorization", CellLabel->"URI"]
+Cell["SpaceMath/tutorial/References", "Categorization",
+ CellLabel->"URI",ExpressionUUID->"fbcbe1f2-3b21-45ed-b7a5-e4c48ac41335"]
 }, Closed]],
 
 Cell[CellGroupData[{
 
 Cell["Keywords", "KeywordsSection",
- CellID->1427428552],
+ CellID->1427428552,ExpressionUUID->"89051baf-10b6-4b25-8dc4-5237a1ad34a0"],
 
 Cell["XXXX", "Keywords",
- CellID->1251852827]
+ CellID->1251852827,ExpressionUUID->"b3f71178-4567-4fe6-8ac8-aeec2398d355"]
 }, Closed]],
 
 Cell[CellGroupData[{
 
 Cell["Details", "DetailsSection",
- CellID->307771771],
+ CellID->307771771,ExpressionUUID->"3ab6fd84-98a9-409a-8281-279adf047df5"],
 
 Cell["XXXX", "Details",
  CellLabel->"Lead",
- CellID->218895918],
+ CellID->218895918,ExpressionUUID->"4072cfef-98fc-4d94-8c00-b9674ac65ca4"],
 
 Cell["XXXX", "Details",
  CellLabel->"Developers",
- CellID->350963985],
+ CellID->350963985,ExpressionUUID->"08523d77-1ced-4b1d-bbc3-e0e1e1d39130"],
 
 Cell["XXXX", "Details",
  CellLabel->"Authors",
- CellID->795871300],
+ CellID->795871300,ExpressionUUID->"f9ee9437-744f-49f8-bc77-eb22247105e5"],
 
 Cell["XXXX", "Details",
  CellLabel->"Feature Name",
- CellID->199739161],
+ CellID->199739161,ExpressionUUID->"7e2188a4-5f53-496d-af74-a41219d590a0"],
 
 Cell["XXXX", "Details",
  CellLabel->"QA",
- CellID->40625308],
+ CellID->40625308,ExpressionUUID->"e7145263-3477-46ce-8829-5f51fc4b56bb"],
 
 Cell["XXXX", "Details",
  CellLabel->"DA",
- CellID->357121918],
+ CellID->357121918,ExpressionUUID->"a6d21db8-a3ef-4ef0-acdc-0ca75adce623"],
 
 Cell["XXXX", "Details",
  CellLabel->"Docs",
- CellID->35949532],
+ CellID->35949532,ExpressionUUID->"091e4f82-90e7-41bc-adcb-fdfb74197103"],
 
 Cell["XXXX", "Details",
  CellLabel->"Features Page Notes",
- CellID->929432370],
+ CellID->929432370,ExpressionUUID->"ad1bc9db-e932-41da-b64a-9644d8d2c3d4"],
 
 Cell["XXXX", "Details",
  CellLabel->"Comments",
- CellID->240026365]
+ CellID->240026365,ExpressionUUID->"5bfe6856-684a-4ced-9244-b60cc28bfea2"]
 }, Closed]],
 
 Cell[CellGroupData[{
 
-Cell["References", "Title",CellID->509267359],
+Cell["References", "Title",
+ CellID->509267359,ExpressionUUID->"d2a6619b-74c4-4434-a65c-c685c40b312a"],
 
-Cell["XXXX", "Text",
- CellID->1534169418],
+Cell["\<\
+1. G. Aad et al. (ATLAS Collaboration), Phys. Lett. B 716, 1 (2012).\
+\>", "Text",
+ CellChangeTimes->{3.788183312290943*^9},
+ CellID->1534169418,ExpressionUUID->"00185c6a-ddc2-47bf-aecc-07138932a8bd"],
 
-Cell[BoxData[GridBox[{
-   {"XXXX", Cell["XXXX", "TableText"]},
-   {"XXXX", Cell["XXXX", "TableText"]},
-   {"XXXX", Cell["XXXX", "TableText"]}
-  }]], "DefinitionBox",
- CellID->2096742444],
+Cell["\<\
+2. S. Chatrchyan et al. (CMS Collaboration), Phys. Lett. B 716, 30 (2012).\
+\>", "Text",
+ CellID->2020047632,ExpressionUUID->"186fa23b-490a-49ca-b760-8a1927513596"],
 
-Cell["XXXX.", "Caption",
- CellID->1891092685],
+Cell["\<\
+3. N. Arkani-Hamed, A. G. Cohen, E. Katz, and A. E. Nelson. The Littlest \
+Higgs. JHEP, 07:034, 2002.\
+\>", "Text",
+ CellChangeTimes->{{3.7881833664939547`*^9, 3.7881833667787933`*^9}},
+ CellID->1662512277,ExpressionUUID->"393fa977-6972-4f78-9f00-232e2a0b5bf9"],
 
-Cell[CellGroupData[{
+Cell["\<\
+4. Nima Arkani-Hamed, Andrew G. Cohen, and Howard Georgi. Electroweak \
+symmetry breaking from dimensional deconstruction. Phys. Lett., B513:232\
+\[Dash]240, 2001.\
+\>", "Text",
+ CellChangeTimes->{{3.788183380884715*^9, 3.788183383168013*^9}},
+ CellID->2047557597,ExpressionUUID->"fb4f46d5-0adb-4e27-a1d8-406a88d58f13"],
 
-Cell["XXXX", "MathCaption",
- CellID->836781195],
+Cell["\<\
+5. Paul H. Frampton and Sheldon L. Glashow. Chiral color: An alternative to \
+the standard model. Physics Letters B, 190(1):157 \[Dash] 161, 1987.\
+\>", "Text",
+ CellChangeTimes->{{3.78818341085385*^9, 3.7881834111217422`*^9}},
+ CellID->1567665676,ExpressionUUID->"646fbdeb-45e0-4b0f-bb1d-4bb4639f24b7"],
 
-Cell[CellGroupData[{
+Cell["\<\
+6. Howard Georgi and Marie Machacek. Doubly charged higgs bosons. Nuclear \
+Physics B, 262(3):463 \[Dash] 477, 1985.\
+\>", "Text",
+ CellChangeTimes->{{3.78818342892835*^9, 3.7881834294841413`*^9}},
+ CellID->2111401125,ExpressionUUID->"27c477a3-10c5-46cf-a181-2de774f0cf18"],
 
-Cell[BoxData["XXXX"], "Input",
- CellLabel->"In[1]:=",
- CellID->2058623809],
+Cell["\<\
+7. Haim Harari. A Schematic Model of Quarks and Leptons. Phys. Lett., 86B:83\
+\[Dash]86, 1979.\
+\>", "Text",
+ CellChangeTimes->{3.788183463159997*^9},
+ CellID->1933113118,ExpressionUUID->"83203aa1-ed3d-4506-9993-2f3c824d42fe"],
 
-Cell[BoxData["XXXX"], "Output",
- CellLabel->"Out[1]=",
- CellID->1181321046]
-}, Open  ]]
-}, Open  ]],
+Cell["\<\
+8. Haim Harari and Nathan Seiberg. The Rishon Model. Nucl. Phys., B204:141\
+\[Dash]167, 1982.\
+\>", "Text",
+ CellChangeTimes->{3.788183476624076*^9},
+ CellID->1921604857,ExpressionUUID->"033f6ea1-c839-4f22-bf42-30356fde40c5"],
+
+Cell["\<\
+9. Gordon kane John F. Gunion, Howard E. Haber and Sally Dawson. The Higgs \
+Hunter\[CloseCurlyQuote]s Guide. Frontiers in Physics, 80. Westview Press, \
+2000.\
+\>", "Text",
+ CellChangeTimes->{{3.7881835071669283`*^9, 3.788183603152087*^9}, {
+  3.788183692260922*^9, 3.788183751181855*^9}},
+ CellID->1612549363,ExpressionUUID->"52f0725d-fb33-449f-880e-35e26b4d1d30"],
+
+Cell["\<\
+10. Hironari Miyazawa. Baryon Number Changing Currents*. Progress of \
+Theoretical Physics, 36(6):1266\[Dash]1276, 12 1966.\
+\>", "Text",
+ CellID->1735352583,ExpressionUUID->"c43a40c0-6a9f-4641-b0f7-6e10f8e3d616"],
+
+Cell["\<\
+11. Rabindra N. Mohapatra and Jogesh C. Pati. Left-Right Gauge Symmetry and \
+an Isoconjugate Model of CP Violation. Phys. Rev., D11:566\[Dash]571, 1975.\
+\>", "Text",
+ CellID->1577106694,ExpressionUUID->"eee9a5bf-a3f0-494b-805c-0189f06925bf"],
+
+Cell["\<\
+12. Jogesh C. Pati and Abdus Salam. Lepton number as the fourth \
+\[CloseCurlyDoubleQuote]color\[CloseCurlyDoubleQuote]. Phys. Rev. D, 10:275\
+\[Dash]289, Jul 1974.\
+\>", "Text",
+ CellChangeTimes->{{3.7881835071669283`*^9, 3.788183568945689*^9}, {
+  3.7881836498231773`*^9, 3.788183684620232*^9}, {3.7881837190382137`*^9, 
+  3.788183725897914*^9}},
+ CellID->1447173129,ExpressionUUID->"7f04efc6-43bd-42d1-adc4-9e8d795a8c2d"],
+
+Cell["\<\
+13. A.M. Polyakov. Quark confinement and topology of gauge theories. Nuclear \
+Physics B, 120(3):429 \[Dash] 458, 1977.\
+\>", "Text",
+ CellID->1172710755,ExpressionUUID->"f5144d93-8335-4ab4-a239-1a1e0502d7ff"],
+
+Cell["\<\
+14. Lisa Randall and Raman Sundrum. A Large mass hierarchy from a small extra \
+dimension. Phys. Rev. Lett., 83:3370\[Dash]3373, 1999.\
+\>", "Text",
+ CellID->1864629732,ExpressionUUID->"333c73f6-c292-49d7-8f81-58b2f092a732"],
+
+Cell["\<\
+15. Leonard Susskind. Dynamics of spontaneous symmetry breaking in the \
+weinberg-salam theory. Phys. Rev. D, 20:2619\[Dash]2625, Nov 1979.\
+\>", "Text",
+ CellID->89641942,ExpressionUUID->"e93f82d4-e708-4d6a-b2d9-95c17a26aab7"],
+
+Cell["\<\
+16. S. Weinberg. Implications of dynamical symmetry breaking: An addendum. \
+Phys. Rev. D, 19:1277\[Dash]1280, Feb 1979. \
+\>", "Text",
+ CellID->2098362344,ExpressionUUID->"2cec6ca5-d482-416f-aceb-fa7754a5ef52"],
+
+Cell["17. Yang Zhang EasyScanHEP collaboration. Easyscanhep, 2017.", "Text",
+ CellID->1356319899,ExpressionUUID->"07fded85-4b72-42c5-b496-54cc80c302cd"],
+
+Cell["\<\
+18. Florian Bernlochner Sanjay Bloor Torsten Bringmann Andy Buckley Marcin \
+Chrzaszcz Jan Conrad Jonathan M. Cornell Joakim Edsj Ben Farmer Andrew Fowlie \
+Tomas Gonzalo Julia Harz Sebastian Hoof Paul Jackson Felix Kahlhoe-fer Anders \
+Kvellestad Nazila Mahmoudi Gregory Martinez James McKay Are Raklev \
+Christopher Rogan Roberto Ruiz de Austri Pat Scott Nicola Serra Roberto \
+Trotta Christoph Weniger Martin White Sebas- tian Wild Peter Athron, Csaba \
+Balzs. Gambit, 2017.\
+\>", "Text",
+ CellChangeTimes->{3.788183678824971*^9},
+ CellID->1522939246,ExpressionUUID->"358eedd2-d126-4265-8492-47f18d84de41"],
+
+Cell["\<\
+19. Manuel Drees Herbert Dreiner Florian Domingo Jong Soo Kim Frederic Ponzca \
+Krzysztof Rolbiecki Roberto Ruiz de Austri Liangliang Shang Jamie Tattersall \
+Simon Zeren Wang Thorsten Weber Yuanfang Yue Daniel Dercks, Nishita Desai. \
+Checkmate, 2014.\
+\>", "Text",
+ CellID->151973800,ExpressionUUID->"f3e47af5-33e8-498a-91a1-fa8475baec1e"],
+
+Cell["\<\
+20. A. M. Sirunyan et al. [CMS Collaboration], Eur. Phys. J. C 79, no. 5, 421 \
+(2019) doi:10.1140/epjc/s10052-019-6909-y [arXiv:1809.10733 [hep-ex]].\
+\>", "Text",
+ CellID->1559621625,ExpressionUUID->"f3c4dfb0-f6ab-4f27-8e98-46a13ebd9d7a"],
 
 Cell[CellGroupData[{
 
 Cell["More About", "TutorialMoreAboutSection",
- CellID->23220180],
+ CellID->23220180,ExpressionUUID->"fe980015-cac9-4b2d-be93-8d2355df3f45"],
 
 Cell["XXXX", "TutorialMoreAbout",
- CellID->1567025153]
+ CellID->1567025153,ExpressionUUID->"b33c658e-bd61-4797-8191-dc1497bccc9d"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell["Related Tutorials", "RelatedTutorialsSection",
- CellID->415694126],
+ CellID->415694126,ExpressionUUID->"98768cb4-cf94-4688-b47c-1822e0985124"],
 
 Cell["XXXX", "RelatedTutorials",
- CellID->806871991]
+ CellID->806871991,ExpressionUUID->"77d3783d-5633-41dc-b176-720aae5fc0a1"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell["Related Wolfram Education Group Courses", "TutorialRelatedLinksSection",
- CellID->415694148],
+ CellID->415694148,ExpressionUUID->"a4bc4b02-aa3c-4907-a20b-f63759bf38b4"],
 
 Cell["XXXX", "TutorialRelatedLinks",
- CellID->415694149]
+ CellID->415694149,ExpressionUUID->"d7a5acc2-73d0-4d6a-81c0-bf2046e3c570"]
 }, Open  ]]
 }, Open  ]]
 },
 WindowSize->{700, 770},
-WindowMargins->{{4, Automatic}, {Automatic, 0}},
-StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "TutorialPageStyles.nb"]
+WindowMargins->{{Automatic, 352}, {Automatic, 54}},
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "TutorialPageStyles.nb", 
+  CharacterEncoding -> "UTF-8"]
 ]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 600, 14, 25, "History",ExpressionUUID->"5bd28b21-0cb9-492d-9108-a08e52001850",
+ CellID->1247902091],
+Cell[CellGroupData[{
+Cell[1183, 38, 123, 1, 30, "CategorizationSection",ExpressionUUID->"a4d520cc-680f-4ade-8454-acd5d7fff479",
+ CellID->1122911449],
+Cell[1309, 41, 136, 2, 70, "Categorization",ExpressionUUID->"2ab73155-5f56-4b29-a84b-e5ec59a77f51",
+ CellID->686433507],
+Cell[1448, 45, 137, 2, 70, "Categorization",ExpressionUUID->"0b8c41c6-eadd-4b9b-a7c2-98d69b4db93e",
+ CellID->605800465],
+Cell[1588, 49, 134, 2, 70, "Categorization",ExpressionUUID->"9a1f9963-859c-426b-a556-5cacce4f84ad",
+ CellID->468444828],
+Cell[1725, 53, 129, 1, 70, "Categorization",ExpressionUUID->"fbcbe1f2-3b21-45ed-b7a5-e4c48ac41335"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1891, 59, 111, 1, 20, "KeywordsSection",ExpressionUUID->"89051baf-10b6-4b25-8dc4-5237a1ad34a0",
+ CellID->1427428552],
+Cell[2005, 62, 100, 1, 70, "Keywords",ExpressionUUID->"b3f71178-4567-4fe6-8ac8-aeec2398d355",
+ CellID->1251852827]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[2142, 68, 108, 1, 20, "DetailsSection",ExpressionUUID->"3ab6fd84-98a9-409a-8281-279adf047df5",
+ CellID->307771771],
+Cell[2253, 71, 118, 2, 70, "Details",ExpressionUUID->"4072cfef-98fc-4d94-8c00-b9674ac65ca4",
+ CellID->218895918],
+Cell[2374, 75, 124, 2, 70, "Details",ExpressionUUID->"08523d77-1ced-4b1d-bbc3-e0e1e1d39130",
+ CellID->350963985],
+Cell[2501, 79, 121, 2, 70, "Details",ExpressionUUID->"f9ee9437-744f-49f8-bc77-eb22247105e5",
+ CellID->795871300],
+Cell[2625, 83, 126, 2, 70, "Details",ExpressionUUID->"7e2188a4-5f53-496d-af74-a41219d590a0",
+ CellID->199739161],
+Cell[2754, 87, 115, 2, 70, "Details",ExpressionUUID->"e7145263-3477-46ce-8829-5f51fc4b56bb",
+ CellID->40625308],
+Cell[2872, 91, 116, 2, 70, "Details",ExpressionUUID->"a6d21db8-a3ef-4ef0-acdc-0ca75adce623",
+ CellID->357121918],
+Cell[2991, 95, 117, 2, 70, "Details",ExpressionUUID->"091e4f82-90e7-41bc-adcb-fdfb74197103",
+ CellID->35949532],
+Cell[3111, 99, 133, 2, 70, "Details",ExpressionUUID->"ad1bc9db-e932-41da-b64a-9644d8d2c3d4",
+ CellID->929432370],
+Cell[3247, 103, 122, 2, 70, "Details",ExpressionUUID->"5bfe6856-684a-4ced-9244-b60cc28bfea2",
+ CellID->240026365]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[3406, 110, 102, 1, 108, "Title",ExpressionUUID->"d2a6619b-74c4-4434-a65c-c685c40b312a",
+ CellID->509267359],
+Cell[3511, 113, 210, 4, 24, "Text",ExpressionUUID->"00185c6a-ddc2-47bf-aecc-07138932a8bd",
+ CellID->1534169418],
+Cell[3724, 119, 174, 3, 24, "Text",ExpressionUUID->"186fa23b-490a-49ca-b760-8a1927513596",
+ CellID->2020047632],
+Cell[3901, 124, 271, 5, 24, "Text",ExpressionUUID->"393fa977-6972-4f78-9f00-232e2a0b5bf9",
+ CellID->1662512277],
+Cell[4175, 131, 329, 6, 42, "Text",ExpressionUUID->"fb4f46d5-0adb-4e27-a1d8-406a88d58f13",
+ CellID->2047557597],
+Cell[4507, 139, 313, 5, 42, "Text",ExpressionUUID->"646fbdeb-45e0-4b0f-bb1d-4bb4639f24b7",
+ CellID->1567665676],
+Cell[4823, 146, 283, 5, 42, "Text",ExpressionUUID->"27c477a3-10c5-46cf-a181-2de774f0cf18",
+ CellID->2111401125],
+Cell[5109, 153, 236, 5, 24, "Text",ExpressionUUID->"83203aa1-ed3d-4506-9993-2f3c824d42fe",
+ CellID->1933113118],
+Cell[5348, 160, 235, 5, 24, "Text",ExpressionUUID->"033f6ea1-c839-4f22-bf42-30356fde40c5",
+ CellID->1921604857],
+Cell[5586, 167, 376, 7, 42, "Text",ExpressionUUID->"52f0725d-fb33-449f-880e-35e26b4d1d30",
+ CellID->1612549363],
+Cell[5965, 176, 223, 4, 42, "Text",ExpressionUUID->"c43a40c0-6a9f-4641-b0f7-6e10f8e3d616",
+ CellID->1735352583],
+Cell[6191, 182, 253, 4, 42, "Text",ExpressionUUID->"eee9a5bf-a3f0-494b-805c-0189f06925bf",
+ CellID->1577106694],
+Cell[6447, 188, 434, 8, 24, "Text",ExpressionUUID->"7f04efc6-43bd-42d1-adc4-9e8d795a8c2d",
+ CellID->1447173129],
+Cell[6884, 198, 219, 4, 42, "Text",ExpressionUUID->"f5144d93-8335-4ab4-a239-1a1e0502d7ff",
+ CellID->1172710755],
+Cell[7106, 204, 234, 4, 42, "Text",ExpressionUUID->"333c73f6-c292-49d7-8f81-58b2f092a732",
+ CellID->1864629732],
+Cell[7343, 210, 237, 4, 42, "Text",ExpressionUUID->"e93f82d4-e708-4d6a-b2d9-95c17a26aab7",
+ CellID->89641942],
+Cell[7583, 216, 221, 4, 42, "Text",ExpressionUUID->"2cec6ca5-d482-416f-aceb-fa7754a5ef52",
+ CellID->2098362344],
+Cell[7807, 222, 152, 1, 24, "Text",ExpressionUUID->"07fded85-4b72-42c5-b496-54cc80c302cd",
+ CellID->1356319899],
+Cell[7962, 225, 619, 10, 96, "Text",ExpressionUUID->"358eedd2-d126-4265-8492-47f18d84de41",
+ CellID->1522939246],
+Cell[8584, 237, 351, 6, 60, "Text",ExpressionUUID->"f3e47af5-33e8-498a-91a1-fa8475baec1e",
+ CellID->151973800],
+Cell[8938, 245, 250, 4, 42, "Text",ExpressionUUID->"f3c4dfb0-f6ab-4f27-8e98-46a13ebd9d7a",
+ CellID->1559621625],
+Cell[CellGroupData[{
+Cell[9213, 253, 120, 1, 67, "TutorialMoreAboutSection",ExpressionUUID->"fe980015-cac9-4b2d-be93-8d2355df3f45",
+ CellID->23220180],
+Cell[9336, 256, 109, 1, 23, "TutorialMoreAbout",ExpressionUUID->"b33c658e-bd61-4797-8191-dc1497bccc9d",
+ CellID->1567025153]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9482, 262, 127, 1, 73, "RelatedTutorialsSection",ExpressionUUID->"98768cb4-cf94-4688-b47c-1822e0985124",
+ CellID->415694126],
+Cell[9612, 265, 107, 1, 23, "RelatedTutorials",ExpressionUUID->"77d3783d-5633-41dc-b176-720aae5fc0a1",
+ CellID->806871991]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9756, 271, 153, 1, 73, "TutorialRelatedLinksSection",ExpressionUUID->"a4bc4b02-aa3c-4907-a20b-f63759bf38b4",
+ CellID->415694148],
+Cell[9912, 274, 111, 1, 23, "TutorialRelatedLinks",ExpressionUUID->"d7a5acc2-73d0-4d6a-81c0-bf2046e3c570",
+ CellID->415694149]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
