@@ -85,10 +85,10 @@ Print[Overlay[{Show[imageSM],
 Grid[
   {
    {Style["SpaceMath", Black, 20, Bold, FontFamily -> "TimesRoman"]},
-   {Style["We present a Mathematica application in development, so-called 
-    SpaceMath, for the search of Beyond Standard Model (BSM) parameter spaces
-    which be agree with the most up-to-date experimental measurements.", 
-    Black, 12,Plain, FontFamily -> "TimesRoman"]},
+   {Style["We present a Mathematica application in development, so-called SpaceMath,\n
+    for the search of Beyond Standard Model (BSM) parameter spaces which be agree \n
+    with the most up-to-date experimental measurements.", 
+    Black, 12,Plain, FontFamily -> "TimesRoman", Spacings -> {1, 1}]},
    {Style["If you use FeynCalc in your research, please cite:", Black, 12, Plain,Bold, FontFamily -> "TimesRoman"]},
    {Style["M. A. Arroyo-Ure\[NTilde]a", Black, 12, Plain,FontFamily -> "TimesRoman"]},
    {Style["Facultad de Estudios Superiores-Cuautitl\[AAcute]n, Universidad Nacional Aut\[OAcute]noma de M\[EAcute]xico", Black, 12, Plain, FontFamily -> "TimesRoman"]},
@@ -114,7 +114,7 @@ Grid[
 				ButtonNote -> "paclet:SpaceMath/tutorial/SpaceMathOverview"],Black, 12, Plain,FontFamily -> "TimesRoman"]
    },
    {
-   	Style[DisplayForm@ButtonBox["Wiki",ButtonData :> {URL["https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"], None},BaseStyle -> "Hyperlink",
+   	Style[DisplayForm@ButtonBox["Wiki site",ButtonData :> {URL["https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"], None},BaseStyle -> "Hyperlink",
 				ButtonNote -> "https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"],Black, 12, Plain,FontFamily -> "TimesRoman"]
    },
    {
