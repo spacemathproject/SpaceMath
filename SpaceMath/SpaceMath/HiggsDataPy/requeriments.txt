@@ -1,0 +1,5 @@
+python-3.7
+sympy==1.*
+numpy==1.16.*
+matplotlib==3.*
+pandas==0.24.*
