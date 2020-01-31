@@ -64,33 +64,29 @@ def plot_df(df,colx,coly,latex_names=None,color='#137A7A',alpha=0.5):
     
 def plot_tabledf(df,coly,latex_names=None,alpha=0.5,color='#137A7A'):
     keys = list(df.keys())
-    values = list(df.values())
     keys.remove(coly)
     l = len(keys)
-    if l>1:
+    if l==1:
+        colx = keys[0]
+        plot_df(df,colx,coly,latex_names)
+    elif l>1:
         import matplotlib.pyplot as plt
         if l%2==0:
-            if l==2:
-                colx = keys[0]
-                plot_df(df,colx,coly,latex_names)
-            else:
-                n = int(l/2)
-                rows = [keys[x:x+n] for x in range(0,len(keys),n)]
-                fig,axes = plt.subplots(2,n,sharey=True)
-                nrows = len(rows)
-                for i in 2:
-                    for j in range(rows[0]);
-                        axes[i,j].plot(df[rows[i][j]],coly,'o',alpha=alpha,color=color)
-                        if latex_names==None:
-                            axes[i,j].set(xlabel=rows[i][j],ylabel=coly)
-                        else:
-                            axes[i,j].set(xlabel=latex_names[rows[i][j]],
-                                          ylabel=latex_names[coly])
-                plt.legends()
-                plt.show()
-        else:
-            R = [k for k in keys if keys[0]=='R']
-            keys.remove(R)
-            
+            n = int(l/2)
+            rows = [keys[x:x+n] for x in range(0,len(keys),n)]
+            fig,axes = plt.subplots(2,n,sharey=True)
+            nrows = len(rows)
+            for i in range(2):
+                for j in range(len(rows[0])):
+                    axes[i,j].plot(df[rows[i][j]],df[coly],'o',alpha=alpha,color=color)
+                    if latex_names==None:
+                        axes[i,j].set(xlabel=rows[i][j],ylabel=coly)
+                    else:
+                        axes[i,j].set(xlabel=latex_names[rows[i][j]],
+                                        ylabel=latex_names[coly])
+                #plt.legends()
+            fig.tight_layout()
+            plt.show()
+        #else:               
     else:
         print(f'{df.keys()} needs almost two column')
