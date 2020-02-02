@@ -391,3 +391,4 @@ def Rgg(ghtt,ghbb):
     else:
         mhiggs,mtop,mbot,mWp,gg = mh['value'],mt['value'],mb['value'],mW['value'],g['value']
     return WidthHgg(ghtt,ghbb,mhiggs)*BRhgg(ghtt,ghbb)/(WidthHgg(gg*mtop/(2*mWp),gg*mbot/(2*mWp),mhiggs)*BRhgg(gg*mtop/(2*mWp),gg*mbot/(2*mWp)))
+

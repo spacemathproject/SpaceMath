@@ -1,8 +1,0 @@
-Resources[
-    Version[1],
-    ExecutionBuildCommand["<<SpaceMath`"],
-    Paclet[
-        PacletFolder["SpaceMath"],
-        FunctionPaclet[False]
-    ]
-]

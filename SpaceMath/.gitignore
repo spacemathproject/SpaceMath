@@ -3,6 +3,14 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+
+#from PyDev
+.settings/
+.project
+.pydevproject
+.WolframResources
+
+
 # C extensions
 #*.so
 

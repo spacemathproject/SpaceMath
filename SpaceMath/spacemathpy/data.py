@@ -1,33 +1,33 @@
-import sympy as sp
-import numpy as np
+from sympy import symbols, S
+from numpy import sqrt, pi
 #####################3
 #masses
 ######################
-mt = {'value':173.21,'units':'GeV','symbol':sp.symbols('m_t',positive=True)}
-mb = {'value':4.18,'units':'GeV','symbol':sp.symbols('m_b',positive=True)}
-mta = {'value':1.77686,'units':'GeV','symbol':sp.symbols(r'm_{\tau}',positive=True)}
-mW = {'value':80.379,'units':'GeV','symbol':sp.symbols('m_W',positive=True)}
-mZ = {'value':91.1876,'units':'GeV','symbol':sp.symbols('m_Z',positive=True)}
-mh = {'value':125.18,'units':'GeV','symbol':sp.symbols('m_h',positive=True)}
+mt = {'value':173.21,'units':'GeV','symbol':symbols('m_t',positive=True)}
+mb = {'value':4.18,'units':'GeV','symbol':symbols('m_b',positive=True)}
+mta = {'value':1.77686,'units':'GeV','symbol':symbols(r'm_{\tau}',positive=True)}
+mW = {'value':80.379,'units':'GeV','symbol':symbols('m_W',positive=True)}
+mZ = {'value':91.1876,'units':'GeV','symbol':symbols('m_Z',positive=True)}
+mh = {'value':125.18,'units':'GeV','symbol':symbols('m_h',positive=True)}
 
-#mCH = {'value':200.0,'units':'GeV','symbol':sp.symbols(r'm_{H^{\pm}}',positive=True)}
+#mCH = {'value':200.0,'units':'GeV','symbol':symbols(r'm_{H^{\pm}}',positive=True)}
 #######################
 #constants
 #######################
-SMvev = {'value':246,'units':'GeV','symbol':sp.symbols('v',positive=True)}
-GF = {'value':1.16637e-5,'units':'GeV','symbol':sp.symbols('G_F',positive=True)}
-αs = {'value':0.11,'units':None,'symbol':sp.symbols(r'\alpha_s',positive=True)}
-αem = {'value':1.0/137.03599911,'units':None,'symbol':sp.symbols(r'\alpha_{e}',positive=True)}
-cW = {'value':mW['value']/mZ['value'],'units':'GeV','symbol':sp.symbols('c_W',real=True)}
-sW = {'value':np.sqrt(1-cW['value']**2),'units':'GeV','symbol':sp.symbols('s_W',real=True)}
-g = {'value':2*(mW['value']/SMvev['value']),'unit':None,'symbol':sp.symbols('g',real=True)}
-ge = {'value':np.sqrt(4*np.pi*αem['value']),'unit':None,'symbol':sp.symbols('g_e',real=True)}
-gw = {'value':ge['value']/sW['value'],'unit':None,'symbol':sp.symbols('g_w',real=True)}
-gz = {'value':gw['value']/cW['value'],'unit':None,'symbol':sp.symbols('g_z',real=True)}
+SMvev = {'value':246,'units':'GeV','symbol':symbols('v',positive=True)}
+GF = {'value':1.16637e-5,'units':'GeV','symbol':symbols('G_F',positive=True)}
+αs = {'value':0.11,'units':None,'symbol':symbols(r'\alpha_s',positive=True)}
+αem = {'value':1.0/137.03599911,'units':None,'symbol':symbols(r'\alpha_{e}',positive=True)}
+cW = {'value':mW['value']/mZ['value'],'units':'GeV','symbol':symbols('c_W',real=True)}
+sW = {'value':sqrt(1-cW['value']**2),'units':'GeV','symbol':symbols('s_W',real=True)}
+g = {'value':2*(mW['value']/SMvev['value']),'unit':None,'symbol':symbols('g',real=True)}
+ge = {'value':sqrt(4*pi*αem['value']),'unit':None,'symbol':symbols('g_e',real=True)}
+gw = {'value':ge['value']/sW['value'],'unit':None,'symbol':symbols('g_w',real=True)}
+gz = {'value':gw['value']/cW['value'],'unit':None,'symbol':symbols('g_z',real=True)}
 
 
-Qt = {'value':2.0/3,'units':'|e|','symbol':sp.S(2)/3}
-Qb = {'value':-1.0/3,'units':'|e|','symbol':-sp.S(1)/3}
+Qt = {'value':2.0/3,'units':'|e|','symbol':S(2)/3}
+Qb = {'value':-1.0/3,'units':'|e|','symbol':-S(1)/3}
 
 ####################################################33
 # Value of bounds
@@ -144,3 +144,5 @@ aEXP=116592091e-11; #Experimental value for the muon anomalous magnetic dipole m
 BRTAUtolnunu=0.17; #Branching ratio of the tau \[Rule] l nu nu decay
 dmuINF=-10*(10**-20); #lower limit of the muon alectric dipole moment
 dmuSUP=8*(10**-20);
+
+#print('linea final')
