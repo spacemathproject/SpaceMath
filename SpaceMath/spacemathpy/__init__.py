@@ -1,3 +1,3 @@
-from data import *
-from RXX import *
-from spacemath import *
+from .data import *
+from .RXX import *
+from .spacemath import *

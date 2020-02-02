@@ -6,7 +6,7 @@
 import sympy as sp
 sp.init_printing()
 import numpy as np
-from data import *
+from .data import *
 #######################################
 # Scalar boson decays into fermion pair
 #######################################

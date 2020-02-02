@@ -1,5 +1,5 @@
 import numpy as np
-from data import *
+from .data import *
 
 class SignalStrenght():
     def __init__(self,R1su,R1sd,R2su,R2sd,latex_name='R'):
@@ -54,7 +54,7 @@ Rz = SignalStrenght(RzzSUP1sig,RzzINF1sig,RzzSUP2sig,RzzINF2sig,latex_name='R_{Z
 def plot_df(df,colx,coly,latex_names=None,color='#137A7A',alpha=0.5):
     import matplotlib.pyplot as plt
     plt.plot(df[colx],df[coly],'o',color=color,alpha=alpha);
-    if latex_names=None:
+    if latex_names==None:
         plt.xlabel(colx);
         plt.ylabel(coly);
     else:
