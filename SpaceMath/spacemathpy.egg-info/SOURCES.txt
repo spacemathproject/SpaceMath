@@ -1,0 +1,11 @@
+README.md
+setup.py
+spacemathpy/RXX.py
+spacemathpy/__init__.py
+spacemathpy/data.py
+spacemathpy/spacemath.py
+spacemathpy.egg-info/PKG-INFO
+spacemathpy.egg-info/SOURCES.txt
+spacemathpy.egg-info/dependency_links.txt
+spacemathpy.egg-info/requires.txt
+spacemathpy.egg-info/top_level.txt

@@ -42,14 +42,14 @@ class SignalStrenght():
     #def __init__(self):
     #    SignalStrenght.__init__(self)
         
-Rtau = SignalStrenght(RtautauSUP1sig,RtautauINF1sig,RtautauSUP2sig,RtautauINF2sig,latex_name='R_{\tau}')
+Rtau = SignalStrenght(RtautauSUP1sig,RtautauINF1sig,RtautauSUP2sig,RtautauINF2sig,latex_name='Rtau')
 
-Rb = SignalStrenght(RbbSUP1sig,RbbINF1sig,RbbSUP2sig,RbbINF2sig,latex_name='R_{b}')
+Rb = SignalStrenght(RbbSUP1sig,RbbINF1sig,RbbSUP2sig,RbbINF2sig,latex_name='Rb')
 
-Rgamma = SignalStrenght(RgammagammaSUP1sig,RgammagammaINF1sig,RgammagammaSUP2sig,RgammagammaINF2sig,latex_name='R_{\gamma}')
+Rgamma = SignalStrenght(RgammagammaSUP1sig,RgammagammaINF1sig,RgammagammaSUP2sig,RgammagammaINF2sig,latex_name='Rgamma')
 
-Rw = SignalStrenght(RwwSUP1sig,RwwINF1sig,RwwSUP2sig,RwwINF2sig,latex_name='R_{W}')
-Rz = SignalStrenght(RzzSUP1sig,RzzINF1sig,RzzSUP2sig,RzzINF2sig,latex_name='R_{Z}')
+Rw = SignalStrenght(RwwSUP1sig,RwwINF1sig,RwwSUP2sig,RwwINF2sig,latex_name='Rw')
+Rz = SignalStrenght(RzzSUP1sig,RzzINF1sig,RzzSUP2sig,RzzINF2sig,latex_name='Rz')
 
 def plot_df(df,colx,coly,latex_names=None,color='#137A7A',alpha=0.5):
     import matplotlib.pyplot as plt

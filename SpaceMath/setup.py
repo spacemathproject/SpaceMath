@@ -15,7 +15,7 @@ from setuptools import find_packages, setup, Command
 NAME = 'spacemathpy'
 DESCRIPTION = 'High energy contraints to parameter space of beyond the standar model.'
 URL = 'https://github.com/spacemathproject/SpaceMath/tree/MoyPython/SpaceMath'
-EMAIL = 'spacemath@gmail.com'
+EMAIL = 'moiseszeleny@gmail.com'
 AUTHOR = 'Moises Zeleny Mora'
 REQUIRES_PYTHON = '>=3.6.0'
 VERSION = '0.1'
