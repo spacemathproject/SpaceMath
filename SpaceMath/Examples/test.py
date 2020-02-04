@@ -1,9 +1,4 @@
-import sys
-sys.path.append('/home/moises/git/SpaceMath/SpaceMath')
-
-from spacemathpy.data import *
-from spacemathpy.RXX import *
-from spacemathpy.spacemath import *
+from spacemathpy import *
 import sympy as sp
 sp.init_printing()
 
