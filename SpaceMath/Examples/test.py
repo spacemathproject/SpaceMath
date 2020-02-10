@@ -17,5 +17,5 @@ def ghtt_2hdm(α,Att,Cab,tb):
                     Mt/SMvev['value'])*Att)
     
 a,Att,Cab,tb = sp.symbols('alpha,A_{tt},C_{ab},t_b')
-print(ghtt_2hdm(a,Att,Cab,tb))
+#print(ghtt_2hdm(a,Att,Cab,tb))
 print(ghtt_2hdm(0.1,0.2,0.3,0.4))

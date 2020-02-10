@@ -1,9 +1,11 @@
 Metadata-Version: 2.1
 Name: spacemathpy
 Version: 0.1
-Summary: High energy contraints to parameter space of beyond the standar model.
-Home-page: https://github.com/spacemathproject/SpaceMath/tree/MoyPython/SpaceMath
-Author: Moises Zeleny Mora
+Summary: High energy constraints to parameter space of beyond the standard model.
+Home-page: https://github.com/spacemathproject/SpaceMath/blob/MoyPython/SpaceMath/dist/spacemathpy-0.1.tar.gz
+Author: Moises Zeleny Mora, 
+Marco Arroyo Ureña, 
+
 Author-email: moiseszeleny@gmail.com
 License: MIT
 Description: 
