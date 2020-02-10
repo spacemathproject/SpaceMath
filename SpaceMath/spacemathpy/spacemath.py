@@ -9,7 +9,7 @@ class SignalStrenght():
         self.R2sd = R2sd
         self.latex_name = latex_name
         
-    def parameter_space(self,func,n=50000,**kwargs):
+    def parameter_space_numpy(self,func,n=50000,**kwargs):
         x = []
         for tup in kwargs.values():
             #print(kwargs.keys())
@@ -23,7 +23,7 @@ class SignalStrenght():
         data2s.append(f[index2s])
         return data1s,data2s
     
-    def parameter_space2(self,func,n=50000,**kwargs):
+    def parameter_space_pandas(self,func,n=50000,**kwargs):
         from pandas import DataFrame
         x = {key:np.random.uniform(kwargs[key][0],kwargs[key][1],n)
              for key in kwargs.keys()}
