@@ -13,10 +13,10 @@ from setuptools import find_packages, setup, Command
 
 # Package meta-data.
 NAME = 'spacemathpy'
-DESCRIPTION = 'High energy constraints to parameter space of beyond the standard model.'
+DESCRIPTION = 'Python version of spacemath .High energy constraints to parameter space of beyond the standard model.'
 URL = 'https://github.com/spacemathproject/SpaceMath/blob/MoyPython/SpaceMath/dist/spacemathpy-0.1.tar.gz'
 EMAIL = 'moiseszeleny@gmail.com'
-AUTHOR = 'Moises Zeleny Mora, \nMarco Arroyo Ureña, \n'
+AUTHOR = 'Moises Zeleny Mora'
 REQUIRES_PYTHON = '>=3.6.0'
 VERSION = '0.1'
 
