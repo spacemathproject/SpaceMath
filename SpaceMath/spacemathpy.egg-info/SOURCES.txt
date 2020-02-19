@@ -1,4 +1,5 @@
 README.md
+setup.cfg
 setup.py
 spacemathpy/RXX.py
 spacemathpy/__init__.py

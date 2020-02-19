@@ -340,6 +340,11 @@ def BRhgg(ghtt,ghbb):
 ###############################################################################
 #Rb
 def Rbotbot(ghtt,ghbb):
+    '''
+    Signal Strenght to Rbb, depends of ghtt and ghbb.
+    Example:
+    Rbotbot(ghtt,ghbb)
+    '''
     global mh,mt,mb,mW,g
     if issymbolic(ghtt,ghbb):
         mhiggs,mtop,mbot,mWp,gg = mh['symbol'],mt['symbol'],mb['symbol'],mW['symbol'],g['symbol']
@@ -348,7 +353,12 @@ def Rbotbot(ghtt,ghbb):
     return (WidthHgg(ghtt,ghbb,mhiggs)*BRhfifj(ghbb, 3, mbot, mbot))/(WidthHgg(gg*mtop/(2*mWp),gg*mbot/(2*mWp),mhiggs)*BRhfifj(gg*mbot/(2*mWp), 3, mbot, mbot))
 
 #Rtau
-def Rtata(ghtt,ghbb,ghtautau):
+def Rtautau(ghtt,ghbb,ghtautau):
+    '''
+    Signal Strenght to Rtautau, depends of ghtt, ghbb and ghtautau.
+    Example:
+    Rtautau(ghtt,ghbb,ghtautau)
+    '''
     global mh,mt,mb,mta,mW,g
     if issymbolic(ghtt,ghbb,ghtautau):
         mhiggs,mtop,mbot,mtau,mWp,gg = mh['symbol'],mt['symbol'],mb['symbol'],mta['symbol'],mW['symbol'],g['symbol']
@@ -358,6 +368,11 @@ def Rtata(ghtt,ghbb,ghtautau):
 
 #RW
 def RWW(ghtt,ghbb,ghWW):
+    '''
+    Signal Strenght to RWW, depends of ghtt and ghWW.
+    Example:
+    Rbotbot(ghtt,ghbb,ghWW)
+    '''
     global mh,mt,mb,mW
     if issymbolic(ghtt,ghbb,ghWW):
         mhiggs,mtop,mbot,mWp,gg,ggw = mh['symbol'],mt['symbol'],mb['symbol'],mW['symbol'],g['symbol'],gw['symbol']
@@ -367,6 +382,11 @@ def RWW(ghtt,ghbb,ghWW):
 
 #RZ
 def RZZ(ghtt,ghbb,ghZZ):
+    '''
+    Signal Strenght to RZZ, depends of ghtt, ghbb and ghZZ.
+    Example:
+    Rbotbot(ghtt,ghbb,ghZZ)
+    '''
     global mh,mt,mb,mW
     if issymbolic(ghtt,ghbb,ghZZ):
         mhiggs,mtop,mbot,mZp,mWp,gg,ggz = mh['symbol'],mt['symbol'],mb['symbol'],mZ['symbol'],mW['symbol'],g['symbol'],gz['symbol']
@@ -376,6 +396,11 @@ def RZZ(ghtt,ghbb,ghZZ):
 
 #Rga
 def Rgaga(ghtt,ghbb,ghWW,gCH,mCH):
+    '''
+    Signal Strenght to Rgaga, depends of ghtt, ghbb, ghWW, gCH and mCH.
+    Example:
+    Rbotbot(ghtt,ghbb,ghWW,gCH,mCH)
+    '''
     global mh,mt,mb,mW
     if issymbolic(ghtt,ghbb,ghWW,gCH,mCH):
         mhiggs,mtop,mbot,mWp,gg,ggw = mh['symbol'],mt['symbol'],mb['symbol'],mW['symbol'],g['symbol'],gw['symbol']
@@ -385,6 +410,11 @@ def Rgaga(ghtt,ghbb,ghWW,gCH,mCH):
 
 #Rg
 def Rgg(ghtt,ghbb):
+    '''
+    Signal Strenght to Rgg, depends of ghtt and ghbb.
+    Example:
+    Rbotbot(ghtt,ghbb)
+    '''
     global mh,mt,mb,mW
     if issymbolic(ghtt,ghbb):
         mhiggs,mtop,mbot,mWp,gg = mh['symbol'],mt['symbol'],mb['symbol'],mW['symbol'],g['symbol']
