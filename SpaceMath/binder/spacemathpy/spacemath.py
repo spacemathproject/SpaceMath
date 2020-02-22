@@ -10,19 +10,6 @@ class Parameters():
         keys = variables.keys()
         return {k:np.random.uniform(variables[k][0],variables[k][1],n) for k in keys}
 
-class Couplings():
-    def __init__(self,ghtt,ghbb,ghtautau,ghWW,ghZZ,gCH=0,mCH=500,model='SM'):
-        self.ghtt = ghtt
-        self.ghbb = ghbb
-        self.ghtautau = ghtautau
-        self.ghWW = ghWW
-        self.ghZZ = ghZZ
-        self.ghCH = ghCH
-        self.mCH = mCH
-    
-    def __str__(self):
-        return f'Model: {self.mosel} \nghtt,ghbb,ghtautau,ghWW,ghZZ,gCH,mCH'
-
 class SignalStrenght():
     def __init__(self,R1su,R1sd,R2su,R2sd,func,latex_name='R'):
         self.R1su = R1su
@@ -62,9 +49,7 @@ class SignalStrenght():
         data2s = {key:parameters[key][index2s] for key in parameters.keys()}
         data2s[self.latex_name] = f[index2s]
         return {'1s':DataFrame(data1s),'2s':DataFrame(data2s)}
-            
-    
-        
+
 Rtau = SignalStrenght(RtautauSUP1sig,RtautauINF1sig,RtautauSUP2sig,RtautauINF2sig,Rtautau,latex_name='Rtau')
 
 Rb = SignalStrenght(RbbSUP1sig,RbbINF1sig,RbbSUP2sig,RbbINF2sig,Rbotbot,latex_name='Rb')
@@ -73,8 +58,27 @@ Rgamma = SignalStrenght(RgammagammaSUP1sig,RgammagammaINF1sig,RgammagammaSUP2sig
 
 Rw = SignalStrenght(RwwSUP1sig,RwwINF1sig,RwwSUP2sig,RwwINF2sig,RWW,latex_name='Rw')
 Rz = SignalStrenght(RzzSUP1sig,RzzINF1sig,RzzSUP2sig,RzzINF2sig,RZZ,latex_name='Rz')
+    
 
-
+class HiggsSignalStrenght():    
+    def __init__(self,ghtt=1,ghbb=1,ghtautau=1,ghWW=1,ghZZ=1,gCH=0,mCH=500,model='SM'):
+        self.ghtt = ghtt
+        self.ghbb = ghbb
+        self.ghtautau = ghtautau
+        self.ghWW = ghWW
+        self.ghZZ = ghZZ
+        self.gCH = gCH
+        self.mCH = mCH
+    
+    def __str__(self):
+        return f'Model: {self.model} \nghtt,ghbb,ghtautau,ghWW,ghZZ,gCH,mCH'
+    
+    #def Rtau_parameter_space(self):
+    #    return 
+    
+##########################################################33
+###################PLOTS
+#############################################################
 
 def plot_df(df,colx,coly,latex_names=None,color='#137A7A',alpha=0.5):
     import matplotlib.pyplot as plt
