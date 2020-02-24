@@ -79,8 +79,9 @@ Get/@listMisc;
 
 
 EndPackage[];
-imageSM = SetAlphaChannel[ ImageResize[Import[FileNameJoin[{$SpaceMathDirectory, "Miscellaneous"}],"LogoSM.jpg"], 450], 0.4];
-
+imageSM = SetAlphaChannel[ ImageResize[Import[FileNameJoin[{$SpaceMathDirectory, "Miscellaneous"}],"LogoSM.jpg"], 45], 0.4];
+imageCaratula = SetAlphaChannel[ ImageResize[Import[FileNameJoin[{$SpaceMathDirectory, "Miscellaneous"}],"caratula.png"], 1000], 1];
+(*
 Print[Overlay[{Show[imageSM],
 Grid[
   {
@@ -126,6 +127,80 @@ Grid[
    },BaseStyle-> Purple,FrameStyle -> Thick,Alignment -> Left, Spacings -> {2, 1},Frame -> True, ItemStyle -> "Text"
   ]
 },Alignment -> Center]];
+*)
+Print[
+Grid[
+	 {
+	  {
+	   Show[imageCaratula]
+	  }, 
+      {
+   	   Style["SpaceMath", Black, 20, Bold, FontFamily -> "TimesRoman"]
+      },
+      {
+       Style["We present a Mathematica application in development, so-called SpaceMath,", 
+       Black, 12,Plain, FontFamily -> "TimesRoman"]
+      },
+      {
+       Style["for the search of Beyond Standard Model (BSM) parameter spaces which be agree", 
+       Black, 12,Plain, FontFamily -> "TimesRoman"]
+      },
+      {
+       Style["with the most up-to-date experimental measurements.", 
+       Black, 12,Plain, FontFamily -> "TimesRoman"]
+      },
+      {
+       Style["If you use FeynCalc in your research, please cite:", Black, 12, Plain,Bold, FontFamily -> "TimesRoman"]
+      },
+      {
+       Style["M. A. Arroyo-Ure\[NTilde]a", Black, 12, Plain,FontFamily -> "TimesRoman"]
+      },
+      {
+       Style["Facultad de Estudios Superiores-Cuautitl\[AAcute]n, Universidad Nacional Aut\[OAcute]noma de M\[EAcute]xico", Black, 12, Plain, FontFamily -> "TimesRoman"]
+      },
+      {
+       Style["T. A. Valencia-P\[EAcute]rez", Black, 12, Plain, FontFamily -> "TimesRoman"]
+      },
+      {
+       Style["Facultad de Ciencias F\[IAcute]sico Matem\[AAcute]ticas, Benem\[EAcute]rita Universidad Aut\[OAcute]noma de Puebla", Black, 12, Plain, FontFamily -> "TimesRoman"]
+      },
+      {
+       Style["Index SpaceMath",Black, 12, Plain, FontFamily -> "TimesRoman"]
+      },
+      {
+       Style["Version",Black, 12, Plain, FontFamily -> "TimesRoman"]
+      },
+      {
+       Style[$SpaceMathVersion <> " ", Black, 12, Plain, FontFamily -> "TimesRoman"]
+      },
+      {
+   	   Style[DisplayForm@ButtonBox["LHC Higgs Boson data", BaseStyle->"Link", ButtonData :> "paclet:SpaceMath/tutorial/SpaceMathOverview",
+	   ButtonNote -> "paclet:SpaceMath/tutorial/SpaceMathOverview"],Black, 12, Plain,FontFamily -> "TimesRoman"]
+      },
+      {
+   	   Style[DisplayForm@ButtonBox["Examples", BaseStyle -> "Hyperlink", 
+	   ButtonFunction :> SystemOpen[FileNameJoin[{$SpaceMathDirectory, "Examples"}]], Evaluator -> Automatic, Method -> "Preemptive"],
+	   Black, 12, Plain,FontFamily -> "TimesRoman"]	
+      },
+      {
+   	   Style["For more help:", Black, 12, Plain,Bold, FontFamily -> "TimesRoman"]
+      },
+      {
+   	   Style[DisplayForm@ButtonBox["Documentation Center", BaseStyle->"Link", ButtonData :> "paclet:SpaceMath/tutorial/SpaceMathOverview",
+	   ButtonNote -> "paclet:SpaceMath/tutorial/SpaceMathOverview"],Black, 12, Plain,FontFamily -> "TimesRoman"]
+      },
+      {
+   	   Style[DisplayForm@ButtonBox["Wiki site",ButtonData :> {URL["https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"], None},BaseStyle -> "Hyperlink",
+	   ButtonNote -> "https://github.com/spacemathproject/SpaceMath/wiki/SpaceMath"],Black, 12, Plain,FontFamily -> "TimesRoman"]
+      },
+      {
+   	   Style[DisplayForm@ButtonBox["Launchpad site",ButtonData :> {URL["https://launchpad.net/spacemath"], None},BaseStyle -> "Hyperlink",
+	   ButtonNote -> "https://launchpad.net/spacemath"],Black, 12, Plain,FontFamily -> "TimesRoman"]
+      }
+	 },
+  Frame -> None, Alignment -> Bottom,Spacings -> {2, 1}]
+]
+
 (*
 Print[Grid[
   {
