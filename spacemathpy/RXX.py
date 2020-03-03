@@ -13,7 +13,7 @@ from .data import *
 # Definitions
 τf = lambda mi,mS: (2*(mi/mS))**2
 
-#Función para probar que un al menos un elempento es una clase de sympy
+#Función para probar que al menos un elemento es una clase de sympy
 # Funtion to test if one argument is a sympy subclass
 
 def issymbolic(*z):
@@ -35,26 +35,26 @@ def ft(mS):
     global mt
     if issymbolic(mS):
         mtop=mt['symbol']
-        return -(sp.S(1)/4)*(sp.log((1+sp.sqrt(1-(((mS**2)/(4*mtop**2))**-1)))/(1-sp.sqrt(1-(((mS**2)/(4*mtop**2))**-1))))*(-sp.I*sp.pi))**2
+        return -(sp.S(1)/4)*(sp.log((1+sp.sqrt(1-((4*mtop**2)/(mS**2)))))/(1-sp.sqrt(1-((4*mtop**2)/(mS**2))))-sp.I*sp.pi)**2;#MODIFICADO#
     else:
         mtop=mt['value']
-        return -(1/4)*(np.log((1+np.sqrt(1-(((mS**2)/(4*mtop**2))**-1)))/(1-np.sqrt(1-(((mS**2)/(4*mtop**2))**-1))))*(-sp.I*np.pi))**2
-            
+        return -(1.0/4.0)*(np.log((1+np.sqrt(1-((4*mtop**2)/(mS**2)))))/(1-np.sqrt(1-((4*mtop**2)/(mS**2))))-1j*np.pi)**2;#MODIFICADO#(-sp.I*np.pi)
+         
 def fb(mS):
     global mb
     if issymbolic(mS):
         mbot=mb['symbol']
-        return -(sp.S(1)/4)*(sp.log((1+sp.sqrt(1-(((mS**2)/(4*mbot**2))**-1)))/(1-sp.sqrt(1-(((mS**2)/(4*mbot**2))**-1))))*(-sp.I*sp.pi))**2
+        return -(sp.S(1)/4)*(sp.log((1+sp.sqrt(1-((4*mbot**2)/(mS**2)))))/(1-sp.sqrt(1-((4*mbot**2)/(mS**2))))-sp.I*sp.pi)**2;#MODIFICADO#
     else:
         mbot=mb['value']
-        return -(1/4)*(np.log((1+np.sqrt(1-(((mS**2)/(4*mbot**2))**-1)))/(1-np.sqrt(1-(((mS**2)/(4*mbot**2))**-1))))*(-sp.I*np.pi))**2
+        return -(1.0/4.0)*(np.log((1+np.sqrt(1-((4*mbot**2)/(mS**2)))))/(1-np.sqrt(1-((4*mbot**2)/(mS**2))))-1j*np.pi)**2;#MODIFICADO#(-sp.I*np.pi)
 
 def gt(mS):
     global mt
     if issymbolic(mS):
         mtop=mt['symbol']
         return sp.asin(sp.sqrt((mS**2)/(4*mtop**2)))**2
-    else:
+    else:#(ArcSin[1/Sqrt[(4*mt^2)/(mS^2)]])^2
         mtop = mt['value']
         return np.arcsin(np.sqrt((mS**2)/(4*mtop**2)))**2;
 
@@ -72,7 +72,7 @@ def At(mS):
     if issymbolic(mS):
         mtop=mt['symbol']
         return sp.Piecewise((gt(mS), mS**2/(4*mtop**2)<=1), (ft(mS), True))
-    else:
+    else:#If[((4*mt^2)/mS^2)>=1,gt[mS],ft[mS]]
         mtop = mt['value']
         return np.where(mS**2/(4*mtop**2)<=1.0,gt(mS),ft(mS))
 
@@ -90,24 +90,24 @@ def Ft(mS):
     global mt
     if issymbolic(mS):
         mtop = mt['symbol']
-        return 2*(mS**2/(4*mtop**2)+((mS**2/(4*mtop**2)-1)*At(mS)))*((mS**2/(4*mtop**2))**-2);
-    else:
+    else:#########MODIFICADO##########
         mtop = mt['value']
-        return 2*(mS**2/(4*mtop**2)+((mS**2/(4*mtop**2)-1)*At(mS)))*((mS**2/(4*mtop**2))**-2);
-        
+    x = 4*mtop**2/(mS**2)
+    return -2*x*(1+(1-x)*At(mS));
+       
 def Fb(mS):
     global mb
     if issymbolic(mS):
         mbot = mb['symbol']
-        return 2*(mS**2/(4*mbot**2)+((mS**2/(4*mbot**2)-1)*At(mS)))*((mS**2/(4*mbot**2))**-2);
-    else:
+    else:#########MODIFICADO##########
         mbot = mb['value']
-        return 2*(mS**2/(4*mbot**2)+((mS**2/(4*mbot**2)-1)*At(mS)))*((mS**2/(4*mbot**2))**-2);
+    x = 4*mbot**2/(mS**2)
+    return -2*x*(1+(1-x)*Ab(mS));
 
         
-def AHgg(ghtt,ghbb,mS):# Considering th bottom and top quarks contributions
+def AHgg(ghtt,ghbb,mS):# Considering the bottom and top quarks contributions
     global mW,mt,mb
-    if issymbolic(ghtt,ghbb,mS):###¿?###does not depend of ghtt and ghbb?
+    if issymbolic(ghtt,ghbb,mS):
         mWp,mtop,mbot = mW['symbol'],mt['symbol'],mb['symbol']
         return 2*mWp*((ghtt/(mtop)*Ft(mS))+(ghbb/(mbot)*Fb(mS)))
     else:
@@ -119,10 +119,10 @@ def WidthHgg(ghtt,ghbb,mS):
     global mW, αs
     if issymbolic(ghtt,ghbb,mS):
         mWp = mW['symbol']
-        return ((αs['symbol']**2*mS**3)/(512*mWp**2*sp.pi**3 ))*abs(sp.S(3/4)*AHgg(ghtt,ghbb,mS))**2;
+        return ((αs['symbol']**2*mS**3)/(512*mWp**2*sp.pi**3 ))*abs(AHgg(ghtt,ghbb,mS))**2;#####MODIFICADO#######
     else:
         mWp = mW['value']
-        return ((αs['value']**2*mS**3)/(512*mWp**2*np.pi**3 ))*abs(3/4*AHgg(ghtt,ghbb,mS))**2;
+        return ((αs['value']**2*mS**3)/(512*mWp**2*np.pi**3 ))*abs(AHgg(ghtt,ghbb,mS))**2;#####MODIFICADO#######
 
 ####################################################
 # Higgs boson decay into photon pair
@@ -130,24 +130,21 @@ def WidthHgg(ghtt,ghbb,mS):
 
 #Main fermion contribution come from top and bottom quark*
 
-#seem that ghff does not contribute ¿?
 def Aht(ghtt,mS):
-    global Qt
+    global Qt,mW,mt
     if issymbolic(ghtt,mS):
-        qt = Qt['symbol']
-        return 3*qt**2*(ghtt/ghtt)*Ft(mS)
+        qt,mWp,mtop = Qt['symbol'],mW['symbol'],mt['symbol']
     else:
-        qt = Qt['value']
-        return 3*qt**2*(ghtt/ghtt)*Ft(mS)
-    
+        qt,mWp,mtop = Qt['value'],mW['value'],mt['value']
+    return 6*(mWp/mtop)*ghtt*qt**2*Ft(mS)#######MODIFICADO#########ghtt
+
 def Ahb(ghbb,mS):
-    global Qb
+    global Qb,mW,mb
     if issymbolic(ghbb,mS):
-        qb = Qb['symbol']
-        return 3*qb**2*(ghbb/ghbb)*Ft(mS)
+        qb,mWp,mbot = Qb['symbol'],mW['symbol'],mb['symbol']
     else:
-        qb = Qb['value']
-        return 3*qb**2*(ghbb/ghbb)*Ft(mS)
+        qb,mWp,mbot = Qb['value'],mW['value'],mb['value']
+    return 6*(mWp/mbot)*ghbb*qb**2*Fb(mS)#######MODIFICADO#########ghbb
 
 def Af(ghtt,ghbb,mS):
     return Aht(ghtt,mS) + Ahb(ghbb,mS)
@@ -158,39 +155,42 @@ def Af(ghtt,ghbb,mS):
 def fW(mS):
     global mW
     if issymbolic(mS):
-        mWp = mW['symbol']
-        return -(sp.S(1)/4)*(sp.log((1+sp.sqrt(1-(((mS**2)/(4*mWp**2))**-1)))/(1-sp.sqrt(1-(((mS**2)/(4*mWp**2))**-1))))*(-sp.I*sp.pi))**2;
+        mWp = mW['symbol']#(sp.S(1)/4)
+        x = (4*mWp**2)/(mS**2)
+        return -(sp.S(1)/4)*(sp.log((1+sp.sqrt(1-x))/(1-sp.sqrt(1-x)))-sp.I*sp.pi)**2;#######MODIFICADO#########(-sp.I*np.pi)
     else:
         mWp = mW['value']
-        return -(1.0/4)*(np.log((1+np.sqrt(1-(((mS**2)/(4*mWp**2))**-1)))/(1-np.sqrt(1-(((mS**2)/(4*mWp**2))**-1))))*(-sp.I*np.pi))**2;
-    
+        x = (4*mWp**2)/(mS**2)
+        return -(1.0/4.0)*(np.log((1+np.sqrt(1-x))/(1-np.sqrt(1-x)))-1j*np.pi)**2; #######MODIFICADO#########(-sp.I*np.pi)
 def gW(mS):
     global mW
     if issymbolic(mS):
         mWp = mW['symbol']
-        return sp.asin(sp.sqrt(mS**2/(4*mWp**2)))**2;
+        x = (4*mWp**2)/(mS**2)
+        return sp.asin(1/sp.sqrt(x))**2;#######MODIFICADO#########
     else:
         mWp = mW['value']
-        return np.arcsin(np.sqrt(mS**2/(4*mWp**2)))**2;
+        x = (4*mWp**2)/(mS**2)
+        return np.arcsin(1/np.sqrt(x))**2;#######MODIFICADO#########
 
     
 def AW(mS):
     global mW
     if issymbolic(mS):
-        mWp=mW['symbol']
-        return sp.Piecewise((gW(mS), mS**2/(4*mWp**2)<=1), (fW(mS), True))
+        mWp=mW['symbol']#If[(4*mW^2/(mS^2))>=1,gW[mS],fW[mS]];
+        return sp.Piecewise((gW(mS), (4*mWp**2)/(mS**2)>=1), (fW(mS), True))
     else:
         mWp=mW['value']
-        return np.where(mS**2/(4*mWp**2)<=1.0,gW(mS),fW(mS))
+        return np.where((4*mWp**2)/(mS**2)>=1.0,gW(mS),fW(mS))
     
 def FW(mS):
     global mW
     if issymbolic(mS):
         mWp = mW['symbol']
-        return -((2*(mS**2/(4*mWp**2))**2)+(3*(mS**2/(4*mWp**2)))+((3*(2*(mS**2/(4*mWp**2))-1))*AW(mS)))*(mS**2/(4*mWp**2))**(-2);
     else:
         mWp = mW['value']
-        return -((2*(mS**2/(4*mWp**2))**2)+(3*(mS**2/(4*mWp**2)))+((3*(2*(mS**2/(4*mWp**2))-1))*AW(mS)))*(mS**2/(4*mWp**2))**(-2);
+    x = 4*mWp**2/(mS**2)
+    return 2+3*x+3*x*(2-x)*AW(mS);#######MODIFICADO#########
     
 def AhW(ghWW,mS):
     global mW
@@ -204,25 +204,29 @@ def AhW(ghWW,mS):
     
 def fH(mCH,mS):
     if issymbolic(mCH,mS):
-        return -(sp.S(1)/4)*(sp.log((1+sp.sqrt(1-(((mS**2)/(4*mCH**2))**-1)))/(1-sp.sqrt(1-(((mS**2)/(4*mCH**2))**-1))))*(- sp.I*sp.pi))**2
+        x = (4*mCH**2)/(mS**2)
+        return -(sp.S(1)/4)*(sp.log((1+sp.sqrt(1-x)/(1-sp.sqrt(1-x))))-sp.I*sp.pi)**2;#######MODIFICADO#########(sp.I*sp.pi)
     else:
-        return -(1.0/4)*(np.log((1+np.sqrt(1-(((mS**2)/(4*mCH**2))**-1)))/(1-np.sqrt(1-(((mS**2)/(4*mCH**2))**-1))))*(- sp.I*np.pi))**2
-    
+        x = (4*mCH**2)/(mS**2)
+        return -(1.0/4)*(np.log((1+np.sqrt(1-x)/(1-np.sqrt(1-x))))-1j*np.pi)**2;#######MODIFICADO#########(-sp.I*sp.pi)
     
 def gH(mCH,mS):
     if issymbolic(mCH,mS):
-        return sp.asin(sp.sqrt(mS**2/(4*mCH**2)))**2 
+        x = (4*mCH**2)/(mS**2)
+        return sp.asin(1/sp.sqrt(x))**2 
     else:
-        return np.arcsin(np.sqrt(mS**2/(4*mCH**2)))**2 
+        x = (4*mCH**2)/(mS**2)
+        return np.arcsin(1.0/np.sqrt(x))**2 
 
 def AH(mCH,mS):
     if issymbolic(mCH,mS):
-        return sp.Piecewise((gH(mCH,mS), mS**2/(4*mCH**2)<=1), (fH(mCH,mS), True))
+        return sp.Piecewise((gH(mCH,mS), (4*mCH**2)/(mS**2)>=1), (fH(mCH,mS), True))
     else:
-        return np.where(mS**2/(4*mCH**2)<=1.0,gH(mCH,mS),fH(mCH,mS))
+        return np.where((4*mCH**2)/(mS**2)>=1.0,gH(mCH,mS),fH(mCH,mS))
 
 def FH(mCH,mS):
-    return -((mS**2/(4*mCH**2))-AH(mCH,mS))*(mS**2/(4*mCH**2))**-2;
+    x = 4*mCH**2/(mS**2)
+    return x*(1-x*AH(mCH,mS))#######MODIFICADO#########
 
 def AHc(gCH,mCH,mS):
     global mW, cW
@@ -231,7 +235,7 @@ def AHc(gCH,mCH,mS):
     else:
         mWp, CW = mW['value'], cW['value']
     return (mWp*gCH)/(mCH**2)*FH(mCH,mS);
-    
+
 def Ahgaga(ghtt,ghbb,ghWW,gCH,mCH,mS):
     return Af(ghtt,ghbb,mS) + AhW(ghWW,mS) + AHc(gCH,mCH,mS)
 
@@ -244,7 +248,8 @@ def WidthHgaga(ghtt,ghbb,ghWW,gCH,mCH,mS):
     else:
         mWp = mW['value']
         return ((αem['value']**2)*(mS**3))/(1024*np.pi**3*mWp**2)*abs(Ahgaga(ghtt,ghbb,ghWW,gCH,mCH,mS))**2
-    
+
+
 ####################################################################################
 # Scalar boson decay into vector pair
 ####################################################################################
@@ -253,13 +258,18 @@ def WidthHgaga(ghtt,ghbb,ghWW,gCH,mCH,mS):
 def RT(mS,mV):
     if issymbolic(mS):
         mVec = mV['symbol']
-        return -(((1-mVec**2/mS**2)*(47*(mVec**4/mS**4)-(13*mVec**2/mS**2)+2))/(2*mVec**2/mS**2))-sp.S(3)/2*(4*(mVec**4/mS**4)-6*(mVec**2/mS**2)+1)*(sp.log(mVec**2/mS**2))+(3*(20*(mVec**4/mS**4)- 8*(mVec**2/mS**2)+1))/sp.sqrt(4**(mVec**2/mS**2)-1)*sp.acos((3*(mVec**2/mS**2)-1)/(2*(mVec**3/mS**3)));
+        x = mVec**2/mS**2
+        return -(((1-x)*(47*x**2-13*x+2))/(2*x))-sp.S(3)/2*(4*x**2-6*x+1)*sp.log(x)+(3*(20*x**2- 8*x+1))/sp.sqrt(4*x-1)*sp.acos((3*x-1)/(2*x**(sp.S(3)/2)));
     else:
         mVec = mV['value']
-        return -(((1-mVec**2/mS**2)*(47*(mVec**4/mS**4)-(13*mVec**2/mS**2)+2))/(2*mVec**2/mS**2))-(3.0/2)*(4*(mVec**4/mS**4)-6*(mVec**2/mS**2)+1)*(np.log(mVec**2/mS**2))+(3*(20*(mVec**4/mS**4)- 8*(mVec**2/mS**2)+1))/np.sqrt(4**(mVec**2/mS**2)-1)*np.arccos((3*(mVec**2/mS**2)-1)/(2*(mVec**3/mS**3)));
-
+        x = mVec**2/mS**2
+        return -(((1-x)*(47*x**2-13*x+2))/(2*x))-(3.0/2)*(4*x**2-6*x+1)*np.log(x)+(3*(20*x**2- 8*x+1))/np.sqrt(4*x-1)*np.arccos((3*x-1)/(2*x**(3.0/2)));
+    
 RTW = lambda mS: RT(mS,mW)
+
 RTZ = lambda mS: RT(mS,mZ)
+
+
 δZ = 7-(40/(3*sW['value']**2))+160/(9*sW['value']**4);
 
 # Decay width of Higgs boson into WW pair
@@ -282,7 +292,7 @@ def WidthHZZ(ghZZ,mS):
     else:
         mZp = mZ['value']
         return ((ghZZ**2)*mS)/(2048*(np.pi**3)*mZp**4)*δZ*RTZ(mS)
-    
+
 #####################################################################3
 # Branchig ratios for higgs -> XX'
 
@@ -406,7 +416,7 @@ def Rgaga(ghtt,ghbb,ghWW,gCH,mCH):
         mhiggs,mtop,mbot,mWp,gg,ggw = mh['symbol'],mt['symbol'],mb['symbol'],mW['symbol'],g['symbol'],gw['symbol']
     else:
         mhiggs,mtop,mbot,mWp,gg,ggw = mh['value'],mt['value'],mb['value'],mW['value'],g['value'],gw['value']
-    return (WidthHgg(ghtt,ghbb,mhiggs)*BRhgaga(ghtt,ghbb,ghWW,gCH,mCH))/(WidthHgg(gg*mtop/(2*mWp),gg*mbot/(2*mWp),mhiggs)*BRhgaga(gg*mtop/(2*mWp),gg*mbot/(2*mWp),ggw*mWp,0,mCH))
+    return (WidthHgg(ghtt,ghbb,mhiggs)*BRhgaga(ghtt,ghbb,ghWW,gCH,mCH))/(WidthHgg(gg*mtop/(2*mWp),gg*mbot/(2*mWp),mhiggs)*BRhgaga(gg*mtop/(2*mWp),gg*mbot/(2*mWp),ggw*mWp,0,mCH))####¿?#####
 
 #Rg
 def Rgg(ghtt,ghbb):

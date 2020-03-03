@@ -19,6 +19,22 @@ class SignalStrenght():
         self.func = func
         self.latex_name = latex_name
         
+    def conditionRx(self,*args,sigma=1):
+        if sigma==1:
+            return self.R1sd < self.func(*args) < self.R1su
+        elif sigma==2:
+            return self.R2sd < self.func(*args) < self.R2su
+        else:
+            print('sigma only can be 1 or 2')
+            
+    def np_index(self,*args,sigma=1):
+        if sigma==1:
+            return (self.func(*args)<=self.R1su)*(self.func(*args)>=self.R1sd)
+        elif sigma==2:
+            return (self.func(*args)<=self.R2su)*(self.func(*args)>=self.R2sd)
+        else:
+            print('sigma must be 1 or 2')
+    
     def parameter_space_numpy(self,couplings,parameters):
         '''
         coupling: list or tuple
@@ -73,8 +89,19 @@ class HiggsSignalStrenght():
     def __str__(self):
         return f'Model: {self.model} \nghtt,ghbb,ghtautau,ghWW,ghZZ,gCH,mCH'
     
-    #def Rtau_parameter_space(self):
-    #    return 
+    def RXscondition(self):
+        ghtt = self.ghtt
+        ghbb = self.ghbb
+        ghtautau = self.ghtautau
+        ghWW = self.ghWW
+        ghZZ = self.ghZZ
+        gCH  = self.gCH
+        mCH = self.mCH       
+        return (conditionRx(Rtau,ghtt,ghbb,ghtautau,sigma=2) and 
+        conditionRx(Rb,ghtt,ghbb,sigma=2) and 
+       conditionRx(Rgamma,ghtt,ghbb,ghWW,gCH,mCH,sigma=2) and
+       conditionRx(Rw,ghtt,ghbb,ghWW,sigma=2) and
+       conditionRx(Rz,ghtt,ghbb,ghZZ,sigma=2))
     
 ##########################################################33
 ###################PLOTS
@@ -89,7 +116,8 @@ def plot_df(df,colx,coly,latex_names=None,color='#137A7A',alpha=0.5):
     else:
         plt.xlabel(latex_names[colx],fontsize=15);
         plt.ylabel(latex_names[coly],fontsize=15);
-    plt.show()
+    plt.title('spacemathpy',fontsize=15);
+    plt.show();
     
 def plot_tabledf(df,coly,latex_names=None,alpha=0.5,color='#137A7A'):
     keys = list(df.keys())

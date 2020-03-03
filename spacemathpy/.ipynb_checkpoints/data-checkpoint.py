@@ -136,7 +136,7 @@ BRHtoTAUMU=0.0025; #Upper bound of the h\[Rule] tau mu decay
 #GF=1.1663787*(10^-5); (*Fermi constant*) 
 
 Ttau=(2.906e-13)*((1/6.582)*10**25); #tau lifetime
-TotWidth=0.0041; #Total width of the Higgs boson
+TotWidth=0.0047; #Total width of the Higgs boson
 aMUInf=1.32e-9; #lower limit of the discrepancy interval of the muon anomalous magnetic dipole moment
 aMUSup=4.44e-9; #upper limit of the discrepancy interval of the muon anomalous magnetic dipole moment
 aSM=11659179e-10; #Theoretical prediction of the SM for the muon anomalous magnetic dipole moment
