@@ -25,7 +25,7 @@ def WidthHff(ghfifj,Nc,mi,mj,mS):
         return (((ghfifj**2)*Nc*mS)/(128*sp.pi))*((4-(sp.sqrt(τf(mi,mS)) + sp.sqrt(τf(mj,mS)))**2)**(sp.S(3)/2))*(sp.sqrt((4-(sp.sqrt(τf(mi,mS))-sp.sqrt(τf(mj,mS)))**2)))
     else:
         return (((ghfifj**2)*Nc*mS)/(128*np.pi))*((4-(np.sqrt(τf(mi,mS)) + np.sqrt(τf(mj,mS)))**2)**(3/2))*(np.sqrt((4-(np.sqrt(τf(mi,mS))-np.sqrt(τf(mj,mS)))**2)))
-ecli
+
 ####################################################
 #Scalar boson decay into gluon pair at one-loop level
 ####################################################
