@@ -18,6 +18,7 @@ or you can download zip file of this repository and after uncompress it.
 Then, open in a terminal `dist` folder inside of `\SpaceMath\dist` and finally you can run 
 
 `pip install spacemathpy-0.1.tar.gz`
+`pip install --upgrade https://github.com/spacemathproject/SpaceMath/tree/MoyPython`
 
 Congratulations spacemathpy is installed.
 
