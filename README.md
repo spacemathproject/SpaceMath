@@ -6,19 +6,16 @@ You can try spacemathpy with binder only needs click in the next icon.
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/spacemathproject/SpaceMath/MoyPython)
 
-and then open some example.
+and then open some example inside of `Examples` folder.
 ## Installation
 
-Our package is a library for python 3 users that can be installed if you use git to clone this repository using:
+Our package is a library for python 3 users that can be installed if you download `MoyPython` branch of SpaceMath github repository with `Download Zip` buttom.
 
-`git clone https://github.com/spacemathproject/SpaceMath.git`
+![MoyPython](github-MoyPython.png)
 
-or you can download zip file of this repository and after uncompress it.
-
-Then, open in a terminal `dist` folder inside of `\SpaceMath\dist` and finally you can run 
+The folder downloaded is `SpaceMath-MoyPython.zip`. After of uncompress it, open in a terminal `dist` folder inside of `\SpaceMath-MoyPython\dist` and finally you can run 
 
 `pip install spacemathpy-0.1.tar.gz`
-`pip install --upgrade https://github.com/spacemathproject/SpaceMath/tree/MoyPython`
 
 Congratulations spacemathpy is installed.
 
