@@ -86,10 +86,36 @@ class HiggsSignalStrenght():
         self.gCH = gCH
         self.mCH = mCH
     
+    def parameter_space(self,parameters,signal='Intersection',sigma=1):
+        '''
+        couplings: instance of HiggsSignalStrenght
+        sigma: number of sigmas it coulbe 1 or 2
+        '''
+        from pandas import DataFrame
+        #global Rtau,Rb,Rgamma,Rw,Rz
+        ghtt = self.ghtt
+        ghbb = self.ghbb
+        ghtautau = self.ghtautau
+        ghWW = self.ghWW
+        ghZZ = self.ghZZ
+        gCH = self.gCH
+        mCH = self.mCH
+        ind_tau = Rtau.np_index(ghtt,ghbb,ghtautau,sigma=sigma)
+        ind_b = Rb.np_index(ghtt,ghbb,sigma=sigma)
+        ind_gamma = Rgamma.np_index(ghtt,ghbb,ghWW,gCH,mCH,sigma=sigma)
+        ind_w = Rw.np_index(ghtt,ghbb,ghWW,sigma=sigma)
+        ind_z = Rz.np_index(ghtt,ghbb,ghZZ,sigma=sigma)
+        index = ind_tau & ind_b & ind_gamma & ind_w & ind_z
+        Rindx = {'Rtau':ind_tau,'Rb':ind_b,'Rgamma':ind_gamma,'Rw':ind_w,'Rz':ind_z,'Intersection':index}
+        data = {key:parameters[key][Rindx[signal]] 
+                  for key in parameters.keys()}
+        return DataFrame(data)
+    
+    
     def __str__(self):
         return f'Model: {self.model} \nghtt,ghbb,ghtautau,ghWW,ghZZ,gCH,mCH'
     
-    def RXscondition(self):
+    def RXscondition(self,sigma=1):
         ghtt = self.ghtt
         ghbb = self.ghbb
         ghtautau = self.ghtautau
@@ -97,11 +123,11 @@ class HiggsSignalStrenght():
         ghZZ = self.ghZZ
         gCH  = self.gCH
         mCH = self.mCH       
-        return (conditionRx(Rtau,ghtt,ghbb,ghtautau,sigma=2) and 
-        conditionRx(Rb,ghtt,ghbb,sigma=2) and 
-       conditionRx(Rgamma,ghtt,ghbb,ghWW,gCH,mCH,sigma=2) and
-       conditionRx(Rw,ghtt,ghbb,ghWW,sigma=2) and
-       conditionRx(Rz,ghtt,ghbb,ghZZ,sigma=2))
+        return (Rtau.conditionRx(ghtt,ghbb,ghtautau,sigma=sigma) and 
+        Rb.conditionRx(ghtt,ghbb,sigma=sigma) and 
+       Rgamma.conditionRx(ghtt,ghbb,ghWW,gCH,mCH,sigma=sigma) and
+       Rw.conditionRx(ghtt,ghbb,ghWW,sigma=sigma) and
+       Rz.conditionRx(ghtt,ghbb,ghZZ,sigma=sigma))
     
 ##########################################################33
 ###################PLOTS

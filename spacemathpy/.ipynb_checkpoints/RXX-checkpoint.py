@@ -13,7 +13,7 @@ from .data import *
 # Definitions
 τf = lambda mi,mS: (2*(mi/mS))**2
 
-#Función para probar que un al menos un elempento es una clase de sympy
+#Función para probar que al menos un elemento es una clase de sympy
 # Funtion to test if one argument is a sympy subclass
 
 def issymbolic(*z):
@@ -277,10 +277,9 @@ def WidthHWW(ghWW,mS):
     global mW
     if issymbolic(ghWW,mS):
         mWp = mW['symbol']
-        return ((ghWW**2)*mS)/(512*(sp.pi**3)*(mWp**4))*RTW(mS)
     else:
         mWp = mW['value']
-        return ((ghWW**2)*mS)/(512*(np.pi**3)*(mWp**4))*RTW(mS)
+    return ((ghWW**2)*mS)/(512*(np.pi**3)*(mWp**4))*RTW(mS)
 
 # Decay width of Higgs boson into ZZ pair
 def WidthHZZ(ghZZ,mS):
@@ -301,49 +300,44 @@ def BRhfifj(ghfifj,Nc,mi,mj):
     global mh,TotWidth
     if issymbolic(ghfifj,Nc,mi,mj):
         mhiggs = mh['symbol']
-        return WidthHff(ghfifj,Nc,mi,mj,mhiggs)/TotWidth
     else:
         mhiggs = mh['value']
-        return WidthHff(ghfifj,Nc,mi,mj,mhiggs)/TotWidth
+    return WidthHff(ghfifj,Nc,mi,mj,mhiggs)/TotWidth
 
 # h->gaga
 def BRhgaga(ghtt,ghbb,ghWW,gCH,mCH):
     global mh,TotWidth
     if issymbolic(ghtt,ghbb,ghWW,gCH,mCH):
         mhiggs = mh['symbol']
-        return WidthHgaga(ghtt,ghbb,ghWW,gCH,mCH,mhiggs)/TotWidth
     else:
         mhiggs = mh['value']
-        return WidthHgaga(ghtt,ghbb,ghWW,gCH,mCH,mhiggs)/TotWidth
+    return WidthHgaga(ghtt,ghbb,ghWW,gCH,mCH,mhiggs)/TotWidth
 
 # h->WW
 def BRhWW(ghWW):
     global mh, TotWidth
     if issymbolic(ghWW):
         mhiggs = mh['symbol']
-        return WidthHWW(ghWW,mhiggs)/TotWidth
     else:
         mhiggs = mh['value']
-        return WidthHWW(ghWW,mhiggs)/TotWidth
+    return WidthHWW(ghWW,mhiggs)/TotWidth
 # h->ZZ
 def BRhZZ(ghZZ):
     global mh , TotWidth
     if issymbolic(ghZZ):
         mhiggs = mh['symbol']
-        return WidthHZZ(ghZZ,mhiggs)/TotWidth
     else:
         mhiggs = mh['value']
-        return WidthHWW(ghZZ,mhiggs)/TotWidth
+    return WidthHZZ(ghZZ,mhiggs)/TotWidth
 
 # h->ZZ
 def BRhgg(ghtt,ghbb):
     global mh, TotWidth
     if issymbolic(ghtt,ghbb):
         mhiggs = mh['symbol']
-        return WidthHgg(ghtt,ghbb,mhiggs)/TotWidth
     else:
         mhiggs = mh['value']
-        return WidthHgg(ghtt,ghbb,mhiggs)/TotWidth
+    return WidthHgg(ghtt,ghbb,mhiggs)/TotWidth
 
 ###############################################################################
 #Signal Strenghts
@@ -402,7 +396,7 @@ def RZZ(ghtt,ghbb,ghZZ):
         mhiggs,mtop,mbot,mZp,mWp,gg,ggz = mh['symbol'],mt['symbol'],mb['symbol'],mZ['symbol'],mW['symbol'],g['symbol'],gz['symbol']
     else:
         mhiggs,mtop,mbot,mZp,mWp,gg,ggz = mh['value'],mt['value'],mb['value'],mZ['value'],mW['value'],g['value'],gz['value']
-    return (WidthHgg(ghtt,ghbb,mhiggs)*BRhZZ(ghZZ))/(WidthHgg(gg*mtop/(2*mWp),gg*mbot/(2*mWp),mhiggs)*BRhZZ(ggz*mZp))#Es mZ o mW
+    return (WidthHgg(ghtt,ghbb,mhiggs)*BRhZZ(ghZZ))/(WidthHgg(gg*mtop/(2*mWp),gg*mbot/(2*mWp),mhiggs)*BRhZZ(ggz*mWp))#Es mZ o mW
 
 #Rga
 def Rgaga(ghtt,ghbb,ghWW,gCH,mCH):
@@ -417,7 +411,7 @@ def Rgaga(ghtt,ghbb,ghWW,gCH,mCH):
     else:
         mhiggs,mtop,mbot,mWp,gg,ggw = mh['value'],mt['value'],mb['value'],mW['value'],g['value'],gw['value']
     return (WidthHgg(ghtt,ghbb,mhiggs)*BRhgaga(ghtt,ghbb,ghWW,gCH,mCH))/(WidthHgg(gg*mtop/(2*mWp),gg*mbot/(2*mWp),mhiggs)*BRhgaga(gg*mtop/(2*mWp),gg*mbot/(2*mWp),ggw*mWp,0,mCH))####¿?#####
-
+#BRhgaga(ghtt,ghbb,ghWW,gCH,mCH)
 #Rg
 def Rgg(ghtt,ghbb):
     '''
