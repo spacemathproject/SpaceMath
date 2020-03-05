@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     17602,        481]
-NotebookOptionsPosition[     12707,        379]
-NotebookOutlinePosition[     13115,        395]
-CellTagsIndexPosition[     13072,        392]
+NotebookDataLength[     16142,        501]
+NotebookOptionsPosition[     13226,        399]
+NotebookOutlinePosition[     13634,        415]
+CellTagsIndexPosition[     13591,        412]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -130,13 +130,13 @@ Cell[TextData[{
  "For a production process ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["\[Mu]", "i"], TraditionalForm]],ExpressionUUID->
-  "1ece5382-6d69-48d4-a7eb-5e7214393e20"],
+   SubscriptBox["\[Mu]", "i"], TraditionalForm]],
+  ExpressionUUID -> "1ece5382-6d69-48d4-a7eb-5e7214393e20"],
  " and a decay ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["\[Mu]", "j"], TraditionalForm]],ExpressionUUID->
-  "d2c1b0e9-5fa8-474a-b4d5-dc196765add9"],
+   SubscriptBox["\[Mu]", "j"], TraditionalForm]],
+  ExpressionUUID -> "d2c1b0e9-5fa8-474a-b4d5-dc196765add9"],
  " , the signal strength is defined as\n",
  Cell[BoxData[
   FormBox[
@@ -148,8 +148,11 @@ Cell[TextData[{
      RowBox[{"\[Sigma]", "(", 
       RowBox[{"i", "\[Rule]", " ", 
        SuperscriptBox["h", "SM"]}], ")"}]]}], TraditionalForm]],
-  FontWeight->"Bold",ExpressionUUID->"b5465cc7-fe43-4505-bbb9-eb777bde7ece"],
+  FontSize->12,
+  FontWeight->"Bold",
+  ExpressionUUID -> "b5465cc7-fe43-4505-bbb9-eb777bde7ece"],
  StyleBox[" and ",
+  FontSize->12,
   FontWeight->"Bold"],
  Cell[BoxData[
   FormBox[
@@ -162,61 +165,64 @@ Cell[TextData[{
       RowBox[{
        SuperscriptBox["h", "SM"], "\[Rule]", "j"}], ")"}]]}], 
    TraditionalForm]],
-  FontWeight->"Bold",ExpressionUUID->"b1760cc2-1b43-4903-b92e-404f71924146"],
- ".\nrespectively, where \[Sigma](i\[Rule] h)  and BR(h\[Rule]j) are the \
-Higgs boson production cross section and the\nbranching ratio of the Higgs \
-boson decaying into j-channel, here i=ggh, VBF, Wh,\nZh, tth and j =bb\:0304, \
-",
+  FontSize->12,
+  FontWeight->"Bold",
+  ExpressionUUID -> "b1760cc2-1b43-4903-b92e-404f71924146"],
+ StyleBox[".",
+  FontSize->12],
+ "\nrespectively, where \[Sigma](i\[Rule] h)  and BR(h\[Rule]j) are the Higgs \
+boson production cross section and the\nbranching ratio of the Higgs boson \
+decaying into j-channel, here i=ggh, VBF, Wh,\nZh, tth and j =bb\:0304, ",
  Cell[BoxData[
   FormBox[
    RowBox[{
     RowBox[{"SuperMinus", "[", "\[Tau]", "]"}], 
-    SuperscriptBox["\[Tau]", "+"]}], TraditionalForm]],ExpressionUUID->
-  "5820bd73-121f-4371-8812-dfd88a04d77f"],
+    SuperscriptBox["\[Tau]", "+"]}], TraditionalForm]],
+  ExpressionUUID -> "5820bd73-121f-4371-8812-dfd88a04d77f"],
  " , ",
  Cell[BoxData[
   FormBox[
-   SuperscriptBox["WW", "*"], TraditionalForm]],ExpressionUUID->
-  "0e2e92ea-dc87-4064-a4c6-532f55df8169"],
+   SuperscriptBox["WW", "*"], TraditionalForm]],
+  ExpressionUUID -> "0e2e92ea-dc87-4064-a4c6-532f55df8169"],
  " , ",
  Cell[BoxData[
   FormBox[
-   SuperscriptBox["ZZ", "*"], TraditionalForm]],ExpressionUUID->
-  "5f0aefc1-e7e7-404e-a222-efbbeabcbc0e"],
+   SuperscriptBox["ZZ", "*"], TraditionalForm]],
+  ExpressionUUID -> "5f0aefc1-e7e7-404e-a222-efbbeabcbc0e"],
  " , \[Gamma]\[Gamma], gg, ",
  Cell[BoxData[
   FormBox[
    RowBox[{
     SuperscriptBox["\[Mu]", "-"], 
-    SuperscriptBox["\[Mu]", "+"]}], TraditionalForm]],ExpressionUUID->
-  "5eb5a2a1-cd78-4414-afe3-e51e40d1dbbe"],
+    SuperscriptBox["\[Mu]", "+"]}], TraditionalForm]],
+  ExpressionUUID -> "5eb5a2a1-cd78-4414-afe3-e51e40d1dbbe"],
  " . In the special case when\n",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["\[Mu]", "i"], TraditionalForm]],ExpressionUUID->
-  "d009bee2-9a11-41f4-9aa6-91fceba9f193"],
+   SubscriptBox["\[Mu]", "i"], TraditionalForm]],
+  ExpressionUUID -> "d009bee2-9a11-41f4-9aa6-91fceba9f193"],
  " ",
  Cell[BoxData[
   FormBox[
    RowBox[{"=", 
-    SubscriptBox["\[Mu]", "j"]}], TraditionalForm]],ExpressionUUID->
-  "7d4b7705-a914-428a-8ec5-3f42f3347a99"],
+    SubscriptBox["\[Mu]", "j"]}], TraditionalForm]],
+  ExpressionUUID -> "7d4b7705-a914-428a-8ec5-3f42f3347a99"],
  " =1, the SM is recovered. Because \[Sigma] and BR cannot be independently \
 mea-\nsured without additional assumptions and only the product ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["\[Mu]", "i"], TraditionalForm]],ExpressionUUID->
-  "45b629bc-78dd-42ae-a90b-8d1a9698a8a0"],
+   SubscriptBox["\[Mu]", "i"], TraditionalForm]],
+  ExpressionUUID -> "45b629bc-78dd-42ae-a90b-8d1a9698a8a0"],
  " \[CenterDot] ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["\[Mu]", "j"], TraditionalForm]],ExpressionUUID->
-  "2c5ba440-d168-4194-b087-b70caa617424"],
+   SubscriptBox["\[Mu]", "j"], TraditionalForm]],
+  ExpressionUUID -> "2c5ba440-d168-4194-b087-b70caa617424"],
  " can be extracted\nexperimentally, the signal strength ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["\[Mu]", "ij"], TraditionalForm]],ExpressionUUID->
-  "6a79eb82-5b58-4b1e-8381-4ebf39c087b1"],
+   SubscriptBox["\[Mu]", "ij"], TraditionalForm]],
+  ExpressionUUID -> "6a79eb82-5b58-4b1e-8381-4ebf39c087b1"],
  " can be denied as follows:\n",
  Cell[BoxData[
   FormBox[
@@ -236,7 +242,8 @@ mea-\nsured without additional assumptions and only the product ",
        RowBox[{
         SuperscriptBox["h", "SM"], "\[Rule]", " ", "j"}], ")"}]}]]}], 
    TraditionalForm]],
-  FontWeight->"Bold",ExpressionUUID->"9ce504f0-d851-4978-840b-8a879a1f8b79"],
+  FontWeight->"Bold",
+  ExpressionUUID -> "9ce504f0-d851-4978-840b-8a879a1f8b79"],
  ".\nIn this version of ",
  StyleBox["SpaceMath",
   FontWeight->"Bold",
@@ -262,13 +269,15 @@ fusion and we use the narrow width approximation\n",
         RowBox[{
          SuperscriptBox["h", "SM"], "\[Rule]", " ", "j"}], ")"}]}]]}], ",", 
     "\[IndentingNewLine]"}], TraditionalForm]],
-  FontWeight->"Bold",ExpressionUUID->"4b134be0-101b-40c8-9c97-2d4f396ebe93"]
+  FontWeight->"Bold",
+  ExpressionUUID -> "4b134be0-101b-40c8-9c97-2d4f396ebe93"]
 }], "GuideText",
  CellChangeTimes->{
   3.783191346285428*^9, {3.78319179249218*^9, 3.783191802177713*^9}, {
    3.783191864282935*^9, 3.783191880338121*^9}, {3.783279080065661*^9, 
    3.783279081160213*^9}},
- CellID->1567743671,ExpressionUUID->"90a914d3-b217-40ea-b0a7-3dd1066db436"],
+ CellID->1567743671,
+ ExpressionUUID -> "90a914d3-b217-40ea-b0a7-3dd1066db436"],
 
 Cell[CellGroupData[{
 
@@ -284,19 +293,27 @@ Cell[TextData[{
  CellID->2082881751,ExpressionUUID->"3d9b6046-1fe8-43b1-95c1-4ff76630f2b3"],
 
 Cell[TextData[{
- "The coupling modifiers ",
- Cell[BoxData[
+ StyleBox["The coupling modifiers ", "GuideTutorial",
+  FontWeight->"Plain"],
+ StyleBox[Cell[BoxData[
   FormBox[
-   SubscriptBox["\[Kappa]", "i"], TraditionalForm]],ExpressionUUID->
-  "7d7a9960-4092-4467-9b65-83d6ef4b1e94"],
- ", are introduced to quantify the deviations of the SM - like\nHiggs boson \
-to other particles.The coupling modifiers ",
- Cell[BoxData[
+   SubscriptBox["\[Kappa]", "i"], TraditionalForm]], "GuideTutorial",
+  FontWeight->"Plain",
+  ExpressionUUID -> "7d7a9960-4092-4467-9b65-83d6ef4b1e94"], 
+  "GuideTutorial"],
+ StyleBox[", are introduced to quantify the deviations of the SM - like\n\
+Higgs boson to other particles.The coupling modifiers ", "GuideTutorial",
+  FontWeight->"Plain"],
+ StyleBox[Cell[BoxData[
   FormBox[
-   SubscriptBox["\[Kappa]", "i"], TraditionalForm]],ExpressionUUID->
-  "9837b997-1bfc-45c1-aba0-bfba0d5902fe"],
- ", for a production or a\ndecay mode, are defined as follows :\n",
- Cell[BoxData[
+   SubscriptBox["\[Kappa]", "i"], TraditionalForm]], "GuideTutorial",
+  FontWeight->"Plain",
+  ExpressionUUID -> "9837b997-1bfc-45c1-aba0-bfba0d5902fe"], 
+  "GuideTutorial"],
+ StyleBox[", for a production or a\ndecay mode, are defined as follows :\n", 
+  "GuideTutorial",
+  FontWeight->"Plain"],
+ StyleBox[Cell[BoxData[
   FormBox[
    StyleBox[
     RowBox[{
@@ -308,14 +325,17 @@ to other particles.The coupling modifiers ",
        RowBox[{"\[CapitalGamma]", "(", 
         RowBox[{
          SuperscriptBox["h", "SM"], "\[Rule]", " ", "j"}], ")"}]], "."}]}],
-    FontWeight->"Bold"], TraditionalForm]],ExpressionUUID->
-  "863d8a11-dd79-4070-854f-e4141907e728"]
+    FontWeight->"Bold"], TraditionalForm]], "GuideTutorial",
+  FontWeight->"Plain",
+  ExpressionUUID -> "863d8a11-dd79-4070-854f-e4141907e728"], "GuideTutorial"]
 }], "Text",
  CellChangeTimes->{{3.767657502426585*^9, 3.767657502428873*^9}, {
   3.7676576338581333`*^9, 3.767657685954959*^9}, {3.783279407932376*^9, 
   3.783279408425115*^9}},
  TextAlignment->Center,
- CellID->1422965881,ExpressionUUID->"346953d6-a187-4753-8920-92d3e7b1380f"]
+ TextJustification->0.25,
+ CellID->1422965881,
+ ExpressionUUID -> "346953d6-a187-4753-8920-92d3e7b1380f"]
 }, Open  ]]
 }, Open  ]],
 
@@ -378,8 +398,8 @@ Cell["Related Links", "GuideRelatedLinksSection",
  CellID->415694148,ExpressionUUID->"ea090e6c-8c94-41e8-a096-3a9760ca03e0"]
 },
 WindowSize->{700, 770},
-WindowMargins->{{Automatic, 525}, {Automatic, 67}},
-FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+WindowMargins->{{Automatic, 224}, {Automatic, 28}},
+FrontEndVersion->"11.0 for Linux x86 (64-bit) (July 28, 2016)",
 StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "GuidePageStyles.nb", 
   CharacterEncoding -> "UTF-8"]
 ]
@@ -394,94 +414,94 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 600, 14, 25, "History",ExpressionUUID->"8e4bec67-1cd2-4d73-a8fa-42289d04f081",
+Cell[558, 20, 600, 14, 24, "History",
  CellID->1247902091],
 Cell[CellGroupData[{
-Cell[1183, 38, 123, 1, 30, "CategorizationSection",ExpressionUUID->"9a31a451-6b8c-4e28-893c-e61bd7ff7be7",
+Cell[1183, 38, 123, 1, 28, "CategorizationSection",
  CellID->1122911449],
-Cell[1309, 41, 133, 2, 70, "Categorization",ExpressionUUID->"2cdf2c86-6dd5-4c05-afde-151e96e5fe5e",
+Cell[1309, 41, 133, 2, 70, "Categorization",
  CellID->686433507],
-Cell[1445, 45, 137, 2, 70, "Categorization",ExpressionUUID->"b2cd5fd5-5684-4eae-b7e7-2d723910f9c7",
+Cell[1445, 45, 137, 2, 70, "Categorization",
  CellID->605800465],
-Cell[1585, 49, 134, 2, 70, "Categorization",ExpressionUUID->"20a013d2-85c3-4a1f-a38b-bac3a522c1d7",
+Cell[1585, 49, 134, 2, 70, "Categorization",
  CellID->468444828],
-Cell[1722, 53, 130, 1, 70, "Categorization",ExpressionUUID->"c90bbdb5-afef-4c96-b839-87a4449b8e3a"]
+Cell[1722, 53, 130, 1, 70, "Categorization"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[1889, 59, 111, 1, 20, "KeywordsSection",ExpressionUUID->"a50a0b37-80db-4b61-a722-9e977d98c8fa",
+Cell[1889, 59, 111, 1, 18, "KeywordsSection",
  CellID->1427428552],
-Cell[2003, 62, 100, 1, 70, "Keywords",ExpressionUUID->"7e56c047-852a-4975-8003-ce1bd5597a59",
+Cell[2003, 62, 100, 1, 70, "Keywords",
  CellID->1251852827]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[2140, 68, 108, 1, 20, "DetailsSection",ExpressionUUID->"f03eeb86-a807-45e3-8ac1-960a507adcac",
+Cell[2140, 68, 108, 1, 18, "DetailsSection",
  CellID->307771771],
-Cell[2251, 71, 118, 2, 70, "Details",ExpressionUUID->"ca0c9672-4dec-4498-b220-a64c8a165f50",
+Cell[2251, 71, 118, 2, 70, "Details",
  CellID->795394057],
-Cell[2372, 75, 124, 2, 70, "Details",ExpressionUUID->"8336ffc5-d0a0-45f7-b69e-0feca08964b9",
+Cell[2372, 75, 124, 2, 70, "Details",
  CellID->350963985],
-Cell[2499, 79, 118, 2, 70, "Details",ExpressionUUID->"36358cbe-51d7-400b-abf5-830204ed734d",
+Cell[2499, 79, 118, 2, 70, "Details",
  CellID->802101],
-Cell[2620, 83, 126, 2, 70, "Details",ExpressionUUID->"34aa0a03-293d-4e3d-b324-ca9f5bc2f53e",
+Cell[2620, 83, 126, 2, 70, "Details",
  CellID->509823116],
-Cell[2749, 87, 116, 2, 70, "Details",ExpressionUUID->"c292f70b-05e2-4480-90f3-b3a6f467af66",
+Cell[2749, 87, 116, 2, 70, "Details",
  CellID->199884516],
-Cell[2868, 91, 116, 2, 70, "Details",ExpressionUUID->"09e73ad0-0d2e-463f-b165-1ecf4e35d62c",
+Cell[2868, 91, 116, 2, 70, "Details",
  CellID->463951815],
-Cell[2987, 95, 116, 2, 70, "Details",ExpressionUUID->"6a6ae0f8-0f08-4aee-a90a-e0ea60002692",
+Cell[2987, 95, 116, 2, 70, "Details",
  CellID->8237523],
-Cell[3106, 99, 133, 2, 70, "Details",ExpressionUUID->"69469626-89dc-4ece-8a2d-398cbb797af7",
+Cell[3106, 99, 133, 2, 70, "Details",
  CellID->813936640],
-Cell[3242, 103, 122, 2, 70, "Details",ExpressionUUID->"eea12df3-ab44-417e-8db9-89ffad3e66b4",
+Cell[3242, 103, 122, 2, 70, "Details",
  CellID->240026365]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[3401, 110, 181, 2, 79, "GuideTitle",ExpressionUUID->"1cf58ebc-fd8f-44bf-946e-5568fe607611",
+Cell[3401, 110, 181, 2, 77, "GuideTitle",
  CellID->942062912],
-Cell[3585, 114, 325, 6, 45, "GuideAbstract",ExpressionUUID->"b1bafb2d-096b-49b3-bf06-9aae5e77c91d",
+Cell[3585, 114, 325, 6, 59, "GuideAbstract",
  CellID->2001916300],
-Cell[3913, 122, 284, 4, 31, "GuideAbstract",ExpressionUUID->"228c9d26-6897-4abf-9333-b66de22e1011",
+Cell[3913, 122, 284, 4, 29, "GuideAbstract",
  CellID->1322507612],
-Cell[4200, 128, 4895, 142, 436, "GuideText",ExpressionUUID->"90a914d3-b217-40ea-b0a7-3dd1066db436",
+Cell[4200, 128, 5018, 151, 466, "GuideText",
  CellID->1567743671],
 Cell[CellGroupData[{
-Cell[9120, 274, 545, 9, 39, "GuideFunctionsSubsection",ExpressionUUID->"3d9b6046-1fe8-43b1-95c1-4ff76630f2b3",
+Cell[9243, 283, 545, 9, 37, "GuideFunctionsSubsection",
  CellID->2082881751],
-Cell[9668, 285, 1252, 32, 92, "Text",ExpressionUUID->"346953d6-a187-4753-8920-92d3e7b1380f",
+Cell[9791, 294, 1648, 43, 129, "Text",
  CellID->1422965881]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[10969, 323, 109, 1, 71, "GuideFunctionsSection",ExpressionUUID->"02c7fd56-97a2-4ebe-a064-f214e53e69fa",
+Cell[11488, 343, 109, 1, 69, "GuideFunctionsSection",
  CellID->1866139230],
-Cell[11081, 326, 235, 6, 24, "GuideText",ExpressionUUID->"d2f62a21-c165-4e7e-9427-eceb5ebc85c1",
+Cell[11600, 346, 235, 6, 21, "GuideText",
  CellID->203374175],
-Cell[11319, 334, 236, 6, 24, "GuideText",ExpressionUUID->"cbda0ac0-a1cf-4cfc-8528-a94301621cd3",
+Cell[11838, 354, 236, 6, 21, "GuideText",
  CellID->1463276848],
 Cell[CellGroupData[{
-Cell[11580, 344, 103, 1, 27, "GuideDelimiter",ExpressionUUID->"d5c50c80-c441-4708-bd23-286601674d68",
+Cell[12099, 364, 103, 1, 26, "GuideDelimiter",
  CellID->311258892],
-Cell[11686, 347, 126, 1, 23, "InlineGuideFunctionListing",ExpressionUUID->"cc1083d8-931c-4c67-915c-66bf90c74e19",
+Cell[12205, 367, 126, 1, 22, "InlineGuideFunctionListing",
  CellID->58033752]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[11861, 354, 117, 1, 73, "GuideTutorialsSection",ExpressionUUID->"d646a842-7924-4d2c-8664-33991081e423",
+Cell[12380, 374, 117, 1, 71, "GuideTutorialsSection",
  CellID->415694126],
-Cell[11981, 357, 104, 1, 23, "GuideTutorial",ExpressionUUID->"d5923d50-268b-4db4-a83b-ff1efad881e6",
+Cell[12500, 377, 104, 1, 21, "GuideTutorial",
  CellID->806871991],
-Cell[12088, 360, 105, 1, 23, "GuideTutorial",ExpressionUUID->"4b10e5b9-0a7c-41a1-a548-85834207feaa",
+Cell[12607, 380, 105, 1, 21, "GuideTutorial",
  CellID->1885805579]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[12230, 366, 117, 1, 73, "GuideMoreAboutSection",ExpressionUUID->"52b5e79d-b84f-460d-949d-f03b1611098e",
+Cell[12749, 386, 117, 1, 71, "GuideMoreAboutSection",
  CellID->23220180],
-Cell[12350, 369, 106, 1, 23, "GuideMoreAbout",ExpressionUUID->"1dc2bfe1-de2e-4098-a2f5-6aed77f6ddfb",
+Cell[12869, 389, 106, 1, 21, "GuideMoreAbout",
  CellID->1567025153],
-Cell[12459, 372, 105, 1, 23, "GuideMoreAbout",ExpressionUUID->"3862a71e-aa06-44db-92d8-52790cb9cb08",
+Cell[12978, 392, 105, 1, 21, "GuideMoreAbout",
  CellID->252299663]
 }, Open  ]],
-Cell[12579, 376, 124, 1, 73, "GuideRelatedLinksSection",ExpressionUUID->"ea090e6c-8c94-41e8-a096-3a9760ca03e0",
+Cell[13098, 396, 124, 1, 71, "GuideRelatedLinksSection",
  CellID->415694148]
 }
 ]
