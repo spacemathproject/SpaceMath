@@ -10,7 +10,7 @@ class Parameters():
         keys = variables.keys()
         return {k:np.random.uniform(variables[k][0],variables[k][1],n) for k in keys}
 
-class SignalStrenght():
+class SignalStrength():
     def __init__(self,R1su,R1sd,R2su,R2sd,func,latex_name='R'):
         self.R1su = R1su
         self.R1sd = R1sd
@@ -66,17 +66,17 @@ class SignalStrenght():
         data2s[self.latex_name] = f[index2s]
         return {'1s':DataFrame(data1s),'2s':DataFrame(data2s)}
 
-Rtau = SignalStrenght(RtautauSUP1sig,RtautauINF1sig,RtautauSUP2sig,RtautauINF2sig,Rtautau,latex_name='Rtau')
+Rtau = SignalStrength(RtautauSUP1sig,RtautauINF1sig,RtautauSUP2sig,RtautauINF2sig,Rtautau,latex_name='Rtau')
 
-Rb = SignalStrenght(RbbSUP1sig,RbbINF1sig,RbbSUP2sig,RbbINF2sig,Rbotbot,latex_name='Rb')
+Rb = SignalStrength(RbbSUP1sig,RbbINF1sig,RbbSUP2sig,RbbINF2sig,Rbotbot,latex_name='Rb')
 
-Rgamma = SignalStrenght(RgammagammaSUP1sig,RgammagammaINF1sig,RgammagammaSUP2sig,RgammagammaINF2sig,Rgaga,latex_name='Rgamma')
+Rgamma = SignalStrength(RgammagammaSUP1sig,RgammagammaINF1sig,RgammagammaSUP2sig,RgammagammaINF2sig,Rgaga,latex_name='Rgamma')
 
-Rw = SignalStrenght(RwwSUP1sig,RwwINF1sig,RwwSUP2sig,RwwINF2sig,RWW,latex_name='Rw')
-Rz = SignalStrenght(RzzSUP1sig,RzzINF1sig,RzzSUP2sig,RzzINF2sig,RZZ,latex_name='Rz')
+Rw = SignalStrength(RwwSUP1sig,RwwINF1sig,RwwSUP2sig,RwwINF2sig,RWW,latex_name='Rw')
+Rz = SignalStrength(RzzSUP1sig,RzzINF1sig,RzzSUP2sig,RzzINF2sig,RZZ,latex_name='Rz')
     
 
-class HiggsSignalStrenght():    
+class HiggsSignalStrength():    
     def __init__(self,ghtt=1,ghbb=1,ghtautau=1,ghWW=1,ghZZ=1,gCH=0,mCH=500,model='SM'):
         self.ghtt = ghtt
         self.ghbb = ghbb
@@ -86,7 +86,7 @@ class HiggsSignalStrenght():
         self.gCH = gCH
         self.mCH = mCH
     
-    def parameter_space(self,parameters,signal='Intersection',sigma=1):
+    def parameter_space(self,parameters,sigma=1):
         '''
         couplings: instance of HiggsSignalStrenght
         sigma: number of sigmas it coulbe 1 or 2
@@ -107,9 +107,9 @@ class HiggsSignalStrenght():
         ind_z = Rz.np_index(ghtt,ghbb,ghZZ,sigma=sigma)
         index = ind_tau & ind_b & ind_gamma & ind_w & ind_z
         Rindx = {'Rtau':ind_tau,'Rb':ind_b,'Rgamma':ind_gamma,'Rw':ind_w,'Rz':ind_z,'Intersection':index}
-        data = {key:parameters[key][Rindx[signal]] 
-                  for key in parameters.keys()}
-        return DataFrame(data)
+        data = {signal:DataFrame({key:parameters[key][Rindx[signal]]
+                  for key in parameters.keys()}) for signal in Rindx.keys()}
+        return data
     
     
     def __str__(self):
@@ -133,16 +133,20 @@ class HiggsSignalStrenght():
 ###################PLOTS
 #############################################################
 
-def plot_df(df,colx,coly,latex_names=None,color='#137A7A',alpha=0.5):
+def plot_df(df,colx,coly,title='SpaceMath',fname=None,marker='o',latex_names=None,color='#137A7A',alpha=0.5):
     import matplotlib.pyplot as plt
-    plt.plot(df[colx],df[coly],'o',color=color,alpha=alpha);
+    plt.plot(df[colx],df[coly],marker,color=color,alpha=alpha);
     if latex_names==None:
         plt.xlabel(colx,fontsize=15);
         plt.ylabel(coly,fontsize=15);
     else:
         plt.xlabel(latex_names[colx],fontsize=15);
         plt.ylabel(latex_names[coly],fontsize=15);
-    plt.title('spacemathpy',fontsize=15);
+    plt.title(title,fontsize=15);
+    if fname!=None:
+        plt.savefig(fname,dpi=1000)
+    else:
+        pass
     plt.show();
     
 def plot_tabledf(df,coly,latex_names=None,alpha=0.5,color='#137A7A'):

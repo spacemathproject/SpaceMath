@@ -29,6 +29,13 @@ gz = {'value':gw['value']/cW['value'],'unit':None,'symbol':symbols('g_z',real=Tr
 Qt = {'value':2.0/3,'units':'|e|','symbol':S(2)/3}
 Qb = {'value':-1.0/3,'units':'|e|','symbol':-S(1)/3}
 
+constants = [mt,mb,mta,mW,mZ,mh,SMvev,GF,αs,αem,cW,sW,g,gw,gz]
+def numeric_substitutions(*args):
+    if args[0] == 'All':
+        return {a['symbol']:a['value'] for a in constants}
+    else:
+        return {a['symbol']:a['value'] for a in args}
+
 ####################################################33
 # Value of bounds
 ######################################################3
