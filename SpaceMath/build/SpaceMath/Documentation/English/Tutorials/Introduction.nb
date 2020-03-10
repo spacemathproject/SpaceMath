@@ -3,32 +3,32 @@
 (*** Wolfram Notebook File ***)
 (* http://www.wolfram.com/nb *)
 
-(* CreatedBy='Mathematica 12.0' *)
+(* CreatedBy='Mathematica 11.0' *)
 
 (*CacheID: 234*)
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     15860,        409]
-NotebookOptionsPosition[     10663,        307]
-NotebookOutlinePosition[     14919,        391]
-CellTagsIndexPosition[     14876,        388]
+NotebookDataLength[     15133,        417]
+NotebookOptionsPosition[     10463,        315]
+NotebookOutlinePosition[     14688,        399]
+CellTagsIndexPosition[     14645,        396]
 WindowTitle->Introduction
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 Cell[BoxData[GridBox[{
-   {Cell["SPACE MATH TUTORIAL", "PacletNameCell",ExpressionUUID->
-     "2e3f2a82-66a8-4699-a098-80373c744b6d"], Cell[TextData[Cell[BoxData[
+   {Cell["SPACE MATH TUTORIAL", "PacletNameCell"], Cell[TextData[Cell[BoxData[
+    
      ActionMenuBox[
       FrameBox[
        InterpretationBox[Cell[TextData[{
          "URL",
          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
           StripOnInput->False]
-        }],ExpressionUUID->"9ed34f41-eebe-4166-bf92-613545654e0a"],
+        }]],
         TextCell[
          Row[{"URL", 
            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
@@ -60,27 +60,26 @@ Introduction.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$30172], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$27504], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/tutorial/Introduction", ".html"]], None}]}]},
       Appearance->None,
       MenuAppearance->Automatic,
       MenuStyle->"URLMenu"]],
-     LineSpacing->{1.4, 0},ExpressionUUID->
-     "229a1b9f-8e4e-40d8-a263-d422bb3c30c2"]], "AnchorBar",ExpressionUUID->
-     "97d53f6e-a382-498f-8c28-32a80ff43173"]}
+     LineSpacing->{1.4, 0}]], "AnchorBar"]}
   }]], "AnchorBarGrid",
  GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
      Scaled[0.65], {
       Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
    "RowsIndexed" -> {}}},
- CellID->1,ExpressionUUID->"7617c821-cd05-4a2d-843f-e9a76b0ef65f"],
+ CellID->1],
 
 Cell[CellGroupData[{
 
 Cell["Introduction", "Title",
- CellID->509267359,ExpressionUUID->"c9039b3e-e09f-470e-99f8-244678fc8d91"],
+ CellID->509267359,
+ ExpressionUUID -> "c9039b3e-e09f-470e-99f8-244678fc8d91"],
 
 Cell[TextData[{
  "With the discovery of the Higgs boson ",
@@ -176,20 +175,20 @@ motivated and allowed by experimental measurements. With the ",
  Cell[BoxData[
   FormBox[
    StyleBox["SpaceMath", "MR"], TraditionalForm]], "InlineFormula",
-  ExpressionUUID->"685d0fec-9775-43e4-91a2-7a62ef99f303"],
+  ExpressionUUID -> "685d0fec-9775-43e4-91a2-7a62ef99f303"],
  " package, is possible to do it. Free model parameter spaces can be to \
 scanned of a semi\[Hyphen]automatic and intuitive way within a friendly work \
 environment. ",
  Cell[BoxData[
   FormBox[
    StyleBox["SpaceMath", "MR"], TraditionalForm]], "InlineFormula",
-  ExpressionUUID->"a4fbaa32-84ff-46a5-9aa9-2097534b9dec"],
+  ExpressionUUID -> "a4fbaa32-84ff-46a5-9aa9-2097534b9dec"],
  " generate graphics and tables which show the allowed regions for the free \
 model parameters of BSM theories. Similar packages to ",
  Cell[BoxData[
   FormBox[
    StyleBox["SpaceMath", "MR"], TraditionalForm]], "InlineFormula",
-  ExpressionUUID->"82f55fa2-a833-4539-aced-197cb69a6574"],
+  ExpressionUUID -> "82f55fa2-a833-4539-aced-197cb69a6574"],
  " can be consulted in the Refs. ",
  ButtonBox["EasyScanHEP",
   BaseStyle->"Citation",
@@ -207,32 +206,33 @@ model parameters of BSM theories. Similar packages to ",
  Cell[BoxData[
   FormBox[
    StyleBox["SpaceMath", "MR"], TraditionalForm]], "InlineFormula",
-  ExpressionUUID->"3c1d3ed0-1b29-403b-967f-c224658bfc8e"],
+  ExpressionUUID -> "3c1d3ed0-1b29-403b-967f-c224658bfc8e"],
  " are the following: "
 }], "Text",
- CellID->1534169418,ExpressionUUID->"dca9ba47-3fea-4c09-b1ea-a9a5de7d775a"],
+ CellID->1534169418,
+ ExpressionUUID -> "dca9ba47-3fea-4c09-b1ea-a9a5de7d775a"],
 
 Cell[TextData[{
  "Higgs boson data    \nHiggs boson coupling modifiers ",
  Cell[BoxData[
   FormBox[
    SubscriptBox["\[Kappa]", 
-    StyleBox["i", "TI"]], TraditionalForm]], "InlineFormula",ExpressionUUID->
-  "6ad837f9-e313-48e9-98d6-b0ba9de24dd2"],
+    StyleBox["i", "TI"]], TraditionalForm]], "InlineFormula",
+  ExpressionUUID -> "6ad837f9-e313-48e9-98d6-b0ba9de24dd2"],
  "   \nSignal strength modifiers ",
  Cell[BoxData[
-  FormBox["\[Mu]", TraditionalForm]], "InlineFormula",ExpressionUUID->
-  "b0fea1a4-e55c-4971-b749-c7376372a747"],
+  FormBox["\[Mu]", TraditionalForm]], "InlineFormula",
+  ExpressionUUID -> "b0fea1a4-e55c-4971-b749-c7376372a747"],
  "   \nMeson physics    \n",
  Cell[BoxData[
   FormBox[
-   StyleBox["B", "TI"], TraditionalForm]], "InlineFormula",ExpressionUUID->
-  "dfa1d5c5-b815-4583-8253-54ebc26b7b1c"],
+   StyleBox["B", "TI"], TraditionalForm]], "InlineFormula",
+  ExpressionUUID -> "dfa1d5c5-b815-4583-8253-54ebc26b7b1c"],
  " mesons \n",
  Cell[BoxData[
   FormBox[
-   StyleBox["D", "TI"], TraditionalForm]], "InlineFormula",ExpressionUUID->
-  "509dddc3-69a8-4252-b23c-eb622a516daf"],
+   StyleBox["D", "TI"], TraditionalForm]], "InlineFormula",
+  ExpressionUUID -> "509dddc3-69a8-4252-b23c-eb622a516daf"],
  " mesons \n",
  Cell[BoxData[
   FormBox[
@@ -240,7 +240,7 @@ Cell[TextData[{
     StyleBox["B", "TI"], "-", 
     OverscriptBox[
      StyleBox["B", "TI"], "_"]}], TraditionalForm]], "InlineFormula",
-  ExpressionUUID->"25d26895-e4b5-4e18-9d8e-b1ccb6148efb"],
+  ExpressionUUID -> "25d26895-e4b5-4e18-9d8e-b1ccb6148efb"],
  " mixing \n",
  Cell[BoxData[
   FormBox[
@@ -248,7 +248,7 @@ Cell[TextData[{
     StyleBox["K", "TI"], "-", 
     OverscriptBox[
      StyleBox["K", "TI"], "_"]}], TraditionalForm]], "InlineFormula",
-  ExpressionUUID->"3e1c47e8-1c40-41ab-b932-e6fa834709df"],
+  ExpressionUUID -> "3e1c47e8-1c40-41ab-b932-e6fa834709df"],
  " mixing \n",
  Cell[BoxData[
   FormBox[
@@ -256,11 +256,12 @@ Cell[TextData[{
     StyleBox["D", "TI"], "-", 
     OverscriptBox[
      StyleBox["D", "TI"], "_"]}], TraditionalForm]], "InlineFormula",
-  ExpressionUUID->"1702b2ce-c9ed-4ca0-a640-91f248515f99"],
+  ExpressionUUID -> "1702b2ce-c9ed-4ca0-a640-91f248515f99"],
  " mixing \nFlavor\[Hyphen]violanting processes \nOblique parameters \n\
 Unitariety "
 }], "Text",
- CellID->1537123131,ExpressionUUID->"780da17c-da1c-49ff-80b3-cb1fc40aa24c"],
+ CellID->1537123131,
+ ExpressionUUID -> "780da17c-da1c-49ff-80b3-cb1fc40aa24c"],
 
 Cell[TextData[{
  "However, in this version only (",
@@ -270,40 +271,47 @@ Cell[TextData[{
  Cell[BoxData[
   FormBox[
    StyleBox["SpaceMath", "MR"], TraditionalForm]], "InlineFormula",
-  ExpressionUUID->"eb29789d-6677-46ca-8a78-da0ccd6f077d"],
+  ExpressionUUID -> "eb29789d-6677-46ca-8a78-da0ccd6f077d"],
  " v1.0 is able to evaluate branching ratios of the SM\[Hyphen]like Higgs \
 boson, ",
  Cell[BoxData[
   FormBox[
    StyleBox[
     RowBox[{"C", "P"}], "TI"], TraditionalForm]], "InlineFormula",
-  ExpressionUUID->"99d46d11-db76-4dbf-9de7-2869a383e440"],
+  ExpressionUUID -> "99d46d11-db76-4dbf-9de7-2869a383e440"],
  "\[Hyphen]odd and ",
  Cell[BoxData[
   FormBox[
    StyleBox[
     RowBox[{"C", "P"}], "TI"], TraditionalForm]], "InlineFormula",
-  ExpressionUUID->"5d4e457e-6044-43d0-9326-bf66b8e2a2ec"],
+  ExpressionUUID -> "5d4e457e-6044-43d0-9326-bf66b8e2a2ec"],
  "\[Hyphen]even scalars.  "
 }], "Text",
- CellID->179312628,ExpressionUUID->"c31a14d3-9417-4be0-8480-a1e03a4c998d"],
+ CellID->179312628,
+ ExpressionUUID -> "c31a14d3-9417-4be0-8480-a1e03a4c998d"],
 
 Cell["XXXX.", "Caption",
- CellID->1891092685,ExpressionUUID->"1b73c731-8658-4287-9c5d-5557d07855ba"],
+ CellID->1891092685,
+ ExpressionUUID -> "1b73c731-8658-4287-9c5d-5557d07855ba"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData["XXXX"], "Input",
  CellLabel->"In[1]:=",
- CellID->2058623809,ExpressionUUID->"0be8721b-4fd1-47dd-838f-5580d6472d55"],
+ CellID->2058623809,
+ ExpressionUUID -> "0be8721b-4fd1-47dd-838f-5580d6472d55"],
 
 Cell[BoxData["XXXX"], "Output",
+ ImageSize->{38, 14},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[1]=",
- CellID->1181321046,ExpressionUUID->"8c5d09c2-08e0-45a4-a636-98ab8613009f"]
+ CellID->1181321046,
+ ExpressionUUID -> "8c5d09c2-08e0-45a4-a636-98ab8613009f"]
 }, Open  ]]
 }, Open  ]],
 
-Cell[" ", "FooterCell",ExpressionUUID->"c3276616-dd51-4e0f-8a64-6d2a897cdb93"]
+Cell[" ", "FooterCell"]
 },
 Saveable->False,
 ScreenStyleEnvironment->"Working",
@@ -319,7 +327,7 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2019, 12, 12, 12, 5, 58.186227}", 
+   "built" -> "{2020, 3, 9, 18, 33, 49.872503}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -354,11 +362,11 @@ _] mixing Flavor-violanting processes Oblique parameters Unitariety However, \
 in this version only (CounterBox[Section, kappaX] ) is enabled. In addition, \
 SpaceMath v1.0 is able to evaluate branching ratios of the SM-like Higgs \
 boson, CP-odd and CP-even scalars. ", "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$30104, "title" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$27436, "title" -> 
     "Introduction", "titlemodifier" -> "", "windowtitle" -> "Introduction", 
-    "type" -> "Tutorial", "uri" -> "SpaceMath/tutorial/Introduction", 
-    "WorkflowDockedCell" -> ""}, "SearchTextTranslated" -> ""},
-FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+    "type" -> "Tutorial", "uri" -> "SpaceMath/tutorial/Introduction"}, 
+  "SearchTextTranslated" -> ""},
+FrontEndVersion->"11.0 for Linux x86 (64-bit) (July 28, 2016)",
 StyleDefinitions->Notebook[{
    Cell[
     StyleData[
@@ -376,7 +384,7 @@ StyleDefinitions->Notebook[{
    Cell[
     StyleData["TutorialRelatedLinksSection"], 
     CellGroupingRules -> {"SectionGrouping", 30}]}, Visible -> False, 
-  FrontEndVersion -> "12.0 for Linux x86 (64-bit) (April 8, 2019)", 
+  FrontEndVersion -> "11.0 for Linux x86 (64-bit) (July 28, 2016)", 
   StyleDefinitions -> "Default.nb"]
 ]
 (* End of Notebook Content *)
@@ -390,27 +398,27 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[584, 21, 2609, 56, 55, "AnchorBarGrid",ExpressionUUID->"7617c821-cd05-4a2d-843f-e9a76b0ef65f",
+Cell[584, 21, 2321, 54, 52, "AnchorBarGrid",
  CellID->1],
 Cell[CellGroupData[{
-Cell[3218, 81, 104, 1, 65, "Title",ExpressionUUID->"c9039b3e-e09f-470e-99f8-244678fc8d91",
+Cell[2930, 79, 108, 2, 46, "Title",
  CellID->509267359],
-Cell[3325, 84, 4389, 128, 487, "Text",ExpressionUUID->"dca9ba47-3fea-4c09-b1ea-a9a5de7d775a",
+Cell[3041, 83, 4401, 129, 416, "Text",
  CellID->1534169418],
-Cell[7717, 214, 1618, 48, 442, "Text",ExpressionUUID->"780da17c-da1c-49ff-80b3-cb1fc40aa24c",
+Cell[7445, 214, 1636, 49, 387, "Text",
  CellID->1537123131],
-Cell[9338, 264, 826, 24, 70, "Text",ExpressionUUID->"c31a14d3-9417-4be0-8480-a1e03a4c998d",
+Cell[9084, 265, 836, 25, 70, "Text",
  CellID->179312628],
-Cell[10167, 290, 100, 1, 70, "Caption",ExpressionUUID->"1b73c731-8658-4287-9c5d-5557d07855ba",
+Cell[9923, 292, 104, 2, 70, "Caption",
  CellID->1891092685],
 Cell[CellGroupData[{
-Cell[10292, 295, 129, 2, 70, "Input",ExpressionUUID->"0be8721b-4fd1-47dd-838f-5580d6472d55",
+Cell[10052, 298, 133, 3, 70, "Input",
  CellID->2058623809],
-Cell[10424, 299, 130, 2, 38, "Output",ExpressionUUID->"8c5d09c2-08e0-45a4-a636-98ab8613009f",
+Cell[10188, 303, 221, 6, 35, "Output",
  CellID->1181321046]
 }, Open  ]]
 }, Open  ]],
-Cell[10581, 305, 78, 0, 70, "FooterCell",ExpressionUUID->"c3276616-dd51-4e0f-8a64-6d2a897cdb93"]
+Cell[10436, 313, 23, 0, 70, "FooterCell"]
 }
 ]
 *)

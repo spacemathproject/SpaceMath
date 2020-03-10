@@ -3,32 +3,31 @@
 (*** Wolfram Notebook File ***)
 (* http://www.wolfram.com/nb *)
 
-(* CreatedBy='Mathematica 12.0' *)
+(* CreatedBy='Mathematica 11.0' *)
 
 (*CacheID: 234*)
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      7073,        174]
-NotebookOptionsPosition[      4643,        117]
-NotebookOutlinePosition[      6756,        169]
-CellTagsIndexPosition[      6713,        166]
+NotebookDataLength[      6303,        171]
+NotebookOptionsPosition[      4157,        116]
+NotebookOutlinePosition[      6238,        168]
+CellTagsIndexPosition[      6195,        165]
 WindowTitle->PlotRtauRandom
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 Cell[BoxData[GridBox[{
-   {Cell["SPACE MATH SYMBOL", "PacletNameCell",ExpressionUUID->
-     "83f5aef7-84fd-4b8b-962d-6969324dea06"], Cell[TextData[Cell[BoxData[
+   {Cell["SPACE MATH SYMBOL", "PacletNameCell"], Cell[TextData[Cell[BoxData[
      ActionMenuBox[
       FrameBox[
        InterpretationBox[Cell[TextData[{
          "URL",
          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
           StripOnInput->False]
-        }],ExpressionUUID->"5572ce5c-0e08-4350-90c1-069a68fcb2b8"],
+        }]],
         TextCell[
          Row[{"URL", 
            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
@@ -60,35 +59,33 @@ PlotRtauRandom.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$11311], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$7897], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/ref/PlotRtauRandom", ".html"]], None}]}]},
       Appearance->None,
       MenuAppearance->Automatic,
       MenuStyle->"URLMenu"]],
-     LineSpacing->{1.4, 0},ExpressionUUID->
-     "2c03b31c-a02d-42d2-a839-36404face79a"]], "AnchorBar",ExpressionUUID->
-     "74f30e89-588e-403e-b2ec-17082193748f"]}
+     LineSpacing->{1.4, 0}]], "AnchorBar"]}
   }]], "AnchorBarGrid",
  GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
      Scaled[0.65], {
       Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
    "RowsIndexed" -> {}}},
- CellID->1,ExpressionUUID->"b60f09b1-3e05-4162-a58b-1f81c74b53b5"],
-
-Cell[CellGroupData[{
+ CellID->1],
 
 Cell[TextData[{
- Cell["PlotRtauRandom", "ObjectName",ExpressionUUID->
-  "39899fc8-79ee-40c7-981c-8fe277c7fef1"],
+ Cell["PlotRtauRandom", "ObjectName"],
  Cell[BoxData[
-  TemplateBox[{8},
-   "Spacer1"]],ExpressionUUID->"3ec8a49d-a927-4140-a1d8-a4de1758efcc"],
- Cell[BoxData[
- ""], "ObjectNameTranslation",ExpressionUUID->
-  "130cd785-1227-4697-8a7c-78161b3a3665"]
-}], "ObjectNameGrid",ExpressionUUID->"122a704b-00ff-46d2-a46e-4ce914bf7458"],
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{8, 0}],
+    CacheGraphics->False],
+   Spacer[8]]]],
+ Cell[BoxData[""], "ObjectNameTranslation"]
+}], "ObjectNameGrid"],
 
 Cell[BoxData[GridBox[{
    {"", Cell[TextData[{
@@ -96,24 +93,26 @@ Cell[BoxData[GridBox[{
       RowBox[{"PlotRtauRandom", "[", 
        RowBox[{
        "ci_", ",", " ", "cj_", ",", " ", "xlabel_", ",", " ", "ylabel_"}], 
-       "]"}]], "InlineFormula",ExpressionUUID->
-      "2a552ccf-6d1f-497c-8a7b-8f6cf60ebf06"],
+       "]"}]], "InlineFormula",
+      ExpressionUUID -> "2a552ccf-6d1f-497c-8a7b-8f6cf60ebf06"],
      " \[LineSeparator]This command generates a plot with random points that \
 are in accordance with ",
      Cell[BoxData[
-      SubscriptBox["R", "\[Tau]"]], "Output",ExpressionUUID->
-      "d6114dac-95ea-47e4-894a-d8f85e39f889"],
+      SubscriptBox["R", "\[Tau]"]], "Output",
+      ExpressionUUID -> "d6114dac-95ea-47e4-894a-d8f85e39f889"],
      " measuremets on the ci-cj plane, where ci and cj stand for the column i \
 and j, respectively; xlabel (ylabel) is used for indicates the X axis label \
 (Y axis label)."
-    }],ExpressionUUID->"34040223-6605-4731-a834-f90a6cc433bf"]}
+    }]]}
   }]], "Usage",
  GridBoxOptions->{
- GridBoxBackground->{"Columns" -> {{None}}, "Rows" -> {{None}}}},
- CellID->982511436,ExpressionUUID->"46215000-9297-43f3-b1b5-2ec87f6d3447"]
-}, Open  ]],
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {{None}}, 
+   "RowsIndexed" -> {}}},
+ CellID->982511436,
+ ExpressionUUID -> "46215000-9297-43f3-b1b5-2ec87f6d3447"],
 
-Cell[" ", "FooterCell",ExpressionUUID->"1c53c551-7a08-4a82-bad6-ac12f5786da1"]
+Cell[" ", "FooterCell"]
 },
 Saveable->False,
 ScreenStyleEnvironment->"Working",
@@ -130,7 +129,7 @@ TaggingRules->{
     Left], "HasOptions" -> False, "ExampleCounter" -> 1, "NeedPlatMsgIn" -> 
   None, "RootCaptions" -> "", 
   "Metadata" -> {
-   "built" -> "{2019, 12, 12, 12, 5, 13.431340}", 
+   "built" -> "{2020, 3, 9, 18, 33, 3.719833}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -142,10 +141,10 @@ ci-cj plane, where ci and cj stand for the column i and j, respectively; \
 xlabel (ylabel) is used for indicates the X axis label (Y axis label).", 
     "synonyms" -> {}, "tabletags" -> {}, "title" -> "PlotRtauRandom", 
     "titlemodifier" -> "", "windowtitle" -> "PlotRtauRandom", "type" -> 
-    "Symbol", "uri" -> "SpaceMath/ref/PlotRtauRandom", "WorkflowDockedCell" -> 
-    ""}, "SearchTextTranslated" -> ""},
+    "Symbol", "uri" -> "SpaceMath/ref/PlotRtauRandom"}, 
+  "SearchTextTranslated" -> ""},
 CellContext->"Global`",
-FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+FrontEndVersion->"11.0 for Linux x86 (64-bit) (July 28, 2016)",
 StyleDefinitions->Notebook[{
    Cell[
     StyleData[
@@ -154,7 +153,7 @@ StyleDefinitions->Notebook[{
     StyleData["Input"], CellContext -> "Global`"], 
    Cell[
     StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
-  FrontEndVersion -> "12.0 for Linux x86 (64-bit) (April 8, 2019)", 
+  FrontEndVersion -> "11.0 for Linux x86 (64-bit) (July 28, 2016)", 
   StyleDefinitions -> "Default.nb"]
 ]
 (* End of Notebook Content *)
@@ -168,14 +167,12 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[586, 21, 2595, 56, 55, "AnchorBarGrid",ExpressionUUID->"b60f09b1-3e05-4162-a58b-1f81c74b53b5",
+Cell[586, 21, 2301, 53, 52, "AnchorBarGrid",
  CellID->1],
-Cell[CellGroupData[{
-Cell[3206, 81, 399, 9, 55, "ObjectNameGrid",ExpressionUUID->"122a704b-00ff-46d2-a46e-4ce914bf7458"],
-Cell[3608, 92, 938, 20, 160, "Usage",ExpressionUUID->"46215000-9297-43f3-b1b5-2ec87f6d3447",
- CellID->982511436]
-}, Open  ]],
-Cell[4561, 115, 78, 0, 43, "FooterCell",ExpressionUUID->"1c53c551-7a08-4a82-bad6-ac12f5786da1"]
+Cell[2890, 76, 291, 11, 43, "ObjectNameGrid"],
+Cell[3184, 89, 943, 23, 117, "Usage",
+ CellID->982511436],
+Cell[4130, 114, 23, 0, 26, "FooterCell"]
 }
 ]
 *)

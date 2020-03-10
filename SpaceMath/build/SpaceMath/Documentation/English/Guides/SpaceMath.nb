@@ -3,17 +3,17 @@
 (*** Wolfram Notebook File ***)
 (* http://www.wolfram.com/nb *)
 
-(* CreatedBy='Mathematica 12.0' *)
+(* CreatedBy='Mathematica 11.0' *)
 
 (*CacheID: 234*)
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      5276,        147]
-NotebookOptionsPosition[      3252,        100]
-NotebookOutlinePosition[      4702,        137]
-CellTagsIndexPosition[      4659,        134]
+NotebookDataLength[      5068,        152]
+NotebookOptionsPosition[      3372,        105]
+NotebookOutlinePosition[      4821,        142]
+CellTagsIndexPosition[      4778,        139]
 WindowTitle->SpaceMath
 WindowFrame->Normal*)
 
@@ -59,7 +59,7 @@ SpaceMath.html"], StandardForm]], "Input", TextClipboardType -> "PlainText"]},
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$9937], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$6459], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/guide/SpaceMath", ".html"]], None}]}]},
@@ -87,8 +87,13 @@ Cell[CellGroupData[{
 
 Cell[TextData[{
  Cell[BoxData[
-  TemplateBox[{6},
-   "Spacer1"]]],
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
  "Reference"
 }], "GuideReferenceSection",
  WholeCellGroupOpener->True],
@@ -112,16 +117,16 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2019, 12, 12, 12, 5, 9.154522}", 
+   "built" -> "{2020, 3, 9, 18, 33, 0.383622}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
     "Space Math Guide", "language" -> "en", "paclet" -> "SpaceMath", "status" -> 
     "None", "summary" -> "", "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$9874, "title" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$6396, "title" -> 
     "SpaceMath", "titlemodifier" -> "", "windowtitle" -> "SpaceMath", "type" -> 
     "Guide", "uri" -> "SpaceMath/guide/SpaceMath"}},
-FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+FrontEndVersion->"11.0 for Linux x86 (64-bit) (July 28, 2016)",
 StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "Reference.nb", 
   CharacterEncoding -> "UTF-8"]
 ]
@@ -136,19 +141,19 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[581, 21, 2286, 53, 70, "AnchorBarGrid",ExpressionUUID->"b6686de4-6588-4bd8-8c8a-7164df9049e4",
+Cell[581, 21, 2286, 53, 70, "AnchorBarGrid",
  CellID->1],
 Cell[CellGroupData[{
-Cell[2892, 78, 51, 1, 70, "GuideTitle",ExpressionUUID->"31b67b41-2dfd-4f99-af1f-40d758051841",
+Cell[2892, 78, 51, 1, 70, "GuideTitle",
  CellID->942062912],
-Cell[2946, 81, 56, 1, 70, "GuideAbstract",ExpressionUUID->"e314076d-790b-4906-9d93-e2141fcb74f1",
+Cell[2946, 81, 56, 1, 70, "GuideAbstract",
  CellID->1]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3039, 87, 137, 6, 70, "GuideReferenceSection",ExpressionUUID->"2451af7c-208d-4388-8d45-a9ff57c251dc"],
-Cell[3179, 95, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"87afd663-c762-43a4-8613-12135350474f"]
+Cell[3039, 87, 257, 11, 70, "GuideReferenceSection"],
+Cell[3299, 100, 31, 0, 70, "SectionHeaderSpacer"]
 }, Open  ]],
-Cell[3225, 98, 23, 0, 70, "FooterCell",ExpressionUUID->"a8d56c80-ae7b-414a-9aca-c95cd1c86c7b"]
+Cell[3345, 103, 23, 0, 70, "FooterCell"]
 }
 ]
 *)

@@ -3,17 +3,17 @@
 (*** Wolfram Notebook File ***)
 (* http://www.wolfram.com/nb *)
 
-(* CreatedBy='Mathematica 12.0' *)
+(* CreatedBy='Mathematica 11.0' *)
 
 (*CacheID: 234*)
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      6094,        160]
-NotebookOptionsPosition[      3777,        106]
-NotebookOutlinePosition[      5811,        157]
-CellTagsIndexPosition[      5768,        154]
+NotebookDataLength[      6231,        170]
+NotebookOptionsPosition[      4135,        116]
+NotebookOutlinePosition[      6167,        167]
+CellTagsIndexPosition[      6124,        164]
 WindowTitle->PlotRZRandom
 WindowFrame->Normal*)
 
@@ -59,7 +59,7 @@ PlotRZRandom.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$12273], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$8901], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/ref/PlotRZRandom", ".html"]], None}]}]},
@@ -77,8 +77,13 @@ PlotRZRandom.html"], StandardForm]], "Input", TextClipboardType ->
 Cell[TextData[{
  Cell["PlotRZRandom", "ObjectName"],
  Cell[BoxData[
-  TemplateBox[{8},
-   "Spacer1"]]],
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{8, 0}],
+    CacheGraphics->False],
+   Spacer[8]]]],
  Cell[BoxData[""], "ObjectNameTranslation"]
 }], "ObjectNameGrid"],
 
@@ -87,20 +92,25 @@ Cell[BoxData[GridBox[{
      Cell[BoxData[
       RowBox[{"PlotRZRandom", "[", 
        RowBox[{"ci_", ",", "cj_", ",", "xlabel_", ",", "ylabel_"}], "]"}]], 
-      "InlineFormula"],
+      "InlineFormula",
+      ExpressionUUID -> "b004d150-09fd-4fac-80da-13f8f1a3ad9a"],
      " \[LineSeparator]This command generates a plot with random points that \
 are in accordance with",
      Cell[BoxData[
       RowBox[{" ", 
-       SubscriptBox["R", "Z"]}]], "Input"],
+       SubscriptBox["R", "Z"]}]], "Input",
+      ExpressionUUID -> "ac7995d1-2e0b-47e8-b198-e64d22ec9e4a"],
      " measuremets on the ci-cj plane, where ci and cj stand for the column i \
 and j, respectively; xlabel (ylabel) is used for indicates the X axis label \
 (Y axis label)."
     }]]}
   }]], "Usage",
  GridBoxOptions->{
- GridBoxBackground->{"Columns" -> {{None}}, "Rows" -> {{None}}}},
- CellID->982511436],
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {{None}}, 
+   "RowsIndexed" -> {}}},
+ CellID->982511436,
+ ExpressionUUID -> "06d1cbaf-165e-4bfb-92d1-872c151a3e9e"],
 
 Cell[" ", "FooterCell"]
 },
@@ -119,7 +129,7 @@ TaggingRules->{
     Left], "HasOptions" -> False, "ExampleCounter" -> 1, "NeedPlatMsgIn" -> 
   None, "RootCaptions" -> "", 
   "Metadata" -> {
-   "built" -> "{2019, 12, 12, 12, 5, 15.779614}", 
+   "built" -> "{2020, 3, 9, 18, 33, 6.110481}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -133,7 +143,7 @@ plane, where ci and cj stand for the column i and j, respectively; xlabel \
     "titlemodifier" -> "", "windowtitle" -> "PlotRZRandom", "type" -> 
     "Symbol", "uri" -> "SpaceMath/ref/PlotRZRandom"}},
 CellContext->"Global`",
-FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+FrontEndVersion->"11.0 for Linux x86 (64-bit) (July 28, 2016)",
 StyleDefinitions->Notebook[{
    Cell[
     StyleData[
@@ -142,7 +152,7 @@ StyleDefinitions->Notebook[{
     StyleData["Input"], CellContext -> "Global`"], 
    Cell[
     StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
-  FrontEndVersion -> "12.0 for Linux x86 (64-bit) (April 8, 2019)", 
+  FrontEndVersion -> "11.0 for Linux x86 (64-bit) (July 28, 2016)", 
   StyleDefinitions -> "Default.nb"]
 ]
 (* End of Notebook Content *)
@@ -156,12 +166,12 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[584, 21, 2294, 53, 70, "AnchorBarGrid",ExpressionUUID->"432672dd-b025-442c-b978-fb6c70cb2681",
+Cell[584, 21, 2293, 53, 70, "AnchorBarGrid",
  CellID->1],
-Cell[2881, 76, 169, 6, 70, "ObjectNameGrid",ExpressionUUID->"ed7d2dd2-028b-4579-ae53-dff6d74c2634"],
-Cell[3053, 84, 694, 18, 70, "Usage",ExpressionUUID->"06d1cbaf-165e-4bfb-92d1-872c151a3e9e",
+Cell[2880, 76, 289, 11, 70, "ObjectNameGrid"],
+Cell[3172, 89, 933, 23, 70, "Usage",
  CellID->982511436],
-Cell[3750, 104, 23, 0, 70, "FooterCell",ExpressionUUID->"fbeff053-af4e-48f3-8054-71de57a9172b"]
+Cell[4108, 114, 23, 0, 70, "FooterCell"]
 }
 ]
 *)

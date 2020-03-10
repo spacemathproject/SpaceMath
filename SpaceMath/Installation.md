@@ -13,4 +13,4 @@ Download (https://github.com/spacemathproject/SpaceMath/archive/developerTAVP.zi
 Unzip the folder inside $UserBaseDirectory/Applications
 
 This should install SpaceMath on your system.
-fffgfgfg
+

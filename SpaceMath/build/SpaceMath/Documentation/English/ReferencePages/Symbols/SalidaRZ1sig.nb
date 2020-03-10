@@ -3,17 +3,17 @@
 (*** Wolfram Notebook File ***)
 (* http://www.wolfram.com/nb *)
 
-(* CreatedBy='Mathematica 12.0' *)
+(* CreatedBy='Mathematica 11.0' *)
 
 (*CacheID: 234*)
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      5494,        148]
-NotebookOptionsPosition[      3411,         97]
-NotebookOutlinePosition[      5213,        145]
-CellTagsIndexPosition[      5170,        142]
+NotebookDataLength[      5571,        157]
+NotebookOptionsPosition[      3706,        106]
+NotebookOutlinePosition[      5507,        154]
+CellTagsIndexPosition[      5464,        151]
 WindowTitle->SalidaRZ1sig
 WindowFrame->Normal*)
 
@@ -59,7 +59,7 @@ SalidaRZ1sig.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$23967], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$21099], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/ref/SalidaRZ1sig", ".html"]], None}]}]},
@@ -77,21 +77,30 @@ SalidaRZ1sig.html"], StandardForm]], "Input", TextClipboardType ->
 Cell[TextData[{
  Cell["SalidaRZ1sig", "ObjectName"],
  Cell[BoxData[
-  TemplateBox[{8},
-   "Spacer1"]]],
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{8, 0}],
+    CacheGraphics->False],
+   Spacer[8]]]],
  Cell[BoxData[""], "ObjectNameTranslation"]
 }], "ObjectNameGrid"],
 
 Cell[BoxData[GridBox[{
    {"", Cell[TextData[{
      Cell[BoxData[
-      RowBox[{"SalidaRZ1sig", "[", "]"}]], "InlineFormula"],
+      RowBox[{"SalidaRZ1sig", "[", "]"}]], "InlineFormula",
+      ExpressionUUID -> "04f52f8c-963f-49d1-94e0-783c4a24e700"],
      " \[LineSeparator]SalidaRZ1sig \[Rule] Output file RZ at 1 sigma."
     }]]}
   }]], "Usage",
  GridBoxOptions->{
- GridBoxBackground->{"Columns" -> {{None}}, "Rows" -> {{None}}}},
- CellID->982511436],
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {{None}}, 
+   "RowsIndexed" -> {}}},
+ CellID->982511436,
+ ExpressionUUID -> "b830646a-36fd-45cf-a332-268ec7646a85"],
 
 Cell[" ", "FooterCell"]
 },
@@ -110,7 +119,7 @@ TaggingRules->{
     Left], "HasOptions" -> False, "ExampleCounter" -> 1, "NeedPlatMsgIn" -> 
   None, "RootCaptions" -> "", 
   "Metadata" -> {
-   "built" -> "{2019, 12, 12, 12, 5, 43.538693}", 
+   "built" -> "{2020, 3, 9, 18, 33, 33.999183}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -121,7 +130,7 @@ TaggingRules->{
     "titlemodifier" -> "", "windowtitle" -> "SalidaRZ1sig", "type" -> 
     "Symbol", "uri" -> "SpaceMath/ref/SalidaRZ1sig"}},
 CellContext->"Global`",
-FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+FrontEndVersion->"11.0 for Linux x86 (64-bit) (July 28, 2016)",
 StyleDefinitions->Notebook[{
    Cell[
     StyleData[
@@ -130,7 +139,7 @@ StyleDefinitions->Notebook[{
     StyleData["Input"], CellContext -> "Global`"], 
    Cell[
     StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
-  FrontEndVersion -> "12.0 for Linux x86 (64-bit) (April 8, 2019)", 
+  FrontEndVersion -> "11.0 for Linux x86 (64-bit) (July 28, 2016)", 
   StyleDefinitions -> "Default.nb"]
 ]
 (* End of Notebook Content *)
@@ -144,12 +153,12 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[584, 21, 2294, 53, 70, "AnchorBarGrid",ExpressionUUID->"8695cc0b-67b5-4b29-a055-dfe60a37bd3c",
+Cell[584, 21, 2294, 53, 70, "AnchorBarGrid",
  CellID->1],
-Cell[2881, 76, 169, 6, 70, "ObjectNameGrid",ExpressionUUID->"c5325c29-e684-467f-8b05-712b40acab05"],
-Cell[3053, 84, 328, 9, 70, "Usage",ExpressionUUID->"b830646a-36fd-45cf-a332-268ec7646a85",
+Cell[2881, 76, 289, 11, 70, "ObjectNameGrid"],
+Cell[3173, 89, 503, 13, 70, "Usage",
  CellID->982511436],
-Cell[3384, 95, 23, 0, 70, "FooterCell",ExpressionUUID->"4b7d0dfc-a313-4a89-8891-8751e441bc2d"]
+Cell[3679, 104, 23, 0, 70, "FooterCell"]
 }
 ]
 *)

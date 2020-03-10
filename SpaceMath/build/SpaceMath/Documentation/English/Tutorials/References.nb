@@ -3,32 +3,32 @@
 (*** Wolfram Notebook File ***)
 (* http://www.wolfram.com/nb *)
 
-(* CreatedBy='Mathematica 12.0' *)
+(* CreatedBy='Mathematica 11.0' *)
 
 (*CacheID: 234*)
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      6526,        168]
-NotebookOptionsPosition[      3809,        101]
-NotebookOutlinePosition[      5938,        156]
-CellTagsIndexPosition[      5895,        153]
+NotebookDataLength[     11621,        333]
+NotebookOptionsPosition[      8103,        231]
+NotebookOutlinePosition[     10417,        289]
+CellTagsIndexPosition[     10374,        286]
 WindowTitle->References
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 Cell[BoxData[GridBox[{
-   {Cell["SPACE MATH TUTORIAL", "PacletNameCell",ExpressionUUID->
-     "a2ca6e6b-aeea-4b90-bcc5-4b7abe95bc8a"], Cell[TextData[Cell[BoxData[
+   {Cell["SPACE MATH TUTORIAL", "PacletNameCell"], Cell[TextData[Cell[BoxData[
+    
      ActionMenuBox[
       FrameBox[
        InterpretationBox[Cell[TextData[{
          "URL",
          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
           StripOnInput->False]
-        }],ExpressionUUID->"9a018238-d7fc-4bff-aaf9-6161f5499c18"],
+        }]],
         TextCell[
          Row[{"URL", 
            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
@@ -60,44 +60,174 @@ References.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$30443], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$27803], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/tutorial/References", ".html"]], None}]}]},
       Appearance->None,
       MenuAppearance->Automatic,
       MenuStyle->"URLMenu"]],
-     LineSpacing->{1.4, 0},ExpressionUUID->
-     "842006a3-2a76-4447-b7fe-e87cf1e1412e"]], "AnchorBar",ExpressionUUID->
-     "5713ac8a-06c1-4f0e-8f37-5134b7763e38"]}
+     LineSpacing->{1.4, 0}]], "AnchorBar"]}
   }]], "AnchorBarGrid",
  GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
      Scaled[0.65], {
       Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
    "RowsIndexed" -> {}}},
- CellID->1,ExpressionUUID->"26a1069a-c649-4059-a72c-217451d382a2"],
+ CellID->1],
 
 Cell[CellGroupData[{
 
 Cell["References", "Title",
- CellID->509267359,ExpressionUUID->"ea892929-83a3-4c39-ac16-2f6c1c54aa62"],
+ CellID->509267359,
+ ExpressionUUID -> "d2a6619b-74c4-4434-a65c-c685c40b312a"],
 
-Cell["XXXX.", "Caption",
- CellID->1891092685,ExpressionUUID->"8d8b1188-307b-450e-aa13-1657c1fbc067"],
+Cell["\<\
+1. G. Aad et al. (ATLAS Collaboration), Phys. Lett. B 716, 1 (2012).\
+\>", "Text",
+ CellID->1534169418,
+ ExpressionUUID -> "00185c6a-ddc2-47bf-aecc-07138932a8bd"],
 
-Cell[CellGroupData[{
+Cell["\<\
+2. S. Chatrchyan et al. (CMS Collaboration), Phys. Lett. B 716, 30 (2012).\
+\>", "Text",
+ CellID->2020047632,
+ ExpressionUUID -> "186fa23b-490a-49ca-b760-8a1927513596"],
 
-Cell[BoxData["XXXX"], "Input",
- CellLabel->"In[1]:=",
- CellID->2058623809,ExpressionUUID->"4acd3bd7-3049-4344-a3f9-b101247972cb"],
+Cell["\<\
+3. N. Arkani-Hamed, A. G. Cohen, E. Katz, and A. E. Nelson. The Littlest \
+Higgs. JHEP, 07:034, 2002.\
+\>", "Text",
+ CellID->1662512277,
+ ExpressionUUID -> "393fa977-6972-4f78-9f00-232e2a0b5bf9"],
 
-Cell[BoxData["XXXX"], "Output",
- CellLabel->"Out[1]=",
- CellID->1181321046,ExpressionUUID->"04b539af-d206-47dc-8ba7-50f712d3e2fe"]
-}, Open  ]]
+Cell["\<\
+4. Nima Arkani-Hamed, Andrew G. Cohen, and Howard Georgi. Electroweak \
+symmetry breaking from dimensional deconstruction. Phys. Lett., B513:232\
+\[Dash]240, 2001.\
+\>", "Text",
+ CellID->2047557597,
+ ExpressionUUID -> "fb4f46d5-0adb-4e27-a1d8-406a88d58f13"],
+
+Cell["\<\
+5. Paul H. Frampton and Sheldon L. Glashow. Chiral color: An alternative to \
+the standard model. Physics Letters B, 190(1):157 \[Dash] 161, 1987.\
+\>", "Text",
+ CellID->1567665676,
+ ExpressionUUID -> "646fbdeb-45e0-4b0f-bb1d-4bb4639f24b7"],
+
+Cell["\<\
+6. Howard Georgi and Marie Machacek. Doubly charged higgs bosons. Nuclear \
+Physics B, 262(3):463 \[Dash] 477, 1985.\
+\>", "Text",
+ CellID->2111401125,
+ ExpressionUUID -> "27c477a3-10c5-46cf-a181-2de774f0cf18"],
+
+Cell["\<\
+7. Haim Harari. A Schematic Model of Quarks and Leptons. Phys. Lett., 86B:83\
+\[Dash]86, 1979.\
+\>", "Text",
+ CellID->1933113118,
+ ExpressionUUID -> "83203aa1-ed3d-4506-9993-2f3c824d42fe"],
+
+Cell["\<\
+8. Haim Harari and Nathan Seiberg. The Rishon Model. Nucl. Phys., B204:141\
+\[Dash]167, 1982.\
+\>", "Text",
+ CellID->1921604857,
+ ExpressionUUID -> "033f6ea1-c839-4f22-bf42-30356fde40c5"],
+
+Cell["\<\
+9. Gordon kane John F. Gunion, Howard E. Haber and Sally Dawson. The Higgs \
+Hunter\[CloseCurlyQuote]s Guide. Frontiers in Physics, 80. Westview Press, \
+2000.\
+\>", "Text",
+ CellID->1612549363,
+ ExpressionUUID -> "52f0725d-fb33-449f-880e-35e26b4d1d30"],
+
+Cell["\<\
+10. Hironari Miyazawa. Baryon Number Changing Currents*. Progress of \
+Theoretical Physics, 36(6):1266\[Dash]1276, 12 1966.\
+\>", "Text",
+ CellID->1735352583,
+ ExpressionUUID -> "c43a40c0-6a9f-4641-b0f7-6e10f8e3d616"],
+
+Cell["\<\
+11. Rabindra N. Mohapatra and Jogesh C. Pati. Left-Right Gauge Symmetry and \
+an Isoconjugate Model of CP Violation. Phys. Rev., D11:566\[Dash]571, 1975.\
+\>", "Text",
+ CellID->1577106694,
+ ExpressionUUID -> "eee9a5bf-a3f0-494b-805c-0189f06925bf"],
+
+Cell["\<\
+12. Jogesh C. Pati and Abdus Salam. Lepton number as the fourth \
+\[CloseCurlyDoubleQuote]color\[CloseCurlyDoubleQuote]. Phys. Rev. D, 10:275\
+\[Dash]289, Jul 1974.\
+\>", "Text",
+ CellID->1447173129,
+ ExpressionUUID -> "7f04efc6-43bd-42d1-adc4-9e8d795a8c2d"],
+
+Cell["\<\
+13. A.M. Polyakov. Quark confinement and topology of gauge theories. Nuclear \
+Physics B, 120(3):429 \[Dash] 458, 1977.\
+\>", "Text",
+ CellID->1172710755,
+ ExpressionUUID -> "f5144d93-8335-4ab4-a239-1a1e0502d7ff"],
+
+Cell["\<\
+14. Lisa Randall and Raman Sundrum. A Large mass hierarchy from a small extra \
+dimension. Phys. Rev. Lett., 83:3370\[Dash]3373, 1999.\
+\>", "Text",
+ CellID->1864629732,
+ ExpressionUUID -> "333c73f6-c292-49d7-8f81-58b2f092a732"],
+
+Cell["\<\
+15. Leonard Susskind. Dynamics of spontaneous symmetry breaking in the \
+weinberg-salam theory. Phys. Rev. D, 20:2619\[Dash]2625, Nov 1979.\
+\>", "Text",
+ CellID->89641942,
+ ExpressionUUID -> "e93f82d4-e708-4d6a-b2d9-95c17a26aab7"],
+
+Cell["\<\
+16. S. Weinberg. Implications of dynamical symmetry breaking: An addendum. \
+Phys. Rev. D, 19:1277\[Dash]1280, Feb 1979. \
+\>", "Text",
+ CellID->2098362344,
+ ExpressionUUID -> "2cec6ca5-d482-416f-aceb-fa7754a5ef52"],
+
+Cell["17. Yang Zhang EasyScanHEP collaboration. Easyscanhep, 2017.", "Text",
+ CellID->1356319899,
+ ExpressionUUID -> "07fded85-4b72-42c5-b496-54cc80c302cd"],
+
+Cell["\<\
+18. Florian Bernlochner Sanjay Bloor Torsten Bringmann Andy Buckley Marcin \
+Chrzaszcz Jan Conrad Jonathan M. Cornell Joakim Edsj Ben Farmer Andrew Fowlie \
+Tomas Gonzalo Julia Harz Sebastian Hoof Paul Jackson Felix Kahlhoe-fer Anders \
+Kvellestad Nazila Mahmoudi Gregory Martinez James McKay Are Raklev \
+Christopher Rogan Roberto Ruiz de Austri Pat Scott Nicola Serra Roberto \
+Trotta Christoph Weniger Martin White Sebas- tian Wild Peter Athron, Csaba \
+Balzs. Gambit, 2017.\
+\>", "Text",
+ CellID->1522939246,
+ ExpressionUUID -> "358eedd2-d126-4265-8492-47f18d84de41"],
+
+Cell["\<\
+19. Manuel Drees Herbert Dreiner Florian Domingo Jong Soo Kim Frederic Ponzca \
+Krzysztof Rolbiecki Roberto Ruiz de Austri Liangliang Shang Jamie Tattersall \
+Simon Zeren Wang Thorsten Weber Yuanfang Yue Daniel Dercks, Nishita Desai. \
+Checkmate, 2014.\
+\>", "Text",
+ CellID->151973800,
+ ExpressionUUID -> "f3e47af5-33e8-498a-91a1-fa8475baec1e"],
+
+Cell["\<\
+20. A. M. Sirunyan et al. [CMS Collaboration], Eur. Phys. J. C 79, no. 5, 421 \
+(2019) doi:10.1140/epjc/s10052-019-6909-y [arXiv:1809.10733 [hep-ex]].\
+\>", "Text",
+ CellID->1559621625,
+ ExpressionUUID -> "f3c4dfb0-f6ab-4f27-8e98-46a13ebd9d7a"]
 }, Open  ]],
 
-Cell[" ", "FooterCell",ExpressionUUID->"f1e5a240-f236-46d7-b03b-6161deedd325"]
+Cell[" ", "FooterCell"]
 },
 Saveable->False,
 ScreenStyleEnvironment->"Working",
@@ -113,17 +243,20 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2019, 12, 12, 12, 5, 59.050782}", 
+   "built" -> "{2020, 3, 9, 18, 33, 50.765168}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
     "Space Math Tutorial", "language" -> "en", "paclet" -> "SpaceMath", 
-    "status" -> "None", "summary" -> "XXXX.", "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$30394, "title" -> 
+    "status" -> "None", "summary" -> 
+    "1. G. Aad et al. (ATLAS Collaboration), Phys. Lett. B 716, 1 (2012). 2. \
+S. Chatrchyan et al. (CMS Collaboration), Phys. Lett. B 716, 30 (2012). 3. N. \
+Arkani-Hamed, A. G. Cohen, E. Katz, and A. E. Nelson. The Littlest Higgs. \
+JHEP, 07:034, 2002.", "synonyms" -> {}, "tabletags" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$27724, "title" -> 
     "References", "titlemodifier" -> "", "windowtitle" -> "References", 
-    "type" -> "Tutorial", "uri" -> "SpaceMath/tutorial/References", 
-    "WorkflowDockedCell" -> ""}, "SearchTextTranslated" -> ""},
-FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+    "type" -> "Tutorial", "uri" -> "SpaceMath/tutorial/References"}},
+FrontEndVersion->"11.0 for Linux x86 (64-bit) (July 28, 2016)",
 StyleDefinitions->Notebook[{
    Cell[
     StyleData[
@@ -141,7 +274,7 @@ StyleDefinitions->Notebook[{
    Cell[
     StyleData["TutorialRelatedLinksSection"], 
     CellGroupingRules -> {"SectionGrouping", 30}]}, Visible -> False, 
-  FrontEndVersion -> "12.0 for Linux x86 (64-bit) (April 8, 2019)", 
+  FrontEndVersion -> "11.0 for Linux x86 (64-bit) (July 28, 2016)", 
   StyleDefinitions -> "Default.nb"]
 ]
 (* End of Notebook Content *)
@@ -155,24 +288,55 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[582, 21, 2601, 56, 55, "AnchorBarGrid",ExpressionUUID->"26a1069a-c649-4059-a72c-217451d382a2",
+Cell[582, 21, 2313, 54, 70, "AnchorBarGrid",
  CellID->1],
 Cell[CellGroupData[{
-Cell[3208, 81, 102, 1, 65, "Title",ExpressionUUID->"ea892929-83a3-4c39-ac16-2f6c1c54aa62",
+Cell[2920, 79, 106, 2, 70, "Title",
  CellID->509267359],
-Cell[3313, 84, 100, 1, 38, "Caption",ExpressionUUID->"8d8b1188-307b-450e-aa13-1657c1fbc067",
- CellID->1891092685],
-Cell[CellGroupData[{
-Cell[3438, 89, 129, 2, 29, "Input",ExpressionUUID->"4acd3bd7-3049-4344-a3f9-b101247972cb",
- CellID->2058623809],
-Cell[3570, 93, 130, 2, 38, "Output",ExpressionUUID->"04b539af-d206-47dc-8ba7-50f712d3e2fe",
- CellID->1181321046]
-}, Open  ]]
+Cell[3029, 83, 172, 4, 70, "Text",
+ CellID->1534169418],
+Cell[3204, 89, 178, 4, 70, "Text",
+ CellID->2020047632],
+Cell[3385, 95, 205, 5, 70, "Text",
+ CellID->1662512277],
+Cell[3593, 102, 267, 6, 70, "Text",
+ CellID->2047557597],
+Cell[3863, 110, 250, 5, 70, "Text",
+ CellID->1567665676],
+Cell[4116, 117, 220, 5, 70, "Text",
+ CellID->2111401125],
+Cell[4339, 124, 198, 5, 70, "Text",
+ CellID->1933113118],
+Cell[4540, 131, 197, 5, 70, "Text",
+ CellID->1921604857],
+Cell[4740, 138, 263, 6, 70, "Text",
+ CellID->1612549363],
+Cell[5006, 146, 227, 5, 70, "Text",
+ CellID->1735352583],
+Cell[5236, 153, 257, 5, 70, "Text",
+ CellID->1577106694],
+Cell[5496, 160, 268, 6, 70, "Text",
+ CellID->1447173129],
+Cell[5767, 168, 223, 5, 70, "Text",
+ CellID->1172710755],
+Cell[5993, 175, 238, 5, 70, "Text",
+ CellID->1864629732],
+Cell[6234, 182, 241, 5, 70, "Text",
+ CellID->89641942],
+Cell[6478, 189, 225, 5, 70, "Text",
+ CellID->2098362344],
+Cell[6706, 196, 156, 2, 70, "Text",
+ CellID->1356319899],
+Cell[6865, 200, 581, 10, 70, "Text",
+ CellID->1522939246],
+Cell[7449, 212, 355, 7, 70, "Text",
+ CellID->151973800],
+Cell[7807, 221, 254, 5, 70, "Text",
+ CellID->1559621625]
 }, Open  ]],
-Cell[3727, 99, 78, 0, 43, "FooterCell",ExpressionUUID->"f1e5a240-f236-46d7-b03b-6161deedd325"]
+Cell[8076, 229, 23, 0, 70, "FooterCell"]
 }
 ]
 *)
 
 (* End of internal cache information *)
-

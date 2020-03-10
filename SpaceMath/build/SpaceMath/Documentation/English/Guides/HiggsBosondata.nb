@@ -3,70 +3,123 @@
 (*** Wolfram Notebook File ***)
 (* http://www.wolfram.com/nb *)
 
-(* CreatedBy='Mathematica 12.0' *)
+(* CreatedBy='Mathematica 11.0' *)
 
 (*CacheID: 234*)
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     11344,        339]
-NotebookOptionsPosition[      8576,        278]
-NotebookOutlinePosition[     10236,        319]
-CellTagsIndexPosition[     10193,        316]
+NotebookDataLength[     13681,        412]
+NotebookOptionsPosition[     11451,        351]
+NotebookOutlinePosition[     13111,        392]
+CellTagsIndexPosition[     13068,        389]
 WindowTitle->Higgs Boson data
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 Cell[BoxData[GridBox[{
-   {Cell["SPACE MATH GUIDE", "PacletNameCell"], Cell[TextData[Cell[BoxData[
-     ActionMenuBox[
-      FrameBox[
-       InterpretationBox[Cell[TextData[{
-         "URL",
-         StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
-          StripOnInput->False]
-        }]],
-        TextCell[
-         Row[{"URL", 
-           Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
-       StripOnInput->False], {"\<\"SpaceMath/guide/HiggsBosondata\"\>":>
-      None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
-      Module[{DocumentationSearch`Private`nb$}, 
-       DocumentationSearch`Private`nb$ = NotebookPut[
-          Notebook[{
-            Cell["SpaceMath/guide/HiggsBosondata"]}, Visible -> False]]; 
-       SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
-       FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
-       NotebookClose[DocumentationSearch`Private`nb$]; Null], 
-      Delimiter, "\<\"Copy web URL\"\>":>
-      Module[{DocumentationSearch`Private`nb$}, 
-       DocumentationSearch`Private`nb$ = NotebookPut[
-          Notebook[{
-            Cell[
-             BoxData[
-              MakeBoxes[
-               Hyperlink[
-               "http://reference.wolfram.com/language/SpaceMath/guide/\
+   {Cell["SPACE MATH GUIDE", "PacletNameCell"], Cell[TextData[{
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "Tutorials",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"Tutorials", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {
+       RowBox[{
+        RowBox[{"{", "}"}], "\[LeftDoubleBracket]", "1", 
+        "\[RightDoubleBracket]"}]:>Documentation`HelpLookup[
+        If[
+         StringMatchQ[
+          Part[{}, 2], "paclet*"], 
+         Part[
+          Part[{{}, {}, {}}, 1], 2], 
+         StringJoin["paclet:", 
+          Part[
+           Part[{{}, {}, {}}, 1], 2]]]], 
+       RowBox[{
+        RowBox[{"{", "}"}], "\[LeftDoubleBracket]", "1", 
+        "\[RightDoubleBracket]"}]:>Documentation`HelpLookup[
+        If[
+         StringMatchQ[
+          Part[{}, 2], "paclet*"], 
+         Part[
+          Part[{{}, {}, {}}, 2], 2], 
+         StringJoin["paclet:", 
+          Part[
+           Part[{{}, {}, {}}, 2], 2]]]], 
+       RowBox[{
+        RowBox[{"{", "}"}], "\[LeftDoubleBracket]", "1", 
+        "\[RightDoubleBracket]"}]:>Documentation`HelpLookup[
+        If[
+         StringMatchQ[
+          Part[{}, 2], "paclet*"], 
+         Part[
+          Part[{{}, {}, {}}, 3], 2], 
+         StringJoin["paclet:", 
+          Part[
+           Part[{{}, {}, {}}, 3], 2]]]]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"GuideTutorial"]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "URL",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"URL", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"SpaceMath/guide/HiggsBosondata\"\>":>
+       None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell["SpaceMath/guide/HiggsBosondata"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+       Delimiter, "\<\"Copy web URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell[
+              BoxData[
+               MakeBoxes[
+                Hyperlink[
+                "http://reference.wolfram.com/language/SpaceMath/guide/\
 HiggsBosondata.html"], StandardForm]], "Input", TextClipboardType -> 
-             "PlainText"]}, Visible -> False]]; 
-       SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
-       FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
-       NotebookClose[DocumentationSearch`Private`nb$]; 
-       Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
-        NotebookLocate[{
-          URL[
-           StringJoin[
-            If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$7219], 
-             "http://reference.wolfram.com/system-modeler/", 
-             "http://reference.wolfram.com/language/"], 
-            "SpaceMath/guide/HiggsBosondata", ".html"]], None}]}]},
-      Appearance->None,
-      MenuAppearance->Automatic,
-      MenuStyle->"URLMenu"]],
-     LineSpacing->{1.4, 0}]], "AnchorBar"]}
+              "PlainText"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; 
+        Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
+         NotebookLocate[{
+           URL[
+            StringJoin[
+             If[
+              TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$4005], 
+              "http://reference.wolfram.com/system-modeler/", 
+              "http://reference.wolfram.com/language/"], 
+             "SpaceMath/guide/HiggsBosondata", ".html"]], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"]],
+      LineSpacing->{1.4, 0}]
+    }], "AnchorBar"]}
   }]], "AnchorBarGrid",
  GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
      Scaled[0.65], {
@@ -77,28 +130,33 @@ HiggsBosondata.html"], StandardForm]], "Input", TextClipboardType ->
 Cell[CellGroupData[{
 
 Cell["Higgs Boson data", "GuideTitle",
- CellID->942062912],
+ CellID->942062912,
+ ExpressionUUID -> "1cf58ebc-fd8f-44bf-946e-5568fe607611"],
 
 Cell["\<\
 The implementation of the Higgs boson data within the SpaceMath code , was \
 closely following the reference : arXiv:1809.10733v2[hep-ex], \
 10.1140/epjc/s10052-019-6909-y.   \
 \>", "GuideAbstract",
- CellID->2001916300],
+ CellID->2001916300,
+ ExpressionUUID -> "b1bafb2d-096b-49b3-bf06-9aae5e77c91d"],
 
 Cell[TextData[StyleBox["Signal strength modifiers \[Mu]", "Subsection"]], \
 "GuideAbstract",
- CellID->1322507612],
+ CellID->1322507612,
+ ExpressionUUID -> "228c9d26-6897-4abf-9333-b66de22e1011"],
 
 Cell[TextData[{
  "For a production process ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["\[Mu]", "i"], TraditionalForm]]],
+   SubscriptBox["\[Mu]", "i"], TraditionalForm]],
+  ExpressionUUID -> "1ece5382-6d69-48d4-a7eb-5e7214393e20"],
  " and a decay ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["\[Mu]", "j"], TraditionalForm]]],
+   SubscriptBox["\[Mu]", "j"], TraditionalForm]],
+  ExpressionUUID -> "d2c1b0e9-5fa8-474a-b4d5-dc196765add9"],
  " , the signal strength is defined as\n",
  Cell[BoxData[
   FormBox[
@@ -110,8 +168,11 @@ Cell[TextData[{
      RowBox[{"\[Sigma]", "(", 
       RowBox[{"i", "\[Rule]", " ", 
        SuperscriptBox["h", "SM"]}], ")"}]]}], TraditionalForm]],
-  FontWeight->"Bold"],
+  FontSize->12,
+  FontWeight->"Bold",
+  ExpressionUUID -> "b5465cc7-fe43-4505-bbb9-eb777bde7ece"],
  StyleBox[" and ",
+  FontSize->12,
   FontWeight->"Bold"],
  Cell[BoxData[
   FormBox[
@@ -124,55 +185,67 @@ Cell[TextData[{
       RowBox[{
        SuperscriptBox["h", "SM"], "\[Rule]", "j"}], ")"}]]}], 
    TraditionalForm]],
-  FontWeight->"Bold"],
- ".\nrespectively, where \[Sigma](i\[Rule] h)  and BR(h\[Rule]j) are the \
-Higgs boson production cross section and the\nbranching ratio of the Higgs \
-boson decaying into j-channel, here i=ggh, VBF, Wh,\nZh, tth and j =bb\:0304, \
-",
+  FontSize->12,
+  FontWeight->"Bold",
+  ExpressionUUID -> "b1760cc2-1b43-4903-b92e-404f71924146"],
+ StyleBox[".",
+  FontSize->12],
+ "\nrespectively, where \[Sigma](i\[Rule] h)  and BR(h\[Rule]j) are the Higgs \
+boson production cross section and the\nbranching ratio of the Higgs boson \
+decaying into j-channel, here i=ggh, VBF, Wh,\nZh, tth and j =bb\:0304, ",
  Cell[BoxData[
   FormBox[
    RowBox[{
     RowBox[{"SuperMinus", "[", "\[Tau]", "]"}], 
-    SuperscriptBox["\[Tau]", "+"]}], TraditionalForm]]],
+    SuperscriptBox["\[Tau]", "+"]}], TraditionalForm]],
+  ExpressionUUID -> "5820bd73-121f-4371-8812-dfd88a04d77f"],
  " , ",
  Cell[BoxData[
   FormBox[
-   SuperscriptBox["WW", "*"], TraditionalForm]]],
+   SuperscriptBox["WW", "*"], TraditionalForm]],
+  ExpressionUUID -> "0e2e92ea-dc87-4064-a4c6-532f55df8169"],
  " , ",
  Cell[BoxData[
   FormBox[
-   SuperscriptBox["ZZ", "*"], TraditionalForm]]],
+   SuperscriptBox["ZZ", "*"], TraditionalForm]],
+  ExpressionUUID -> "5f0aefc1-e7e7-404e-a222-efbbeabcbc0e"],
  " , \[Gamma]\[Gamma], gg, ",
  Cell[BoxData[
   FormBox[
    RowBox[{
     SuperscriptBox["\[Mu]", "-"], 
-    SuperscriptBox["\[Mu]", "+"]}], TraditionalForm]]],
+    SuperscriptBox["\[Mu]", "+"]}], TraditionalForm]],
+  ExpressionUUID -> "5eb5a2a1-cd78-4414-afe3-e51e40d1dbbe"],
  "\[NonBreakingSpace]",
  StyleBox["\[FilledVerySmallSquare]", "InlineSeparator"],
  " ",
  "In the special case when\n",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["\[Mu]", "i"], TraditionalForm]]],
+   SubscriptBox["\[Mu]", "i"], TraditionalForm]],
+  ExpressionUUID -> "d009bee2-9a11-41f4-9aa6-91fceba9f193"],
  " ",
  Cell[BoxData[
   FormBox[
    RowBox[{"=", 
-    SubscriptBox["\[Mu]", "j"]}], TraditionalForm]]],
+    SubscriptBox["\[Mu]", "j"]}], TraditionalForm]],
+  ExpressionUUID -> "7d4b7705-a914-428a-8ec5-3f42f3347a99"],
  " =1, the SM is recovered. Because \[Sigma] and BR cannot be independently \
 mea-\nsured without additional assumptions and only the product ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["\[Mu]", "i"], TraditionalForm]]],
+   SubscriptBox["\[Mu]", "i"], TraditionalForm]],
+  ExpressionUUID -> "45b629bc-78dd-42ae-a90b-8d1a9698a8a0"],
  " \[CenterDot] ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["\[Mu]", "j"], TraditionalForm]]],
+   SubscriptBox["\[Mu]", "j"], TraditionalForm]],
+  ExpressionUUID -> "2c5ba440-d168-4194-b087-b70caa617424"],
  " can be extracted\nexperimentally, the signal strength ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["\[Mu]", "ij"], TraditionalForm]]],
+   SubscriptBox["\[Mu]", "ij"], TraditionalForm]],
+  ExpressionUUID -> "6a79eb82-5b58-4b1e-8381-4ebf39c087b1"],
  " can be denied as follows:\n",
  Cell[BoxData[
   FormBox[
@@ -192,7 +265,8 @@ mea-\nsured without additional assumptions and only the product ",
        RowBox[{
         SuperscriptBox["h", "SM"], "\[Rule]", " ", "j"}], ")"}]}]]}], 
    TraditionalForm]],
-  FontWeight->"Bold"],
+  FontWeight->"Bold",
+  ExpressionUUID -> "9ce504f0-d851-4978-840b-8a879a1f8b79"],
  ".\nIn this version of ",
  StyleBox["SpaceMath",
   FontWeight->"Bold",
@@ -218,46 +292,40 @@ fusion and we use the narrow width approximation\n",
         RowBox[{
          SuperscriptBox["h", "SM"], "\[Rule]", " ", "j"}], ")"}]}]]}], ",", 
     "\[IndentingNewLine]"}], TraditionalForm]],
-  FontWeight->"Bold"]
+  FontWeight->"Bold",
+  ExpressionUUID -> "4b134be0-101b-40c8-9c97-2d4f396ebe93"]
 }], "GuideText",
- CellID->1567743671],
+ CellID->1567743671,
+ ExpressionUUID -> "90a914d3-b217-40ea-b0a7-3dd1066db436"],
 
 Cell[CellGroupData[{
 
 Cell[TextData[{
  StyleBox["H", "Subsection"],
  StyleBox["iggs boson coupling modifiers ", "Subsection"],
- StyleBox[Cell[BoxData["\[Kappa]"], "Subsection"], "Subsection"]
+ StyleBox[Cell[BoxData["\[Kappa]"], "Subsection",
+  ExpressionUUID -> "90584387-4060-4b0d-9134-d687cf6c39f3"], "Subsection"]
 }], "GuideFunctionsSubsection",
- CellID->2082881751],
+ CellID->2082881751,
+ ExpressionUUID -> "3d9b6046-1fe8-43b1-95c1-4ff76630f2b3"],
 
 Cell[TextData[{
- "The coupling modifiers ",
- Cell[BoxData[
-  FormBox[
-   SubscriptBox["\[Kappa]", "i"], TraditionalForm]]],
- ", are introduced to quantify the deviations of the SM - like\nHiggs boson \
-to other particles.The coupling modifiers ",
- Cell[BoxData[
-  FormBox[
-   SubscriptBox["\[Kappa]", "i"], TraditionalForm]]],
- ", for a production or a\ndecay mode, are defined as follows :\n",
- Cell[BoxData[
-  FormBox[
-   StyleBox[
-    RowBox[{
-     SubsuperscriptBox["\[Kappa]", "i", "2"], "=", 
-     RowBox[{
-      FractionBox[
-       RowBox[{"\[CapitalGamma]", "(", 
-        RowBox[{"h", "\[Rule]", " ", "j"}], ")"}], 
-       RowBox[{"\[CapitalGamma]", "(", 
-        RowBox[{
-         SuperscriptBox["h", "SM"], "\[Rule]", " ", "j"}], ")"}]], "."}]}],
-    FontWeight->"Bold"], TraditionalForm]]]
+ StyleBox["The coupling modifiers ", "GuideTutorial",
+  FontWeight->"Plain"],
+ "GuideTutorial",
+ StyleBox[", are introduced to quantify the deviations of the SM - like\n\
+Higgs boson to other particles.The coupling modifiers ", "GuideTutorial",
+  FontWeight->"Plain"],
+ "GuideTutorial",
+ StyleBox[", for a production or a\ndecay mode, are defined as follows :\n", 
+  "GuideTutorial",
+  FontWeight->"Plain"],
+ "GuideTutorial"
 }], "Text",
  TextAlignment->Center,
- CellID->1422965881]
+ TextJustification->0.25,
+ CellID->1422965881,
+ ExpressionUUID -> "346953d6-a187-4753-8920-92d3e7b1380f"]
 }, Open  ]]
 }, Open  ]],
 
@@ -265,8 +333,13 @@ Cell[CellGroupData[{
 
 Cell[TextData[{
  Cell[BoxData[
-  TemplateBox[{6},
-   "Spacer1"]]],
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
  "Reference"
 }], "GuideReferenceSection",
  WholeCellGroupOpener->True],
@@ -290,7 +363,7 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2019, 12, 12, 12, 5, 5.310727}", 
+   "built" -> "{2020, 3, 9, 18, 32, 57.222372}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -299,11 +372,11 @@ TaggingRules->{
     "The implementation of the Higgs boson data within the SpaceMath code , \
 was closely following the reference : arXiv:1809.10733v2[hep-ex], \
 10.1140/epjc/s10052-019-6909-y. ", "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$7153, "title" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$3939, "title" -> 
     "Higgs Boson data", "titlemodifier" -> "", "windowtitle" -> 
     "Higgs Boson data", "type" -> "Guide", "uri" -> 
     "SpaceMath/guide/HiggsBosondata"}},
-FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+FrontEndVersion->"11.0 for Linux x86 (64-bit) (July 28, 2016)",
 StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "Reference.nb", 
   CharacterEncoding -> "UTF-8"]
 ]
@@ -318,29 +391,29 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[588, 21, 2308, 53, 70, "AnchorBarGrid",ExpressionUUID->"58b81f47-0756-4842-abff-318f2fb24aa0",
+Cell[588, 21, 4006, 106, 70, "AnchorBarGrid",
  CellID->1],
 Cell[CellGroupData[{
-Cell[2921, 78, 58, 1, 70, "GuideTitle",ExpressionUUID->"1cf58ebc-fd8f-44bf-946e-5568fe607611",
+Cell[4619, 131, 117, 2, 70, "GuideTitle",
  CellID->942062912],
-Cell[2982, 81, 229, 5, 70, "GuideAbstract",ExpressionUUID->"b1bafb2d-096b-49b3-bf06-9aae5e77c91d",
+Cell[4739, 135, 288, 6, 70, "GuideAbstract",
  CellID->2001916300],
-Cell[3214, 88, 113, 2, 70, "GuideAbstract",ExpressionUUID->"228c9d26-6897-4abf-9333-b66de22e1011",
+Cell[5030, 143, 172, 3, 70, "GuideAbstract",
  CellID->1322507612],
-Cell[3330, 92, 3877, 130, 70, "GuideText",ExpressionUUID->"90a914d3-b217-40ea-b0a7-3dd1066db436",
+Cell[5205, 148, 4913, 150, 70, "GuideText",
  CellID->1567743671],
 Cell[CellGroupData[{
-Cell[7232, 226, 222, 5, 70, "GuideFunctionsSubsection",ExpressionUUID->"3d9b6046-1fe8-43b1-95c1-4ff76630f2b3",
+Cell[10143, 302, 341, 7, 70, "GuideFunctionsSubsection",
  CellID->2082881751],
-Cell[7457, 233, 857, 26, 70, "Text",ExpressionUUID->"346953d6-a187-4753-8920-92d3e7b1380f",
+Cell[10487, 311, 582, 16, 70, "Text",
  CellID->1422965881]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[8363, 265, 137, 6, 70, "GuideReferenceSection",ExpressionUUID->"eeab7bce-d5dc-4f66-99fc-8f7e3a8d0760"],
-Cell[8503, 273, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"6144cf13-55d4-42c5-b2f9-6f57bd801b03"]
+Cell[11118, 333, 257, 11, 70, "GuideReferenceSection"],
+Cell[11378, 346, 31, 0, 70, "SectionHeaderSpacer"]
 }, Open  ]],
-Cell[8549, 276, 23, 0, 70, "FooterCell",ExpressionUUID->"244266e7-2f34-4de0-9158-4b7a82c4e232"]
+Cell[11424, 349, 23, 0, 70, "FooterCell"]
 }
 ]
 *)

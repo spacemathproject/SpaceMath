@@ -3,17 +3,17 @@
 (*** Wolfram Notebook File ***)
 (* http://www.wolfram.com/nb *)
 
-(* CreatedBy='Mathematica 12.0' *)
+(* CreatedBy='Mathematica 11.0' *)
 
 (*CacheID: 234*)
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      7079,        172]
-NotebookOptionsPosition[      4314,        112]
-NotebookOutlinePosition[      6795,        169]
-CellTagsIndexPosition[      6752,        166]
+NotebookDataLength[      7218,        182]
+NotebookOptionsPosition[      4673,        122]
+NotebookOutlinePosition[      7153,        179]
+CellTagsIndexPosition[      7110,        176]
 WindowTitle->RgamRandom
 WindowFrame->Normal*)
 
@@ -59,7 +59,7 @@ RgamRandom.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$15222], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$11976], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/ref/RgamRandom", ".html"]], None}]}]},
@@ -77,8 +77,13 @@ RgamRandom.html"], StandardForm]], "Input", TextClipboardType ->
 Cell[TextData[{
  Cell["RgamRandom", "ObjectName"],
  Cell[BoxData[
-  TemplateBox[{8},
-   "Spacer1"]]],
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{8, 0}],
+    CacheGraphics->False],
+   Spacer[8]]]],
  Cell[BoxData[""], "ObjectNameTranslation"]
 }], "ObjectNameGrid"],
 
@@ -90,11 +95,13 @@ Cell[BoxData[GridBox[{
        "ghtt_", ",", "ghbb_", ",", "ghWW_", ",", "gCH_", ",", "mCH_", ",", 
         "x1_", ",", "x1min_", ",", "x1max_", ",", "x2_", ",", "x2min_", ",", 
         "x2max_", ",", "x3_", ",", "x3min_", ",", "x3max_", ",", "x4_", ",", 
-        "x4min_", ",", "x4max_", ",", "NN_"}], "]"}]], "InlineFormula"],
+        "x4min_", ",", "x4max_", ",", "NN_"}], "]"}]], "InlineFormula",
+      ExpressionUUID -> "fd99e055-93ef-49c3-8873-667c1f6d5ef2"],
      " \[LineSeparator]This command generates random points that agree with \
 the signal strength ",
      Cell[BoxData[
-      SubscriptBox["R", "\[Gamma]"]], "Input"],
+      SubscriptBox["R", "\[Gamma]"]], "Input",
+      ExpressionUUID -> "1cc20691-181c-4746-81e7-8c1b34830012"],
      " measurements. The arguments ghtt, ghbb, ghWW, gCH stand for the \
 SM-like Higgs boson to top, bottom quarks, W gauge boson and a charged scalar \
 boson couplings, respectively. While xi, with i= 1, 2, 3, 4, are the \
@@ -105,8 +112,11 @@ generate. Here [[i]] indicates the confidence level: i=1 (2) at 1\[Sigma] (2\
     }]]}
   }]], "Usage",
  GridBoxOptions->{
- GridBoxBackground->{"Columns" -> {{None}}, "Rows" -> {{None}}}},
- CellID->982511436],
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {{None}}, 
+   "RowsIndexed" -> {}}},
+ CellID->982511436,
+ ExpressionUUID -> "2785427b-74e7-446c-8d7c-dbe1415a4343"],
 
 Cell[" ", "FooterCell"]
 },
@@ -125,7 +135,7 @@ TaggingRules->{
     Left], "HasOptions" -> False, "ExampleCounter" -> 1, "NeedPlatMsgIn" -> 
   None, "RootCaptions" -> "", 
   "Metadata" -> {
-   "built" -> "{2019, 12, 12, 12, 5, 24.079400}", 
+   "built" -> "{2020, 3, 9, 18, 33, 13.844533}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -145,7 +155,7 @@ output file will be saved in $UserDocumentsDirectory.", "synonyms" -> {},
     "windowtitle" -> "RgamRandom", "type" -> "Symbol", "uri" -> 
     "SpaceMath/ref/RgamRandom"}},
 CellContext->"Global`",
-FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+FrontEndVersion->"11.0 for Linux x86 (64-bit) (July 28, 2016)",
 StyleDefinitions->Notebook[{
    Cell[
     StyleData[
@@ -154,7 +164,7 @@ StyleDefinitions->Notebook[{
     StyleData["Input"], CellContext -> "Global`"], 
    Cell[
     StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
-  FrontEndVersion -> "12.0 for Linux x86 (64-bit) (April 8, 2019)", 
+  FrontEndVersion -> "11.0 for Linux x86 (64-bit) (July 28, 2016)", 
   StyleDefinitions -> "Default.nb"]
 ]
 (* End of Notebook Content *)
@@ -168,12 +178,12 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[582, 21, 2286, 53, 70, "AnchorBarGrid",ExpressionUUID->"106b70ba-8ce4-464b-a98c-c854ce0d57b6",
+Cell[582, 21, 2286, 53, 70, "AnchorBarGrid",
  CellID->1],
-Cell[2871, 76, 167, 6, 70, "ObjectNameGrid",ExpressionUUID->"a36220a3-21aa-4925-92dc-caf81f537bd9"],
-Cell[3041, 84, 1243, 24, 70, "Usage",ExpressionUUID->"2785427b-74e7-446c-8d7c-dbe1415a4343",
+Cell[2871, 76, 287, 11, 70, "ObjectNameGrid"],
+Cell[3161, 89, 1482, 29, 70, "Usage",
  CellID->982511436],
-Cell[4287, 110, 23, 0, 70, "FooterCell",ExpressionUUID->"00495e81-19cf-43d4-bd5a-f2e635de505e"]
+Cell[4646, 120, 23, 0, 70, "FooterCell"]
 }
 ]
 *)

@@ -3,17 +3,17 @@
 (*** Wolfram Notebook File ***)
 (* http://www.wolfram.com/nb *)
 
-(* CreatedBy='Mathematica 12.0' *)
+(* CreatedBy='Mathematica 11.0' *)
 
 (*CacheID: 234*)
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      9532,        280]
-NotebookOptionsPosition[      6510,        207]
-NotebookOutlinePosition[      8601,        262]
-CellTagsIndexPosition[      8558,        259]
+NotebookDataLength[      9452,        287]
+NotebookOptionsPosition[      6923,        214]
+NotebookOutlinePosition[      9013,        269]
+CellTagsIndexPosition[      8970,        266]
 WindowTitle->SampleCouplings
 WindowFrame->Normal*)
 
@@ -60,7 +60,7 @@ SampleCouplings.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$30695], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$28063], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/tutorial/SampleCouplings", ".html"]], None}]}]},
@@ -78,10 +78,12 @@ SampleCouplings.html"], StandardForm]], "Input", TextClipboardType ->
 Cell[CellGroupData[{
 
 Cell["SampleCouplings", "Title",
- CellID->509267359],
+ CellID->509267359,
+ ExpressionUUID -> "0495cd88-c981-46ac-bdb4-f148bc895406"],
 
 Cell["XXXX.", "Caption",
- CellID->1891092685],
+ CellID->1891092685,
+ ExpressionUUID -> "369b2822-cf6a-48aa-bea6-3527f557f7a3"],
 
 Cell[CellGroupData[{
 
@@ -115,7 +117,8 @@ Cell[BoxData[
        RowBox[{"mt", "/", "vev"}], "*", "Att"}], ")"}]}], ")"}]}]}]], "Input",\
 
  CellLabel->"In[1]:=",
- CellID->2058623809],
+ CellID->2058623809,
+ ExpressionUUID -> "2820d9cb-d878-44ec-a6d6-d545ad58ef90"],
 
 Cell[BoxData[
  RowBox[{
@@ -150,7 +153,8 @@ Cell[BoxData[
        RowBox[{"mb", "/", "vev"}], "*", "Abb"}], ")"}]}], ")"}]}]}]], "Input",\
 
  CellLabel->"In[1]:=",
- CellID->1959503054],
+ CellID->1959503054,
+ ExpressionUUID -> "0758454a-97d6-45b9-bc37-9241e73902e4"],
 
 Cell[BoxData[
  RowBox[{
@@ -185,21 +189,24 @@ Cell[BoxData[
        RowBox[{"mtau", "/", "vev"}], "*", "Atata"}], ")"}]}], 
     ")"}]}]}]], "Input",
  CellLabel->"In[1]:=",
- CellID->90209605],
+ CellID->90209605,
+ ExpressionUUID -> "71b14882-aa49-4b00-b315-966aaac64cb2"],
 
 Cell[BoxData[
  RowBox[{
   RowBox[{"ghWW", "[", "sab_", "]"}], ":=", " ", 
   RowBox[{"g", "*", "mW", "*", "sab"}]}]], "Input",
  CellLabel->"In[1]:=",
- CellID->785542046],
+ CellID->785542046,
+ ExpressionUUID -> "40854692-d4a0-4758-bb31-99961d5110fa"],
 
 Cell[BoxData[
  RowBox[{
   RowBox[{"ghZZ", "[", "sab_", "]"}], " ", ":=", " ", 
   RowBox[{"g", "*", "mZ", "*", "sab"}]}]], "Input",
  CellLabel->"In[1]:=",
- CellID->1055765423]
+ CellID->1055765423,
+ ExpressionUUID -> "ebc3a29b-51f8-478e-858a-408176ee2ff2"]
 }, Open  ]]
 }, Open  ]],
 
@@ -219,17 +226,17 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2019, 12, 12, 12, 5, 59.850634}", 
+   "built" -> "{2020, 3, 9, 18, 33, 51.480486}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
     "Space Math Tutorial", "language" -> "en", "paclet" -> "SpaceMath", 
     "status" -> "None", "summary" -> "XXXX.", "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$30646, "title" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$28014, "title" -> 
     "SampleCouplings", "titlemodifier" -> "", "windowtitle" -> 
     "SampleCouplings", "type" -> "Tutorial", "uri" -> 
     "SpaceMath/tutorial/SampleCouplings"}},
-FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+FrontEndVersion->"11.0 for Linux x86 (64-bit) (July 28, 2016)",
 StyleDefinitions->Notebook[{
    Cell[
     StyleData[
@@ -247,7 +254,7 @@ StyleDefinitions->Notebook[{
    Cell[
     StyleData["TutorialRelatedLinksSection"], 
     CellGroupingRules -> {"SectionGrouping", 30}]}, Visible -> False, 
-  FrontEndVersion -> "12.0 for Linux x86 (64-bit) (April 8, 2019)", 
+  FrontEndVersion -> "11.0 for Linux x86 (64-bit) (July 28, 2016)", 
   StyleDefinitions -> "Default.nb"]
 ]
 (* End of Notebook Content *)
@@ -261,27 +268,27 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[587, 21, 2333, 54, 70, "AnchorBarGrid",ExpressionUUID->"7ffde6cc-40ab-4d94-843f-15a102bc32c6",
+Cell[587, 21, 2333, 54, 70, "AnchorBarGrid",
  CellID->1],
 Cell[CellGroupData[{
-Cell[2945, 79, 52, 1, 70, "Title",ExpressionUUID->"0495cd88-c981-46ac-bdb4-f148bc895406",
+Cell[2945, 79, 111, 2, 70, "Title",
  CellID->509267359],
-Cell[3000, 82, 45, 1, 70, "Caption",ExpressionUUID->"369b2822-cf6a-48aa-bea6-3527f557f7a3",
+Cell[3059, 83, 104, 2, 70, "Caption",
  CellID->1891092685],
 Cell[CellGroupData[{
-Cell[3070, 87, 966, 30, 70, "Input",ExpressionUUID->"2820d9cb-d878-44ec-a6d6-d545ad58ef90",
+Cell[3188, 89, 1025, 31, 70, "Input",
  CellID->2058623809],
-Cell[4039, 119, 1023, 33, 70, "Input",ExpressionUUID->"0758454a-97d6-45b9-bc37-9241e73902e4",
+Cell[4216, 122, 1082, 34, 70, "Input",
  CellID->1959503054],
-Cell[5065, 154, 1043, 33, 70, "Input",ExpressionUUID->"71b14882-aa49-4b00-b315-966aaac64cb2",
+Cell[5301, 158, 1102, 34, 70, "Input",
  CellID->90209605],
-Cell[6111, 189, 168, 5, 70, "Input",ExpressionUUID->"40854692-d4a0-4758-bb31-99961d5110fa",
+Cell[6406, 194, 227, 6, 70, "Input",
  CellID->785542046],
-Cell[6282, 196, 174, 5, 70, "Input",ExpressionUUID->"ebc3a29b-51f8-478e-858a-408176ee2ff2",
+Cell[6636, 202, 233, 6, 70, "Input",
  CellID->1055765423]
 }, Open  ]]
 }, Open  ]],
-Cell[6483, 205, 23, 0, 70, "FooterCell",ExpressionUUID->"ec2580bc-9955-4f64-a6aa-1731afbe05e2"]
+Cell[6896, 212, 23, 0, 70, "FooterCell"]
 }
 ]
 *)

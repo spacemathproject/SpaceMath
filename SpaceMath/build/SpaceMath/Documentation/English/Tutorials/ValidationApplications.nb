@@ -3,17 +3,17 @@
 (*** Wolfram Notebook File ***)
 (* http://www.wolfram.com/nb *)
 
-(* CreatedBy='Mathematica 12.0' *)
+(* CreatedBy='Mathematica 11.0' *)
 
 (*CacheID: 234*)
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1399496,      23154]
-NotebookOptionsPosition[   1395859,      23073]
-NotebookOutlinePosition[   1398082,      23130]
-CellTagsIndexPosition[   1398039,      23127]
+NotebookDataLength[   1400688,      23186]
+NotebookOptionsPosition[   1397764,      23105]
+NotebookOutlinePosition[   1399987,      23162]
+CellTagsIndexPosition[   1399944,      23159]
 WindowTitle->Validation and Applications
 WindowFrame->Normal*)
 
@@ -62,7 +62,7 @@ ValidationApplications.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$31779], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$29091], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "SpaceMath/tutorial/ValidationApplications", ".html"]], None}]}]},
@@ -81,19 +81,23 @@ ValidationApplications.html"], StandardForm]], "Input", TextClipboardType ->
 Cell[CellGroupData[{
 
 Cell["Validation and Applications", "Title",
- CellID->509267359],
+ CellID->509267359,
+ ExpressionUUID -> "83b438ca-f2a0-40ab-bacc-daf5319775e4"],
 
 Cell[TextData[{
  "In order to validate ",
  Cell[BoxData[
   FormBox[
-   StyleBox["SpaceMath", "MR"], TraditionalForm]], "InlineFormula"],
+   StyleBox["SpaceMath", "MR"], TraditionalForm]], "InlineFormula",
+  ExpressionUUID -> "2b5093d5-6fac-4a70-a091-704eab371c48"],
  " v1.0, we reproduce some figures of refs. Nathaniel, BUAP "
 }], "Text",
- CellID->1534169418],
+ CellID->1534169418,
+ ExpressionUUID -> "421a663f-9433-42c9-9cee-4253318dcedb"],
 
 Cell["", "Text",
- CellID->625621745],
+ CellID->625621745,
+ ExpressionUUID -> "13b3a29e-96cb-45e3-b735-c5b35e95d47e"],
 
 Cell[TextData[Cell[BoxData[
  GraphicsBox[
@@ -1766,8 +1770,10 @@ wOcXcOtH3VJWKmVlZspluPgg37QJo4dwc7vVt/Y9749hTXq18g1evYZJX3I/
    Selectable->False],
   DefaultBaseStyle->"ImageGraphics",
   ImageSizeRaw->{752, 779},
-  PlotRange->{{0, 752}, {0, 779}}]], "Input"]], "Text",
- CellID->1496592297],
+  PlotRange->{{0, 752}, {0, 779}}]], "Input",
+ ExpressionUUID -> "8346bfdd-6862-4d8f-b7d3-54797e6617d3"]], "Text",
+ CellID->1496592297,
+ ExpressionUUID -> "b9a4bd78-d798-410d-8fed-c05f8bef482b"],
 
 Cell[TextData[{
  Cell[BoxData[
@@ -5992,7 +5998,8 @@ wOcXcOtH3VJWKmVlZspluPgg37QJo4dwc7vVt/Y9749hTXq18g1evYZJX3I/
     Selectable->False],
    DefaultBaseStyle->"ImageGraphics",
    ImageSizeRaw->{958, 777},
-   PlotRange->{{0, 958}, {0, 777}}]], "Input"],
+   PlotRange->{{0, 958}, {0, 777}}]], "Input",
+  ExpressionUUID -> "7e585dd2-2f3d-4ca9-b202-f76d60ec3f94"],
  "\nContours of ",
  Cell[BoxData[
   FormBox[
@@ -6012,20 +6019,24 @@ wOcXcOtH3VJWKmVlZspluPgg37QJo4dwc7vVt/Y9749hTXq18g1evYZJX3I/
       StyleBox["b", "TI"], 
       OverscriptBox[
        StyleBox["b", "TI"], "_"]}], ")"}]}], TraditionalForm]], 
-  "InlineFormula"],
+  "InlineFormula",
+  ExpressionUUID -> "bbb4df48-68d3-45cd-9385-8d16d1ddc7d7"],
  " for the SM\[Hyphen]like Higgs boson as a function of ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"sin", "\[Alpha]"}], TraditionalForm]], "InlineFormula"],
+   RowBox[{"sin", "\[Alpha]"}], TraditionalForm]], "InlineFormula",
+  ExpressionUUID -> "c6189142-1b97-4c0b-9299-d84b33a69482"],
  " and ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"tan", "\[Beta]"}], TraditionalForm]], "InlineFormula"],
+   RowBox[{"tan", "\[Beta]"}], TraditionalForm]], "InlineFormula",
+  ExpressionUUID -> "77ebb520-453f-4557-8a0e-fd136fb6e276"],
  " in Type 1 2HDM (left) and Type 2 2HDM (right). The Type 3 model is \
 parametrically similar to Type 1, while Type 4 is similar to Type 2. Thick \
 black lines denote the SM value. "
 }], "Text",
- CellID->1014704546],
+ CellID->1014704546,
+ ExpressionUUID -> "2c6d0f8b-8568-4451-97cb-3562050f91a3"],
 
 Cell[TextData[Cell[BoxData[
  GraphicsBox[
@@ -8727,8 +8738,10 @@ wOcXcOtH3VJWKmVlZspluPgg37QJo4dwc7vVt/Y9749hTXq18g1evYZJX3I/
    Selectable->False],
   DefaultBaseStyle->"ImageGraphics",
   ImageSizeRaw->{748, 790},
-  PlotRange->{{0, 748}, {0, 790}}]], "Input"]], "Text",
- CellID->1998493277],
+  PlotRange->{{0, 748}, {0, 790}}]], "Input",
+ ExpressionUUID -> "89f5450d-9549-43e4-8e3c-000168c7660d"]], "Text",
+ CellID->1998493277,
+ ExpressionUUID -> "1f87fdf5-a12c-4a3f-a584-63ec57f39df8"],
 
 Cell[TextData[{
  Cell[BoxData[
@@ -14420,7 +14433,8 @@ wOcXcOtH3VJWKmVlZspluPgg37QJo4dwc7vVt/Y9749hTXq18g1evYZJX3I/
     Selectable->False],
    DefaultBaseStyle->"ImageGraphics",
    ImageSizeRaw->{955, 790},
-   PlotRange->{{0, 955}, {0, 790}}]], "Input"],
+   PlotRange->{{0, 955}, {0, 790}}]], "Input",
+  ExpressionUUID -> "52efa300-8d83-4b36-ab62-511b446805ee"],
  "\nContours of ",
  Cell[BoxData[
   FormBox[
@@ -14440,20 +14454,24 @@ wOcXcOtH3VJWKmVlZspluPgg37QJo4dwc7vVt/Y9749hTXq18g1evYZJX3I/
       StyleBox["b", "TI"], 
       OverscriptBox[
        StyleBox["b", "TI"], "_"]}], ")"}]}], TraditionalForm]], 
-  "InlineFormula"],
+  "InlineFormula",
+  ExpressionUUID -> "97b54e34-1a09-4cac-9376-55e83fd3510b"],
  " for the SM\[Hyphen]like Higgs boson as a function of ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"sin", "\[Alpha]"}], TraditionalForm]], "InlineFormula"],
+   RowBox[{"sin", "\[Alpha]"}], TraditionalForm]], "InlineFormula",
+  ExpressionUUID -> "01ae2be5-cdc0-4e13-b940-446289881db8"],
  " and ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"tan", "\[Beta]"}], TraditionalForm]], "InlineFormula"],
+   RowBox[{"tan", "\[Beta]"}], TraditionalForm]], "InlineFormula",
+  ExpressionUUID -> "320b22c0-8056-4bc2-9eb8-717ed8882bd3"],
  " in Type 1 2HDM (left) and Type 2 2HDM (right). The Type 3 model is \
 parametrically similar to Type 1, while Type 4 is similar to Type 2. Thick \
 black lines denote the SM value. "
 }], "Text",
- CellID->1630254921],
+ CellID->1630254921,
+ ExpressionUUID -> "68df27f0-a168-4c4e-9ecd-3eabf1cf4583"],
 
 Cell[TextData[Cell[BoxData[
  GraphicsBox[
@@ -16271,8 +16289,10 @@ wOcXcOtH3VJWKmVlZspluPgg37QJo4dwc7vVt/Y9749hTXq18g1evYZJX3I/
    Selectable->False],
   DefaultBaseStyle->"ImageGraphics",
   ImageSizeRaw->{749, 781},
-  PlotRange->{{0, 749}, {0, 781}}]], "Input"]], "Text",
- CellID->389516810],
+  PlotRange->{{0, 749}, {0, 781}}]], "Input",
+ ExpressionUUID -> "dbfaab72-a056-4d33-8f4c-514cb9340851"]], "Text",
+ CellID->389516810,
+ ExpressionUUID -> "7ddc9ddf-8df9-4615-860f-7a8219ebab4a"],
 
 Cell[TextData[{
  Cell[BoxData[
@@ -20404,7 +20424,8 @@ wOcXcOtH3VJWKmVlZspluPgg37QJo4dwc7vVt/Y9749hTXq18g1evYZJX3I/
     Selectable->False],
    DefaultBaseStyle->"ImageGraphics",
    ImageSizeRaw->{953, 781},
-   PlotRange->{{0, 953}, {0, 781}}]], "Input"],
+   PlotRange->{{0, 953}, {0, 781}}]], "Input",
+  ExpressionUUID -> "81226fd1-55d7-4068-bc43-e40cda537a16"],
  "\nContours of ",
  Cell[BoxData[
   FormBox[
@@ -20424,20 +20445,24 @@ wOcXcOtH3VJWKmVlZspluPgg37QJo4dwc7vVt/Y9749hTXq18g1evYZJX3I/
       StyleBox["b", "TI"], 
       OverscriptBox[
        StyleBox["b", "TI"], "_"]}], ")"}]}], TraditionalForm]], 
-  "InlineFormula"],
+  "InlineFormula",
+  ExpressionUUID -> "45ab1c52-0212-491d-af08-221cdd7e9fba"],
  " for the SM\[Hyphen]like Higgs boson as a function of ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"sin", "\[Alpha]"}], TraditionalForm]], "InlineFormula"],
+   RowBox[{"sin", "\[Alpha]"}], TraditionalForm]], "InlineFormula",
+  ExpressionUUID -> "05bbc408-8ad4-48c9-b83a-67c7c13a327b"],
  " and ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"tan", "\[Beta]"}], TraditionalForm]], "InlineFormula"],
+   RowBox[{"tan", "\[Beta]"}], TraditionalForm]], "InlineFormula",
+  ExpressionUUID -> "2de2a14e-45e3-409d-b82e-37591f15e5b3"],
  " in Type 1 2HDM (left) and Type 2 2HDM (right). The Type 3 model is \
 parametrically similar to Type 1, while Type 4 is similar to Type 2. Thick \
 black lines denote the SM value. "
 }], "Text",
- CellID->528086300],
+ CellID->528086300,
+ ExpressionUUID -> "df98c997-fe88-4026-bcb8-82ab84531fdd"],
 
 Cell[TextData[Cell[BoxData[
  GraphicsBox[
@@ -21743,8 +21768,10 @@ wOcXcOtH3VJWKmVlZspluPgg37QJo4dwc7vVt/Y9749hTXq18g1evYZJX3I/
    Selectable->False],
   DefaultBaseStyle->"ImageGraphics",
   ImageSizeRaw->{861, 860},
-  PlotRange->{{0, 861}, {0, 860}}]], "Input"]], "Text",
- CellID->1678593681],
+  PlotRange->{{0, 861}, {0, 860}}]], "Input",
+ ExpressionUUID -> "adae8f92-9f49-43d3-a04d-41d35d5f210c"]], "Text",
+ CellID->1678593681,
+ ExpressionUUID -> "327eaa2e-c23b-49c6-82f7-f3080d41393e"],
 
 Cell[TextData[{
  Cell[BoxData[
@@ -23033,7 +23060,8 @@ wOcXcOtH3VJWKmVlZspluPgg37QJo4dwc7vVt/Y9749hTXq18g1evYZJX3I/
     Selectable->False],
    DefaultBaseStyle->"ImageGraphics",
    ImageSizeRaw->{863, 860},
-   PlotRange->{{0, 863}, {0, 860}}]], "Input"],
+   PlotRange->{{0, 863}, {0, 860}}]], "Input",
+  ExpressionUUID -> "0d24683b-a34c-4337-8226-e009322dcd80"],
  "\nContours of ",
  Cell[BoxData[
   FormBox[
@@ -23053,20 +23081,24 @@ wOcXcOtH3VJWKmVlZspluPgg37QJo4dwc7vVt/Y9749hTXq18g1evYZJX3I/
       StyleBox["b", "TI"], 
       OverscriptBox[
        StyleBox["b", "TI"], "_"]}], ")"}]}], TraditionalForm]], 
-  "InlineFormula"],
+  "InlineFormula",
+  ExpressionUUID -> "7048e03f-5c50-407b-b238-b2ee6ee03b7e"],
  " for the SM\[Hyphen]like Higgs boson as a function of ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"sin", "\[Alpha]"}], TraditionalForm]], "InlineFormula"],
+   RowBox[{"sin", "\[Alpha]"}], TraditionalForm]], "InlineFormula",
+  ExpressionUUID -> "51f34d2d-77ff-4e74-9f7a-77fe6e8e2e19"],
  " and ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"tan", "\[Beta]"}], TraditionalForm]], "InlineFormula"],
+   RowBox[{"tan", "\[Beta]"}], TraditionalForm]], "InlineFormula",
+  ExpressionUUID -> "ccee41f6-ee9d-4c8c-8322-126f8c22a95f"],
  " in Type 1 2HDM (left) and Type 2 2HDM (right). The Type 3 model is \
 parametrically similar to Type 1, while Type 4 is similar to Type 2. Thick \
 black lines denote the SM value. "
 }], "Text",
- CellID->1690932283]
+ CellID->1690932283,
+ ExpressionUUID -> "1ce1f179-c416-4860-a049-a5bd248ef3eb"]
 }, Open  ]],
 
 Cell[" ", "FooterCell"]
@@ -23085,7 +23117,7 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2019, 12, 12, 12, 6, 7.276898}", 
+   "built" -> "{2020, 3, 9, 18, 33, 54.876303}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "SpaceMath`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -23093,11 +23125,11 @@ TaggingRules->{
     "status" -> "None", "summary" -> 
     "In order to validate SpaceMath v1.0, we reproduce some figures of refs. \
 Nathaniel, BUAP ", "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$31732, "title" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$29044, "title" -> 
     "Validation and Applications", "titlemodifier" -> "", "windowtitle" -> 
     "Validation and Applications", "type" -> "Tutorial", "uri" -> 
     "SpaceMath/tutorial/ValidationApplications"}},
-FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+FrontEndVersion->"11.0 for Linux x86 (64-bit) (July 28, 2016)",
 StyleDefinitions->Notebook[{
    Cell[
     StyleData[
@@ -23115,7 +23147,7 @@ StyleDefinitions->Notebook[{
    Cell[
     StyleData["TutorialRelatedLinksSection"], 
     CellGroupingRules -> {"SectionGrouping", 30}]}, Visible -> False, 
-  FrontEndVersion -> "12.0 for Linux x86 (64-bit) (April 8, 2019)", 
+  FrontEndVersion -> "11.0 for Linux x86 (64-bit) (July 28, 2016)", 
   StyleDefinitions -> "Default.nb"]
 ]
 (* End of Notebook Content *)
@@ -23129,33 +23161,33 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[599, 21, 2390, 57, 70, "AnchorBarGrid",ExpressionUUID->"729fd767-66c4-4411-90d3-15212904002c",
+Cell[599, 21, 2390, 57, 70, "AnchorBarGrid",
  CellID->1],
 Cell[CellGroupData[{
-Cell[3014, 82, 64, 1, 70, "Title",ExpressionUUID->"83b438ca-f2a0-40ab-bacc-daf5319775e4",
+Cell[3014, 82, 123, 2, 70, "Title",
  CellID->509267359],
-Cell[3081, 85, 231, 7, 70, "Text",ExpressionUUID->"421a663f-9433-42c9-9cee-4253318dcedb",
+Cell[3140, 86, 350, 9, 70, "Text",
  CellID->1534169418],
-Cell[3315, 94, 36, 1, 70, "Text",ExpressionUUID->"13b3a29e-96cb-45e3-b735-c5b35e95d47e",
+Cell[3493, 97, 95, 2, 70, "Text",
  CellID->625621745],
-Cell[3354, 97, 101499, 1672, 70, "Text",ExpressionUUID->"b9a4bd78-d798-410d-8fed-c05f8bef482b",
+Cell[3591, 101, 101617, 1674, 70, "Text",
  CellID->1496592297],
-Cell[104856, 1771, 258141, 4256, 70, "Text",ExpressionUUID->"2c6d0f8b-8568-4451-97cb-3562050f91a3",
+Cell[105211, 1777, 258440, 4261, 70, "Text",
  CellID->1014704546],
-Cell[363000, 6029, 164264, 2701, 70, "Text",ExpressionUUID->"1f87fdf5-a12c-4a3f-a584-63ec57f39df8",
+Cell[363654, 6040, 164382, 2703, 70, "Text",
  CellID->1998493277],
-Cell[527267, 8732, 347620, 5723, 70, "Text",ExpressionUUID->"68df27f0-a168-4c4e-9ecd-3eabf1cf4583",
+Cell[528039, 8745, 347919, 5728, 70, "Text",
  CellID->1630254921],
-Cell[874890, 14457, 110384, 1817, 70, "Text",ExpressionUUID->"7ddc9ddf-8df9-4615-860f-7a8219ebab4a",
+Cell[875961, 14475, 110502, 1819, 70, "Text",
  CellID->389516810],
-Cell[985277, 16276, 252446, 4163, 70, "Text",ExpressionUUID->"df98c997-fe88-4026-bcb8-82ab84531fdd",
+Cell[986466, 16296, 252745, 4168, 70, "Text",
  CellID->528086300],
-Cell[1237726, 20441, 79096, 1305, 70, "Text",ExpressionUUID->"327eaa2e-c23b-49c6-82f7-f3080d41393e",
+Cell[1239214, 20466, 79214, 1307, 70, "Text",
  CellID->1678593681],
-Cell[1316825, 21748, 78992, 1320, 70, "Text",ExpressionUUID->"1ce1f179-c416-4860-a049-a5bd248ef3eb",
+Cell[1318431, 21775, 79291, 1325, 70, "Text",
  CellID->1690932283]
 }, Open  ]],
-Cell[1395832, 23071, 23, 0, 70, "FooterCell",ExpressionUUID->"8bfc6bd1-f260-4b38-aa77-3afce97818a1"]
+Cell[1397737, 23103, 23, 0, 70, "FooterCell"]
 }
 ]
 *)
