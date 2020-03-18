@@ -177,7 +177,7 @@ Rbotbot[ghtt_,ghbb_]:=(WidthHgg[ghtt,ghbb,mh]*BRhfifj[ghbb, 3, mb, mb])/(WidthHg
 (************************************************************************************************************************************************************************************************************************************************************************************************************************)
 Rtata[ghtt_,ghbb_,ghtautau_]:=(WidthHgg[ghtt,ghbb,mh]*BRhfifj[ghtautau, 1, mtau, mtau])/(WidthHgg[g mt/(2 mW),g mb/(2 mW),mh]*BRhfifj[g mtau/(2 mW), 1, mtau, mtau]);
 RWW[ghtt_,ghbb_,ghWW_]:=(WidthHgg[ghtt,ghbb,mh]*BRhWW[ghWW])/(WidthHgg[g mt/(2 mW),g mb/(2 mW),mh]*BRhWW[gw*mW]);
-RZZ[ghtt_,ghbb_,ghZZ_]:=(WidthHgg[ghtt,ghbb,mh]*BRhZZ[ghZZ])/(WidthHgg[g mt/(2 mW),g mb/(2 mW),mh]*BRhZZ[gz*mW]);
+RZZ[ghtt_,ghbb_,ghZZ_]:=(WidthHgg[ghtt,ghbb,mh]*BRhZZ[ghZZ])/(WidthHgg[g mt/(2 mW),g mb/(2 mW),mh]*BRhZZ[gz*mZ]);
 Rgaga[ghtt_,ghbb_,ghWW_,gCH_,mCH_]:=(WidthHgg[ghtt,ghbb,mh]*BRhgaga[ghtt,ghbb,ghWW,gCH,mCH])/(WidthHgg[g mt/(2 mW),g mb/(2 mW),mh]*BRhgaga[g mt/(2 mW),g mb/(2 mW),gw*mW,0,mCH]);
 Rgg[ghtt_,ghbb_]:=WidthHgg[ghtt,ghbb,mh]*BRhgg[ghtt,ghbb]/(WidthHgg[g mt/(2 mW),g mb/(2 mW),mh]*BRhgg[g mt/(2 mW),g mb/(2 mW)]);
 
