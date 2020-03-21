@@ -18,7 +18,13 @@ class SignalStrength():
         self.R2sd = R2sd
         self.func = func
         self.latex_name = latex_name
-        
+    
+    def __str__(self):
+        return (f'{self.__class__.__name__}('
+               f'{self.R1su!r},{self.R1sd!r},{self.R2su!r},{self.R2sd!r},{self.func!r},{self.latex_name!r})')
+    def __repr__(self):
+        return (f'Higgs Signal streght observable with bounds: {self.R1sd} < {self.latex_name} <{self.R1su} at 1 sigma and {self.R2sd} < {self.latex_name}< {self.R2su} at 2 sigma.')
+    
     def conditionRx(self,*args,sigma=1):
         if sigma==1:
             return self.R1sd < self.func(*args) < self.R1su
@@ -29,9 +35,9 @@ class SignalStrength():
             
     def np_index(self,*args,sigma=1):
         if sigma==1:
-            return (self.func(*args)<=self.R1su)*(self.func(*args)>=self.R1sd)
+            return (self.func(*args)>=self.R1sd) & (self.func(*args)<=self.R1su)
         elif sigma==2:
-            return (self.func(*args)<=self.R2su)*(self.func(*args)>=self.R2sd)
+            return (self.func(*args)>=self.R2sd) &(self.func(*args)<=self.R2su)
         else:
             print('sigma must be 1 or 2')
     
@@ -76,7 +82,7 @@ Rw = SignalStrength(RwwSUP1sig,RwwINF1sig,RwwSUP2sig,RwwINF2sig,RWW,latex_name='
 Rz = SignalStrength(RzzSUP1sig,RzzINF1sig,RzzSUP2sig,RzzINF2sig,RZZ,latex_name='Rz')
     
 
-class HiggsSignalStrength():    
+class HiggsSignalStrength():
     def __init__(self,ghtt=1,ghbb=1,ghtautau=1,ghWW=1,ghZZ=1,gCH=0,mCH=500,model='SM'):
         self.ghtt = ghtt
         self.ghbb = ghbb
@@ -85,11 +91,24 @@ class HiggsSignalStrength():
         self.ghZZ = ghZZ
         self.gCH = gCH
         self.mCH = mCH
+        self.model = model
+    
+    def __str__(self):
+        return (f'{self.__class__.__name__}('
+               f'{self.ghtt!r},{self.ghbb!r},{self.ghtautau!r},{self.ghWW!r},{self.ghZZ!r},{self.gCH!r},{self.mCH!r},{self.model!r})')
+    def __repr__(self):
+        from pandas import DataFrame
+        #return f'{self.model} Higgs couplings given by:' + f'\nghtt = {self.ghtt}' + f'\nghbb = {self.ghbb}'+ f'\nghtautau = {self.ghtautau}' + f'\nghWW = {self.ghWW}' + f'\nghZZ = {self.ghZZ}'
+        coups = {'ghtt':self.ghtt,'ghbb':self.ghbb,'ghtautau':self.ghtautau,'ghWW':self.ghWW,'ghZZ':self.ghZZ,'gCH':self.gCH,'mCH':self.mCH}
+        if self.gCH == 0:
+            return f'{self.model} couplings\n' + str(DataFrame({cou:coups[cou] for cou in ['ghtt','ghbb','ghtautau','ghWW','ghZZ']}))
+        else:
+            return f'{self.model} couplings\n' +  str(DataFrame({cou:coups[cou] for cou in coups.keys()}))
     
     def parameter_space(self,parameters,sigma=1):
         '''
         couplings: instance of HiggsSignalStrenght
-        sigma: number of sigmas it coulbe 1 or 2
+        sigma: number of sigmas it could be 1 or 2
         '''
         from pandas import DataFrame
         #global Rtau,Rb,Rgamma,Rw,Rz
@@ -105,7 +124,7 @@ class HiggsSignalStrength():
         ind_gamma = Rgamma.np_index(ghtt,ghbb,ghWW,gCH,mCH,sigma=sigma)
         ind_w = Rw.np_index(ghtt,ghbb,ghWW,sigma=sigma)
         ind_z = Rz.np_index(ghtt,ghbb,ghZZ,sigma=sigma)
-        index = ind_tau & ind_b & ind_gamma & ind_w & ind_z
+        index = ind_z*ind_w*ind_gamma*ind_tau*ind_b 
         Rindx = {'Rtau':ind_tau,'Rb':ind_b,'Rgamma':ind_gamma,'Rw':ind_w,'Rz':ind_z,'Intersection':index}
         data = {signal:DataFrame({key:parameters[key][Rindx[signal]]
                   for key in parameters.keys()}) for signal in Rindx.keys()}
@@ -133,7 +152,7 @@ class HiggsSignalStrength():
 ###################PLOTS
 #############################################################
 
-def plot_df(df,colx,coly,title='SpaceMath',fname=None,marker='o',latex_names=None,color='#137A7A',alpha=0.5):
+def plot_df(df,colx,coly,title='SpaceMath',fname=None,marker='.',latex_names=None,color='#137A7A',alpha=0.5):
     import matplotlib.pyplot as plt
     plt.plot(df[colx],df[coly],marker,color=color,alpha=alpha);
     if latex_names==None:

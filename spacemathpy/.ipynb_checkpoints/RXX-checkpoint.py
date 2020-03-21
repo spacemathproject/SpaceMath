@@ -35,19 +35,23 @@ def ft(mS):
     global mt
     if issymbolic(mS):
         mtop=mt['symbol']
-        return -(sp.S(1)/4)*(sp.log((1+sp.sqrt(1-((4*mtop**2)/(mS**2)))))/(1-sp.sqrt(1-((4*mtop**2)/(mS**2))))-sp.I*sp.pi)**2;#MODIFICADO#
+        x = 4*mtop**2/mS**2
+        return -(sp.S(1)/4)*(sp.log((1+sp.sqrt(1-x))/(1-sp.sqrt(1-x)))-sp.I*sp.pi)**2;#MODIFICADO#
     else:
         mtop=mt['value']
-        return -(1.0/4.0)*(np.log((1+np.sqrt(1-((4*mtop**2)/(mS**2)))))/(1-np.sqrt(1-((4*mtop**2)/(mS**2))))-1j*np.pi)**2;#MODIFICADO#(-sp.I*np.pi)
+        x = 4*mtop**2/mS**2
+        return -(1.0/4.0)*(np.log((1+np.sqrt(1-x))/(1-np.sqrt(1-x)))-1j*np.pi)**2;#MODIFICADO#(-sp.I*np.pi)
          
 def fb(mS):
     global mb
     if issymbolic(mS):
         mbot=mb['symbol']
-        return -(sp.S(1)/4)*(sp.log((1+sp.sqrt(1-((4*mbot**2)/(mS**2)))))/(1-sp.sqrt(1-((4*mbot**2)/(mS**2))))-sp.I*sp.pi)**2;#MODIFICADO#
+        x = 4*mbot**2/mS**2
+        return -(sp.S(1)/4)*(sp.log((1+sp.sqrt(1-x))/(1-sp.sqrt(1-x)))-sp.I*sp.pi)**2;#MODIFICADO#
     else:
         mbot=mb['value']
-        return -(1.0/4.0)*(np.log((1+np.sqrt(1-((4*mbot**2)/(mS**2)))))/(1-np.sqrt(1-((4*mbot**2)/(mS**2))))-1j*np.pi)**2;#MODIFICADO#(-sp.I*np.pi)
+        x = 4*mbot**2/mS**2
+        return -(1.0/4.0)*(np.log((1+np.sqrt(1-x))/(1-np.sqrt(1-x)))-1j*np.pi)**2;#MODIFICADO#(-sp.I*np.pi)
 
 def gt(mS):
     global mt
@@ -71,20 +75,20 @@ def At(mS):
     global mt
     if issymbolic(mS):
         mtop=mt['symbol']
-        return sp.Piecewise((gt(mS), mS**2/(4*mtop**2)<=1), (ft(mS), True))
+        return sp.Piecewise((gt(mS), (4*mtop**2)/mS**2>=1), (ft(mS), True))
     else:#If[((4*mt^2)/mS^2)>=1,gt[mS],ft[mS]]
         mtop = mt['value']
-        return np.where(mS**2/(4*mtop**2)<=1.0,gt(mS),ft(mS))
+        return np.where((4*mtop**2)/mS**2>=1.0,gt(mS),ft(mS))
 
     
 def Ab(mS):
     global mb
     if issymbolic(mS):
         mbot=mb['symbol']
-        return sp.Piecewise((gb(mS), mS**2/(4*mbot**2)<=1), (fb(mS), True))
+        return sp.Piecewise((gb(mS), (4*mbot**2)/mS**2>=1), (fb(mS), True))
     else:
         mbot=mb['value']
-        return np.where(mS**2/(4*mbot**2)<=1.0,gb(mS),fb(mS))
+        return np.where((4*mbot**2)/mS**2>=1.0,gb(mS),fb(mS))
     
 def Ft(mS):
     global mt
@@ -119,7 +123,7 @@ def WidthHgg(ghtt,ghbb,mS):
     global mW, αs
     if issymbolic(ghtt,ghbb,mS):
         mWp = mW['symbol']
-        return ((αs['symbol']**2*mS**3)/(512*mWp**2*sp.pi**3 ))*abs(AHgg(ghtt,ghbb,mS))**2;#####MODIFICADO#######
+        return ((αs['symbol']**2*mS**3)/(512*mWp**2*sp.pi**3 ))*sp.Abs(AHgg(ghtt,ghbb,mS))**2;#####MODIFICADO#######
     else:
         mWp = mW['value']
         return ((αs['value']**2*mS**3)/(512*mWp**2*np.pi**3 ))*abs(AHgg(ghtt,ghbb,mS))**2;#####MODIFICADO#######
@@ -205,10 +209,10 @@ def AhW(ghWW,mS):
 def fH(mCH,mS):
     if issymbolic(mCH,mS):
         x = (4*mCH**2)/(mS**2)
-        return -(sp.S(1)/4)*(sp.log((1+sp.sqrt(1-x)/(1-sp.sqrt(1-x))))-sp.I*sp.pi)**2;#######MODIFICADO#########(sp.I*sp.pi)
+        return -(sp.S(1)/4)*(sp.log((1+sp.sqrt(1-x))/(1-sp.sqrt(1-x)))-sp.I*sp.pi)**2;#######MODIFICADO#########(sp.I*sp.pi)
     else:
         x = (4*mCH**2)/(mS**2)
-        return -(1.0/4)*(np.log((1+np.sqrt(1-x)/(1-np.sqrt(1-x))))-1j*np.pi)**2;#######MODIFICADO#########(-sp.I*sp.pi)
+        return -(1.0/4)*(np.log((1+np.sqrt(1-x))/(1-np.sqrt(1-x)))-1j*np.pi)**2;#######MODIFICADO#########(-sp.I*sp.pi)
     
 def gH(mCH,mS):
     if issymbolic(mCH,mS):
@@ -237,14 +241,17 @@ def AHc(gCH,mCH,mS):
     return (mWp*gCH)/(mCH**2)*FH(mCH,mS);
 
 def Ahgaga(ghtt,ghbb,ghWW,gCH,mCH,mS):
-    return Af(ghtt,ghbb,mS) + AhW(ghWW,mS) + AHc(gCH,mCH,mS)
+    if gCH==0:
+        return Af(ghtt,ghbb,mS) + AhW(ghWW,mS)
+    else:
+        return Af(ghtt,ghbb,mS) + AhW(ghWW,mS) + AHc(gCH,mCH,mS)
 
 #Decay width of scalar boson into photon-photon
 def WidthHgaga(ghtt,ghbb,ghWW,gCH,mCH,mS):
     global mW, αem
     if issymbolic(ghtt,ghbb,ghWW,gCH,mCH,mS):
         mWp = mW['symbol']
-        return ((αem['symbol']**2)*(mS**3))/(1024*sp.pi**3*mWp**2)*abs(Ahgaga(ghtt,ghbb,ghWW,gCH,mCH,mS))**2
+        return ((αem['symbol']**2)*(mS**3))/(1024*sp.pi**3*mWp**2)*sp.Abs(Ahgaga(ghtt,ghbb,ghWW,gCH,mCH,mS))**2
     else:
         mWp = mW['value']
         return ((αem['value']**2)*(mS**3))/(1024*np.pi**3*mWp**2)*abs(Ahgaga(ghtt,ghbb,ghWW,gCH,mCH,mS))**2
@@ -259,11 +266,11 @@ def RT(mS,mV):
     if issymbolic(mS):
         mVec = mV['symbol']
         x = mVec**2/mS**2
-        return -(((1-x)*(47*x**2-13*x+2))/(2*x))-sp.S(3)/2*(4*x**2-6*x+1)*sp.log(x)+(3*(20*x**2- 8*x+1))/sp.sqrt(4*x-1)*sp.acos((3*x-1)/(2*x**(sp.S(3)/2)));
+        return -(((1-x)*(47*x**2-13*x+2))/(2*x))-(sp.S(3)/2)*(4*x**2-6*x+1)*sp.log(x)+((3*(20*x**2- 8*x+1))/sp.sqrt(4*x-1))*sp.acos((3*x-1)/(2*x**(sp.S(3)/2)));
     else:
         mVec = mV['value']
         x = mVec**2/mS**2
-        return -(((1-x)*(47*x**2-13*x+2))/(2*x))-(3.0/2)*(4*x**2-6*x+1)*np.log(x)+(3*(20*x**2- 8*x+1))/np.sqrt(4*x-1)*np.arccos((3*x-1)/(2*x**(3.0/2)));
+        return -(((1.0-x)*(47.0*x**2.0-13.0*x+2.0))/(2.0*x))-(3.0/2.0)*(4.0*x**2.0-6.0*x+1.0)*np.log(x)+((3.0*(20.0*x**2.0- 8.0*x+1.0))/np.sqrt(4.0*x-1.0))*np.arccos((3.0*x-1.0)/(2.0*x**(3.0/2.0)));
     
 RTW = lambda mS: RT(mS,mW)
 
@@ -277,9 +284,10 @@ def WidthHWW(ghWW,mS):
     global mW
     if issymbolic(ghWW,mS):
         mWp = mW['symbol']
+        return ((ghWW**2)*mS)/(512*(sp.pi**3)*(mWp**4))*RTW(mS)
     else:
         mWp = mW['value']
-    return ((ghWW**2)*mS)/(512*(np.pi**3)*(mWp**4))*RTW(mS)
+        return ((ghWW**2)*mS)/(512*(np.pi**3)*(mWp**4))*RTW(mS)
 
 # Decay width of Higgs boson into ZZ pair
 def WidthHZZ(ghZZ,mS):
@@ -287,10 +295,10 @@ def WidthHZZ(ghZZ,mS):
     if issymbolic(ghZZ,mS):
         mZp = mZ['symbol']
         sZ = sp.symbols(r'\delta_Z',positive=True)
-        return ((ghZZ**2)*mS)/(2048*(sp.pi**3)*mZp**4)*sZ*RTZ(mS)
+        return ((ghZZ**2)*mS)/(2048*(sp.pi**3)*(mZp**4))*sZ*RTZ(mS)
     else:
         mZp = mZ['value']
-        return ((ghZZ**2)*mS)/(2048*(np.pi**3)*mZp**4)*δZ*RTZ(mS)
+        return ((ghZZ**2)*mS)/(2048*(np.pi**3)*(mZp**4))*δZ*RTZ(mS)
 
 #####################################################################3
 # Branchig ratios for higgs -> XX'
@@ -312,7 +320,7 @@ def BRhgaga(ghtt,ghbb,ghWW,gCH,mCH):
     else:
         mhiggs = mh['value']
     return WidthHgaga(ghtt,ghbb,ghWW,gCH,mCH,mhiggs)/TotWidth
-
+#WidthHgaga(ghtt,ghbb,ghWW,gCH,mCH,mS)
 # h->WW
 def BRhWW(ghWW):
     global mh, TotWidth
@@ -396,14 +404,14 @@ def RZZ(ghtt,ghbb,ghZZ):
         mhiggs,mtop,mbot,mZp,mWp,gg,ggz = mh['symbol'],mt['symbol'],mb['symbol'],mZ['symbol'],mW['symbol'],g['symbol'],gz['symbol']
     else:
         mhiggs,mtop,mbot,mZp,mWp,gg,ggz = mh['value'],mt['value'],mb['value'],mZ['value'],mW['value'],g['value'],gz['value']
-    return (WidthHgg(ghtt,ghbb,mhiggs)*BRhZZ(ghZZ))/(WidthHgg(gg*mtop/(2*mWp),gg*mbot/(2*mWp),mhiggs)*BRhZZ(ggz*mWp))#Es mZ o mW
+    return (WidthHgg(ghtt,ghbb,mhiggs)*BRhZZ(ghZZ))/(WidthHgg(gg*mtop/(2*mWp),gg*mbot/(2*mWp),mhiggs)*BRhZZ(ggz*mZp))#Es mZ o mW
 
 #Rga
 def Rgaga(ghtt,ghbb,ghWW,gCH,mCH):
     '''
     Signal Strenght to Rgaga, depends of ghtt, ghbb, ghWW, gCH and mCH.
     Example:
-    Rbotbot(ghtt,ghbb,ghWW,gCH,mCH)
+    Rgaga(ghtt,ghbb,ghWW,gCH,mCH)
     '''
     global mh,mt,mb,mW
     if issymbolic(ghtt,ghbb,ghWW,gCH,mCH):
@@ -417,7 +425,7 @@ def Rgg(ghtt,ghbb):
     '''
     Signal Strenght to Rgg, depends of ghtt and ghbb.
     Example:
-    Rbotbot(ghtt,ghbb)
+    Rgg(ghtt,ghbb)
     '''
     global mh,mt,mb,mW
     if issymbolic(ghtt,ghbb):
