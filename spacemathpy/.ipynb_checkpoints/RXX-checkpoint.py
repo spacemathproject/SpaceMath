@@ -16,11 +16,44 @@ from .data import *
 #Función para probar que al menos un elemento es una clase de sympy
 # Funtion to test if one argument is a sympy subclass
 
-def issymbolic(*z):
-    return True in [isinstance(z[i],tuple(sp.core.all_classes)) for i in range(len(z))]
+def issymbolic(*args):
+    '''
+    Test is some of the element of args list is an 
+    instance of sympy
+    
+    Parameters
+    ----------
+    args: list
+        List with differents types of elements they 
+        could be float, int or sympy instances
+        
+    Returns
+    -------
+    Return True if someone of the elements of args list is a
+    sympy instance, otherwise return False.
+    
+    '''
+    return True in [isinstance(args[i],tuple(sp.core.all_classes)) for i in range(len(args))]
 
 # Decay width of the Scalar boson into fermion pair
 def WidthHff(ghfifj,Nc,mi,mj,mS):
+    '''Width decay for S -> fi fj
+    
+    Parameters
+    ----------
+    ghfifj: float also works with numpy or sympy
+        Coupling of scalar and fermions
+    Nc: int 
+        Color charge, 1 for leptons and 3 for quarks.
+    mi,mj: float also works with numpy or sympy
+        Fermions masses
+    mS: float also works with numpy or sympy
+        Scalar mass
+    
+    Returns
+    -------
+    float, numpy and sympy instances depend on input
+    '''
     if issymbolic(ghfifj,Nc,mi,mj,mS):
         return (((ghfifj**2)*Nc*mS)/(128*sp.pi))*((4-(sp.sqrt(τf(mi,mS)) + sp.sqrt(τf(mj,mS)))**2)**(sp.S(3)/2))*(sp.sqrt((4-(sp.sqrt(τf(mi,mS))-sp.sqrt(τf(mj,mS)))**2)))
     else:
@@ -120,6 +153,20 @@ def AHgg(ghtt,ghbb,mS):# Considering the bottom and top quarks contributions
 
 #Decay width of the Scalar boson into gluon pair
 def WidthHgg(ghtt,ghbb,mS):
+    '''Width decay for S -> g g
+    
+    Parameters
+    ----------
+    ghtt: float also works with numpy or sympy
+        Coupling of scalar and top quarks
+    ghbb: float also works with numpy or sympy
+        Coupling of scalar and top quarks
+    mS: float also works with numpy or sympy
+        Scalar mass
+    Returns
+    -------
+    float, numpy and sympy instances depend on input
+    '''
     global mW, αs
     if issymbolic(ghtt,ghbb,mS):
         mWp = mW['symbol']
@@ -248,6 +295,27 @@ def Ahgaga(ghtt,ghbb,ghWW,gCH,mCH,mS):
 
 #Decay width of scalar boson into photon-photon
 def WidthHgaga(ghtt,ghbb,ghWW,gCH,mCH,mS):
+    '''Width decay for S -> gamma gamma
+    
+    Parameters
+    ----------
+    ghtt: float also works with numpy or sympy
+        Coupling of scalar and top quarks
+    ghbb: float also works with numpy or sympy
+        Coupling of scalar and bottom quarks
+    ghWW: float also works with numpy or sympy
+        Coupling of scalar and W bosons
+    gCH: float also works with numpy or sympy
+        Coupling of scalar and charged Higgs wich can appear in 2HDM's
+    mCH: float also works with numpy or sympy
+        Charged Higgs mass
+    mS: float also works with numpy or sympy
+        Scalar mass
+    
+    Returns
+    -------
+    float, numpy and sympy instances depend on input
+    '''
     global mW, αem
     if issymbolic(ghtt,ghbb,ghWW,gCH,mCH,mS):
         mWp = mW['symbol']
@@ -281,30 +349,71 @@ RTZ = lambda mS: RT(mS,mZ)
 
 # Decay width of Higgs boson into WW pair
 def WidthHWW(ghWW,mS):
+    '''Width decay for S -> W W* 
+    
+    Parameters
+    ----------
+    ghWW: float also works with numpy or sympy
+        Coupling of scalar and W bosons
+    mS: float also works with numpy or sympy
+        Scalar mass
+    
+    Returns
+    -------
+    float, numpy and sympy instances depend on input
+    '''
     global mW
     if issymbolic(ghWW,mS):
         mWp = mW['symbol']
-        return ((ghWW**2)*mS)/(512*(sp.pi**3)*(mWp**4))*RTW(mS)
+        return 3*((ghWW**4)*mS)/(512*(sp.pi**3)*(mWp**4))*RTW(mS)
     else:
         mWp = mW['value']
-        return ((ghWW**2)*mS)/(512*(np.pi**3)*(mWp**4))*RTW(mS)
+        return 3*((ghWW**4)*mS)/(512*(np.pi**3)*(mWp**4))*RTW(mS)
 
 # Decay width of Higgs boson into ZZ pair
 def WidthHZZ(ghZZ,mS):
+    '''Width decay for S -> Z Z*
+    
+    Parameters
+    ----------
+    ghZZ: float also works with numpy or sympy
+        Coupling of scalar and Z bosons
+    mS: float also works with numpy or sympy
+        Scalar mass
+    
+    Returns
+    -------
+    float, numpy and sympy instances depend on input
+    '''
     global mZ, δZ
     if issymbolic(ghZZ,mS):
         mZp = mZ['symbol']
         sZ = sp.symbols(r'\delta_Z',positive=True)
-        return ((ghZZ**2)*mS)/(2048*(sp.pi**3)*(mZp**4))*sZ*RTZ(mS)
+        return 3*((ghZZ**4)*mS)/(2048*(sp.pi**3)*(mZp**4))*sZ*RTZ(mS)
     else:
         mZp = mZ['value']
-        return ((ghZZ**2)*mS)/(2048*(np.pi**3)*(mZp**4))*δZ*RTZ(mS)
+        return 3*((ghZZ**4)*mS)/(2048*(np.pi**3)*(mZp**4))*δZ*RTZ(mS)
 
 #####################################################################3
 # Branchig ratios for higgs -> XX'
 
 # h->fifj
 def BRhfifj(ghfifj,Nc,mi,mj):
+    '''Branching ratio higgs boson to fermions, h -> fi fj.
+    
+    Parameters
+    ----------
+    ghfifj: float also works with numpy or sympy
+        Coupling of scalar and fermions
+    Nc: int 
+        Color charge, 1 for leptons and 3 for quarks.
+    mi,mj: float also works with numpy or sympy
+        Fermions masses
+    
+    Returns
+    -------
+    float, numpy and sympy instances depend on input
+    '''
     global mh,TotWidth
     if issymbolic(ghfifj,Nc,mi,mj):
         mhiggs = mh['symbol']
@@ -314,6 +423,25 @@ def BRhfifj(ghfifj,Nc,mi,mj):
 
 # h->gaga
 def BRhgaga(ghtt,ghbb,ghWW,gCH,mCH):
+    '''Branching ratio higgs boson to photon pair , h -> gamma gamma.
+    
+    Parameters
+    ----------
+    ghtt: float also works with numpy or sympy
+        Coupling of scalar and top quarks
+    ghbb: float also works with numpy or sympy
+        Coupling of scalar and bottom quarks
+    ghWW: float also works with numpy or sympy
+        Coupling of scalar and W bosons
+    gCH: float also works with numpy or sympy
+        Coupling of scalar and charged Higgs wich can appear in 2HDM's
+    mCH: float also works with numpy or sympy
+        Charged Higgs mass
+    
+    Returns
+    -------
+    float, numpy and sympy instances depend on input
+    '''
     global mh,TotWidth
     if issymbolic(ghtt,ghbb,ghWW,gCH,mCH):
         mhiggs = mh['symbol']
@@ -323,6 +451,17 @@ def BRhgaga(ghtt,ghbb,ghWW,gCH,mCH):
 #WidthHgaga(ghtt,ghbb,ghWW,gCH,mCH,mS)
 # h->WW
 def BRhWW(ghWW):
+    '''Branching ratio higgs boson to W bosons pair , h -> W W*.
+    
+    Parameters
+    ----------
+    ghWW: float also works with numpy or sympy
+        Coupling of scalar and W bosons
+    
+    Returns
+    -------
+    float, numpy and sympy instances depend on input
+    '''
     global mh, TotWidth
     if issymbolic(ghWW):
         mhiggs = mh['symbol']
@@ -331,6 +470,17 @@ def BRhWW(ghWW):
     return WidthHWW(ghWW,mhiggs)/TotWidth
 # h->ZZ
 def BRhZZ(ghZZ):
+    '''Branching ratio higgs boson to Z bosons pair , h -> Z Z*.
+    
+    Parameters
+    ----------
+    ghZZ: float also works with numpy or sympy
+        Coupling of scalar and Z bosons
+    
+    Returns
+    -------
+    float, numpy and sympy instances depend on input
+    '''
     global mh , TotWidth
     if issymbolic(ghZZ):
         mhiggs = mh['symbol']
@@ -340,6 +490,19 @@ def BRhZZ(ghZZ):
 
 # h->ZZ
 def BRhgg(ghtt,ghbb):
+    '''Branching ratio higgs boson to gluons pair , h -> g g.
+    
+    Parameters
+    ----------
+    ghtt: float also works with numpy or sympy
+        Coupling of scalar and top quarks
+    ghbb: float also works with numpy or sympy
+        Coupling of scalar and top quarks
+    
+    Returns
+    -------
+    float, numpy and sympy instances depend on input
+    '''
     global mh, TotWidth
     if issymbolic(ghtt,ghbb):
         mhiggs = mh['symbol']
@@ -352,10 +515,18 @@ def BRhgg(ghtt,ghbb):
 ###############################################################################
 #Rb
 def Rbotbot(ghtt,ghbb):
-    '''
-    Signal Strenght to Rbb, depends of ghtt and ghbb.
-    Example:
-    Rbotbot(ghtt,ghbb)
+    '''Signal Strenght to h->bb
+    
+    Parameters
+    ----------
+    ghtt: float also works with numpy or sympy
+        Coupling of Higgs boson and top quarks
+    ghbb: float also works with numpy or sympy
+        Coupling of Higgs boson and top quarks
+    
+    Returns
+    -------
+    float, numpy and sympy instances depend on input
     '''
     global mh,mt,mb,mW,g
     if issymbolic(ghtt,ghbb):
@@ -366,10 +537,20 @@ def Rbotbot(ghtt,ghbb):
 
 #Rtau
 def Rtautau(ghtt,ghbb,ghtautau):
-    '''
-    Signal Strenght to Rtautau, depends of ghtt, ghbb and ghtautau.
-    Example:
-    Rtautau(ghtt,ghbb,ghtautau)
+    '''Signal Strenght to h->tau tau
+    
+    Parameters
+    ----------
+    ghtt: float also works with numpy or sympy instances
+        Coupling of Higgs boson and top quarks
+    ghbb: float also works with numpy or sympy instnaces
+        Coupling of Higgs boson and top quarks
+    ghtautau: float also works with numpy or sympy instnaces
+        Coupling of Higgs boson and tau leptons
+    
+    Returns
+    -------
+    float, numpy and sympy instances depend on input
     '''
     global mh,mt,mb,mta,mW,g
     if issymbolic(ghtt,ghbb,ghtautau):
@@ -381,10 +562,17 @@ def Rtautau(ghtt,ghbb,ghtautau):
 #RW
 def RWW(ghtt,ghbb,ghWW):
     '''
-    Signal Strenght to RWW, depends of ghtt and ghWW.
-    Example:
-    Rbotbot(ghtt,ghbb,ghWW)
-    '''
+    Signal Strenght to h -> W W*.
+    
+    Parameters
+    ----------
+    ghWW: float also works with numpy or sympy instances
+        Coupling of Higgs boson and W bosons
+    
+    Returns
+    -------
+    float, numpy and sympy instances depend on input
+    '''    
     global mh,mt,mb,mW
     if issymbolic(ghtt,ghbb,ghWW):
         mhiggs,mtop,mbot,mWp,gg,ggw = mh['symbol'],mt['symbol'],mb['symbol'],mW['symbol'],g['symbol'],gw['symbol']
@@ -395,10 +583,17 @@ def RWW(ghtt,ghbb,ghWW):
 #RZ
 def RZZ(ghtt,ghbb,ghZZ):
     '''
-    Signal Strenght to RZZ, depends of ghtt, ghbb and ghZZ.
-    Example:
-    Rbotbot(ghtt,ghbb,ghZZ)
-    '''
+    Signal Strenght to h -> Z Z*.
+    
+    Parameters
+    ----------
+    ghZZ: float also works with numpy or sympy instances
+        Coupling of Higgs boson and W bosons
+    
+    Returns
+    -------
+    float, numpy and sympy instances depend on input
+    '''    
     global mh,mt,mb,mW
     if issymbolic(ghtt,ghbb,ghZZ):
         mhiggs,mtop,mbot,mZp,mWp,gg,ggz = mh['symbol'],mt['symbol'],mb['symbol'],mZ['symbol'],mW['symbol'],g['symbol'],gz['symbol']
@@ -408,10 +603,24 @@ def RZZ(ghtt,ghbb,ghZZ):
 
 #Rga
 def Rgaga(ghtt,ghbb,ghWW,gCH,mCH):
-    '''
-    Signal Strenght to Rgaga, depends of ghtt, ghbb, ghWW, gCH and mCH.
-    Example:
-    Rgaga(ghtt,ghbb,ghWW,gCH,mCH)
+    '''Signal Strenght to h->gamma gamma
+    
+    Parameters
+    ----------
+    ghtt: float also works with numpy or sympy instances
+        Coupling of Higgs boson and top quarks
+    ghbb: float also works with numpy or sympy instnaces
+        Coupling of Higgs boson and top quarks
+    ghWW: float also works with numpy or sympy instnaces
+        Coupling of Higgs boson and W bosons
+    gCH: float also works with numpy or sympy instnaces
+        Coupling of Higgs boson and charged
+    mCH: float also works with numpy or sympy instnaces
+        Charged scalar mass
+    
+    Returns
+    -------
+    float, numpy and sympy instances depend on input
     '''
     global mh,mt,mb,mW
     if issymbolic(ghtt,ghbb,ghWW,gCH,mCH):
@@ -422,10 +631,18 @@ def Rgaga(ghtt,ghbb,ghWW,gCH,mCH):
 #BRhgaga(ghtt,ghbb,ghWW,gCH,mCH)
 #Rg
 def Rgg(ghtt,ghbb):
-    '''
-    Signal Strenght to Rgg, depends of ghtt and ghbb.
-    Example:
-    Rgg(ghtt,ghbb)
+    '''Signal Strenght to h->gamma gamma
+    
+    Parameters
+    ----------
+    ghtt: float also works with numpy or sympy instances
+        Coupling of Higgs boson and top quarks
+    ghbb: float also works with numpy or sympy instnaces
+        Coupling of Higgs boson and top quarks
+    
+    Returns
+    -------
+    float, numpy and sympy instances depend on input
     '''
     global mh,mt,mb,mW
     if issymbolic(ghtt,ghbb):

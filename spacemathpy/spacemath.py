@@ -1,4 +1,5 @@
 import numpy as np
+np.seterr(all='ignore')# to ignore numpy errors
 from .data import *
 from .RXX import *
 
@@ -11,7 +12,57 @@ class Parameters():
         return {k:np.random.uniform(variables[k][0],variables[k][1],n) for k in keys}
 
 class SignalStrength():
+    '''Class for represent a generic signal strenght
+    
+    Atributes
+    ---------
+        R1su, R1sd: float
+            Bounds for 1 sigma R1su upper and R1sd lower bounds.
+        R2su, R2sd: float
+            Bounds for 2 sigma R1su upper and R1sd lower bounds.
+        func: function
+            Analitic function associated to signal strength
+        latex_name: str
+            Name to signal stregth.
+        
+    Methods
+    -------
+    conditionRx(*args,sigma=1)
+        args is a list with the arguments of func. Each element in args is float or
+        sympy instance.
+        if sigma==1:
+            Return True if R1sd < func(*args) < R1su
+        elif sigma==2:
+            Return True if R2sd < func(*args) < R2su
+        else:
+            Prints message "sigma only can be 1 or 2"
+        
+    np_index(*args,sigma=1)
+        args is a list with the arguments of func. Each element in args is a
+        numpyrandom.uniform instance.
+        if sigma==1:
+            Return numpy array with True Y False depending of condition
+            R1sd < func(*args) < R1su.
+        elif sigma==2:
+            Return numpy array with True Y False depending of condition
+            R1sd < func(*args) < R1su. 
+        else:
+            Prints message "sigma only can be 1 or 2"
+    
+    '''
     def __init__(self,R1su,R1sd,R2su,R2sd,func,latex_name='R'):
+        '''
+        Parameters
+        ----------
+            R1su, R1sd: float
+                Bounds for 1 sigma R1su upper and R1sd lower bounds.
+            R2su, R2sd: float
+                Bounds for 2 sigma R1su upper and R1sd lower bounds.
+            func: function
+                Analitic function associated to signal strength
+            latex_name: str
+            Name to signal stregth.
+        '''
         self.R1su = R1su
         self.R1sd = R1sd
         self.R2su = R2su
@@ -26,20 +77,48 @@ class SignalStrength():
         return (f'Higgs Signal streght observable with bounds: {self.R1sd} < {self.latex_name} <{self.R1su} at 1 sigma and {self.R2sd} < {self.latex_name}< {self.R2su} at 2 sigma.')
     
     def conditionRx(self,*args,sigma=1):
+        '''
+        args is a list with the arguments of func. Each element in args is float or
+        sympy instance.
+        if sigma==1:
+            Return True if R1sd < func(*args) < R1su
+        elif sigma==2:
+            Return True if R2sd < func(*args) < R2su
+            
+        Raises
+        ------
+        ValueError
+            If sigma is different to 1 or 2.
+        '''
         if sigma==1:
             return self.R1sd < self.func(*args) < self.R1su
         elif sigma==2:
             return self.R2sd < self.func(*args) < self.R2su
-        else:
-            print('sigma only can be 1 or 2')
+        else:# sigma!=1 or sigma!=2:
+            raise ValueError("sigma only can be 1 or 2")
             
     def np_index(self,*args,sigma=1):
+        '''
+        args is a list with the arguments of func. Each element in args is a numpy
+        instance.
+        if sigma==1:
+            Return numpy array with True and False elements depending of condition
+            R1sd < func(*args) < R1su.
+        elif sigma==2:
+            Return numpy array with True and False elements depending of condition
+            R1sd < func(*args) < R1su.
+            
+        Raises
+        ------
+        ValueError
+            If sigma is different to 1 or 2.
+        '''
         if sigma==1:
             return (self.func(*args)>=self.R1sd) & (self.func(*args)<=self.R1su)
         elif sigma==2:
             return (self.func(*args)>=self.R2sd) &(self.func(*args)<=self.R2su)
         else:
-            print('sigma must be 1 or 2')
+            raise ValueError("sigma only can be 1 or 2")
     
     def parameter_space_numpy(self,couplings,parameters):
         '''
@@ -83,7 +162,70 @@ Rz = SignalStrength(RzzSUP1sig,RzzINF1sig,RzzSUP2sig,RzzINF2sig,RZZ,latex_name='
     
 
 class HiggsSignalStrength():
+    '''Class to represent a Higgs signal strenght
+    
+    Atributes
+    ---------
+        ghtt: float, sympy or numpy instance
+            Higgs coupling with top quarks
+        ghbb: float, sympy or numpy instance
+            Higgs coupling with bottom quarks
+        ghtautau: float, sympy or numpy instance
+            Higgs coupling with tau leptons
+        ghWW: float, sympy or numpy instance
+            Higgs coupling with W bosons
+        ghZZ: float, sympy or numpy instance
+            Higgs coupling with Z bosons
+        gCH: float, sympy or numpy instance
+            Higgs coupling with chaged Higgs
+        mCH: float, sympy or numpy instance
+            Charged scalar mass
+        model: str
+            Model name
+        
+    Methods
+    -------
+    parameter_space(parameters,sigma=1)
+        parameter:dict
+            python dictionary with keys equal to names 
+            the variables of which a the Higgs couplings depends.
+            The values are numpy array with initial values of 
+            Higgs coupings.
+            
+        Returns a python dict with keys associates to each 
+        Higgs signal strenght and as a values DataFrame instances
+        with the values of Higgs couplings allowed by Higgs 
+        Signal Stregths.
+    
+    RXscondition(self,sigma=1):
+        sigma: int equal to 1 or 2
+            
+            Return True if the float values for the Higgs couplings
+            fullfill all the Higgs signals contraints to 1 or 2 sigmas, 
+            otherwise return False.
+    
+    '''
     def __init__(self,ghtt=1,ghbb=1,ghtautau=1,ghWW=1,ghZZ=1,gCH=0,mCH=500,model='SM'):
+        '''
+        Parameters
+        ----------
+            ghtt: float, sympy or numpy instance
+                Higgs coupling with top quarks
+            ghbb: float, sympy or numpy instance
+                Higgs coupling with bottom quarks
+            ghtautau: float, sympy or numpy instance
+                Higgs coupling with tau leptons
+            ghWW: float, sympy or numpy instance
+                Higgs coupling with W bosons
+            ghZZ: float, sympy or numpy instance
+                Higgs coupling with Z bosons
+            gCH: float, sympy or numpy instance
+                Higgs coupling with chaged Higgs
+            mCH: float, sympy or numpy instance
+                Charged scalar mass
+            model: str
+                Model name
+        '''
         self.ghtt = ghtt
         self.ghbb = ghbb
         self.ghtautau = ghtautau
@@ -107,8 +249,22 @@ class HiggsSignalStrength():
     
     def parameter_space(self,parameters,sigma=1):
         '''
-        couplings: instance of HiggsSignalStrenght
-        sigma: number of sigmas it could be 1 or 2
+        parameter_space(parameters,sigma=1)
+        
+        Parameters
+        ----------
+            parameter:dict
+                python dictionary with keys equal to names 
+                of the variables of which the Higgs couplings depends.
+                The values are numpy array with initial values of 
+                Higgs coupings.
+            sigma: int
+                Confidence level sigma equal to 1 or 2
+                
+        Returns a python dict with keys associates to each 
+        Higgs signal strenght and as a values DataFrame instances
+        with the values of Higgs couplings allowed by Higgs 
+        Signal Stregths.
         '''
         from pandas import DataFrame
         #global Rtau,Rb,Rgamma,Rw,Rz
@@ -130,11 +286,17 @@ class HiggsSignalStrength():
                   for key in parameters.keys()}) for signal in Rindx.keys()}
         return data
     
-    
-    def __str__(self):
-        return f'Model: {self.model} \nghtt,ghbb,ghtautau,ghWW,ghZZ,gCH,mCH'
-    
     def RXscondition(self,sigma=1):
+        '''
+        Parameters
+        ----------
+            sigma: int 
+                Confidence level sigma equal to 1 or 2
+            
+            Return True if the float values for the Higgs couplings
+            fullfill all the Higgs signals contraints to 1 or 2 sigmas, 
+            otherwise return False.
+        '''
         ghtt = self.ghtt
         ghbb = self.ghbb
         ghtautau = self.ghtautau
@@ -153,6 +315,34 @@ class HiggsSignalStrength():
 #############################################################
 
 def plot_df(df,colx,coly,title='SpaceMath',fname=None,marker='.',latex_names=None,color='#137A7A',alpha=0.5):
+    '''
+    Parameters
+    ----------
+    df: pd.DataFrame
+        DataFrame instance whih columns equal to 
+        the parameter of which the Higgs signal depends. 
+        We  wait that df will be an output of 
+        parameter_space method of HiggsSignalStrength class.
+    colx,coly: str
+        Names of the column x and y taken of the posible 
+        columns of df
+    title: str
+        Title to the plot as default title=SpaceMath
+    fname: str
+        By default fname is equal to None. If you want to 
+        save this plot choose a name and its path.
+    marker: str
+        Kind of point, by default marker='.'
+    latex_names:dict
+        By default is equal to None. If you want an latex name 
+        associated to the columns chosen you need write a dict
+        with keys equal to the associated name of the column in 
+        df and its latex name as a corresponding value.
+    color: str
+        Color to plot. By default color=#137A7A
+    alpha: float
+        Opacity by default alpha=0.5
+    '''
     import matplotlib.pyplot as plt
     plt.plot(df[colx],df[coly],marker,color=color,alpha=alpha);
     if latex_names==None:
