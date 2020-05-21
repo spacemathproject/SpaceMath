@@ -1,6 +1,6 @@
 
 InstallSpaceMath::notcomp =
-"Your Mathematica version is too old. SpaceMath requires at least Mathematica 8. Installation aborted!";
+"Your Mathematica version is too old. SpaceMath requires at least Mathe 8. Installation aborted!";
 
 InstallSpaceMath::failed =
 "Download of `1` failed. Installation aborted!";
