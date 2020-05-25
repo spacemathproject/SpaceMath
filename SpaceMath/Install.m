@@ -1,4 +1,4 @@
-
+(* Automatic install *)
 
 InstallSpaceMath[]:=
 		Module[
