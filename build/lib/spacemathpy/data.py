@@ -1,11 +1,12 @@
 from sympy import symbols, S
-from numpy import sqrt, pi
+from numpy import sqrt as _sqrt
+from numpy import pi as _pi
 #####################3
 #masses
 ######################
 mt = {'value':173.21,'units':'GeV','symbol':symbols('m_t',positive=True)}
 mb = {'value':4.18,'units':'GeV','symbol':symbols('m_b',positive=True)}
-mta = {'value':1.77686,'units':'GeV','symbol':symbols(r'm_{\tau}',positive=True)}
+mtau = {'value':1.77686,'units':'GeV','symbol':symbols(r'm_{\tau}',positive=True)}
 mW = {'value':80.379,'units':'GeV','symbol':symbols('m_W',positive=True)}
 mZ = {'value':91.1876,'units':'GeV','symbol':symbols('m_Z',positive=True)}
 mh = {'value':125.18,'units':'GeV','symbol':symbols('m_h',positive=True)}
@@ -19,9 +20,9 @@ GF = {'value':1.16637e-5,'units':'GeV','symbol':symbols('G_F',positive=True)}
 αs = {'value':0.11,'units':None,'symbol':symbols(r'\alpha_s',positive=True)}
 αem = {'value':1.0/137.03599911,'units':None,'symbol':symbols(r'\alpha_{e}',positive=True)}
 cW = {'value':mW['value']/mZ['value'],'units':'GeV','symbol':symbols('c_W',real=True)}
-sW = {'value':sqrt(1-cW['value']**2),'units':'GeV','symbol':symbols('s_W',real=True)}
+sW = {'value':_sqrt(1-cW['value']**2),'units':'GeV','symbol':symbols('s_W',real=True)}
 g = {'value':2*(mW['value']/SMvev['value']),'unit':None,'symbol':symbols('g',real=True)}
-ge = {'value':sqrt(4*pi*αem['value']),'unit':None,'symbol':symbols('g_e',real=True)}
+ge = {'value':_sqrt(4*_pi*αem['value']),'unit':None,'symbol':symbols('g_e',real=True)}
 gw = {'value':ge['value']/sW['value'],'unit':None,'symbol':symbols('g_w',real=True)}
 gz = {'value':gw['value']/cW['value'],'unit':None,'symbol':symbols('g_z',real=True)}
 
@@ -29,7 +30,7 @@ gz = {'value':gw['value']/cW['value'],'unit':None,'symbol':symbols('g_z',real=Tr
 Qt = {'value':2.0/3,'units':'|e|','symbol':S(2)/3}
 Qb = {'value':-1.0/3,'units':'|e|','symbol':-S(1)/3}
 
-constants = [mt,mb,mta,mW,mZ,mh,SMvev,GF,αs,αem,cW,sW,g,gw,gz]
+constants = [mt,mb,mtau,mW,mZ,mh,SMvev,GF,αs,αem,cW,sW,g,gw,gz]
 def numeric_substitutions(*args):
     if args[0] == 'All':
         return {a['symbol']:a['value'] for a in constants}

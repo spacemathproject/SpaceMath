@@ -1,15 +1,15 @@
-import numpy as np
-np.seterr(all='ignore')# to ignore numpy errors
+from numpy import seterr
+seterr(all='ignore')# to ignore numpy errors
 from .data import *
 from .RXX import *
 
-class Parameters():
-    def __init__(self,dict_variables):
-        self.dict_variables = dict_variables
-    def numpy_dict(self,n=50000):
-        variables = self.dict_variables
-        keys = variables.keys()
-        return {k:np.random.uniform(variables[k][0],variables[k][1],n) for k in keys}
+#class Parameters():
+#    def __init__(self,dict_variables):
+#        self.dict_variables = dict_variables
+#    def numpy_dict(self,n=50000):
+#        variables = self.dict_variables
+#        keys = variables.keys()
+#        return {k:np.random.uniform(variables[k][0],variables[k][1],n) for k in keys}
 
 class SignalStrength():
     '''Class for represent a generic signal strenght
@@ -353,7 +353,7 @@ def plot_df(df,colx,coly,title='SpaceMath',fname=None,marker='.',latex_names=Non
         plt.ylabel(latex_names[coly],fontsize=15);
     plt.title(title,fontsize=15);
     if fname!=None:
-        plt.savefig(fname,dpi=1000)
+        plt.savefig(fname,dpi=100)
     else:
         pass
     plt.show();
