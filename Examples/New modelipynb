@@ -1,0 +1,589 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "Collapsed": "false"
+   },
+   "source": [
+    "# New Model"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## First stage: symbolic definition\n",
+    "\n",
+    "The first stage consiste on do symbolic definitions of our Higgs couplings. This first stage allow us do some simplification or manipulations of our couplings."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "Collapsed": "false"
+   },
+   "source": [
+    "### Higgs couplings\n",
+    "If you want, you can write in this cell the couplings of your model in this `markdown` cell with latex code.\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "**Importing** `sympy` functions for symbolic calculations."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "Collapsed": "false"
+   },
+   "outputs": [],
+   "source": [
+    "from sympy import symbols, init_printing, cos, sin, atan\n",
+    "init_printing()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "Collapsed": "false"
+   },
+   "source": [
+    "**Init symbolic variables**\n",
+    "\n",
+    "We use `symbols` sympy function to init symbolic parameters, which are denoted by lowercase letters."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "Collapsed": "false"
+   },
+   "outputs": [],
+   "source": [
+    "a,b,c,d = symbols('a,b,c,d',real=True)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### Symbolic definition of $g_{hff}$ couplings\n",
+    "\n",
+    "We use the symbolic constants predefined on `spacemathpy`, using the notation `constant['symbol']`, but first we import `spacemathpy`."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "from spacemathpy import *"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### Symbolic definition of $g_{htt}$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "Collapsed": "false"
+   },
+   "outputs": [],
+   "source": [
+    "#2HDM-III\n",
+    "s = 'symbol'\n",
+    "ghtt = g[s]*#... write the definition of ghtt\n",
+    "\n",
+    "ghtt.simplify()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "Collapsed": "false"
+   },
+   "source": [
+    "#### Symbolic definition of $g_{hbb}$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "Collapsed": "false"
+   },
+   "outputs": [],
+   "source": [
+    "abb = symbols('A_{bb}',real=True)\n",
+    "ghbb = g[s]*#... write the definition of ghbb\n",
+    "ghbb.simplify()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Symbolic definition of $g_{h\\tau\\tau}$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "Collapsed": "false"
+   },
+   "outputs": [],
+   "source": [
+    "ghtautau = g[s]*a#... write the definition of ghtautau\n",
+    "\n",
+    "ghtautau.simplify()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### Symbolic definition of $g_{hWW}$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "Collapsed": "false"
+   },
+   "outputs": [],
+   "source": [
+    "ghww =  gw[s]*#... write the definition of ghww\n",
+    "ghww"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### Symbolic definition of $g_{hZZ}$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "Collapsed": "false"
+   },
+   "outputs": [],
+   "source": [
+    "ghzz =  gz[s]*#... write the definition of ghzz\n",
+    "ghzz"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "Collapsed": "false"
+   },
+   "source": [
+    "## Second stage: numeric implementations\n",
+    "\n",
+    "The second stage consist in change our previous symbolic Higgs couplings to `numpy` functions by using sympy `lambdify` function. This function allow us to rewrite our symbolic coupling in term of numeric `numpy` functions. This function is imported from `sympy` as follows"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "from sympy import lambdify"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Also we need the numeric values of our predefined constants which are showed with the notation `constant['numeric']`. However, `sympy` allow us substitute symbolic variables by numeric values using `python` dictionary with the structure `{symbol:value}`, and finally using the attribute `subs` of any symbolic `sympy` expression. But we have implemented a dictionary with all constants in `spacemathpy` in the next line."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "Collapsed": "false"
+   },
+   "outputs": [],
+   "source": [
+    "num = numeric_substitutions('All')\n",
+    "num"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Numeric $g_{htt}$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "Collapsed": "false"
+   },
+   "outputs": [],
+   "source": [
+    "ghtt_2hdm = lambdify([a,b,c,d],ghtt.subs(num),'numpy')\n",
+    "ghtt_2hdm(0.1,0.2,0.3,0.4)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Numeric $g_{hbb}$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "Collapsed": "false"
+   },
+   "outputs": [],
+   "source": [
+    "ghbb_2hdm = lambdify([a,b,c,d],ghbb.subs(num),'numpy')\n",
+    "ghbb_2hdm(0.1,0.2,0.3,0.4)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Numeric $g_{h\\tau\\tau}$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "Collapsed": "false"
+   },
+   "outputs": [],
+   "source": [
+    "ghtautau_2hdm = lambdify([a,b,c,d],ghtautau.subs(num),'numpy')\n",
+    "ghtautau_2hdm(0.1,0.2,0.3,0.4)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Numeric $g_{hWW}$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "Collapsed": "false"
+   },
+   "outputs": [],
+   "source": [
+    "ghww_2hdm = lambdify([a],ghww.subs(num),'numpy')\n",
+    "ghww_2hdm(0.1)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Numeric $g_{hZZ}$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ghzz_2hdm = lambdify([a],ghzz.subs(num),'numpy')\n",
+    "ghzz_2hdm(0.1)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "Collapsed": "false"
+   },
+   "source": [
+    "### Third stage: analysis"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "The final stage is the own analysis. Now we define the numeric range to the parameters. To differentiate we denote them with the first letter uppercase. From `numpy` we use `np.random.uniform(i,f,n)` to create `n` randomly chosen points to each parameter in the range $[i,f]$, and create a dictionary which link our numeric parameters with its string name."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "Collapsed": "false"
+   },
+   "outputs": [],
+   "source": [
+    "n = 1_000_000\n",
+    "A= np.random.uniform(-1,1,n)\n",
+    "B = np.random.uniform(0.01,50.0,n)\n",
+    "C = np.random.uniform(0.01,1,n)\n",
+    "D = np.random.uniform(0.01,1,n)\n",
+    "parameters = {'A':A,'B':B,'C':C,'Abb':C}"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### Parameter scan"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Now we proceed to use `HiggsSignalStrength` class from `spacemathpy` to evaluate the initial parameter space on the predefined numeric Higgs couplings. Then we assign the Higgs couplings to `HiggsSignalStrength` in this case assigned to `THDM` variable."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "Collapsed": "false"
+   },
+   "outputs": [],
+   "source": [
+    "Model = HiggsSignalStrength()\n",
+    "Model.model = '2HDM-FCNC'\n",
+    "Model.ghtt = ghtt_2hdm(A,B,C,D)\n",
+    "Model.ghbb = ghbb_2hdm(A,B,C,D)\n",
+    "Model.ghtautau = ghtautau_2hdm(A,B,C,D)\n",
+    "Model.ghWW = ghww_2hdm(A)\n",
+    "Model.ghZZ = ghzz_2hdm(A,B,C,D)\n",
+    "#Model.gCH = 0.5\n",
+    "#Model.mCH = np.random.uniform(100,1000,n)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Also, we can name our model by means of `model` attribute of `HiggsSignalStrength`. This class by default has values equal to one for Higgs couplings with standard particles, 0 for Higgs couplings with charged scalars and 500 GeV for chaged scalar mass. Then we can show the initial parameter space of Higgs couplings show output of Model."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Model"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Now, the method `parameter_space` from `HiggsSignalStrength` test each point of initial Higgs couplings parameter space and only save the points allowed by Higgs  Signals Strengths $R_X$ considering 1 or 2 $\\sigma$ ranges and returns a dictionary with keys equal to each $R_X$ and its corresponding value equal to a `Pandas` `DataFrame` which stores the allowed parameter associated to $R_X$ constraints . In this case we obtain both ranges of allowed parameter spaces in the variables `THDMspace1` and `THDMspace2` corresponding to 1 and 2 $\\sigma$ ranges, respectively."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "Collapsed": "false"
+   },
+   "outputs": [],
+   "source": [
+    "Modelspace1 = THDM.parameter_space(parameters,sigma=1)\n",
+    "Modelspace2 = THDM.parameter_space(parameters,sigma=2)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "Collapsed": "false"
+   },
+   "source": [
+    "The obtained Higgs coupling allowed parameter space (`Modelspace1` or `Modelspace2`) is related with the initial parameter space `A,B,C,D` and we can extract the parameter space allowed by each particular Higgs signal strength by `ModelspaceX['RX']`. For example, for the $R_\\tau$ and 2 $\\sigma$ constraints we have"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Modelspace2['Rtau']"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "where we observe that after the scan, it is obtained only 8215 points allowed by $R_\\tau$ at 2 $\\sigma$ of confidence level.\n",
+    "\n",
+    "If we want the allowed paramater space after consider all Higgs Signals Strengths  constraints together we use `'Intersection'` index inside of square brackets as follows"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Modelspace2['Intersection']"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Allowed parameter space plots"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Then we can plot the allowed parameter space by means of `plot.scatter` method of each $R_X$ `DataFrame`.For example for $R_\\tau$ signal"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "Collapsed": "false"
+   },
+   "source": [
+    "### $$R_{\\tau}$$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Modelspace2['Rtau'].plot.scatter(x='A',y='B');"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "If we want customize our plot we can do it by for example"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "Collapsed": "false"
+   },
+   "outputs": [],
+   "source": [
+    "ax = Modelspace2['Rtau'].plot.scatter(x='A',y='B',grid=True,alpha=0.5);\n",
+    "ax.set_xlabel(r'$A$',size=18,color='brown');\n",
+    "ax.set_ylabel(r'$B$',size=18,color='brown');"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "Collapsed": "false"
+   },
+   "source": [
+    "## Intersection\n",
+    "\n",
+    "Also, if are interested in the allowed parameter space joining the constraints of all defined Higgs Signals, we only use the `Intersection` key of `Modelspace2` for example"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ax = Modelspace2['Intersection'].plot.scatter(x='A',y='B',grid=True,alpha=0.5);\n",
+    "#ax.tick_params(labelsize=15,grid_color='gray',grid_alpha=0.5,colors='gray')\n",
+    "ax.set_xlabel(r'$A$',size=18,color='brown');\n",
+    "ax.set_ylabel(r'$B$',size=18,color='brown');"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Also, we can explore the behaviour of the total allowed parameter space using `scatter_matrix` function from `pandas` module as follows."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "from pandas.plotting import scatter_matrix"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "scatter_matrix(Modelspace2['Intersection'], alpha=0.2, figsize=(10, 10), diagonal='kde',marker='o');"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}

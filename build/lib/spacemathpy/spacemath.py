@@ -262,9 +262,9 @@ class HiggsSignalStrength():
                 Confidence level sigma equal to 1 or 2
                 
         Returns a python dict with keys associates to each 
-        Higgs signal strenght and as a values DataFrame instances
-        with the values of Higgs couplings allowed by Higgs 
-        Signal Stregths.
+        Higgs signal strenght and as a value a DataFrame instance
+        with the values of the parameter space allowed by each Higgs 
+        Signal Stregth.
         '''
         from pandas import DataFrame
         #global Rtau,Rb,Rgamma,Rw,Rz
@@ -280,8 +280,10 @@ class HiggsSignalStrength():
         ind_gamma = Rgamma.np_index(ghtt,ghbb,ghWW,gCH,mCH,sigma=sigma)
         ind_w = Rw.np_index(ghtt,ghbb,ghWW,sigma=sigma)
         ind_z = Rz.np_index(ghtt,ghbb,ghZZ,sigma=sigma)
-        index = ind_z*ind_w*ind_gamma*ind_tau*ind_b 
-        Rindx = {'Rtau':ind_tau,'Rb':ind_b,'Rgamma':ind_gamma,'Rw':ind_w,'Rz':ind_z,'Intersection':index}
+        indexf = ind_tau*ind_b
+        indexV = ind_w*ind_gamma*ind_z
+        index = ind_tau*ind_b*ind_z*ind_w*ind_gamma
+        Rindx = {'Rtau':ind_tau,'Rb':ind_b,'Rgamma':ind_gamma,'Rw':ind_w,'Rz':ind_z,'Intersection':index,'fermions':indexf,'Vectors':indexV}
         data = {signal:DataFrame({key:parameters[key][Rindx[signal]]
                   for key in parameters.keys()}) for signal in Rindx.keys()}
         return data
@@ -353,7 +355,7 @@ def plot_df(df,colx,coly,title='SpaceMath',fname=None,marker='.',latex_names=Non
         plt.ylabel(latex_names[coly],fontsize=15);
     plt.title(title,fontsize=15);
     if fname!=None:
-        plt.savefig(fname,dpi=1000)
+        plt.savefig(fname,dpi=100)
     else:
         pass
     plt.show();

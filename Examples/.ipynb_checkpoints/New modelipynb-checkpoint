@@ -26,8 +26,8 @@
     "Collapsed": "false"
    },
    "source": [
-    "### Higgs couplings\n",
-    "In the most general context of 2HDM, the couplings $g_{hff}$ can be extracted of:\n",
+    "### Higgs couplings with fermions\n",
+    "In the most general context to 2HDM, the couplings $g_{hff}$ can be extracted of:\n",
     "\n",
     "$$\\mathcal{L}_Y^{hqq} = \\frac{g}{2}\\left(\\frac{m_{d_{m}}}{m_{W}}\\right) d_{m}\\left[-\\frac{\\operatorname{sen} \\alpha}{\\cos \\beta} \\delta_{m n}+\\frac{\\sqrt{2} \\cos (\\alpha-\\beta)}{g \\cos \\beta}\\left(\\frac{m_{W}}{m_{d_{m}}}\\right)\\left(\\tilde{Y}_{2}^{d}\\right)_{m n}\\right] d_{n} h^{0}$$\n",
     "$$+\\frac{g}{2}\\left(\\frac{m_{u_{m}}}{m_{W}}\\right) \\bar{u}_{m}\\left[\\frac{\\cos \\alpha}{\\operatorname{sen} \\beta} \\delta_{m n}-\\frac{\\sqrt{2} \\cos (\\alpha-\\beta)}{g \\operatorname{sen} \\beta}\\left(\\frac{m_{W}}{m_{u_{m}}}\\right)\\left(\\bar{Y}_{1}^{u}\\right)_{m n}\\right] u_{n} h^{0}$$\n",
@@ -233,6 +233,20 @@
     "#(g/2) (mtau/mW) ((-Sin[a]*tb/Sin[ArcTan[tb]]) + (Sqrt[2] (Cab*tb)/(g*Sin[ArcTan[tb]]) (mW/mtau)*(mtau/vev*Atata)))\n",
     "\n",
     "ghtautau.simplify()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "Collapsed": "false"
+   },
+   "source": [
+    "### Higgs couplings with vector bosons\n",
+    "In the case of $g_{hWW}$ and $g_{hZZ}$ the couplings in the $2HDM$ are given by\n",
+    "\n",
+    "$$\\mathcal{L}_{hVV} = g m_{V} \\sin{(\\alpha - \\beta)}$$ \n",
+    "\n",
+    "where $V = W,Z$. The corresponding functions in python are given as follow"
    ]
   },
   {

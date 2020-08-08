@@ -5,7 +5,7 @@
 #python libraries
 from sympy import log, sqrt, pi,I,S,asin,acos,Abs,Piecewise,symbols
 import numpy as np
-from .data import *
+import data
 #######################################
 # Scalar boson decays into fermion pair
 #######################################
@@ -279,9 +279,9 @@ def FH(mCH,mS):
 def AHc(gCH,mCH,mS):
     global mW, cW
     if issymbolic(gCH,mCH,mS):
-        mWp, CW = mW['symbol'], cW['symbol']
+        mWp = mW['symbol']
     else:
-        mWp, CW = mW['value'], cW['value']
+        mWp = mW['value']
     return (mWp*gCH)/(mCH**2)*FH(mCH,mS);
 
 def Ahgaga(ghtt,ghbb,ghWW,gCH,mCH,mS):
@@ -342,7 +342,7 @@ RTW = lambda mS: RT(mS,mW)
 RTZ = lambda mS: RT(mS,mZ)
 
 
-δZ = 7-(40/(3*sW['value']**2))+160/(9*sW['value']**4);
+δZ = 7-(40/(3*data.sW['value']**2))+160/(9*data.sW['value']**4);
 
 # Decay width of Higgs boson into WW pair
 def WidthHWW(ghWW,mS):
@@ -570,11 +570,12 @@ def RWW(ghtt,ghbb,ghWW):
     -------
     float, numpy and sympy instances depend on input
     '''    
-    global mh,mt,mb,mW
+    #global data.mh,data.mt,data.mb,data.mW
+    mh,mt,mb,mW = data.mh,data.mt,data.mb,data.mW
     if issymbolic(ghtt,ghbb,ghWW):
-        mhiggs,mtop,mbot,mWp,gg,ggw = mh['symbol'],mt['symbol'],mb['symbol'],mW['symbol'],g['symbol'],gw['symbol']
+        mhiggs,mtop,mbot,mWp,gg,ggw = mh['symbol'],mt['symbol'],mb['symbol'],mW['symbol'],data.g['symbol'],data.gw['symbol']
     else:
-        mhiggs,mtop,mbot,mWp,gg,ggw = mh['value'],mt['value'],mb['value'],mW['value'],g['value'],gw['value']
+        mhiggs,mtop,mbot,mWp,gg,ggw = mh['value'],mt['value'],mb['value'],mW['value'],data.g['value'],data.gw['value']
     return (WidthHgg(ghtt,ghbb,mhiggs)*BRhWW(ghWW))/(WidthHgg(gg*mtop/(2*mWp),gg*mbot/(2*mWp),mhiggs)*BRhWW(ggw*mWp))
 
 #RZ
@@ -593,9 +594,9 @@ def RZZ(ghtt,ghbb,ghZZ):
     '''    
     global mh,mt,mb,mW
     if issymbolic(ghtt,ghbb,ghZZ):
-        mhiggs,mtop,mbot,mZp,mWp,gg,ggz = mh['symbol'],mt['symbol'],mb['symbol'],mZ['symbol'],mW['symbol'],g['symbol'],gz['symbol']
+        mhiggs,mtop,mbot,mZp,mWp,gg,ggz = mh['symbol'],mt['symbol'],mb['symbol'],mZ['symbol'],mW['symbol'],data.g['symbol'],data.gz['symbol']
     else:
-        mhiggs,mtop,mbot,mZp,mWp,gg,ggz = mh['value'],mt['value'],mb['value'],mZ['value'],mW['value'],g['value'],gz['value']
+        mhiggs,mtop,mbot,mZp,mWp,gg,ggz = mh['value'],mt['value'],mb['value'],mZ['value'],mW['value'],data.g['value'],data.gz['value']
     return (WidthHgg(ghtt,ghbb,mhiggs)*BRhZZ(ghZZ))/(WidthHgg(gg*mtop/(2*mWp),gg*mbot/(2*mWp),mhiggs)*BRhZZ(ggz*mZp))#Es mZ o mW
 
 #Rga
@@ -621,9 +622,9 @@ def Rgaga(ghtt,ghbb,ghWW,gCH,mCH):
     '''
     global mh,mt,mb,mW
     if issymbolic(ghtt,ghbb,ghWW,gCH,mCH):
-        mhiggs,mtop,mbot,mWp,gg,ggw = mh['symbol'],mt['symbol'],mb['symbol'],mW['symbol'],g['symbol'],gw['symbol']
+        mhiggs,mtop,mbot,mWp,gg,ggw = mh['symbol'],mt['symbol'],mb['symbol'],mW['symbol'],data.g['symbol'],data.gw['symbol']
     else:
-        mhiggs,mtop,mbot,mWp,gg,ggw = mh['value'],mt['value'],mb['value'],mW['value'],g['value'],gw['value']
+        mhiggs,mtop,mbot,mWp,gg,ggw = mh['value'],mt['value'],mb['value'],mW['value'],data.g['value'],data.gw['value']
     return (WidthHgg(ghtt,ghbb,mhiggs)*BRhgaga(ghtt,ghbb,ghWW,gCH,mCH))/(WidthHgg(gg*mtop/(2*mWp),gg*mbot/(2*mWp),mhiggs)*BRhgaga(gg*mtop/(2*mWp),gg*mbot/(2*mWp),ggw*mWp,0,mCH))####¿?#####
 #BRhgaga(ghtt,ghbb,ghWW,gCH,mCH)
 #Rg
@@ -648,3 +649,5 @@ def Rgg(ghtt,ghbb):
         mhiggs,mtop,mbot,mWp,gg = mh['value'],mt['value'],mb['value'],mW['value'],g['value']
     return WidthHgg(ghtt,ghbb,mhiggs)*BRhgg(ghtt,ghbb)/(WidthHgg(gg*mtop/(2*mWp),gg*mbot/(2*mWp),mhiggs)*BRhgg(gg*mtop/(2*mWp),gg*mbot/(2*mWp)))
 
+if __name__=='__main__':
+    print('All right RXX')
