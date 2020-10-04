@@ -5,7 +5,24 @@
 #python libraries
 from sympy import log, sqrt, pi,I,S,asin,acos,Abs,Piecewise,symbols
 import numpy as np
-import data
+from .data import *
+#from data import mt,mb, mW, αs, Qt,Qb,αem, mZ, mh,TotWidth,cW,g,mtau,sW
+#import data
+#mt = data.mt
+#mb = data.mb
+#mW = data.mW
+#mZ = data.mZ
+#mtau = data.mtau
+#mh = data.mh
+#αs = data.αs
+#Qt = data.Qt
+#Qb = data.Qb
+#αem = data.αem
+#TotWidth = data.TotWidth
+#cW = data.cW
+#sW = data.sW
+#g = data.g
+#gw = data.gw
 #######################################
 # Scalar boson decays into fermion pair
 #######################################
@@ -54,7 +71,7 @@ def WidthHff(ghfifj,Nc,mi,mj,mS):
     if issymbolic(ghfifj,Nc,mi,mj,mS):
         return (((ghfifj**2)*Nc*mS)/(128*pi))*((4-(sqrt(τf(mi,mS)) + sqrt(τf(mj,mS)))**2)**(S(3)/2))*(sqrt((4-(sqrt(τf(mi,mS))-sqrt(τf(mj,mS)))**2)))
     else:
-        return (((ghfifj**2)*Nc*mS)/(128*np.pi))*((4-(np.sqrt(τf(mi,mS)) + np.sqrt(τf(mj,mS)))**2)**(3/2))*(np.sqrt((4-(np.sqrt(τf(mi,mS))-np.sqrt(τf(mj,mS)))**2)))
+        return (((ghfifj**2)*Nc*mS)/(128*np.pi))*((4-(np.sqrt(τf(mi,mS)) + np.sqrt(τf(mj,mS)))**2)**(3.0/2))*(np.sqrt((4-(np.sqrt(τf(mi,mS))-np.sqrt(τf(mj,mS)))**2)))
 
 ####################################################
 #Scalar boson decay into gluon pair at one-loop level
@@ -170,7 +187,7 @@ def WidthHgg(ghtt,ghbb,mS):
         return ((αs['symbol']**2*mS**3)/(512*mWp**2*pi**3 ))*Abs(AHgg(ghtt,ghbb,mS))**2;#####MODIFICADO#######
     else:
         mWp = mW['value']
-        return ((αs['value']**2*mS**3)/(512*mWp**2*np.pi**3 ))*abs(AHgg(ghtt,ghbb,mS))**2;#####MODIFICADO#######
+        return ((αs['value']**2*mS**3)/(512*mWp**2*np.pi**3))*abs(AHgg(ghtt,ghbb,mS))**2;#####MODIFICADO#######
 
 ####################################################
 # Higgs boson decay into photon pair
@@ -342,7 +359,7 @@ RTW = lambda mS: RT(mS,mW)
 RTZ = lambda mS: RT(mS,mZ)
 
 
-δZ = 7-(40/(3*data.sW['value']**2))+160/(9*data.sW['value']**4);
+δZ = 7-(40/(3*sW['value']**2))+160/(9*sW['value']**4);
 
 # Decay width of Higgs boson into WW pair
 def WidthHWW(ghWW,mS):
@@ -571,11 +588,10 @@ def RWW(ghtt,ghbb,ghWW):
     float, numpy and sympy instances depend on input
     '''    
     #global data.mh,data.mt,data.mb,data.mW
-    mh,mt,mb,mW = data.mh,data.mt,data.mb,data.mW
     if issymbolic(ghtt,ghbb,ghWW):
-        mhiggs,mtop,mbot,mWp,gg,ggw = mh['symbol'],mt['symbol'],mb['symbol'],mW['symbol'],data.g['symbol'],data.gw['symbol']
+        mhiggs,mtop,mbot,mWp,gg,ggw = mh['symbol'],mt['symbol'],mb['symbol'],mW['symbol'],g['symbol'],gw['symbol']
     else:
-        mhiggs,mtop,mbot,mWp,gg,ggw = mh['value'],mt['value'],mb['value'],mW['value'],data.g['value'],data.gw['value']
+        mhiggs,mtop,mbot,mWp,gg,ggw = mh['value'],mt['value'],mb['value'],mW['value'],g['value'],gw['value']
     return (WidthHgg(ghtt,ghbb,mhiggs)*BRhWW(ghWW))/(WidthHgg(gg*mtop/(2*mWp),gg*mbot/(2*mWp),mhiggs)*BRhWW(ggw*mWp))
 
 #RZ
@@ -594,9 +610,9 @@ def RZZ(ghtt,ghbb,ghZZ):
     '''    
     global mh,mt,mb,mW
     if issymbolic(ghtt,ghbb,ghZZ):
-        mhiggs,mtop,mbot,mZp,mWp,gg,ggz = mh['symbol'],mt['symbol'],mb['symbol'],mZ['symbol'],mW['symbol'],data.g['symbol'],data.gz['symbol']
+        mhiggs,mtop,mbot,mZp,mWp,gg,ggz = mh['symbol'],mt['symbol'],mb['symbol'],mZ['symbol'],mW['symbol'],g['symbol'],gz['symbol']
     else:
-        mhiggs,mtop,mbot,mZp,mWp,gg,ggz = mh['value'],mt['value'],mb['value'],mZ['value'],mW['value'],data.g['value'],data.gz['value']
+        mhiggs,mtop,mbot,mZp,mWp,gg,ggz = mh['value'],mt['value'],mb['value'],mZ['value'],mW['value'],g['value'],gz['value']
     return (WidthHgg(ghtt,ghbb,mhiggs)*BRhZZ(ghZZ))/(WidthHgg(gg*mtop/(2*mWp),gg*mbot/(2*mWp),mhiggs)*BRhZZ(ggz*mZp))#Es mZ o mW
 
 #Rga
@@ -607,13 +623,13 @@ def Rgaga(ghtt,ghbb,ghWW,gCH,mCH):
     ----------
     ghtt: float also works with numpy or sympy instances
         Coupling of Higgs boson and top quarks
-    ghbb: float also works with numpy or sympy instnaces
+    ghbb: float also works with numpy or sympy instances
         Coupling of Higgs boson and top quarks
-    ghWW: float also works with numpy or sympy instnaces
+    ghWW: float also works with numpy or sympy instances
         Coupling of Higgs boson and W bosons
-    gCH: float also works with numpy or sympy instnaces
+    gCH: float also works with numpy or sympy instances
         Coupling of Higgs boson and charged
-    mCH: float also works with numpy or sympy instnaces
+    mCH: float also works with numpy or sympy instances
         Charged scalar mass
     
     Returns
@@ -622,9 +638,9 @@ def Rgaga(ghtt,ghbb,ghWW,gCH,mCH):
     '''
     global mh,mt,mb,mW
     if issymbolic(ghtt,ghbb,ghWW,gCH,mCH):
-        mhiggs,mtop,mbot,mWp,gg,ggw = mh['symbol'],mt['symbol'],mb['symbol'],mW['symbol'],data.g['symbol'],data.gw['symbol']
+        mhiggs,mtop,mbot,mWp,gg,ggw = mh['symbol'],mt['symbol'],mb['symbol'],mW['symbol'],g['symbol'],gw['symbol']
     else:
-        mhiggs,mtop,mbot,mWp,gg,ggw = mh['value'],mt['value'],mb['value'],mW['value'],data.g['value'],data.gw['value']
+        mhiggs,mtop,mbot,mWp,gg,ggw = mh['value'],mt['value'],mb['value'],mW['value'],g['value'],gw['value']
     return (WidthHgg(ghtt,ghbb,mhiggs)*BRhgaga(ghtt,ghbb,ghWW,gCH,mCH))/(WidthHgg(gg*mtop/(2*mWp),gg*mbot/(2*mWp),mhiggs)*BRhgaga(gg*mtop/(2*mWp),gg*mbot/(2*mWp),ggw*mWp,0,mCH))####¿?#####
 #BRhgaga(ghtt,ghbb,ghWW,gCH,mCH)
 #Rg

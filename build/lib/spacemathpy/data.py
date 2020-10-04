@@ -7,6 +7,8 @@ from numpy import pi as _pi
 mt = {'value':173.21,'units':'GeV','symbol':symbols('m_t',positive=True)}
 mb = {'value':4.18,'units':'GeV','symbol':symbols('m_b',positive=True)}
 mtau = {'value':1.77686,'units':'GeV','symbol':symbols(r'm_{\tau}',positive=True)}
+mmu = {'value':0.10566,'units':'GeV','symbol':symbols(r'm_{\mu}',positive=True)}
+me = {'value':0.000511,'units':'GeV','symbol':symbols(r'm_{e}',positive=True)}
 mW = {'value':80.379,'units':'GeV','symbol':symbols('m_W',positive=True)}
 mZ = {'value':91.1876,'units':'GeV','symbol':symbols('m_Z',positive=True)}
 mh = {'value':125.18,'units':'GeV','symbol':symbols('m_h',positive=True)}
@@ -18,7 +20,7 @@ mh = {'value':125.18,'units':'GeV','symbol':symbols('m_h',positive=True)}
 SMvev = {'value':246,'units':'GeV','symbol':symbols('v',positive=True)}
 GF = {'value':1.16637e-5,'units':'GeV','symbol':symbols('G_F',positive=True)}
 αs = {'value':0.11,'units':None,'symbol':symbols(r'\alpha_s',positive=True)}
-αem = {'value':1.0/137.03599911,'units':None,'symbol':symbols(r'\alpha_{e}',positive=True)}
+αem = {'value':1.0/137.0,'units':None,'symbol':symbols(r'\alpha_{e}',positive=True)}
 cW = {'value':mW['value']/mZ['value'],'units':'GeV','symbol':symbols('c_W',real=True)}
 sW = {'value':_sqrt(1-cW['value']**2),'units':'GeV','symbol':symbols('s_W',real=True)}
 g = {'value':2*(mW['value']/SMvev['value']),'unit':None,'symbol':symbols('g',real=True)}
@@ -30,7 +32,7 @@ gz = {'value':gw['value']/cW['value'],'unit':None,'symbol':symbols('g_z',real=Tr
 Qt = {'value':2.0/3,'units':'|e|','symbol':S(2)/3}
 Qb = {'value':-1.0/3,'units':'|e|','symbol':-S(1)/3}
 
-constants = [mt,mb,mtau,mW,mZ,mh,SMvev,GF,αs,αem,cW,sW,g,gw,gz]
+constants = [mt,mb,me,mmu,mtau,mW,mZ,mh,SMvev,GF,αs,αem,cW,sW,g,gw,gz]
 def numeric_substitutions(*args):
     if args[0] == 'All':
         return {a['symbol']:a['value'] for a in constants}

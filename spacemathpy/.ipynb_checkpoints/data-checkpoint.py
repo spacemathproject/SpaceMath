@@ -18,7 +18,7 @@ mh = {'value':125.18,'units':'GeV','symbol':symbols('m_h',positive=True)}
 SMvev = {'value':246,'units':'GeV','symbol':symbols('v',positive=True)}
 GF = {'value':1.16637e-5,'units':'GeV','symbol':symbols('G_F',positive=True)}
 αs = {'value':0.11,'units':None,'symbol':symbols(r'\alpha_s',positive=True)}
-αem = {'value':1.0/137.03599911,'units':None,'symbol':symbols(r'\alpha_{e}',positive=True)}
+αem = {'value':1.0/137.0,'units':None,'symbol':symbols(r'\alpha_{e}',positive=True)}
 cW = {'value':mW['value']/mZ['value'],'units':'GeV','symbol':symbols('c_W',real=True)}
 sW = {'value':_sqrt(1-cW['value']**2),'units':'GeV','symbol':symbols('s_W',real=True)}
 g = {'value':2*(mW['value']/SMvev['value']),'unit':None,'symbol':symbols('g',real=True)}

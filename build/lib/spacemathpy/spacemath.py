@@ -283,7 +283,7 @@ class HiggsSignalStrength():
         indexf = ind_tau*ind_b
         indexV = ind_w*ind_gamma*ind_z
         index = ind_tau*ind_b*ind_z*ind_w*ind_gamma
-        Rindx = {'Rtau':ind_tau,'Rb':ind_b,'Rgamma':ind_gamma,'Rw':ind_w,'Rz':ind_z,'Intersection':index,'fermions':indexf,'Vectors':indexV}
+        Rindx = {'Rtau':ind_tau,'Rb':ind_b,'Rgamma':ind_gamma,'Rw':ind_w,'Rz':ind_z,'Intersection':index,'Fermions':indexf,'Vectors':indexV}
         data = {signal:DataFrame({key:parameters[key][Rindx[signal]]
                   for key in parameters.keys()}) for signal in Rindx.keys()}
         return data
